@@ -1,0 +1,7 @@
+*.log
+*.toc
+*.aux
+*.ntuple
+*.so
+*.d
+*.pcm
