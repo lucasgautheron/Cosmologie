@@ -150,6 +150,12 @@ d = c t_0 ^\beta \dint_0^T t^{-\beta} dt = \dfrac{ct_0^\beta} {1-\beta}  T^{1-\b
 
 Donc $T = \left [ (1-\beta) \dfrac{d}{ct_0^\beta} \right ] ^ { \left [1/(1-\beta)\right ] }$
 
+Si $d$ est mesuré à $t_0$ :
+
+ \begin{equation}
+d = c t_0 ^\beta \dint_0^T t^{-\beta} dt = \dfrac{ct_0^\beta} {1-\beta}  \left ( T^{1-\beta} - t_0^{1-\beta} \right ) 
+\end{equation}
+
 \section{Horizons}
 
 \textbf{Horizon des évènements} : distance maximale $R_{ev}$ de laquelle peut provenir un signal lumineux en un temps fini.
@@ -177,12 +183,12 @@ $dN'(T) = \dfrac{dl}{l(T)} \dfrac{f(T)}{f_0} N$
 La longueur du front d'onde au temps $t$ est donnée par $l(t)$. Dans un espace plat + 2D :
 
 \begin{equation}
-l(T) = 2\pi d \dfrac{L(T)}{L_0} = 2\pi d (1+z(T)) = 2\pi (1+z(T)) \dint_0^T \dfrac{dt}{1+z(t)}
+l(T) = 2\pi d \dfrac{L(T)}{L_0} = 2\pi d (1+z(T)) 
 \end{equation}
 
 Dans un espace sphérique 2D :
 \begin{equation}
-l(T) = 2\pi L(T) \sin \dfrac{d}{L_0} = 2\pi L_0 (1+z(T)) \sin \dfrac{d}{L_0}  = 2\pi L_0 (1+z(T)) \sin \dfrac{c}{L_0} \dint_0^T \dfrac{dt}{1+z(t)}
+l(T) = 2\pi L(T) \sin \dfrac{d}{L_0} = 2\pi L_0 (1+z(T)) \sin \dfrac{d}{L_0} 
 \end{equation}
 
 L'énergie des photons décroit en $1+z$ (red shift) 
@@ -197,5 +203,25 @@ Espace sphérique 2D :
 \bar{L} (z) = \dfrac{\bar{L}}{2\pi L_0(1+z)^2 \sin\frac{d}{L_0}}
 \end{equation}
 
+Exemple : $L(t) = L_0 \left (\dfrac{t}{t_0} \right )  ^\beta$
+\begin{equation}
+t = t_0 \left (1+z(t) \right)^{1/\beta}
+\end{equation}
+
+Donc
+\begin{equation}
+d(z) = \dfrac{ct_0} {1-\beta} \left [ \left (1+z(t) \right)^{(1-\beta)/\beta} - 1 \right ]
+\end{equation}
+
+Et en espace plat :
+\begin{equation}
+\bar{L} (z) = \dfrac{\bar{L}(1-\beta)}{2\pi ct_0 \left [ (1+z)^{(1+\beta)/\beta}- (1+z)^2 \right ] } = \dfrac{\bar{L}(1-\beta)}{2\pi ct_0 \left(1+z \right ) \left [ (1+z)^{1/\beta}- (1+z) \right ] }
+\end{equation}
+
+En sphérique :
+
+\begin{equation}
+\bar{L} (z) = \dfrac{\bar{L}}{2\pi L_0 (1+z)^2 \sin\dfrac{ct_0} {L_0(1-\beta)} \left [ \left (1+z(t) \right)^{(1-\beta)/\beta} - 1 \right ]}
+\end{equation}
 
 \end{document}
