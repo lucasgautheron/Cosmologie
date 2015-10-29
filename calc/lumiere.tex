@@ -148,7 +148,7 @@ Exemple 2 : $L(t) = L_0 \left ( \dfrac{t}{t_0} \right )^\beta$ :
 d = c t_0 ^\beta \dint_0^T t^{-\beta} dt = \dfrac{ct_0^\beta} {1-\beta}  T^{1-\beta}  \textrm{ si } \beta < 1
 \end{equation}
 
-Donc $T = \left [ (1-\beta) \dfrac{d}{ct_0^\beta} \right ] ^ { (1/1-\beta) }$
+Donc $T = \left [ (1-\beta) \dfrac{d}{ct_0^\beta} \right ] ^ { \left [1/(1-\beta)\right ] }$
 
 \section{Horizons}
 
@@ -163,5 +163,32 @@ Exemple 2 : $L_0 \left ( \dfrac{t}{t_0} \right )^\beta, \beta < 1 \Rightarrow R_
 \begin{equation}
 R_{part} = L(t_1) c \dint_{t_0}^{t_1} \dfrac{dt}{L(t)}
 \end{equation}
+
+\section{Relation luminosité-z}
+
+On définit $z$ tq $1+z(t) = \dfrac{L(t)}{L_0}$.
+
+Une source émet $N$ photons par seconde en $x = 0$. Au temps $T$ on capte ce signal en un point originellement ($t = 0$) distant de $d$ de la source sur une "surface" $dl$ du front d'onde l(T). On mesure $dN'(T)$ photons par seconde.
+
+On doit avoir :
+$dN'(T) \propto \dfrac{dl}{l(T)} \dfrac{f(T)}{f_0}$
+
+
+La longueur du front d'onde au temps $t$ est donnée par $l(t)$. Dans un espace plat + 2D :
+
+\begin{equation}
+l(T) = 2\pi d \dfrac{L(T)}{L_0} = 2\pi d (1+z(T)) = 2\pi (1+z(T)) \dint_0^T \dfrac{dt}{1+z(t)}
+\end{equation}
+
+Dans un espace sphérique 2D :
+\begin{equation}
+l(T) = 2\pi L(T) \sin \dfrac{d}{L_0} = 2\pi L_0 (1+z(T)) \sin \dfrac{d}{L_0}  = 2\pi L_0 (1+z(T)) \sin \dfrac{c}{L_0} \dint_0^T \dfrac{dt}{1+z(t)}
+\end{equation}
+
+La fréquence varie également : le temps de parcours varie avec le temps par $L(t)$ et $f(T) \propto 1/(\dfrac{dT}{dt_0})$
+
+
+L'énergie des photons décroit en $1+z$ (red shift) 
+
 
 \end{document}
