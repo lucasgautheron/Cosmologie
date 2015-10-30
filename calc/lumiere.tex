@@ -19,64 +19,8 @@
 % \geometry{landscape} % set up the page for landscape
 %   read geometry.pdf for detailed page layout information
 
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{url}
-\usepackage{eqnarray}
-\usepackage{tikz}
-\usepackage{esvect}
-\usepackage{graphicx}
-\usepackage{color}
-\usepackage[french]{babel}
-
-\usepackage{graphicx} % support the \includegraphics command and options
-\usepackage[outdir=./]{epstopdf}
-\usepackage{psfrag}
-\usepackage{subcaption}
-
-\usepackage{feynmp-auto}
-
-\makeatletter
-\def\endfmffile{%
-  \fmfcmd{\p@rcent\space the end.^^J%
-          end.^^J%
-          endinput;}%
-  \if@fmfio
-    \immediate\closeout\@outfmf
-  \fi
-  \IfFileExists{\thefmffile.mp}{\immediate\write18{mpost \thefmffile}}{}
-  \let\thefmffile\relax
-}
-\makeatother
-
-% Déclarations
-
-
-
-% Commandes
-
-% d droit
-\newcommand{\dd}{ \mathop{}\mathopen{}\mathrm{d}}
-
-% opérateurs vectoriels
-\newcommand{\grad}{\vec{\nabla}}
-%\newcommand{\div}{\nabla \cdot}
-\newcommand{\rot}{\vec{\nabla} \times }
-
-% bra ket
-\newcommand{\ket}[1]{|{#1}\rangle}
-\newcommand{\bra}[1]{\langle{#1}|}
-
-\newcommand{\sket}[1]{{#1}\rangle}
-\newcommand{\sbra}[1]{\langle{#1}}
-
-% Résidus
-\DeclareMathOperator*{\res}{Res}
-
-% displaystyle
-\newcommand{\dint}{\displaystyle \int}
-\newcommand{\dsum}{\displaystyle \sum}
+\usepackage{import}
+\subimport{../common/}{header}
 
 % \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
 
@@ -125,7 +69,7 @@ A envoie un signal à B situé à une distance $d$ ($x(A) = 0$ et $x(B) = d$) da
 Pour la lumière
 
 \begin{equation}
-c dt = \dfrac{L(t)}{L(0)} dx
+c \dd t = \dfrac{L(t)}{L(0)} dx
 \end{equation}
 
 Donc \begin{equation}
