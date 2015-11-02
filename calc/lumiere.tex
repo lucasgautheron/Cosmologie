@@ -163,6 +163,19 @@ Et en espace plat :
 \bar{L} (z) = \dfrac{\bar{L}(1-\beta)}{2\pi ct_0 \left [ (1+z)^{(1+\beta)/\beta}- (1+z)^2 \right ] } = \dfrac{\bar{L}(1-\beta)}{2\pi ct_0 \left(1+z \right ) \left [ (1+z)^{1/\beta}- (1+z) \right ] }
 \end{equation}
 
+Et de plus 
+\begin{equation}
+H(t) = \dfrac{\dot{L}}{L}(t) = \dfrac{\beta}{t_0}
+\end{equation}
+
+Donc 
+
+
+\begin{equation}
+\bar{L} (z) = \dfrac{\bar{L}(1-\beta)H_0}{2\pi \beta c\left(1+z \right ) \left [ (1+z)^{1/\beta}- (1+z) \right ] }
+\end{equation}
+
+
 \begin{figure}[H]
 \centering
   \caption{L(z) en espace 2D plat pour $\beta = 1/3$ et $\beta = 2/3$}
@@ -174,7 +187,7 @@ Et en espace plat :
 En sphérique :
 
 \begin{equation}
-\bar{L} (z) = \dfrac{\bar{L}}{2\pi L_0 (1+z)^2 \sin\dfrac{ct_0} {L_0(1-\beta)} \left [ \left (1+z \right)^{(1-\beta)/\beta} - 1 \right ]}
+\bar{L} (z) = \dfrac{\bar{L}}{2\pi L_0 (1+z)^2 \sin\dfrac{c\beta} {H_0 L_0(1-\beta)} \left [ \left (1+z \right)^{(1-\beta)/\beta} - 1 \right ]}
 \end{equation}
 
 Exemple : $L(t) = L_0 e^{\alpha t}$
@@ -190,13 +203,13 @@ d(z) = \dfrac{c}{\alpha} \dfrac{z(t)}{1+z(t)}
 Et si la courbure est nulle :
 
 \begin{equation}
-\bar{L} (z) = \dfrac{\alpha \bar{L}}{2\pi c z(1+z) }
+\bar{L} (z) = \dfrac{H_0 \bar{L}}{2\pi c z(1+z) }
 \end{equation}
 
 Pour une géométrie sphérique :
 
 \begin{equation}
-\bar{L} (z) = \dfrac{\bar{L}}{2\pi L_0(1+z)^2 \sin\frac{c}{\alpha L_0} \dfrac{z}{1+z}}
+\bar{L} (z) = \dfrac{\bar{L}}{2\pi L_0(1+z)^2 \sin\frac{c}{H_0 L_0} \dfrac{z}{1+z}}
 \end{equation}
 
 \end{document}
