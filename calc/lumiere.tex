@@ -217,4 +217,19 @@ Pour une géométrie sphérique :
 \input{plot}
 \end{figure}
 
+\section{Distance angulaire}
+
+En 2D, l'angle apparent au temps $t$ est le rapport entre la taille de la source et sa distance comobile 
+
+\begin{equation}
+d_A \equiv \dfrac{dl}{d\theta}
+\end{equation}
+
+Or $dl(t) = d(t) L(t) / L_0$. Donc :
+\begin{equation}
+d_A(t) = c (1+z(t)) \dint_0^t \dfrac{dt'}{1+z(t')} 
+\end{equation}
+
+Donc en 2D, si $\bar{L}(z) = \bar{L}/d_L$, alors $d_A = d_L / (1+z)$
+
 \end{document}
