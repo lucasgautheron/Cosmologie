@@ -65,7 +65,14 @@ void Univers()
     double t0 = t[lookup(1.0, POINTS, a)];
     printf("Age univers: %f Ga\n", 1e-9 * t0/H_0);
 
-    double deta = 3.5 * d_eta_z(1, a, t, POINTS, t0) / double(POINTS);
-    printf("z = 1: dn = %f\n", 1e-9 * deta/H_0);
+    fp = fopen("luminosite.res", "w+");
+    for(int i = 0; i < 50; ++i)
+    {
+        const double z = 10 * double(i)/50.0;
+        double deta = 3.5 * d_eta_z(z, a, t, POINTS, t0) / double(POINTS);
+        printf("z = %.2f: dn = %f (%f)\n", z, 1e-9 * deta/H_0, deta*(1+z));
+        fprintf(fp, "%.2f %f\n", z, deta*(1+z));
+    }
+    fclose(fp);
     
 }
