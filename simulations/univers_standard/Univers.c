@@ -31,10 +31,6 @@ int Friedmann(const double o_m0, const double o_r0, const double o_v0, const dou
     for(int i = 0; i < N-1; ++i)
     {
         a[i+1] = a[i] + d_eta * sqrt(o_r0 + o_m0*a[i] + o_k0*a[i]*a[i] + o_v0*a[i]*a[i]*a[i]*a[i]);
-    }
-
-    for(int i = 0; i < N-1; ++i)
-    {
         t[i+1] = t[i] + a[i]*d_eta;
     }
     return 0;
@@ -66,12 +62,12 @@ void Univers()
     printf("Age univers: %f Ga\n", 1e-9 * t0/H_0);
 
     fp = fopen("luminosite.res", "w+");
-    for(int i = 0; i < 50; ++i)
+    for(int i = 0; i < 100; ++i)
     {
-        const double z = 1 * double(i)/50.0;
+        const double z = 5 * double(i)/100.0;
         double deta = 3.5 * d_eta_z(z, a, t, POINTS, t0) / double(POINTS);
         //printf("z = %.2f: dn = %f (%f)\n", z, 1e-9 * deta/H_0, deta*(1+z));
-        fprintf(fp, "%.2f %f %f %f %f %f %f\n", z, deta*(1+z), deta/(1+z), TMath::SinH(deta)*(1+z), TMath::SinH(deta)/(1+z), TMath::Sin(deta)*(1+z), TMath::Sin(deta)/(1+z));
+        fprintf(fp, "%.2f %f %f %f %f %f %f %f\n", z, deta*(1+z), deta/(1+z), TMath::SinH(deta)*(1+z), TMath::SinH(deta)/(1+z), TMath::Sin(deta)*(1+z), TMath::Sin(deta)/(1+z), deta);
     }
     fclose(fp);
     
