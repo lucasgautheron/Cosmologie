@@ -3,8 +3,8 @@
 #define POINTS 200000
 #define ABS(x) ((x) > 0 ? (x) : (-(x))) 
 
-const double o_m0 = 0.315, o_v0 = 0.685, o_r0 = 8.4e-5, o_k0 = 0, H_0 = /*1/(13.9e9)*/1.0/14536650456.5; // planck values
-//const double o_m0 = 0.99, o_v0 = 0.01, o_r0 = 8.4e-5, o_k0 = 0, H_0 = /*1/(13.9e9)*/1.0/14536650456.5; // test
+const double o_m0 = 0.315, o_v0 = 0.685, o_r0 = 8.4e-5, o_k0 = 1-o_m0-o_v0-o_r0, H_0 = /*1/(13.9e9)*/1.0/14536650456.5; // planck values
+//const double o_m0 = 0.315, o_v0 = 0.685, o_r0 = 8.4e-5, o_k0 = -0.1, H_0 = /*1/(13.9e9)*/1.0/14536650456.5; // planck values
 const double t[POINTS], a[POINTS];
 
 int lookup(const double val, const int size, const double *A)
@@ -46,8 +46,8 @@ int d_eta_z(const double z, double *a, double *t, const int N, double t0)
     double a0 = a[eta_0];
     double ae = a0/(1+z);
     int eta_e = lookup(ae, N, a);
-    double te = t[eta_e];
-    printf("%.3f\n", t[eta_e]/H_0);
+    //double te = t[eta_e];
+    //printf("%.3f\n", t[eta_e]/H_0);
     return eta_0 - eta_e;
 }
 
@@ -68,10 +68,10 @@ void Univers()
     fp = fopen("luminosite.res", "w+");
     for(int i = 0; i < 50; ++i)
     {
-        const double z = 10 * double(i)/50.0;
+        const double z = 1 * double(i)/50.0;
         double deta = 3.5 * d_eta_z(z, a, t, POINTS, t0) / double(POINTS);
-        printf("z = %.2f: dn = %f (%f)\n", z, 1e-9 * deta/H_0, deta*(1+z));
-        fprintf(fp, "%.2f %f\n", z, deta*(1+z));
+        //printf("z = %.2f: dn = %f (%f)\n", z, 1e-9 * deta/H_0, deta*(1+z));
+        fprintf(fp, "%.2f %f %f %f %f %f %f\n", z, deta*(1+z), deta/(1+z), TMath::SinH(deta)*(1+z), TMath::SinH(deta)/(1+z), TMath::Sin(deta)*(1+z), TMath::Sin(deta)/(1+z));
     }
     fclose(fp);
     
