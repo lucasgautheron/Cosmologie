@@ -6,25 +6,10 @@ struct SN
     float d, z;
 };
 
-#define POINTS 100000
+#define POINTS 200000
 #define ABS(x) ((x) > 0 ? (x) : (-(x))) 
 
 const double o_r0 = 8.4e-5, o_k0 = 0, H_0 = /*1/(13.9e9)*/1.0/14536650456.5; // planck values
-
-int lookup(const double val, const int size, const double *A)
-{
-    double dist = -1;
-    int closest = -1;
-    for(int i = 0; i < size; ++i)
-    {
-        if(ABS(val-A[i]) < dist || closest < 0)
-        {
-            dist = ABS(val-A[i]);
-            closest = i;
-        }
-    }
-    return closest;
-}
 
 int fast_lookup_rev(const double val, const int size, const double *A)
 {
@@ -49,17 +34,6 @@ int Friedmann(const double o_m0, const double o_r0, const double o_v0, const dou
     return 0;
 }
 
-int d_eta_z(const double z, const double *a, const double *t, const int N, const double t0)
-{
-    int eta_0 = lookup(t0, N, t);
-    double a0 = a[eta_0];
-    double ae = a0/(1+z);
-    int eta_e = lookup(ae, N, a);
-    //double te = t[eta_e];
-    //printf("%.3f\n", t[eta_e]/H_0);
-    return eta_0 - eta_e;
-}
-
 double calculate_square(const vector<SN *> &supernovaes, const double o_m0, const double o_v0)
 {
     double t[POINTS], a[POINTS];
@@ -76,11 +50,9 @@ double calculate_square(const vector<SN *> &supernovaes, const double o_m0, cons
     {
         SN *sn = supernovaes[i];
         int j = fast_lookup_rev(1.0/(1.0+sn->z), POINTS, a);
-
         double deta = 3.5 * (origin-j) / double(POINTS);
         double dl = deta*(1+sn->z);
         d += (sn->d-dl) * (sn->d-dl);
-        //printf("err=%f\n", (sn->d-dl)/dl);
     }
     return d;
 }
@@ -100,23 +72,27 @@ void snIa()
     } 
     fclose(fp);
 
-    double o_m0_min = 0.25, o_m0_max = 0.30;
+    //double o_m0_min = 0.25, o_m0_max = 0.30;
+    double o_m0_min = 0.1, o_m0_max = 0.9;
     const int tries = 50;
 
     double min_square = -1;
     double best_m0 = -1;
 
+    fp = fopen("sn_fit.res", "w+");
     for(int i = 0; i < tries; ++i)
     {
         double o_m0 = o_m0_min + (o_m0_max - o_m0_min) * double(i) / double(tries);
         double square = calculate_square(supernovaes, o_m0, 1-o_m0);
         printf("m0=%f square=%f\n", o_m0, square);
+        fprintf(fp, "%f %f %f\n", o_m0, square, 100.0 * sqrt(min_square)/double(supernovaes.size()));
         if(best_m0 < 0 || square < min_square)
         {
             best_m0 = o_m0;
             min_square = square;
         }
     }
+    fclose(fp);
     
-    printf("Best fit: m0=%f square=%f\n", best_m0, min_square);
+    printf("Best fit: m0=%f square=%f err%%=%f %%\n", best_m0, min_square, 100.0 * sqrt(min_square)/double(supernovaes.size()));
 }
