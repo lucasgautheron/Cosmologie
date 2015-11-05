@@ -3,10 +3,10 @@
 
 struct SN
 {
-    float d, z;
+    float d, z, err;
 };
 
-#define POINTS 200000
+#define POINTS 500000
 #define ABS(x) ((x) > 0 ? (x) : (-(x))) 
 
 const double o_r0 = 8.4e-5, o_k0 = 0, H_0 = /*1/(13.9e9)*/1.0/14536650456.5; // planck values
@@ -40,10 +40,6 @@ double calculate_square(const vector<SN *> &supernovaes, const double o_m0, cons
     Friedmann(o_m0, o_r0, o_v0, o_k0, 3.5, POINTS, a, t);
 
     int origin = fast_lookup_rev(1.0, POINTS, a);
-    /*int min = fast_lookup_rev(0.5, POINTS, a);
-    int len = origin - min - 1;
-
-    double *aa = a + sizeof(double)*min;*/
     
     double d = 0;
     for(unsigned int i = 0; i < supernovaes.size(); ++i)
@@ -52,6 +48,7 @@ double calculate_square(const vector<SN *> &supernovaes, const double o_m0, cons
         int j = fast_lookup_rev(1.0/(1.0+sn->z), POINTS, a);
         double deta = 3.5 * (origin-j) / double(POINTS);
         double dl = deta*(1+sn->z);
+        //d += (sn->d-dl) * (sn->d-dl) / (sn->err * sn->err);
         d += (sn->d-dl) * (sn->d-dl);
     }
     return d;
@@ -62,18 +59,19 @@ void snIa()
     FILE *fp = fopen("sn.res", "r");
     SN tmp;
     std::vector<SN *> supernovaes;
-    while(fscanf(fp, "%f %f\n", &tmp.z, &tmp.d) > 0)
+    while(fscanf(fp, "%f %f %f\n", &tmp.z, &tmp.d, &tmp.err) > 0)
     {
         SN *sn = new SN();
         sn->z = tmp.z;
         sn->d = tmp.d;
+        sn->err = tmp.err;
         supernovaes.push_back(sn);
         //printf("%f %f\n", tmp.z, tmp.d);
     } 
     fclose(fp);
 
     //double o_m0_min = 0.25, o_m0_max = 0.30;
-    double o_m0_min = 0.1, o_m0_max = 0.9;
+    double o_m0_min = 0.2, o_m0_max = 0.35;
     const int tries = 50;
 
     double min_square = -1;
@@ -95,4 +93,19 @@ void snIa()
     fclose(fp);
     
     printf("Best fit: m0=%f square=%f err%%=%f %%\n", best_m0, min_square, 100.0 * sqrt(min_square)/double(supernovaes.size()));
+
+    double t[POINTS], a[POINTS];
+    Friedmann(best_m0, o_r0, 1-best_m0, o_k0, 3.5, POINTS, a, t);
+
+    fp = fopen("luminosite.res", "w+");
+    int origin = fast_lookup_rev(1.0, POINTS, a);
+    for(int i = 0; i < 1000; ++i)
+    {
+        const double z = 2 * double(i)/1000.0;
+        int j = fast_lookup_rev(1.0/(1.0+z), POINTS, a);
+        double deta = 3.5 * (origin-j) / double(POINTS);
+        double dl = deta*(1+z);
+        fprintf(fp, "%f %f %f\n", z, dl, 5*(TMath::Log10(1e6*dl/0.0002261568)-1));
+    }
+    fclose(fp);
 }
