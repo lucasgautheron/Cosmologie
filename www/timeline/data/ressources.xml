@@ -19,12 +19,30 @@
     <!--           -->
 
     <ressource id="100">
-        <title>Equation d'Einstein</title>
-        <text>\begin{equation}R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu\nu}T \right) \end{equation}</text>
+        <title>Équation d'Einstein</title>
+        <text>L'équation d'Einstein est l'équation centrale de la Relativité Générale : elle relie le tenseur énergie-impulsion $T^{\mu\nu}$ à la géométrie de l'espace-temps et plus exactement à sa courbure via le tenseur de Ricci $R^{\mu\nu}$. Dans sa forme générale l'équation prend la forme suivante :
+
+\begin{equation}
+R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu\nu}T \right)
+\end{equation}</text>
         <linkwords>
-            <linkword>Albert Einstein</linkword>
-            <linkword>A. Einstein</linkword>
-            <linkword>Einstein</linkword>
+            <linkword>Équation d'Einstein</linkword>
+        </linkwords>
+    </ressource>
+
+    <ressource id="101">
+        <title>Tenseur Énergie-Impulsion</title>
+        <text>...</text>
+        <linkwords>
+            <linkword>tenseur énergie-impulsion</linkword>
+        </linkwords>
+    </ressource>
+
+    <ressource id="102">
+        <title>Tenseur de Ricci</title>
+        <text>...</text>
+        <linkwords>
+            <linkword>tenseur de Ricci</linkword>
         </linkwords>
     </ressource>
 </ressources>
