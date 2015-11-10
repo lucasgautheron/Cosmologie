@@ -24,7 +24,10 @@
 
 \begin{equation}
 R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu\nu}T \right)
-\end{equation}</text>
+\end{equation}
+
+Le paramètre $\Lambda$ est la constante cosmologique.
+</text>
         <linkwords>
             <linkword>Équation d'Einstein</linkword>
         </linkwords>
@@ -43,6 +46,38 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <text>...</text>
         <linkwords>
             <linkword>tenseur de Ricci</linkword>
+        </linkwords>
+    </ressource>
+
+    <ressource id="103">
+        <title>Transformation de Lorentz</title>
+        <text>...</text>
+        <linkwords>
+            <linkword>Transformation de Lorentz</linkword>
+        </linkwords>
+    </ressource>
+
+    <!--           -->
+    <!-- CONSTANTS -->
+    <!--           -->
+
+    <ressource id="201">
+        <title>Constante cosmologique</title>
+        <text>La constante cosmologique notée $\Lambda$ est un paramètre apparaissant naturellement en Relativité Générale. </text>
+        <linkwords>
+            <linkword>constante cosmologique</linkword>
+        </linkwords>
+    </ressource>
+
+    <!--             -->
+    <!-- EXPERIMENTS -->
+    <!--             -->
+
+    <ressource id="301">
+        <title>Expérience de Michelson-Morley</title>
+        <text>...</text>
+        <linkwords>
+            <linkword>Michelson-Morley</linkword>
         </linkwords>
     </ressource>
 </ressources>

@@ -3,6 +3,8 @@
     <content id="1">
         <title>Développement de la relativité</title>
         <image>relativite.jpg</image>
-        <text>Lorem ipsum</text>
+        <text>A la fin du 19ème siècle, plusieurs questions restent ouvertes pour les physiciens. Parmi ces problèmes se pose celui de la conciliation des équations de Maxwell avec la transformation de Galilée. En effet, les équations de Maxwell suggèrent que la lumière se propage à une vitesse $c$ constante. Or, selon la transformation de Galilée, la lumière ne peut se propager à $c$ dans tous les référentiels galiléens. On suppose alors à l'époque qu'il existe un référentiel particulier dans lequel les équations de Maxwell sont vérifiées, celui de l'"éther", considéré comme le support des ondes électromagnétiques. Si tout cela est correct, on devrait pouvoir mesurer la vitesse de la Terre par rapport à l'éther en observant les déviations du comportement de la lumière par rapport à celui décrit par les équations de Maxwell. De nombreuses expériences en ce sens ont été effectuées, la plus célèbre étant sans doute celle de Michelson-Morley, effectuée à l'aide d'un interféromètre. Toutes ces expériences eurent un résultat négatif : la lumière se comportait comme prédit par les équations de Maxwell, même sur Terre, où sa vitesse de propagation semble également valoir $c$.
+
+En 1905, A. Einstein publie un article intitulé "Zur Elektrodynamik bewegter Körper" ("Sur l'électrodynamique des corps en mouvement") dans lequel il propose une théorie fondée sur le postulat selon lequel la lumière se propage à une même vitesse $c$ dans tous les référentiels galiléens. Il en déduit la transformation de Lorentz </text>
     </content>
 </contents>
