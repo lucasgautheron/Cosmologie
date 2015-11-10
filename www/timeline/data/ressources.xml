@@ -51,7 +51,22 @@ Le paramètre $\Lambda$ est la constante cosmologique.
 
     <ressource id="103">
         <title>Transformation de Lorentz</title>
-        <text>...</text>
+        <text>La transformation de Lorentz est la transformation qui relie les coordonnées d'un évènements dans deux référentiels inertiels en mouvement rectiligne uniforme l'un par rapport à l'autre dans le cadre de la relativité restreinte. 
+        
+        On se donne deux référentiels $\mathcal{R}$ et $\mathcal{R}'$ partageant la même origine à $t=0$, de mêmes axes, et que $\mathcal{R}'$ s'éloigne de $\mathcal{R}$ dans la direction $x$ à vitesse constante $v$.
+        Si $(t,x,y,z)$ sont les coordonnées d'un évènement $A$ dans $\mathcal{R}$, et $(t',x',y',z')$ ses coordonnées dans $\mathcal{R}'$, alors :
+        
+        \begin{equation}\left\{\begin{matrix}
+        ct' &amp; = &amp; \gamma (ct-\beta x)\\ 
+        x' &amp;  = &amp; \gamma (x-\beta ct)\\ 
+        y' &amp; = &amp;  y\\ 
+        z' &amp; = &amp; z
+        \end{matrix}\right.\end{equation}
+        
+        Où $\gamma = \dfrac{1}{\sqrt{1-v^2/c^2}}$ est le facteur de Lorentz et $\beta = v/c$ le nombre de Lorentz.
+        
+        La transformation de Lorentz laisse invariante la quantité $ds^2 = c^2 dt^2 - dx^2 - dy^2 - dz^2$, l'intervalle infinitésimal d'espace temps.</text>
+        
         <linkwords>
             <linkword>Transformation de Lorentz</linkword>
         </linkwords>
