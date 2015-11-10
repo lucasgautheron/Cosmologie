@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ressources>
+    <!--            -->
+    <!-- PHYSICISTS -->
+    <!--            -->
+
+    <ressource id="1">
+        <title>Albert Einstein</title>
+        <text>Lorem ipsum</text>
+        <linkwords>
+            <linkword>Albert Einstein</linkword>
+            <linkword>A. Einstein</linkword>
+            <linkword>Einstein</linkword>
+        </linkwords>
+    </ressource>
+
+
+</ressources>
