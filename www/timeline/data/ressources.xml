@@ -6,7 +6,9 @@
 
     <ressource id="1">
         <title>Albert Einstein</title>
-        <text>Lorem ipsum</text>
+        <text>1879-1965. Physicien d'abord Allemand puis Helvético-Américain.  
+        
+        La contribution d'Einstein n'est pas limité à la théorie de la relativité qu'il a élaboré au début du 20ème siècle. Il a également travaillé sur la nature de la lumière en proposant une explication de différents phénomènes tels que l'effet photoélectrique à partir de l'hypothèse selon laquelle la lumière serait constituée de "quanta" d'énergie (à l'origine du concept de photon). Ceci lui vaut le prix Nobel en 1921. Einstein a également montré comment le mouvement brownien pouvait être expliqué par le concept d'atomes ce qui fut à l'origine d'un nouveau test expérimental de leur existence ainsi que d'une nouvelle méthode de mesure de la constante d'Avogadro.</text>
         <linkwords>
             <linkword>Albert Einstein</linkword>
             <linkword>A. Einstein</linkword>
@@ -53,7 +55,7 @@ Le paramètre $\Lambda$ est la constante cosmologique.
         <title>Transformation de Lorentz</title>
         <text>La transformation de Lorentz est la transformation qui relie les coordonnées d'un évènements dans deux référentiels inertiels en mouvement rectiligne uniforme l'un par rapport à l'autre dans le cadre de la relativité restreinte. 
         
-        On se donne deux référentiels $\mathcal{R}$ et $\mathcal{R}'$ partageant la même origine à $t=0$, de mêmes axes, et que $\mathcal{R}'$ s'éloigne de $\mathcal{R}$ dans la direction $x$ à vitesse constante $v$.
+        On se donne deux référentiels $\mathcal{R}$ et $\mathcal{R}'$ partageant la même origine à $t=0$, de mêmes axes, et tels que $\mathcal{R}'$ s'éloigne de $\mathcal{R}$ dans la direction $x$ à vitesse constante $v$.
         Si $(t,x,y,z)$ sont les coordonnées d'un évènement $A$ dans $\mathcal{R}$, et $(t',x',y',z')$ ses coordonnées dans $\mathcal{R}'$, alors :
         
         \begin{equation}\left\{\begin{matrix}
@@ -65,7 +67,9 @@ Le paramètre $\Lambda$ est la constante cosmologique.
         
         Où $\gamma = \dfrac{1}{\sqrt{1-v^2/c^2}}$ est le facteur de Lorentz et $\beta = v/c$ le nombre de Lorentz.
         
-        La transformation de Lorentz laisse invariante la quantité $ds^2 = c^2 dt^2 - dx^2 - dy^2 - dz^2$, l'intervalle infinitésimal d'espace temps.</text>
+        La transformation de Lorentz laisse invariante la quantité $ds^2 = c^2 dt^2 - dx^2 - dy^2 - dz^2$, l'intervalle infinitésimal d'espace temps.
+        
+        La notion de transformation de Lorentz se généralise à d'autres quantités que les coordonnées : on appelle Quadrivecteur dont les composantes sont changées par passage d'un référentiel inertiel à un autre selon la transformation de Lorentz. C'est le cas par exemple des quadrivecteurs vitesses et accélérations $dx^\mu/ds$ et $d^2x^\mu/ds^2$, du quadrivecteur énergie-impulsion $p^\mu = (E/c, \vec{p})$, ou encore du quadrivecteur potentiel $A^\mu = (\phi/c, \vec{A})$</text>
         
         <linkwords>
             <linkword>Transformation de Lorentz</linkword>
