@@ -85,7 +85,7 @@
               data_object = $($.parseHTML(data)); 
               $('#content #timeline').html(data_object.find('#horizontal_timeline').html());
               $('#content .title').text(data_object.find('#title').text());
-              $('#content .text').html(data_object.find('#text').html());
+              $('#content .text').html(data_object.find('#text').html().replace("\n", "<br />"));
               $('#content .image').html(data_object.find('#image').html());
               $('#content').show();
               MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
@@ -113,7 +113,7 @@
             success: function(data) {
               data_object = $($.parseHTML(data)); 
               $('#ressource .title').text(data_object.find('#title').text());
-              $('#ressource .text').html(data_object.find('#text').html());
+              $('#ressource .text').html(data_object.find('#text').html().replace("\n", "<br />"));
               $('#ressource').show();
               MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
             },
