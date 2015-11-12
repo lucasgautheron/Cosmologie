@@ -24,7 +24,7 @@
     <head>
       <title>Histoire de la Cosmologie</title>
       <meta charset="utf-8" />
-      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -129,7 +129,7 @@
     </head>
     <body>
       <div><a href="#" id="show_timeline" style="display: none;">Show timeline</a></div>
-      <div id="Timeline">
+      <div id="timeline">
       <h1>Timeline</h1>
         <ul>
           <xsl:for-each select="root/events/event">
