@@ -81,7 +81,7 @@ Le paramètre $\Lambda$ est appelé constante cosmologique.
         
         La transformation de Lorentz laisse invariante la quantité $ds^2 = c^2 dt^2 - dx^2 - dy^2 - dz^2$, l'intervalle infinitésimal d'espace temps.
         
-        La notion de transformation de Lorentz se généralise à d'autres quantités que les coordonnées : on appelle Quadrivecteur dont les composantes sont changées par passage d'un référentiel inertiel à un autre selon la transformation de Lorentz. C'est le cas par exemple des quadrivecteurs vitesses et accélérations $dx^\mu/ds$ et $d^2x^\mu/ds^2$, du quadrivecteur énergie-impulsion $p^\mu = (E/c, \vec{p})$, ou encore du quadrivecteur potentiel $A^\mu = (\phi/c, \vec{A})$</text>
+        La notion de transformation de Lorentz se généralise à d'autres quantités que les coordonnées : on appelle Quadrivecteur tout vecteur dont les composantes sont changées par passage d'un référentiel inertiel à un autre selon la transformation de Lorentz. C'est le cas par exemple des quadrivecteurs vitesses et accélérations $dx^\mu/ds$ et $d^2x^\mu/ds^2$, du quadrivecteur énergie-impulsion $p^\mu = (E/c, \vec{p})$, ou encore du quadrivecteur potentiel $A^\mu = (\phi/c, \vec{A})$</text>
         
         <linkwords>
             <linkword>Transformation de Lorentz</linkword>
@@ -117,6 +117,28 @@ Le paramètre $\Lambda$ est appelé constante cosmologique.
         <text>...</text>
         <linkwords>
             <linkword>Michelson-Morley</linkword>
+        </linkwords>
+    </ressource>
+    
+    <!--         -->
+    <!-- EFFECTS -->
+    <!--         -->
+    
+    <ressource id="302">
+        <title>Effet Doppler</title>
+        <text>L'effet Doppler caractérise le fait qu'un observateur en mouvement par rapport à une source émettant une onde perçoit celle-ci à une fréquence différente de la fréquence d'émission. Cet effet concerne aussi bien les ondes mécaniques comme les ondes sonores que les ondes électromagnétiques (donc la lumière). Si la source et l'observateur se rapprochent, la fréquence de réception est supérieure à la fréquence d'émission. Si au contraire la source s'éloigne de l'observateur, alors la fréquence du signal reçue est inférieure à celle perçue par la source. TODO: INSERER IMAGE. Si la source émet un signal lumineux (donc à vitesse la $c$) et se déplace à une vitesse v par rapport à l'émetteur dirigée selon sa ligne de visée, alors on montre à l'aide des transformations de Lorentz que :
+        
+        \begin{equation}
+        f_{rec} = f_0 \sqrt{1-\beta}{1+\beta} )
+        \end{equation}
+        
+        Pour de petites vitesses, cette équation tend vers $f_0 (1-v/c)$ et il est alors clair que si la vitesse est dirigée dans la ligne de visée, la source s'éloigne si $v$ est positif et dans ce cas il y a bien diminution de la fréquence apparente. 
+        
+        La preuve est rapide à partir de la transformation de Lorentz (TODO: donner preuve)
+        </text>
+        <linkwords>
+            <linkword>effet Doppler</linkword>
+            <linkword>Effet Doppler</linkword>
         </linkwords>
     </ressource>
 </ressources>
