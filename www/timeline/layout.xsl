@@ -46,8 +46,12 @@
     <script type="text/javascript">
       
       $(document).ready(function() {
-          $("ul#timeline a").click(function() {
+          $("#timeline ul a").click(function() {
               show_content($(this).data('cid'));
+              return false;
+          });
+          $("a.ressource").click(function() {
+              show_ressource($(this).data('rid'));
               return false;
           });
           $("#show_timeline").click(function() {
@@ -124,18 +128,25 @@
     </head>
     <body>
       <div><a href="#" id="show_timeline" style="display: none;">Show timeline</a></div>
+      <div id="Timeline">
       <h1>Timeline</h1>
-      <ul id="timeline">
-        <xsl:for-each select="root/events/event">
-          <li><b><xsl:value-of select="./@date" /></b> : <a href="#" data-cid="{./@content-id}"><xsl:value-of select="." /></a></li>
-        </xsl:for-each>
-      </ul>
+        <ul>
+          <xsl:for-each select="root/events/event">
+            <li><b><xsl:value-of select="./@date" /></b> : <a href="#" data-cid="{./@content-id}"><xsl:value-of select="." /></a></li>
+          </xsl:for-each>
+        </ul>
+      </div>
       
       <div id="content">
         <h2 id="title"></h2>
         <div id="timeline"></div>
         <div id="text"></div>
         <div id="image"></div>
+      </div>
+      
+      <div id="ressource">
+        <h2 id="title"></h2>
+        <div id="text"></div>
       </div>
 
      <h1>Contents</h1>
