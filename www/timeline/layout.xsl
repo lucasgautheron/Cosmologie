@@ -24,6 +24,7 @@
     <head>
       <title>Histoire de la Cosmologie</title>
       <meta charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
