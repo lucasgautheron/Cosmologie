@@ -81,9 +81,9 @@ Le paramètre $\Lambda$ est appelé constante cosmologique.
         
         La notion de transformation de Lorentz se généralise à d'autres quantités que les coordonnées : on appelle Quadrivecteur tout vecteur dont les composantes sont changées par passage d'un référentiel inertiel à un autre selon la transformation de Lorentz. C'est le cas par exemple des quadrivecteurs vitesses et accélérations $dx^\mu/ds$ et $d^2x^\mu/ds^2$, du quadrivecteur énergie-impulsion $p^\mu = (E/c, \vec{p})$, ou encore du quadrivecteur potentiel $A^\mu = (\phi/c, \vec{A})$.
         
-        La transformation de Lorentz laisse invariante la quantité la norme d'un quadrivecteur. C'est par exemple le cas de $dx_\mu dx^\mu = ds^2 = c^2 dt^2 - dx^2 - dy^2 - dz^2$, l'intervalle infinitésimal d'espace temps. On peut construire d'autres invariants comme le produit scalaire de deux 4-vecteur $A_\mu B^\mu = A^t B^t - A^x B^x - A^y B^y - A^z B^z$.
+        La transformation de Lorentz laisse invariante la norme d'un quadrivecteur. C'est par exemple le cas de $dx_\mu dx^\mu = ds^2 = c^2 dt^2 - dx^2 - dy^2 - dz^2$, l'intervalle infinitésimal d'espace temps. On peut construire d'autres invariants comme le produit scalaire de deux 4-vecteur $A_\mu B^\mu = A^t B^t - A^x B^x - A^y B^y - A^z B^z$.
         
-        On peut déduire de cette transformation la loi de composition des vitesses relativistes. TODO FAIRE LE CALCUL
+        On peut déduire de cette transformation la loi de composition relativiste des vitesses. TODO FAIRE LE CALCUL
         </text>
         
         <linkwords>
