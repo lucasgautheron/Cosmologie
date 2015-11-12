@@ -46,8 +46,12 @@
     <script type="text/javascript">
       
       $(document).ready(function() {
-      $("ul#timeline a").click(function() {
+          $("ul#timeline a").click(function() {
               show_content($(this).data('cid'));
+              return false;
+          });
+          $("#show_timeline").click(function() {
+              show_timeline();
               return false;
           });
       });
@@ -56,13 +60,14 @@
       {
           hide_content();
           hide_ressource();
-          $("#timeline").show();
-          
+          $("#show_timeline").hide();
+          $("#timeline").show(1000);
       }
       
       function hide_timeline()
       {
-          $("#timeline").hide();
+          $("#timeline").hide(1000);
+          $("#show_timeline").show();
       }
       
       function show_content(id)
@@ -118,6 +123,7 @@
     </script>
     </head>
     <body>
+      <div><a href="#" id="show_timeline" style="display: none;">Show timeline</a></div>
       <h1>Timeline</h1>
       <ul id="timeline">
         <xsl:for-each select="root/events/event">
