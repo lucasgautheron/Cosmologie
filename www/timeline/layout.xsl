@@ -94,6 +94,8 @@
               console.log(e.message);
             }
           });
+          
+          show_ressource("103");
       }
       
       function hide_content(id)
@@ -103,22 +105,22 @@
       
       function show_ressource(id)
       {
-        hide_timeline();
-      
-        $.ajax({
-          url: 'ressources/ressource_' + id + '.html',
-          type: 'GET',
-          success: function(data) {
-            data_object = $($.parseHTML(data)); 
-            $('#ressource #title').text(data_object.find('#title').text());
-            $('#ressource #text').html(data_object.find('#text').html());
-            $('#ressource').show();
-            MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-          },
-          error: function(e) {
-            console.log(e.message);
-          }
-        });
+          hide_timeline();
+        
+          $.ajax({
+            url: 'ressources/ressource_' + id + '.html',
+            type: 'GET',
+            success: function(data) {
+              data_object = $($.parseHTML(data)); 
+              $('#ressource #title').text(data_object.find('#title').text());
+              $('#ressource #text').html(data_object.find('#text').html());
+              $('#ressource').show();
+              MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+            },
+            error: function(e) {
+              console.log(e.message);
+            }
+          });
       }
       
       function hide_ressource(id)
