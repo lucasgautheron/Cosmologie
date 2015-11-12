@@ -40,7 +40,7 @@
 R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu\nu}T \right)
 \end{equation}
 
-Le paramètre $\Lambda$ est la constante cosmologique.
+Le paramètre $\Lambda$ est appelé constante cosmologique.
 </text>
         <linkwords>
             <linkword>Équation d'Einstein</linkword>
@@ -85,6 +85,14 @@ Le paramètre $\Lambda$ est la constante cosmologique.
         
         <linkwords>
             <linkword>Transformation de Lorentz</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="104">
+        <title>Équations de Friedmann</title>
+        <text>...</text>
+        <linkwords>
+            <linkword>Équations de Friedmann</linkword>
         </linkwords>
     </ressource>
 
