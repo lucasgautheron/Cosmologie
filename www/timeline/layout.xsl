@@ -141,15 +141,15 @@
       </div>
       
       <div id="content">
-        <h2 id="title"></h2>
+        <h2 class="title"></h2>
         <div id="timeline"></div>
-        <div id="text"></div>
-        <div id="image"></div>
+        <div class="text"></div>
+        <div class="image"></div>
       </div>
       
       <div id="ressource">
-        <h2 id="title"></h2>
-        <div id="text"></div>
+        <h2 class="title"></h2>
+        <div class="text"></div>
       </div>
 
     <div class="clear"></div>
@@ -182,9 +182,9 @@
       </xsl:for-each>
       </ul>
     </div>
-    <h2 class="title"><xsl:value-of select="./title" /></h2>
-    <div class="text"><xsl:value-of select="./text" /></div>
-    <div class="image"><img src="images/{./image}" /></div>
+    <h2 id="title"><xsl:value-of select="./title" /></h2>
+    <div id="text"><xsl:value-of select="./text" /></div>
+    <div id="image"><img src="images/{./image}" /></div>
   </div>
 </xsl:result-document>
 </xsl:for-each>
@@ -192,8 +192,8 @@
 <xsl:for-each select="root/ressources/ressource">
   <xsl:result-document method="html" href="ressources/ressource_{./@id}.html">
     <div id="ressource">
-      <h2 class="title"><xsl:value-of select="./title" /></h2>
-      <div class="text"><xsl:value-of select="./text" /></div>
+      <h2 id="title"><xsl:value-of select="./title" /></h2>
+      <div id="text"><xsl:value-of select="./text" /></div>
     </div>
   </xsl:result-document>
 </xsl:for-each>
