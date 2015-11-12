@@ -152,6 +152,7 @@
         <div id="text"></div>
       </div>
 
+    <div class="clear"></div>
      <h1>Contents</h1>
        <div>
          <xsl:for-each select="root/contents/content">

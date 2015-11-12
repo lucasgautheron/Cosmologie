@@ -11,4 +11,10 @@ div#ressource
     margin: 10px;
     padding: 5px;
     width: 30%;
+    float: left;
+}
+
+div.clear
+{
+    clear: both;
 }
