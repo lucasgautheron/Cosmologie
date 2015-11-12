@@ -84,9 +84,9 @@
               hide_timeline();
               data_object = $($.parseHTML(data)); 
               $('#content #timeline').html(data_object.find('#horizontal_timeline').html());
-              $('#content #title').text(data_object.find('#title').text());
-              $('#content #text').html(data_object.find('#text').html());
-              $('#content #image').html(data_object.find('#image').html());
+              $('#content .title').text(data_object.find('#title').text());
+              $('#content .text').html(data_object.find('#text').html());
+              $('#content .image').html(data_object.find('#image').html());
               $('#content').show();
               MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
             },
@@ -112,8 +112,8 @@
             type: 'GET',
             success: function(data) {
               data_object = $($.parseHTML(data)); 
-              $('#ressource #title').text(data_object.find('#title').text());
-              $('#ressource #text').html(data_object.find('#text').html());
+              $('#ressource .title').text(data_object.find('#title').text());
+              $('#ressource .text').html(data_object.find('#text').html());
               $('#ressource').show();
               MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
             },
@@ -182,9 +182,9 @@
       </xsl:for-each>
       </ul>
     </div>
-    <h2 id="title"><xsl:value-of select="./title" /></h2>
-    <div id="text"><xsl:value-of select="./text" /></div>
-    <div id="image"><img src="images/{./image}" /></div>
+    <h2 class="title"><xsl:value-of select="./title" /></h2>
+    <div class="text"><xsl:value-of select="./text" /></div>
+    <div class="image"><img src="images/{./image}" /></div>
   </div>
 </xsl:result-document>
 </xsl:for-each>
@@ -192,8 +192,8 @@
 <xsl:for-each select="root/ressources/ressource">
   <xsl:result-document method="html" href="ressources/ressource_{./@id}.html">
     <div id="ressource">
-      <h2 id="title"><xsl:value-of select="./title" /></h2>
-      <div id="text"><xsl:value-of select="./text" /></div>
+      <h2 class="title"><xsl:value-of select="./title" /></h2>
+      <div class="text"><xsl:value-of select="./text" /></div>
     </div>
   </xsl:result-document>
 </xsl:for-each>
