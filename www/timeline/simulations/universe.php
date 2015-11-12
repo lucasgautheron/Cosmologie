@@ -55,7 +55,7 @@ function filter($A, $keep)
 $o_m0 = !empty($_GET['m']) ? $_GET['m'] : 0.315;
 $o_r0 = !empty($_GET['r']) ? $_GET['r'] : 8.4e-5;
 $o_v0 = !empty($_GET['v']) ? $_GET['v'] : 0.685;
-$o_k0 = !empty($_GET['k']) ? $_GET['k'] : 0;
+$o_k0 = 1-$o_m0-$o_r0-$o_v0;
 
 $results = Friedmann($o_m0, $o_r0, $o_v0, $o_k0, 3.5, 100000);
 
