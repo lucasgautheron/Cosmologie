@@ -38,7 +38,7 @@ function show_content(id)
       data_object = $($.parseHTML(data)); 
       $('#content #timeline').html(data_object.find('#horizontal_timeline').html());
       $('#content .title').text(data_object.find('#title').text());
-      $('#content .text').html(data_object.find('#text').html()/*.replace(/\n/g, "<br />")*/);
+      $('#content .text').html(data_object.find('#text').html().replace(/\n\n/g, "<br /><br />"));
       $('#content .image').html(data_object.find('#image').html());
       $('#content').show();
       MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
@@ -66,7 +66,7 @@ function show_ressource(id)
     success: function(data) {
       data_object = $($.parseHTML(data)); 
       $('#ressource .title').text(data_object.find('#title').text());
-      $('#ressource .text').html(data_object.find('#text').html()/*.replace(/\n/g, "<br />")*/);
+      $('#ressource .text').html(data_object.find('#text').html().replace(/\n\n/g, "<br /><br />"));
       $('#ressource').show();
       MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
     },
