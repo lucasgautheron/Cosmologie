@@ -19,6 +19,28 @@
     <xsl:copy-of select="replace($text, '\\textbf\{(.*)\}', $replacement)"/>
   </xsl:function>
   
+  <xsl:template match="text">
+    <xsl:apply-templates />
+  </xsl:template>
+  
+  <xsl:template match="b">
+    <span style="font-weight:bold;">
+      <xsl:apply-templates />
+    </span>  
+  </xsl:template>
+  
+  <xsl:template match="i">
+    <span style="font-style:italic;">
+      <xsl:apply-templates />
+    </span>  
+  </xsl:template>
+  
+  <xsl:template match="p">
+    <p>
+      <xsl:apply-templates />
+    </p>  
+  </xsl:template>
+  
 <xsl:template match="/">
   <html>
     <head>
@@ -75,7 +97,7 @@
        <div>
          <xsl:for-each select="root/contents/content">
           <h3><xsl:value-of select="./title" /></h3>
-           <p><xsl:value-of select="./text" /></p>
+           <div><xsl:apply-templates select="text" /></div>
         </xsl:for-each>
        </div>
 
@@ -83,7 +105,7 @@
        <div>
          <xsl:for-each select="root/ressources/ressource">
           <h3><xsl:value-of select="./title" /></h3>
-          <p><xsl:value-of select="./text" /></p>
+           <div><xsl:apply-templates select="text" /></div>
         </xsl:for-each>
        </div>
     </body>
@@ -101,7 +123,7 @@
       </ul>
     </div>
     <h2 id="title"><xsl:value-of select="./title" /></h2>
-    <div id="text"><xsl:value-of select="./text" /></div>
+    <div id="text"><xsl:apply-templates select="text" /></div>
     <div id="image"><img src="images/{./image}" /></div>
   </div>
 </xsl:result-document>
@@ -111,7 +133,7 @@
   <xsl:result-document method="html" href="ressources/ressource_{./@id}.html">
     <div id="ressource">
       <h2 id="title"><xsl:value-of select="./title" /></h2>
-      <div id="text"><xsl:value-of select="./text" /></div>
+      <div id="text"><xsl:apply-templates select="text" /></div>
     </div>
   </xsl:result-document>
 </xsl:for-each>
