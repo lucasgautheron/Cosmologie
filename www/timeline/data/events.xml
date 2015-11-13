@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <events>
     <event id="1" date="1905" content-id="1" visible="1">Albert Einstein publie sa théorie de la Relativité Restreinte qui décrit l'électrodynamique classique </event>
-    <event id="2" date="1912" content-id="2">Vesto M. Slipher découvre grâce au \textit{red-shift} l'éloignement des galaxies spirales de la Terre</event>
+    <event id="2" date="1912" content-id="2">Vesto M. Slipher mesure la vitesse de la galaxie d'Andromède par rapport à la Voie Lactée grâce au red-shift</event>
     <event id="3" date="1915" content-id="1">Albert Einstein et David Hilbert finalisent la théorie de la Relativité Générale, une théorie relativiste de la gravitation</event>
     <event id="4" date="1917" content-id="1">A. Einstein introduit la constante cosmologique dans l'équation qui porte son nom afin de la rendre compatible avec un Univers statique</event>
+    <event id="2bis" date="1917" content-id="2">V. Slipher montre que la plupart des galaxies s'éloignent de nous</event>
     <event id="5" date="1922" content-id="3">Alexandre Friedmann publie une théorie décrivant un Univers en expansion de courbure positive basé sur la Relativité Générale</event>
     <event id="6" date="1927" content-id="3">Georges Lemaître publie un article dans lequel il décrit un Univers en expansion homogène isotrope de masse constante et prédit la future "Loi de Hubble" en expliquant la fuite des galaxies par cette expansion</event>
     <event id="7" date="1929" content-id="4">Découverte de l'expansion de l'Univers par Hubble et preuve expérimentale de la loi portant son nom</event>

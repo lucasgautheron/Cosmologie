@@ -15,6 +15,13 @@
     <content id="2">
         <title>Découverte de l'éloignement des galaxies</title>
         <image>redshift.jpg</image>
-        <text>Travail de Slipher et Keeler, effet doppler, données, conclusions, questions</text>
+        <text><p>En 1912, Vesto Slipher mesure la vitesse de la galaxie Andromède par rapport à nous. Pour cela, il utilise la spectroscopie : en étudiant le spectre d'Andromède, il observe que certaines raies d'émision associées à des éléments bien connus (comme l'hydrogène) sont légèrement déplacées. C'est le cas par exemple de la raie $H\alpha$ qui correspond à une transition électronique particulière dans l'atome d'Hydrogène, qui émet à une longueur d'onde de 656,3 nm mais qui est observée à une longeur d'onde légèrement inférieur (une différence d'un millième !). V. Slipher sait que cette différence est due à l'effet Doppler : une onde émise par une source en mouvement est perçue à une longueur d'onde différence que la longueur d'onde d'émission. Il connait aussi la relation entre la vitesse radiale d'éloignement de la source et la différence de longueur d'onde :
+        \begin{equation}
+        v_{radiale} = c \left ( \lambda_{rec} - \lambda_0 \right )
+        \end{equation}
+        
+        Pour Andromède, il trouve une valeur d'environ -300 km/s ! Le signe moins indique qu'elle se rapproche de nous. Cette valeur est un peu surprenante : elle est un ordre de grandeur supérieur à la vitesse typique des planètes du système solaire par rapport au Soleil. Cela a une conséquence importante : cette vitesse exclut que les galaxies soient fortement liées gravitationnellement à la nôtre. On comprend alors à l'époque que cela favorise l'hypothèse selon laquelle ces objets sont relativement indépendants et de même nature que la Voie Lactée. Il n'était pas exclu à l'époque que ces galaxies qu'on appelait alors "spirales nébuleuses" soient périphériques et liées à la Voie Lactée. </p>
+        
+        <p>Slipher continue ses observations sur les galaxies. En 1917, il a observé le spectre de 25 d'entre-elles. Le résultat est étonnant : seules 4 d'entre elles se rapprochent de nous. Toutes les autres s'éloignent ! Puisque la plupart des galaxies s'éloignent, les raies lumineuses (donc entre le rouge et le bleu) qu'elles émettent sont décalées vers des longueurs d'ondes plus grandes c'est-à-dire vers le rouge : on parle de décalage vers le rouge ou encore de redshift. Il trouve des vitesses dépassant 1000 km/s.</p></text>
     </content>
 </contents>

@@ -129,13 +129,13 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     
     <ressource id="302">
         <title>Effet Doppler</title>
-        <text>L'effet Doppler caractérise le fait qu'un observateur en mouvement par rapport à une source émettant une onde perçoit celle-ci à une fréquence différente de la fréquence d'émission. Cet effet concerne aussi bien les ondes mécaniques comme les ondes sonores que les ondes électromagnétiques (donc la lumière). Si la source et l'observateur se rapprochent, la fréquence de réception est supérieure à la fréquence d'émission. Si au contraire la source s'éloigne de l'observateur, alors la fréquence du signal reçue est inférieure à celle perçue par la source. TODO: INSERER IMAGE. Si la source émet un signal lumineux (donc à vitesse la $c$) et se déplace à une vitesse v par rapport à l'émetteur dirigée selon sa ligne de visée, alors on montre à l'aide des transformations de Lorentz que :
+        <text><p>L'effet Doppler caractérise le fait qu'un observateur en mouvement par rapport à une source émettant une onde perçoit celle-ci à une fréquence différente de la fréquence d'émission. Cet effet concerne aussi bien les ondes mécaniques comme les ondes sonores que les ondes électromagnétiques (donc la lumière). Si la source et l'observateur se rapprochent, la fréquence de réception est supérieure à la fréquence d'émission. Si au contraire la source s'éloigne de l'observateur, alors la fréquence du signal reçue est inférieure à celle perçue par la source. TODO: INSERER IMAGE.</p><p>Si la source émet un signal lumineux (donc à vitesse la $c$) et se déplace à une vitesse v constante par rapport à l'émetteur dirigée selon sa ligne de visée, alors on montre à l'aide des transformations de Lorentz que : 
         
         \begin{equation}
         f_{rec} = f_0 \sqrt{\dfrac{1-\beta}{1+\beta}}
         \end{equation}
         
-        Pour de petites vitesses, cette expression vaut environ $f_0 (1-v/c)$ et il est alors clair que si la vitesse est dirigée selon la ligne de visée, la source s'éloigne si $v$ est positif et dans ce cas il y a bien diminution de la fréquence apparente. 
+        Pour de petites vitesses, cette expression vaut environ $f_0 (1-v/c)$ et il est alors clair que si la vitesse est dirigée selon la ligne de visée, la source s'éloigne si $v$ est positif et dans ce cas il y a bien diminution de la fréquence apparente. </p>
         
         La preuve est rapide à partir de la transformation de Lorentz (TODO: donner preuve)
         </text>
