@@ -116,7 +116,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <text><p>L'univers d'Einstein est un modèle d'Univers statique essentiellement constitué de matière relativiste. Pour concilier les deux, Einstein a du faire appel à un nouveau terme dans l'équation qui porte son nom, celui de la constante cosmologique. Cette équation est :
             \begin{equation}
             R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu\nu}T \right)
-            \end{equation}</p></text>
+            \end{equation}</p>
+        TODO: resultats (courbure, etc)</text>
         <linkwords>
             <linkword>Univers d'Einstein</linkword>
         </linkwords>
