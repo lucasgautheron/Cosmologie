@@ -40,7 +40,7 @@
 R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu\nu}T \right)
 \end{equation}</p>
 
-            <p>Le paramètre $\Lambda$ est appelé constante cosmologique.</p>
+            <p>Le paramètre $\Lambda$ est appelé constante cosmologique. Einstein avait proposé de le rajouter dans l'équation afin de la rendre compatible avec un Univers statique (l'Univers d'Einstein)</p>
 </text>
         <linkwords>
             <linkword>Équation d'Einstein</linkword>
@@ -108,6 +108,17 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         Certains modèles cosmologiques sont basés sur le principe cosmologique dit "parfait", qui en plus des hypothèses du principe cosmologique standard contient l'hypothèse d'homogénéité du temps. Un exemple de modèle respectant ce principe est le Steady-State Universe TODO DEVELOPPER + TRAD</text>
         <linkwords>
             <linkword>principe cosmologique</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="106">
+        <title>L'Univers d'Einstein</title>
+        <text><p>L'univers d'Einstein est un modèle d'Univers statique essentiellement constitué de matière relativiste. Pour concilier les deux, Einstein a du faire appel à un nouveau terme dans l'équation qui porte son nom, celui de la constante cosmologique. Cette équation est :
+            \begin{equation}
+            R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu\nu}T \right)
+            \end{equation}</p></text>
+        <linkwords>
+            <linkword>Univers d'Einstein</linkword>
         </linkwords>
     </ressource>
 
