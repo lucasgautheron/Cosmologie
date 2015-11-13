@@ -14,6 +14,11 @@ $(document).ready(function() {
   });
 });
 
+function process_maths()
+{
+    MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
 function show_timeline()
 {
   hide_content();
@@ -33,15 +38,16 @@ function show_content(id)
   $.ajax({
     url: 'contents/content_' + id + '.html',
     type: 'GET',
+    cache: false, // disable when ready
     success: function(data) {
       hide_timeline();
       data_object = $($.parseHTML(data)); 
       $('#content #timeline').html(data_object.find('#horizontal_timeline').html());
       $('#content .title').text(data_object.find('#title').text());
-      $('#content .text').html(data_object.find('#text').html().replace(/\n\n/g, "<br /><br />"));
+      $('#content .text').html(data_object.find('#text').html());
       $('#content .image').html(data_object.find('#image').html());
       $('#content').show();
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+      setTimeout(process_maths, 100);
     },
     error: function(e) {
       console.log(e.message);
@@ -63,12 +69,13 @@ function show_ressource(id)
   $.ajax({
     url: 'ressources/ressource_' + id + '.html',
     type: 'GET',
+    cache: false, // disable when ready
     success: function(data) {
       data_object = $($.parseHTML(data)); 
       $('#ressource .title').text(data_object.find('#title').text());
-      $('#ressource .text').html(data_object.find('#text').html().replace(/\n\n/g, "<br /><br />"));
+      $('#ressource .text').html(data_object.find('#text').html());
       $('#ressource').show();
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+      setTimeout(process_maths, 100);
     },
     error: function(e) {
       console.log(e.message);
