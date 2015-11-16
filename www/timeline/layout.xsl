@@ -1,15 +1,32 @@
 <xsl:stylesheet version="2.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:doc="http://sciencestechniques.fr">
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:doc="http://sciencestechniques.fr"
+  exclude-result-prefixes="xs doc">
   
-  <xsl:function name="doc:transform_ressource_links">
-    <xsl:param name="nodes"/>
+  <xsl:variable name="linkwords" select="//ressources/ressource/linkwords/linkword"/>
+  <xsl:function name="doc:find-matching-linkword">
     <xsl:param name="text"/>
-    <xsl:variable name="output" select="$text"/>
-    <xsl:for-each select="$nodes/root/ressources/ressource/linkwords/linkword">
-      <xsl:value-of select="$text" />
-    </xsl:for-each>
+    <xsl:copy-of select="(data(($linkwords[contains($text, .)])[1]/../../@id), ($linkwords[contains($text, .)])[1])"/>
   </xsl:function>
+  <xsl:function name="doc:add-links" as="item()*">
+    <xsl:param name="text"/>
+    <xsl:variable name="linkword" select="doc:find-matching-linkword($text)"/>
+    <xsl:choose>
+      <xsl:when test="$linkword[1]">
+        <xsl:value-of select="substring-before($text, $linkword[2])"/>
+        <a href="#" class="ressource" data-rid="{$linkword[1]}"><xsl:value-of select="$linkword[2]"/></a>
+        <xsl:copy-of select="doc:add-links(substring-after($text, $linkword[2]))"/>
+      </xsl:when>
+      <xsl:otherwise><xsl:value-of select="$text"/></xsl:otherwise>
+    </xsl:choose>
+  </xsl:function>
+  <xsl:template match="text//text()">
+    <xsl:copy-of select="doc:add-links(.)"/>
+  </xsl:template>
+  <xsl:template match="node()|@*">
+    <xsl:copy><xsl:apply-templates select="node()|@*"/></xsl:copy>
+  </xsl:template>
   
   <xsl:function name="doc:bold">
     <xsl:param name="text"/>
