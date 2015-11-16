@@ -28,12 +28,12 @@ function show_timeline()
   hide_content();
   hide_ressource();
   $("#show_timeline").hide();
-  $("#timeline").show(1000);
+  $("#timeline").show();
 }
 
 function hide_timeline()
 {
-  $("#timeline").hide(1000);
+  $("#timeline").hide();
   $("#show_timeline").show();
 }
 
