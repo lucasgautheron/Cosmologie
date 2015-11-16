@@ -57,8 +57,6 @@ function show_content(id)
       console.log(e.message);
     }
   });
-  
-  show_ressource("103");
 }
 
 function hide_content(id)
