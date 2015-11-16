@@ -20,14 +20,21 @@
         v_{radiale} = \dfrac{\lambda_{rec} - \lambda_0}{\lambda_0} c
         \end{equation}
         
-        Pour Andromède, il trouve une valeur d'environ -300 km/s ! Le signe moins indique qu'elle se rapproche de nous. Cette valeur est un peu surprenante : elle est un ordre de grandeur supérieur à la vitesse typique des planètes du système solaire par rapport au Soleil. Cela a une conséquence importante, puisque cette vitesse exclut que les galaxies soient fortement liées gravitationnellement à la nôtre. On comprend alors à l'époque que cela favorise l'hypothèse selon laquelle ces objets sont relativement indépendants et de même nature que la Voie Lactée. Il n'était en effet pas exclu à l'époque que ces galaxies qu'on appelait alors "spirales nébuleuses" ne fassent partie de la Voie Lactée. </p>
+        Pour Andromède, il trouve une valeur d'environ -300 km/s ! Le signe moins indique qu'elle se rapproche de nous. Cette valeur est un peu surprenante : elle est un ordre de grandeur supérieur à la vitesse typique des planètes du système solaire par rapport au Soleil. Cela a une conséquence importante, puisque cette vitesse exclut que les galaxies soient fortement liées gravitationnellement à la nôtre. On comprend alors à ce moment que cela favorise l'hypothèse selon laquelle ces objets sont relativement indépendants et de même nature que la Voie Lactée. Il n'était en effet pas exclu à l'époque que ces galaxies qu'on appelait alors "spirales nébuleuses" ne fassent partie de la Voie Lactée. </p>
         
         <p>Slipher continue ses observations sur les galaxies. En 1917, il a observé le spectre de 25 d'entre-elles. Le résultat est étonnant : seules 4 parmi les 25 se rapprochent de nous. Toutes les autres s'éloignent ! Puisque la plupart des galaxies s'éloignent, les raies lumineuses (donc entre le rouge et le bleu) qu'elles émettent sont décalées vers des longueurs d'ondes plus grandes c'est-à-dire vers le rouge : on parle de décalage vers le rouge ou encore de redshift. Slipher trouve des vitesses dépassant 1000 km/s : il est clair que ces "spirales nébuleuses" sont des objets indépendants de notre galaxie, la Voie Lactée.</p></text>
     </content>
     
     <content id="3">
-        <title>Equations de Friedmann</title>
+        <title>Débuts de la Cosmologie relativistes</title>
         <image>friedmann.jpg</image>
-        <text><p></p></text>
+        <text><p>La première application de la théorie de la relativité à la cosmologie est due à Einstein lui-même, en 1917. Il suppose que l'Univers respecte le principe cosmologique, c'est-à-dire qu'il est homogène et isotrope. Il suppose de plus que celui-ci est statique, et qu'il ne contient que de la matière non relativiste. Il réalise que pour concilier ces hypothèses, il faut introduire un nouveau terme dans l'équation d'Einstein : c'est ainsi qu'il ajoute à son modèle la constante cosmologique. Ce modèle, appelé Univers d'Einstein, présente quelques problèmes : d'abord, il est instable. D'autre part, la constante cosmologique, introduite comme paramètre, doit prendre une valeur très précise pour que l'Univers demeure statique. Où est l'erreur ?</p>
+        <p>Plusieurs physiciens et mathématiciens se sont penchés assez tôt sur la relativité générale. Alexandre Friedmann, d'origine russe, est l'un d'entre eux. En 1922, il publie un article intitulé "Sur la courbature de l'espace", dans lequel il applique l'équation d'einstein avec constante cosmologique à un Univers homogène et isotrope, constitué de matière non relativiste. Cependant, à la différence d'Einstein, il ne le suppose pas statique :  </p></text>
+    </content>
+    
+    <content id="4">
+        <title>La loi de Hubble</title>
+        <image>hubble.jpg</image>
+        <text><p>La première application de la théorie de la relativité à la cosmologie est due à Einstein lui-même, en 1917. Il suppose que l'Univers respecte le principe cosmologique, c'est-à-dire qu'il est homogène et isotrope. Il suppose de plus que celui-ci est statique, et qu'il ne contient que de la matière non relativiste. Il réalise que pour concilier ces hypothèses, il faut introduire un nouveau terme dans l'équation d'Einstein : c'est ainsi qu'il ajoute à son modèle la constante cosmologique. Ce modèle, appelé Univers d'Einstein, présente quelques problèmes : d'abord, il est instable. D'autre part, la constante cosmologique, introduite comme paramètre, doit prendre une valeur très précise pour que l'Univers demeure statique. Où est l'erreur ?</p></text>
     </content>
 </contents>
