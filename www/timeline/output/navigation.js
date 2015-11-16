@@ -14,8 +14,12 @@ $(document).ready(function() {
   });
 });
 
-function process_maths()
+function update()
 {
+    $("a.ressource").click(function() {
+      show_ressource($(this).data('rid'));
+      return false;
+    });
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
@@ -47,7 +51,7 @@ function show_content(id)
       $('#content .text').html(data_object.find('#text').html());
       $('#content .image').html(data_object.find('#image').html());
       $('#content').show();
-      setTimeout(process_maths, 100);
+      setTimeout(update, 100);
     },
     error: function(e) {
       console.log(e.message);
@@ -65,7 +69,6 @@ function hide_content(id)
 function show_ressource(id)
 {
   hide_timeline();
-
   $.ajax({
     url: 'ressources/ressource_' + id + '.html',
     type: 'GET',
@@ -75,7 +78,7 @@ function show_ressource(id)
       $('#ressource .title').text(data_object.find('#title').text());
       $('#ressource .text').html(data_object.find('#text').html());
       $('#ressource').show();
-      setTimeout(process_maths, 100);
+      setTimeout(update, 100);
     },
     error: function(e) {
       console.log(e.message);
