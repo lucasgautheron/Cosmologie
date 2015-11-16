@@ -12,7 +12,7 @@
         <linkwords>
             <linkword>Albert Einstein</linkword>
             <linkword>A. Einstein</linkword>
-            <linkword>Einstein</linkword>
+            <linkword> Einstein</linkword>
         </linkwords>
     </ressource>
     
@@ -114,13 +114,19 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     
     <ressource id="106">
         <title>L'Univers d'Einstein</title>
-        <text><p>L'univers d'Einstein est un modèle d'Univers statique essentiellement constitué de matière relativiste. Pour concilier les deux, Einstein a du faire appel à un nouveau terme dans l'équation qui porte son nom, celui de la constante cosmologique. Cette équation est :
-            \begin{equation}
-            R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu\nu}T \right)
-            \end{equation}</p>
-        TODO: resultats (courbure, etc)</text>
+        <text><p>L'univers d'Einstein (aussi appelé "modèle A") est un modèle d'Univers statique essentiellement constitué de matière non relativiste. MOntrer résultats</p> </text>
         <linkwords>
             <linkword>Univers d'Einstein</linkword>
+            <linkword>modèle A</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="107">
+        <title>L'Univers de Sitter</title>
+        <text><p>L'univers de Sitter aussi appelé "modèle B" est ...</p></text>
+        <linkwords>
+            <linkword>Univers de Sitter</linkword>
+            <linkword>modèle B</linkword>
         </linkwords>
     </ressource>
 
