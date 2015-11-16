@@ -12,4 +12,4 @@ file_put_contents('data/cache', "<?xml version=\"1.0\" encoding=\"UTF-8\"?><root
 
 $start_time = microtime(true);
 exec('saxonb-xslt -s:data/cache -xsl:layout.xsl -o:output/index.html -ext:on');
-echo "generation done (" . round($start_tim, 4) . " s)\n";
+echo "generation done (" . round(microtime(true) - $start_time, 4) . " s)\n";
