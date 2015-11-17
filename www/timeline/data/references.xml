@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <references>
-    <reference id="1">
+    <reference id="1" content-id="1">
         <title>Sur l'électrodynamique des corps en mouvement</title>
         <author>Albert Einstein</author>
         <text>Traduction anglais de la publication originale d'Einstein sur sa théorie de la Relativité Restreinte.</text>
@@ -8,11 +8,27 @@
         <file>einstein_1905.pdf</file>
     </reference>
     
-    <reference id="2">
+    <reference id="2" content-id="2">
         <title>The radial velocity of the Andromeda Nebula</title>
         <author>Vesto Slipher</author>
         <text>Publication de V. Slipher sur sa mesure par effet doppler de la vitesse radiale d'Andromède.</text>
         <date>1912</date>
         <file>slipher_1905.pdf</file>
+    </reference>
+    
+    <reference id="3" content-id="3">
+        <title>On the curvature of space</title>
+        <author>Alexandre Friedmann</author>
+        <text>Publication de A. Friedmann donnant les solutions des équations d'Einstein pour un Univers de géométrie sphérique avec constante cosmologique et matière non relativiste.</text>
+        <date>1922</date>
+        <file>friedmann_1922.pdf</file>
+    </reference>
+    
+    <reference id="4" content-id="3">
+        <title>Un univers homogène de masse constante et de rayon variable rendant compte de la vitesse radiale des nébuleuses</title>
+        <author>Georges Lemaitre</author>
+        <text>Article de Georges Lemaitre dans lequel il décrit un modèle similaire à celui de Friedmann (univers d'einstein non statique) et où il prédit la loi de Hubble donnant ainsi une explication théorique de la fuite des galaxies observée par Slipher.</text>
+        <date>1927</date>
+        <file>lemaitre_1927.pdf</file>
     </reference>
 </references>

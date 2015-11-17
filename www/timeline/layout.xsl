@@ -102,6 +102,7 @@
         <h2 class="title"></h2>
         <div id="timeline"></div>
         <div class="text"></div>
+        <div class="references"></div>
         <div class="image"></div>
       </div>
       
@@ -136,12 +137,21 @@
     <div id="horizontal_timeline">
       <ul>
       <xsl:for-each select="/root/events/event[@content-id=$id]">
+        <xsl:sort select="./@date" />
         <li><b><xsl:value-of select="./@date" /></b> : <xsl:value-of select="." /></li>
       </xsl:for-each>
       </ul>
     </div>
     <h2 id="title"><xsl:value-of select="./title" /></h2>
     <div id="text"><xsl:apply-templates select="text" /></div>
+    <div id="references">
+      <ul>
+        <xsl:for-each select="/root/references/reference[@content-id=$id]">
+          <xsl:sort select="./@date" />
+          <li><i><a href="../references/{./file}" target="_blank"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
+        </xsl:for-each>
+      </ul>
+    </div>
     <div id="image"><img src="images/{./image}" /></div>
   </div>
 </xsl:result-document>

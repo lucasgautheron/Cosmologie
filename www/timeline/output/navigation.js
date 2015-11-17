@@ -49,6 +49,7 @@ function show_content(id)
       $('#content #timeline').html(data_object.find('#horizontal_timeline').html());
       $('#content .title').text(data_object.find('#title').text());
       $('#content .text').html(data_object.find('#text').html());
+      $('#content .references').html(data_object.find('#references').html());
       $('#content .image').html(data_object.find('#image').html());
       $('#content').show();
       setTimeout(update, 100);
