@@ -91,7 +91,7 @@
       <div id="timeline">
       <h1>Timeline</h1>
         <ul>
-          <xsl:for-each select="root/events/event">
+          <xsl:for-each select="root/events/event[not(@hidden=1)]">
             <li><b><xsl:value-of select="./@date" /></b> : <a href="#" data-cid="{./@content-id}"><xsl:value-of select="." /></a></li>
           </xsl:for-each>
         </ul>

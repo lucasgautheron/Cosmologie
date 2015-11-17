@@ -175,4 +175,20 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <linkword>Effet Doppler</linkword>
         </linkwords>
     </ressource>
+    
+    <!--         -->
+    <!-- OBJECTS -->
+    <!--         -->
+    
+    
+    <ressource id="500">
+        <title>Céphéides</title>
+        <text><p>Une céphéide est une étoile variable périodique, c'est-à-dire dont la luminosité diminue et augmente de façon stable et périodique. Il existe plusieurs types de céphéides. Les céphéides classiques dites de Classe I sont très lumineuses (jusqu'à 100 000 fois plus que le Soleil !) ce qui les rend visible individuellement même à très grande distance. </p>
+        <p>La luminosité intrinsèque (c'est-à-dire la puissance rayonnée) des céphéides présente la particularité de ne dépendre que de leur période de variation lumineuse (la relation dépendant en revanche du type de céphéide dont il s'agit). Or, la puissance reçue par unité de surface située à une distance $d$ d'une source lumineuse est égale à $\Phi = L/(4\pi d^2)$ où $L$ est sa luminosité. En observant une céphéide, on connait à la fois $L$ par le biais de sa période $T$ facilement observable (de l'ordre de grandeur de la journée) et d'autre part  la puissance reçue par unité de surface. Cela donne donc $d = \sqrt{\dfrac{L}{4 \pi \Phi}}</p>
+        </text>
+        <linkwords>
+            <linkword>céphéides</linkword>
+        </linkwords>
+    </ressource>
+    
 </ressources>

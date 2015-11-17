@@ -36,12 +36,13 @@
         \begin{equation}
         \dfrac{v}{c} = d \dfrac{1}{R} \dfrac{dR}{dt} \textrm{ si } \ v \ll c \textrm{ càd } \ \ d \ll R
         \end{equation}
-        Ce résultat peut être testé expérimentalement : il suffit de vérifier que la vitesse de fuite de galaxies est proportionnelle à leur distance avec nous. La mesure du coefficient de proportionnalité donne directement la valeur de $\frac{\dot{R}}{R}$</p></text>
+        Ce résultat peut être testé expérimentalement : il suffit de vérifier que la vitesse de fuite de galaxies est proportionnelle à leur distance avec nous. La mesure du coefficient de proportionnalité donne directement la valeur de $\frac{\dot{R}}{R}$. La difficulté est d'évaluer ces distances.</p></text>
     </content>
     
     <content id="4">
-        <title>La loi de Hubble</title>
+        <title>Découverte de l'expansion de l'Univers</title>
         <image>hubble.jpg</image>
-        <text><p>La première application de la théorie de la relativité à la cosmologie est due à Einstein lui-même, en 1917. Il suppose que l'Univers respecte le principe cosmologique, c'est-à-dire qu'il est homogène et isotrope. Il suppose de plus que celui-ci est statique, et qu'il ne contient que de la matière non relativiste. Il réalise que pour concilier ces hypothèses, il faut introduire un nouveau terme dans l'équation d'Einstein : c'est ainsi qu'il ajoute à son modèle la constante cosmologique. Ce modèle, appelé Univers d'Einstein, présente quelques problèmes : d'abord, il est instable. D'autre part, la constante cosmologique, introduite comme paramètre, doit prendre une valeur très précise pour que l'Univers demeure statique. Où est l'erreur ?</p></text>
+        <text><p>D'après les mesures de vitesse des nébuleuses spirales dues à Slipher, ces objets ne semblent pas appartenir à la Voie Lactée : ils se déplacent trop vite par rapport à elle pour y être liées gravitationnellement. Il est donc naturel pour mettre fin à ce débat de se demander à quelle distance celles-ci se trouvent. Les mesures de distance classiques comme la parallaxe ne s'appliquent pas à des objets si lointains : il faut trouver une autre méthode.</p>
+        <p></p></text>
     </content>
 </contents>
