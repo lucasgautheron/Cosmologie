@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<references>
+    <reference id="1">
+        <title>Sur l'électrodynamique des corps en mouvement</title>
+        <author>Albert Einstein</author>
+        <text>Traduction anglais de la publication originale d'Einstein sur sa théorie de la Relativité Restreinte.</text>
+        <date>1905</date>
+        <file>einstein_1905.pdf</file>
+    </reference>
+    
+    <reference id="2">
+        <title>The radial velocity of the Andromeda Nebula</title>
+        <author>Vesto Slipher</author>
+        <text>Publication de V. Slipher sur sa mesure par effet doppler de la vitesse radiale d'Andromède.</text>
+        <date>1912</date>
+        <file>slipher_1905.pdf</file>
+    </reference>
+</references>
