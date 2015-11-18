@@ -39,4 +39,29 @@
         <date>1929</date>
         <file>hubble_1929.pdf</file>
     </reference>
+    
+    <reference id="6" content-id="4">
+        <title>Pulsation theory of cepheides variables</title>
+        <author>Eddington</author>
+        <text>Dans ce papier de 1917, Eddington propose une explication du mécanisme à l'origine de la périodicité de la luminosité des céphéides, et de l'existence d'une relation luminosité-période.</text>
+        <date>1917</date>
+        <file>cepheides_eddington.pdf</file>
+    </reference>
+    
+    <reference id="7" content-id="4">
+        <title>1777 variables in the Magellanic clouds</title>
+        <author>Henrietta Leavitt</author>
+        <text>Catalogue d'étoiles variables dans les nuages de Magellan réalisé par H. Leavitt en 1908.</text>
+        <date>1908</date>
+        <file>cepheides_leavitt.pdf</file>
+    </reference>
+    
+    <reference id="8" content-id="4">
+        <title>The period-Luminosity relation : an historical review</title>
+        <author>J.D. Fernie</author>
+        <text>Texte reprenant l'histoire autour de la découverte de la relation période-luminosité des céphéides.</text>
+        <date>1969</date>
+        <file>cepheides_Hertzsprung.pdf</file>
+    </reference>
+    
 </references>
