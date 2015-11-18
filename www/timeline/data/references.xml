@@ -31,4 +31,12 @@
         <date>1927</date>
         <file>lemaitre_1927.pdf</file>
     </reference>
+    
+    <reference id="5" content-id="4">
+        <title>A relation between distance and radial velocity among extra-galactic nebulae</title>
+        <author>Edwin Hubble</author>
+        <text>Article d'Edwin Hubble dans lequel il montre la proportionnalité entre la vitesse radiale des galaxies spirales et leur distance.</text>
+        <date>1929</date>
+        <file>hubble_1929.pdf</file>
+    </reference>
 </references>
