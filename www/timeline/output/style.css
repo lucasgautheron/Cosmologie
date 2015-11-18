@@ -12,7 +12,8 @@ div#ressource
     padding: 5px;
     width: 30%;
     float: left;
-    background-color: #999;
+    background-color: #666666;
+    display: none;
     color: white;
 }
 
