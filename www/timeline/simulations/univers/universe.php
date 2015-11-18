@@ -52,9 +52,9 @@ function filter($A, $keep)
     return $B;
 }
 
-$o_m0 = isset($_GET['m']) ? $_GET['m'] : 0.315;
-$o_r0 = isset($_GET['r']) ? $_GET['r'] : 8.4e-5;
-$o_v0 = isset($_GET['v']) ? $_GET['v'] : 0.685;
+$o_m0 = isset($_GET['m']) ? $_GET['m']/100.0 : 0.315;
+$o_r0 = isset($_GET['r']) ? $_GET['r']/100.0 : 8.4e-5;
+$o_v0 = isset($_GET['v']) ? $_GET['v']/100.0 : 0.685;
 $a0 = isset($_GET['a0']) ? $_GET['a0'] : 0;
 $o_k0 = 1-$o_m0-$o_r0-$o_v0;
 
