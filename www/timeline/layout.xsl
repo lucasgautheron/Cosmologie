@@ -104,21 +104,6 @@
       </div>
 
     <div class="clear"></div>
-     <h1>Contents</h1>
-       <div>
-         <xsl:for-each select="root/contents/content">
-          <h3><xsl:value-of select="./title" /></h3>
-           <div><xsl:apply-templates select="text" /></div>
-        </xsl:for-each>
-       </div>
-
-      <h1>Ressources</h1>
-       <div>
-         <xsl:for-each select="root/ressources/ressource">
-          <h3><xsl:value-of select="./title" /></h3>
-           <div><xsl:apply-templates select="text" /></div>
-        </xsl:for-each>
-       </div>
     </body>
   </html>
 
