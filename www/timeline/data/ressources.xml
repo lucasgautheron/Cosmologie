@@ -138,11 +138,11 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <title>Constante cosmologique</title>
         <text><p>La constante cosmologique notée $\Lambda$ est un paramètre introduit par Einstein dans son équation afin qu'elle autorise un Univers fait de matière non relativiste <i>statique</i>. L'équation d'Einstein en présence de cette constante devient :
             \begin{equation}
-            R^{\mu\nu} - \dfrac{1}{2} Rg^{\mu\nu} - \Lambda g^{\mu\nu} = \dfrac{8\pi G}{c^4} \left  T^{\mu\nu}
+            R^{\mu\nu} - \dfrac{1}{2} Rg^{\mu\nu} - \Lambda g^{\mu\nu} = \dfrac{8\pi G}{c^4} T^{\mu\nu}
             \end{equation}</p>
             <p>On peut interpréter la constante cosmologique comme une forme particulière d'énergie (souvent appelée "énergie du vide") vérifiant l'équation d'état $P_v = -\rho_v$. En effet, en écrivant $\tilde{T}^{\mu\nu} = T^{\mu\nu} + T_v^{\mu\nu}$ où $T_v^{\mu\nu} = \Lambda g^{\mu\nu}$ on a :
                 \begin{equation}
-                R^{\mu\nu} - \dfrac{1}{2} Rg^{\mu\nu} = 8\pi G \left  \tilde{T}^{\mu\nu}
+                R^{\mu\nu} - \dfrac{1}{2} Rg^{\mu\nu} = 8\pi G \tilde{T}^{\mu\nu}
                 \end{equation}
                 Et dans ce cas le tenseur $T_v^{\mu\nu}$ est le tenseur énergie impulsion d'un fluide parfait tel que $P_v = -\rho_v = -\dfrac{\Lambda c^4}{8\pi G}$</p>
         </text>
