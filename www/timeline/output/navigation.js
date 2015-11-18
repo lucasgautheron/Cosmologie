@@ -16,6 +16,7 @@ $(document).ready(function() {
 
 function update()
 {
+    $("a.ressource").unbind("click");
     $("a.ressource").click(function() {
       show_ressource($(this).data('rid'));
       return false;
