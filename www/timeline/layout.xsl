@@ -28,14 +28,6 @@
     <xsl:copy><xsl:apply-templates select="node()|@*"/></xsl:copy>
   </xsl:template>
   
-  <xsl:function name="doc:bold">
-    <xsl:param name="text"/>
-    <xsl:variable name="replacement">
-      <![CDATA[<b>$1</b>]]>
-    </xsl:variable>
-    <xsl:copy-of select="replace($text, '\\textbf\{(.*)\}', $replacement)"/>
-  </xsl:function>
-  
   <xsl:template match="text">
     <xsl:apply-templates />
   </xsl:template>
