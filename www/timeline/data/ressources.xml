@@ -229,7 +229,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <p><b>Principe d'équivalence fort</b>: </p>
             <p><b>Du principe d'équivalence au formalisme tensoriel :</b> On suppose par l'intermédiaire du principe d'équivalence qu'un champ de gravitation a les mêmes effets qu'une accélération du référentiel d'étude. Dans ce cas résoudre les équations du mouvement d'un objet en chute revient à trouver les relations de passage entre le référentiel inertiel (celui dans lequel l'objet est immobile) et le référentiel dans lequel le champ apparait. On sait qu'en mécanique Newtonienne, en appliquant les transformations galiléennes, l'équation du mouvement dans un référentiel $\mathcal{R}'$ non inertiel se déduit de l'accélération de ce référentiel par rapport à $\mathcal{R}$, un référentiel galiléen et de son vecteur rotation $\vec{\omega}$ par rapport à celui-ci selon :
                 \begin{equation}
-                m \left [ \vec{a}_\mathcal{R'}  + \vec{a}_{\mathcal{R'}/\mathcal{R}}  + 2 \vec{\omega} \wedge \vec{v}_\mathcal{R'} + \dfrac{d \vec{\omega}}{dt}\wedge \vec{O'M} + \vec{\omega} \wedge \left ( \vec{\omega} \wedge \vec{O'M} \right ) \right ] = \vec{F}
+                m \left [ \vec{a}_\mathcal{R'}  \\ + \vec{a}_{\mathcal{R'}/\mathcal{R}}  + 2 \vec{\omega} \wedge \vec{v}_\mathcal{R'} + \dfrac{d \vec{\omega}}{dt}\wedge \vec{O'M} \\ + \vec{\omega} \wedge \left ( \vec{\omega} \wedge \vec{O'M} \right ) \right ] = \vec{F}
                 \end{equation}
             </p>
         </text>
