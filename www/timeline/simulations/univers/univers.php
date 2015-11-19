@@ -58,7 +58,7 @@ $o_v0 = isset($_GET['v']) ? $_GET['v'] : 0.685;
 $a0 = isset($_GET['a0']) ? $_GET['a0'] : 0;
 $o_k0 = 1-$o_m0-$o_r0-$o_v0;
 
-$results = Friedmann($o_m0, $o_r0, $o_v0, $o_k0, $a0, 10, 200000);
+$results = Friedmann($o_m0, $o_r0, $o_v0, $o_k0, $a0, 5, 200000);
 
 $age = $results[1][fast_lookup_rev(1.0, $results[0])];
 $age_ga = $age / H_0 / (1e9);
