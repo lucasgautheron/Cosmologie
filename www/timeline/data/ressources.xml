@@ -189,7 +189,6 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <!-- OBJECTS -->
     <!--         -->
     
-    
     <ressource id="500">
         <title>Céphéides</title>
         <text><p>Une céphéide est une étoile variable périodique, c'est-à-dire dont la luminosité diminue et augmente de façon stable et périodique. Il existe plusieurs types de céphéides. Les céphéides classiques dites de Classe I sont très lumineuses (jusqu'à 100 000 fois plus que le Soleil !) ce qui les rend visible individuellement même à très grande distance. </p>
@@ -209,7 +208,6 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </linkwords>
     </ressource>
     
-    
     <!--         -->
     <!--  MISC   -->
     <!--         -->
@@ -220,6 +218,15 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </text>
         <linkwords>
             <linkword>le grand débat</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="601">
+        <title>Principe d'équivalence</title>
+        <text><p>MP d'Amanuensis</p>
+        </text>
+        <linkwords>
+            <linkword>principe d'équivalence</linkword>
         </linkwords>
     </ressource>
     
