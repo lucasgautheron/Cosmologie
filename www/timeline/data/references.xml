@@ -64,4 +64,14 @@
         <file>cepheides_Hertzsprung.pdf</file>
     </reference>
     
+    <reference id="9" content-id="1">
+        <title>General covariance and the foundations of general relativity : eight decades of dispute </title>
+        <author>John D. Norton</author>
+        <text>Ce texte montre comment l'idée de "covariance générale" a guidé Einstein dans le développement de la relativité générale.</text>
+        <date>1993</date>
+        <file>relativity_origin.pdf</file>
+    </reference>
+    
+    
+    
 </references>
