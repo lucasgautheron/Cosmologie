@@ -223,7 +223,15 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     
     <ressource id="601">
         <title>Principe d'équivalence</title>
-        <text><p>MP d'Amanuensis</p>
+        <text><p>Il existe plusieurs formulations du principe d'équivalence. Tous reposent cependant sur le résultat suivant : la chute d'un corps dans un champ de pesanteur est indépendant de sa nature (en particulier de sa masse). On dit aussi que la masse inerte d'un corps $m_i$ (qui intervient dans la deuxième loi de Newton, $\vec{F} = m_i\vec{a}$) est égale à sa masse grave $m_g$ (qui intervient dans l'expression de la force de gravitation $\vec{F}_g = m_g \vec{g}$. Si en effet $m_i = m_g = m$ alors le principe fondamental de la dynamique appliqué à un corps en chute libre donne $\vec{a} = \vec{g}$ ce qui ne dépend plus de la nature des corps. Expérimentalement, Eötvös avait montré en 1909 que la différence relative entre ces deux masses était inférieure à $10^{-8}$.</p>
+            <p>Le principe d'équivalence tel qu'énoncé par Einstein en 1907 est l'hypothèse d'une "équivalence complète entre un champ de gravitation et l'accélération correspondante du référentiel (dans lequel ce champ apparait). </p>
+            <p><b>Principe d'équivalence faible</b>: <i>La chute d'une particule-test ne dépend pas de sa nature donc de sa masse en particulier.</i> Ceci signifie qu'une particule sensible uniquement au champ de gravitation, et sans effet sur le système qui l'entoure, tombe de la même manière dans un champ de pesanteur quelque soit sa masse. </p>
+            <p><b>Principe d'équivalence fort</b>: </p>
+            <p><b>Du principe d'équivalence au formalisme tensoriel :</b> On suppose par l'intermédiaire du principe d'équivalence qu'un champ de gravitation a les mêmes effets qu'une accélération du référentiel d'étude. Dans ce cas résoudre les équations du mouvement d'un objet en chute revient à trouver les relations de passage entre le référentiel inertiel (celui dans lequel l'objet est immobile) et le référentiel dans lequel le champ apparait. On sait qu'en mécanique Newtonienne, en appliquant les transformations galiléennes, l'équation du mouvement dans un référentiel $\mathcal{R}'$ non inertiel se déduit de l'accélération de ce référentiel par rapport à $\mathcal{R}$, un référentiel galiléen et de son vecteur rotation $\omega$ par rapport à celui-ci selon :
+                \begin{equation}
+                m \left [ \vec{a}_\mathcal{R'}  + \vec{a}_{\mathcal{R'}/\mathcal{R}}  + 2 \vec{\omega} \wedge \vec{v}_\mathcal{R'} + \dfrac{\dd \vec{\omega}}{\dd t}\wedge \vv{O'M} + \vec{\omega} \wedge \left ( \vec{\omega} \wedge \vv{O'M} \right ) \right ] = \vec{F}
+                \end{equation}
+            </p>
         </text>
         <linkwords>
             <linkword>principe d'équivalence</linkword>
