@@ -37,7 +37,7 @@
         \begin{equation}
         v = \left (\dfrac{c}{R} \dfrac{dR}{dt} \right ) d \textrm{ si } \ v \ll c \textrm{ càd } \ \ d \ll R
         \end{equation}
-        Ce résultat peut être testé expérimentalement : il suffit de vérifier que la vitesse de fuite de galaxies est proportionnelle à leur distance avec nous. La mesure du coefficient de proportionnalité donne directement la valeur de $K = \frac{\dot{cR}}{R}$. La difficulté est d'évaluer ces distances.</p></text>
+        Ce résultat peut être testé expérimentalement : il suffit de vérifier que la vitesse de fuite de galaxies est proportionnelle à leur distance avec nous. La mesure du coefficient de proportionnalité donne directement la valeur de $K = \frac{c\dot{R}}{R}$. La difficulté est d'évaluer ces distances.</p></text>
     </content>
     
     <content id="4">
