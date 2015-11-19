@@ -19,9 +19,10 @@ div#ressource
     padding: 10px;
     width: 32%;
     float: left;
-    background-color: #444;
     display: none;
-    color: white;
+    
+    /*background-color: #444;
+    color: white;*/
 }
 
 div.text
