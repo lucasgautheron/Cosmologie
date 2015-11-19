@@ -69,7 +69,10 @@
           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
           processEscapes: true
-        }
+      },
+      "HTML-CSS": {
+          availableFonts: ["TeX"]
+      }
     });
     </script>
     <script type="text/javascript"
