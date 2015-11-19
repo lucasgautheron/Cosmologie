@@ -142,7 +142,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         \begin{equation}
         E(a) = -\dfrac{8\pi G}{3} \left ( \dfrac{\rho_0}{a} + \rho_v a^2\right )
         \end{equation}
-        Ici, $rho_0$ est la densité d'énergie sous forme de matière non relativiste à notre époque (date à laquelle $a = 1$) et $rho_v = \dfrac{\lambda c^2}{8\pi G}$ représente l'"énergie du vide". 
+        Ici, $\rho_0$ est la densité d'énergie sous forme de matière non relativiste à notre époque (date à laquelle $a = 1$) et $\rho_v = \dfrac{\lambda c^2}{8\pi G}$ représente l'"énergie du vide". 
         La première équation se lit alors : "l'énergie cinétique de l'Univers + son énergie potentielle est égale à une constante K". La courbe de l'énergie potentielle est représentée sur la figure suivante : TODO INSERER FIGURE a \mapsto E(a)</p>
         <p>Einstein pensant l'Univers statique, il est nécessaire que son modèle autorise une situation d'équilibre. Cet équilibre est atteint lorsque $E'(a) = 0$. Cela n'est possible que si $\rho_v \neq 0$ : c'est la raison pour laquelle Einstein fit intervenir la constante cosmologique. Le terme en $-1/a$ est un potentiel attractif de type gravitationnel newtonien classique. Le terme en $-a^2$ est un terme répulsif qui autorise un équilibre. Celui-ci est atteint si $\rho_o = 2\rho_v$. </p></text>
         <linkwords>
