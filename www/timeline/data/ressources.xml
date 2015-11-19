@@ -110,9 +110,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <ressource id="104">
         <title>Équations de Friedmann</title>
         <text><p>Les équations de Friedmann sont les équations qui décrivent un Univers homogène isotrope obéissant aux équations d'Einstein. Pour un univers constitué de différentes formes d'énergie de densités $\rho_i$, de pression $P_i$ et d'équation d'état $f_i(\rho_i,P_i) = 0$ :\begin{equation}\left\{\begin{matrix}
-            \dot{a}^2-\dfrac{8 \pi G}{3} \sum_i \rho_i a^2 &amp;  = &amp; K\\ 
-            \dfrac{d}{dt}\left ( \rho_i a^3 \right )  = &amp; -P_i \dfrac{d}{dt} \left (a^3 \right) \\ 
-            f_i(\rho_i,P_i) &amp;  = &amp;0 \\ 
+            \dot{a}^2-\dfrac{8 \pi G}{3} \displaystyle \sum_i \rho_i a^2 &amp; = &amp; K\\ 
+            \dfrac{d}{dt}\left ( \rho_i a^3 \right ) &amp; = &amp; -P_i \dfrac{d}{dt} \left (a^3 \right) \\ 
+            f_i(\rho_i,P_i) &amp; = &amp;0 \\ 
             \end{matrix}\right.\end{equation}
         La première équation décrit la dynamique de l'Univers en fonction de son contenu. La seconde équation traduit le premier principe de la thermodynamique. La troisième équation indique simplement la relation entre densité et pression imposée par l'équation d'état de la $i$-ème forme d'énergie. Pour un gaz parfait non relativiste, $P\propto v^2/c^2$ et on peut considérer $P = 0$. Pour de l'énergie rayonnante ou ultra relativiste ($v = c$), alors $P = \rho/3$. Enfin pour l'énergie du vide, $P = -\rho$. </p></text>
         <linkwords>
