@@ -83,7 +83,22 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         
             <p>La transformation de Lorentz laisse invariante la pseudo-norme d'un quadrivecteur. C'est par exemple le cas de $dx_\mu dx^\mu = ds^2 = c^2 dt^2 - dx^2 - dy^2 - dz^2$, l'intervalle infinitésimal d'espace temps. On peut construire d'autres invariants comme le produit scalaire de deux 4-vecteur $A_\mu B^\mu = A^t B^t - A^x B^x - A^y B^y - A^z B^z$.</p>
         
-        On peut déduire de cette transformation la loi de composition relativiste des vitesses. TODO FAIRE LE CALCUL
+            <p>La loi de transformation relativiste des vitesses se déduit directement de cette transformation. On suppose, sans perdre de généralité, la même définition des référentiels $\mathcal{R}$ et $\mathcal{R}'$ que celle précédemment donnée; on suppose de plus qu'un corps se déplace à la vitesse $\vec{u} = (u_x,u_y,u_z)$ dans $\mathcal{R}$ et on cherche sa vitesse $\vec{u}'$ dans $\mathcal{R}'$. On remarque que $u_i = dx_i/dt$ et $u_i' = dx_i'/dt'$. De là :
+                \begin{equation}\left\{\begin{matrix}
+                \dfrac{dx'}{dt'} &amp;  = &amp; \dfrac{c\gamma (dx-\beta c dt)}{\gamma(c dt-\beta dx)} = \dfrac{c(u_x dt-\beta c dt)}{(c dt-\beta u_x dt)}\\ 
+                \dfrac{dy'}{dt'} &amp;  = &amp; \dfrac{c dy}{(c dt-\beta dx)} = \dfrac{c u_y dt}{(c dt-\beta u_x dt)}\\ 
+                \dfrac{dz'}{dt'} &amp;  = &amp; \dfrac{c dz}{(c dt-\beta dx)} = \dfrac{c u_z dt}{(c dt-\beta u_x dt)}\\ 
+                \end{matrix}\right.\end{equation}
+            
+            Ce qui donne :
+            
+            \begin{equation}\left\{\begin{matrix}
+            u_x' &amp;  = &amp; \dfrac{u_x-v}{1-v u_x/c^2}\\ 
+            u_y' &amp;  = &amp; \dfrac{u_y}{\gamma (1-v u_x/ c^2 )}\\ 
+            u_z' &amp;  = &amp; \dfrac{u_z}{\gamma (1-v u_x/ c^2 )}\\ 
+            \end{matrix}\right.\end{equation}
+            
+            </p>
         </text>
         
         <linkwords>
