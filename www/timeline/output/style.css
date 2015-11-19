@@ -12,7 +12,7 @@ div#content
     padding: 10px;
     float: left;
     width: 55%;
-    line-height: 1.2em;
+    line-height: 1.4em;
 }
 
 div#ressource
@@ -22,7 +22,7 @@ div#ressource
     width: 32%;
     float: left;
     display: none;
-    line-height: 1.2em;
+    line-height: 1.4em;
 
     /*background-color: #444;
     color: white;*/
