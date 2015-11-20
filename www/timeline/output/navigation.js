@@ -1,3 +1,6 @@
+var current_content = null;
+var current_ressource = null;
+
 $(document).ready(function() {
   $("#timeline ul a").click(function() {
       show_content($(this).data('cid'));
@@ -23,6 +26,18 @@ function update()
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
+function update_hash()
+{
+    if(current_content!=null)
+    {
+        if(current_ressource!=null)
+        {
+            window.location.hash = '#content/' + current_content + '/ressource/' + current_ressource;
+        }
+        window.location.hash = '#content/' + current_content;
+    }
+}
+
 function show_timeline()
 {
   hide_content();
@@ -44,6 +59,8 @@ function show_content(id)
     type: 'GET',
     cache: false, // disable when ready
     success: function(data) {
+      current_content = id;
+      update_hash();
       hide_timeline();
       data_object = $($.parseHTML(data)); 
       $('#content #timeline').html(data_object.find('#horizontal_timeline').html());
@@ -62,6 +79,8 @@ function show_content(id)
 
 function hide_content(id)
 {
+  current_content = null;
+  update_hash();
   $("#content").hide();
 }
 
@@ -73,6 +92,8 @@ function show_ressource(id)
     type: 'GET',
     cache: false, // disable when ready
     success: function(data) {
+      current_ressource = id;
+      update_hash();
       data_object = $($.parseHTML(data)); 
       $('#ressource .title').text(data_object.find('#title').text());
       $('#ressource .text').html(data_object.find('#text').html());
@@ -88,5 +109,7 @@ function show_ressource(id)
 
 function hide_ressource(id)
 {
+  current_ressource = null;
+  update_hash();
   $("#ressource").hide();
 }
