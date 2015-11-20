@@ -22,7 +22,7 @@ chdir('images/');
 foreach($plots as $plot)
 {
     $plot = preg_replace('/\\.(gnuplot)/', '', basename($plot));
-    file_put_contents("tmp", "set term svg enhanced; set out '$plot.svg'; \n" . file_get_contents("../plots/$plot.gnuplot"));
+    file_put_contents("tmp", "set term svg enhanced dashed; set out '$plot.svg'; \n" . file_get_contents("../plots/$plot.gnuplot"));
     exec('gnuplot tmp');
 }
 if(is_file('tmp')) unlink('tmp');
