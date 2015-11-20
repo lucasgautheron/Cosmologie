@@ -32,9 +32,9 @@ function update_hash()
     {
         if(current_ressource!=null)
         {
-            window.location.hash = '#content/' + current_content + '/ressource/' + current_ressource;
+            window.location.hash = '#/content/' + current_content + '/ressource/' + current_ressource;
         }
-        window.location.hash = '#content/' + current_content;
+        else window.location.hash = '#/content/' + current_content;
     }
 }
 
