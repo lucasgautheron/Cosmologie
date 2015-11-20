@@ -1,3 +1,4 @@
+history = new Array();
 
 $(document).ready(function() {
   $("#timeline ul a").click(function() {
@@ -40,6 +41,7 @@ function hide_timeline()
 
 function show_content(id)
 {
+  history.push(new Array("content", id));
   $.ajax({
     url: 'contents/content_' + id + '.html',
     type: 'GET',
@@ -68,6 +70,7 @@ function hide_content(id)
 
 function show_ressource(id)
 {
+  history.push(new Array("ressource", id));
   hide_timeline();
   $.ajax({
     url: 'ressources/ressource_' + id + '.html',
