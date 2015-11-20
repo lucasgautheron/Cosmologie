@@ -16,6 +16,7 @@ $(document).ready(function() {
   });
 
   load_hash();
+  window.onhashchange = load_hash;
 });
 
 function update()
@@ -43,11 +44,12 @@ function update_hash()
 function load_hash()
 {
     var matches = window.location.hash.match(/\/content\/(\d+)(\/ressource\/(\d+))?/);
+    var change = current_content != matches[1] || current_ressource != matches[3];
     current_content = matches[1];
     current_ressource = matches[3];
-    if(current_content != null)
+    if(change)
     {
-        show_content(current_content);
+        if(current_content != null) show_content(current_content);
         if(current_ressource != null) show_ressource(current_ressource);
     }
 }
