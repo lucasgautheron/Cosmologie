@@ -107,7 +107,7 @@ function browse_history(type, direction)
     index = index_history > 0 && index_history < modules_history.length ? index_history : modules_history.length;
     if(type!="content" && type!="ressource") next_index = min(max(index+direction, 0), modules_history.length);
     next_index = index;
-    for(int i = index+direction; i >= 0 && i < modules_history.length; i+=direction)
+    for(i = index+direction; i >= 0 && i < modules_history.length; i+=direction)
     {
         if((type!="content" && type!="ressource") || modules_history[i][0] == type)
         {
