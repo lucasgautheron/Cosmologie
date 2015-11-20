@@ -15,14 +15,15 @@ $start_time = microtime(true);
 exec('saxonb-xslt -s:data/cache -xsl:layout.xsl -o:output/index.html -ext:on');
 echo "HTML generation done (" . round(microtime(true) - $start_time, 4) . " s)\n";
 
+// gnuplot
 $start_time = microtime(true);
 $plots = glob("plots/*.gnuplot");
 chdir('images/');
 foreach($plots as $plot)
 {
     $plot = preg_replace('/\\.(gnuplot)/', '', basename($plot));
-    file_put_contents("tmp", "set term svg; set out '$plot.svg'; \n" . file_get_contents("../plots/$plot.gnuplot"));
+    file_put_contents("tmp", "set term svg enhanced; set out '$plot.svg'; \n" . file_get_contents("../plots/$plot.gnuplot"));
     exec('gnuplot tmp');
 }
 if(is_file('tmp')) unlink('tmp');
-echo "plots generation done (" . round(microtime(true) - $start_time, 4) . " s)\n";
+echo "plot generation done (" . round(microtime(true) - $start_time, 4) . " s)\n";
