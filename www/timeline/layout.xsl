@@ -32,7 +32,7 @@
     <xsl:apply-templates />
   </xsl:template>
   
-  <xsl:template match="b">
+ <!-- <xsl:template match="b">
     <span style="font-weight:bold;">
       <xsl:apply-templates />
     </span>  
@@ -48,7 +48,7 @@
     <p>
       <xsl:apply-templates />
     </p>  
-  </xsl:template>
+  </xsl:template>-->
   
   <xsl:template match="figure">
     <div class="figure"><img src="{./@src}" title="{.}" /> <span class="caption"><xsl:value-of select="." /></span></div>

@@ -6,27 +6,36 @@ body
     font-family: inherit;
 }
 
-div#content
+div#content div#ressource
 {
+    line-height: 1.4em;
     margin: 5px;
     padding: 10px;
+}
+
+div#content
+{
     float: left;
     width: 55%;
-    line-height: 1.4em;
 }
 
 div#ressource
 {
-    margin: 5px;
-    padding: 10px;
-    width: 32%;
     float: left;
+    width: 32%;
     display: none;
-    line-height: 1.4em;
-
     /*background-color: #444;
     color: white;*/
 }
+
+div.figure
+{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+span.caption { font-family: inherit; line-height: 1.1em; }
 
 div.text
 {
