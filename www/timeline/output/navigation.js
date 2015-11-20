@@ -14,6 +14,8 @@ $(document).ready(function() {
       show_timeline();
       return false;
   });
+
+  load_hash();
 });
 
 function update()
