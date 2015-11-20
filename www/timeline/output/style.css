@@ -6,7 +6,7 @@ body
     font-family: inherit;
 }
 
-div#content div#ressource
+div#content, div#ressource
 {
     line-height: 1.4em;
     margin: 5px;
