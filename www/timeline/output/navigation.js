@@ -1,4 +1,5 @@
-var modules_history = new Array(1);
+var modules_history = new Array();
+var index_history = -1;
 
 $(document).ready(function() {
   $("#timeline ul a").click(function() {
@@ -25,6 +26,12 @@ function update()
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
+function update_history(type, id)
+{
+    modules_history.push(new Array(type, id));
+    index_history = -1;
+}
+
 function show_timeline()
 {
   hide_content();
@@ -41,12 +48,12 @@ function hide_timeline()
 
 function show_content(id)
 {
-  modules_history.push(new Array("content", id));
   $.ajax({
     url: 'contents/content_' + id + '.html',
     type: 'GET',
     cache: false, // disable when ready
     success: function(data) {
+      update_history("content", id);
       hide_timeline();
       data_object = $($.parseHTML(data)); 
       $('#content #timeline').html(data_object.find('#horizontal_timeline').html());
@@ -70,13 +77,13 @@ function hide_content(id)
 
 function show_ressource(id)
 {
-  modules_history.push(new Array("ressource", id));
   hide_timeline();
   $.ajax({
     url: 'ressources/ressource_' + id + '.html',
     type: 'GET',
     cache: false, // disable when ready
     success: function(data) {
+      update_history("ressource", id);
       data_object = $($.parseHTML(data)); 
       $('#ressource .title').text(data_object.find('#title').text());
       $('#ressource .text').html(data_object.find('#text').html());
@@ -93,4 +100,22 @@ function show_ressource(id)
 function hide_ressource(id)
 {
   $("#ressource").hide();
+}
+
+function browse_history(type, direction)
+{
+    index = index_history > 0 && index_history < modules_history.length ? index_history : modules_history.length;
+    if(type!="content" && type!="ressource") next_index = min(max(index+direction, 0), modules_history.length);
+    next_index = index;
+    for(int i = index+direction; i >= 0 && i < modules_history.length; i+=direction)
+    {
+        if((type!="content" && type!="ressource") || modules_history[i][0] == type)
+        {
+            next_index = i;
+            break;
+        }
+    }
+    if(index == next_index) return 0;
+    if(modules_history[index][0] == "content") show_content(modules_history[index][1]);
+    else show_ressource(modules_history[index][1]);
 }
