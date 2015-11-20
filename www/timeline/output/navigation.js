@@ -1,4 +1,4 @@
-history = new Array();
+var history = new Array(1);
 
 $(document).ready(function() {
   $("#timeline ul a").click(function() {
