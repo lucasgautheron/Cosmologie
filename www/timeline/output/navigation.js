@@ -38,6 +38,12 @@ function update_hash()
     }
 }
 
+function load_hash()
+{
+    var matches = text.match(/\/content\/(\d+)(\/ressource\/s(\d+))?/);
+    alert(matches);
+}
+
 function show_timeline()
 {
   hide_content();
