@@ -50,6 +50,10 @@
     </p>  
   </xsl:template>
   
+  <xsl:template match="figure">
+    <div class="figure"><img src="{./@src}" title="{.}" /> <span class="caption"><xsl:value-of select="." /></span></div>
+  </xsl:template>
+  
 <xsl:template match="/">
   <html>
     <head>
