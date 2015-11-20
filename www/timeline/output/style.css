@@ -35,7 +35,7 @@ div.figure
     padding: 10px;
 }
 
-span.caption { font-family: inherit; line-height: 1.1em; }
+span.caption { width: 100%; padding: 5px; font-family: inherit; font-size: 80%; line-height: 1.1em; display: block; }
 
 div.text
 {
