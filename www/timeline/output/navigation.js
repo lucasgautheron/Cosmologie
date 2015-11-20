@@ -77,6 +77,7 @@ function show_ressource(id)
       data_object = $($.parseHTML(data)); 
       $('#ressource .title').text(data_object.find('#title').text());
       $('#ressource .text').html(data_object.find('#text').html());
+      $('#ressource .references').html(data_object.find('#references').html());
       $('#ressource').show();
       setTimeout(update, 100);
     },

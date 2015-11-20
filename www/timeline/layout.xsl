@@ -142,10 +142,19 @@
 </xsl:for-each>
   
 <xsl:for-each select="root/ressources/ressource">
+  <xsl:variable name="id" select="./@id"/>
   <xsl:result-document method="html" href="ressources/ressource_{./@id}.html">
     <div id="ressource">
       <h2 id="title"><xsl:value-of select="./title" /></h2>
       <div id="text"><xsl:apply-templates select="text" /></div>
+      <div id="references">
+        <ul>
+          <xsl:for-each select="/root/references/reference[@ressource-id=$id]">
+            <xsl:sort select="./date" />
+            <li><i><a href="../references/{./file}" target="_blank"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
+          </xsl:for-each>
+        </ul>
+      </div>
     </div>
   </xsl:result-document>
 </xsl:for-each>
