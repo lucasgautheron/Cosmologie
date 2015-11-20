@@ -51,7 +51,7 @@
   </xsl:template>-->
   
   <xsl:template match="figure">
-    <div class="figure"><img src="../images/{./@src}" title="{.}" /> <span class="caption"><b><xsl:value-of select="./@title" /></b> <xsl:value-of select="." /></span></div>
+    <div class="figure"><img src="../images/{./@src}" title="{.}" /> <span class="caption"><b><xsl:value-of select="./@title" /> </b> <xsl:value-of select="." /></span></div>
   </xsl:template>
   
 <xsl:template match="/">
