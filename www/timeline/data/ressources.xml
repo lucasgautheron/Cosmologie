@@ -160,7 +160,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             
             Les solutions en Univers plat sont alors :
             \begin{equation}
-            a(t) = \exp{\pm \left( \sqrt{\dfrac{8 \pi G}{3c^2} \rho_0} \right ) \left ( t-t_0 \right )}
+            a(t) = \exp{\pm \left[ \sqrt{\dfrac{8 \pi G}{3c^2} \rho_0}  \left ( t-t_0 \right ) \right ]}
             \end{equation}
             Un tel Univers peut alors s'expandre ou se contracter de façon exponentielle.</p>
         </text>
