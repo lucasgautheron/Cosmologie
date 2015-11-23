@@ -119,7 +119,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <li>La matière "froide" (aussi dite non relativiste ou poussière). C'est la matière ordinaire massive dont la vitesse est très inférieure à celle de la lumière. Pour un gaz parfait non relativiste, $P/\rho \propto v^2/c^2$ et on peut considérer $P = 0$.</li>
                 <li>Les rayonnements. C'est la lumière ou de la matière ultrarelativiste comme les neutrinos ($v\sim c$). L'équation d'état est alors $P = \rho/3$. </li>
                 <li>L'énergie du vide. Cette énergie d'équation d'état $P=-\rho$ est équivalente à l'introduction d'une constante cosmologique.</li>
-            </ul></p></text>
+            </ul></p>
         <h3>Démonstration</h3>
         <p>TODO: lien ? ou récap ?</p>
         <h3>Solutions particulières de l'équation de Friedmann</h3>
@@ -150,7 +150,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a^2} = \dfrac{kc^2}{R^2}
         \end{equation}
         
-        La solution en Univers plat est alors simple : $a^2(t) - a^2_i = \sqrt{\dfrac{8\piG}{3c^2}} (t-t_i)</p>
+        La solution en Univers plat est alors simple : $a^2(t) - a^2_i = \sqrt{\dfrac{8\piG}{3c^2}} (t-t_i)$</p>
+        </text>
         <linkwords>
             <linkword>équations de Friedmann</linkword>
         </linkwords>
