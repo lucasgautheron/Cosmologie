@@ -192,7 +192,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 R^{\mu\nu} - \dfrac{1}{2} Rg^{\mu\nu} = \dfrac{8\pi G}{c^4} \tilde{T}^{\mu\nu}
                 \end{equation}
                 Et dans ce cas le tenseur $T_{vide}^{\mu\nu}$ est le tenseur énergie impulsion d'un fluide parfait tel que $P_v = -\rho_v = -\dfrac{\Lambda c^4}{8\pi G}$</p>
-            <h2>Formes possibles d'énergie du vide :</h2>
+            <h3>Formes possibles d'énergie du vide :</h3>
             <p><b>Champ scalaire</b> : Il existe plusieurs façons d'introduire une énergie du vide. Une d'entre-elles est de faire intervenir un champ scalaire $\phi \mapsto V(\phi)$ de lagrangien $\mathcal{L} = \dfrac{1}{2} (\partial_\mu \phi ) (\partial^\mu \phi) - V(\phi)$. Dès lors le tenseur-énergie impulsion associé à ce champ a pour expression :
             \begin{equation}
             T^{\mu\nu} = \dfrac{\delta \mathcal{L}}{\delta (\partial_\mu \phi)} \partial^\nu \phi - \eta^{\mu\nu} \mathcal{L} \\ = (\partial^\mu \phi) (\partial^\nu \phi) -\dfrac{1}{2} \eta^{\mu\nu} \left ( (\partial^\alpha \phi) (\partial^\alpha \phi) - 2 V(\phi) \right )
