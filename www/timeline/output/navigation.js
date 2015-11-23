@@ -17,6 +17,14 @@ $(document).ready(function() {
 
   load_hash();
   window.onhashchange = load_hash;
+
+  if(window.history && window.history.pushState) {
+    window.history.pushState(null, null, '#');
+    $(window).on('popstate', function(event) {
+      load_hash();
+    });
+
+  }
 });
 
 function update()
@@ -39,7 +47,7 @@ function update_hash()
             url = '#/content/' + current_content + '/ressource/' + current_ressource;
         }
         else url = '#/content/' + current_content;
-        window.history.pushState("", "", url);
+        window.history.pushState({content_id: current_content, ressource_id: current_ressource}, "", url);
         //e.preventDefault();
     }
 }
