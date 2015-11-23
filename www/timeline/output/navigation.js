@@ -38,6 +38,8 @@ function update_hash()
             window.location.hash = '#/content/' + current_content + '/ressource/' + current_ressource;
         }
         else window.location.hash = '#/content/' + current_content;
+        window.history.pushState("", "", window.location.hash);
+        //e.preventDefault();
     }
 }
 
