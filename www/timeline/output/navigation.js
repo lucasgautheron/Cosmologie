@@ -21,7 +21,7 @@ $(document).ready(function() {
 
   if(window.history && window.history.pushState) {
     $(window).on('popstate', function(event) {
-      load_hash();
+      if(!!event.state) load_hash();
     });
     update_hash();
   }
@@ -68,7 +68,7 @@ function load_hash()
     current_ressource = matches[3];
     if(change)
     {
-        if(current_content == null && current_ressource == null) show_timeline();
+        if(!current_content && !current_ressource) show_timeline();
         else
         {
             if(current_content != null)
