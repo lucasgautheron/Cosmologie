@@ -61,7 +61,12 @@ function update_hash()
 
 function load_hash()
 {
-    var matches = window.location.hash.match(/\/content\/(\d+)(\/ressource\/(\d+))?/);
+    var matches = window.location.hash ? window.location.hash.match(/\/content\/(\d+)(\/ressource\/(\d+))?/) : null;
+    if(!matches)
+    {
+        show_timeline();
+        return;
+    }
     var new_content = current_content != matches[1];
     var new_ressource = current_ressource != matches[3];
     var change = new_content || new_ressource;
