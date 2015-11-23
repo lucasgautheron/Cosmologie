@@ -61,7 +61,9 @@ function load_hash()
     if(change)
     {
         if(current_content != null) show_content(current_content);
+        else hide_content();
         if(current_ressource != null) show_ressource(current_ressource);
+        else hide_ressource();
     }
 }
 
