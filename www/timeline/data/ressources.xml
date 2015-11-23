@@ -267,7 +267,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \begin{equation}
             R^{\mu\nu} - \dfrac{1}{2} Rg^{\mu\nu} - \Lambda g^{\mu\nu} = \dfrac{8\pi G}{c^4} T^{\mu\nu}
             \end{equation}</p>
-            <p>On peut interpréter la constante cosmologique comme une forme particulière d'énergie (souvent appelée "énergie du vide") vérifiant l'équation d'état $P_v = -\rho_v$. En effet, en écrivant $\tilde{T}^{\mu\nu} = T^{\mu\nu} + T_{vide}^{\mu\nu}$ où $T_{vide}^{\mu\nu} = \Lambda g^{\mu\nu}$ on a :
+            <p>On peut interpréter la constante cosmologique comme une forme particulière d'énergie (souvent appelée "énergie du vide") vérifiant l'équation d'état $P_v = -\rho_v$. En effet, en écrivant $\tilde{T}^{\mu\nu} = T^{\mu\nu} + T_{vide}^{\mu\nu}$ où $T_{vide}^{\mu\nu} = \dfrac{\Lambda c^4}{8\pi G} g^{\mu\nu}$ on a :
                 \begin{equation}
                 R^{\mu\nu} - \dfrac{1}{2} Rg^{\mu\nu} = \dfrac{8\pi G}{c^4} \tilde{T}^{\mu\nu}
                 \end{equation}
