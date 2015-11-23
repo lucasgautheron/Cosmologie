@@ -33,7 +33,7 @@ function update()
 {
     $("a.ressource").unbind("click");
     $("a.ressource").click(function() {
-      show_ressource($(this).data('rid'));
+      show_ressource($(this).data('rid'), true);
       return false;
     });
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
@@ -49,8 +49,8 @@ function build_hash()
             url = '#/content/' + current_content + '/ressource/' + current_ressource;
         }
         else url = '#/content/' + current_content;
-        return url;
     }
+    return url;
 }
 
 function update_hash()
