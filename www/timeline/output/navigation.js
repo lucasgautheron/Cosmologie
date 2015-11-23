@@ -20,11 +20,10 @@ $(document).ready(function() {
   window.onhashchange = load_hash;
 
   if(window.history && window.history.pushState) {
-    update_hash();
     $(window).on('popstate', function(event) {
       load_hash();
     });
-
+    update_hash();
   }
 });
 
@@ -55,7 +54,8 @@ function build_hash()
 function update_hash()
 {
     var url = build_hash();
-    window.history.pushState({content_id: current_content, ressource_id: current_ressource}, "", url);
+    if(window.history && window.history.pushState) window.history.pushState({content_id: current_content, ressource_id: current_ressource}, "", url);
+    else window.location.hash = url;
 }
 
 function load_hash()
