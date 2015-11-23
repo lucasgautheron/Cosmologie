@@ -33,12 +33,13 @@ function update_hash()
 {
     if(current_content!=null)
     {
+        var url = '#';
         if(current_ressource!=null)
         {
-            window.location.hash = '#/content/' + current_content + '/ressource/' + current_ressource;
+            url = '#/content/' + current_content + '/ressource/' + current_ressource;
         }
-        else window.location.hash = '#/content/' + current_content;
-        window.history.pushState("", "", window.location.hash);
+        else url = '#/content/' + current_content;
+        window.history.pushState("", "", url);
         //e.preventDefault();
     }
 }
