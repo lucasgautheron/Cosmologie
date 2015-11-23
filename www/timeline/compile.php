@@ -17,12 +17,12 @@ echo "HTML generation done (" . round(microtime(true) - $start_time, 4) . " s)\n
 
 // gnuplot
 $start_time = microtime(true);
-$plots = glob("plots/*.gnuplot");
-chdir('images/');
+chdir('plots/');
+$plots = glob("*.gnuplot");
 foreach($plots as $plot)
 {
-    $plot = preg_replace('/\\.(gnuplot)/', '', basename($plot));
-    file_put_contents("tmp", "set term svg enhanced dashed; set out '$plot.svg'; \n" . file_get_contents("../plots/$plot.gnuplot"));
+    $plot = preg_replace('/\\.(gnuplot)/', '', $plot);
+    file_put_contents("tmp", "set term svg enhanced dashed; set out '../images/$plot.svg'; \n" . file_get_contents("$plot.gnuplot"));
     exec('gnuplot tmp');
 }
 if(is_file('tmp')) unlink('tmp');
