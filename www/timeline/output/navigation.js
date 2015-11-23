@@ -23,7 +23,8 @@ $(document).ready(function() {
     $(window).on('popstate', function(event) {
       if(!!event.state) load_hash();
     });
-    update_hash();
+    var url = build_hash();
+    if(window.history && window.history.pushState) window.history.pushState({content_id: current_content, ressource_id: current_ressource, randomData: window.Math.random()}, "", url);
   }
 });
 
