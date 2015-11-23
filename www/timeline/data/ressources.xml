@@ -150,7 +150,19 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a^2} = \dfrac{kc^2}{R^2}
         \end{equation}
         
-        La solution en Univers plat est alors simple : $a^2(t) - a^2_i = \sqrt{\dfrac{9}{4}\dfrac{8\pi G}{3c^2}} (t-t_i)$</p>
+        La solution en Univers plat est alors simple : $a^2(t) - a^2_i = \sqrt{\dfrac{1}{2}\dfrac{8\pi G}{3c^2}} (t-t_i)$</p>
+            
+            <p><b>Univers d'énergie du vide :</b>
+            L'énergie du vide a pour équation d'état $P=-\rho$ ce qui après résolution de (2) donne $\rho = \mbox{ cste } = \rho_0$. Dès lors :
+            \begin{equation}
+            \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \rho_0 a^2 = \dfrac{kc^2}{R^2}
+            \end{equation}
+            
+            Les solutions en Univers plat sont alors :
+            \begin{equation}
+            a(t) = \exp{\pm \left( \sqrt{\dfrac{8 \pi G}{3c^2} \rho_0} \right ) \left ( t-t_0 \right )}
+            \end{equation}
+            Un tel Univers peut alors s'expandre ou se contracter de façon exponentielle.</p>
         </text>
         <linkwords>
             <linkword>équations de Friedmann</linkword>
