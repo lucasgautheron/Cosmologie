@@ -3,15 +3,16 @@ var current_ressource = null;
 
 $(document).ready(function() {
   $("#timeline ul a").click(function() {
-      show_content($(this).data('cid'));
+      show_content($(this).data('cid'), true);
       return false;
   });
   $("a.ressource").click(function() {
-      show_ressource($(this).data('rid'));
+      show_ressource($(this).data('rid'), true);
       return false;
   });
   $("#show_timeline").click(function() {
       show_timeline();
+      update_hash();
       return false;
   });
 
@@ -19,7 +20,8 @@ $(document).ready(function() {
   window.onhashchange = load_hash;
 
   if(window.history && window.history.pushState) {
-    window.history.pushState(null, null, '#');
+    var url = build_hash();
+    window.history.pushState(null, null, url);
     $(window).on('popstate', function(event) {
       load_hash();
     });
@@ -37,19 +39,24 @@ function update()
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
-function update_hash()
+function build_hash()
 {
+    var url = '#';
     if(current_content!=null)
     {
-        var url = '#';
         if(current_ressource!=null)
         {
             url = '#/content/' + current_content + '/ressource/' + current_ressource;
         }
         else url = '#/content/' + current_content;
-        window.history.pushState({content_id: current_content, ressource_id: current_ressource}, "", url);
-        //e.preventDefault();
+        return url;
     }
+}
+
+function update_hash()
+{
+    var url = build_hash();
+    window.history.pushState({content_id: current_content, ressource_id: current_ressource}, "", url);
 }
 
 function load_hash()
@@ -60,9 +67,9 @@ function load_hash()
     current_ressource = matches[3];
     if(change)
     {
-        if(current_content != null) show_content(current_content);
+        if(current_content != null) show_content(current_content, false);
         else hide_content();
-        if(current_ressource != null) show_ressource(current_ressource);
+        if(current_ressource != null) show_ressource(current_ressource, false);
         else hide_ressource();
     }
 }
@@ -81,7 +88,7 @@ function hide_timeline()
   $("#show_timeline").show();
 }
 
-function show_content(id)
+function show_content(id, updatehash)
 {
   $.ajax({
     url: 'contents/content_' + id + '.html',
@@ -89,7 +96,7 @@ function show_content(id)
     cache: false, // disable when ready
     success: function(data) {
       current_content = id;
-      update_hash();
+      if(updatehash) update_hash();
       hide_timeline();
       data_object = $($.parseHTML(data)); 
       $('#content #timeline').html(data_object.find('#horizontal_timeline').html());
@@ -109,11 +116,10 @@ function show_content(id)
 function hide_content(id)
 {
   current_content = null;
-  update_hash();
   $("#content").hide();
 }
 
-function show_ressource(id)
+function show_ressource(id, updatehash)
 {
   hide_timeline();
   $.ajax({
@@ -122,7 +128,7 @@ function show_ressource(id)
     cache: false, // disable when ready
     success: function(data) {
       current_ressource = id;
-      update_hash();
+      if(updatehash) update_hash();
       data_object = $($.parseHTML(data)); 
       $('#ressource .title').text(data_object.find('#title').text());
       $('#ressource .text').html(data_object.find('#text').html());
@@ -139,6 +145,5 @@ function show_ressource(id)
 function hide_ressource(id)
 {
   current_ressource = null;
-  update_hash();
   $("#ressource").hide();
 }
