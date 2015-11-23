@@ -20,8 +20,7 @@ $(document).ready(function() {
   window.onhashchange = load_hash;
 
   if(window.history && window.history.pushState) {
-    var url = build_hash();
-    window.history.pushState(null, null, url);
+    update_hash();
     $(window).on('popstate', function(event) {
       load_hash();
     });
@@ -62,15 +61,27 @@ function update_hash()
 function load_hash()
 {
     var matches = window.location.hash.match(/\/content\/(\d+)(\/ressource\/(\d+))?/);
-    var change = current_content != matches[1] || current_ressource != matches[3];
+    var new_content = current_content != matches[1];
+    var new_ressource = current_ressource != matches[3];
+    var change = new_content || new_ressource;
     current_content = matches[1];
     current_ressource = matches[3];
     if(change)
     {
-        if(current_content != null) show_content(current_content, false);
-        else hide_content();
-        if(current_ressource != null) show_ressource(current_ressource, false);
-        else hide_ressource();
+        if(current_content == null && current_ressource == null) show_timeline();
+        else
+        {
+            if(current_content != null)
+            {
+                if(new_content) show_content(current_content, false);
+            }
+            else hide_content();
+            if(current_ressource != null)
+            {
+                 if(new_ressource) show_ressource(current_ressource, false);
+            }
+            else hide_ressource();
+        }
     }
 }
 
