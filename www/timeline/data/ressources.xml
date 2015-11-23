@@ -335,7 +335,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <text><p>Une céphéide est une étoile variable périodique, c'est-à-dire dont la luminosité diminue et augmente de façon stable et périodique. Il existe plusieurs types de céphéides. Les céphéides classiques dites de Classe I sont très lumineuses (jusqu'à 100 000 fois plus que le Soleil !) ce qui les rend visible individuellement même à très grande distance. </p>
         <p>La luminosité intrinsèque (c'est-à-dire la puissance rayonnée) des céphéides présente la particularité de ne dépendre que de leur période de variation lumineuse (la relation dépendant en revanche du type de céphéide dont il s'agit). Or, le flux reçu par unité de surface à une distance $d$ d'une source lumineuse est égal à $\Phi = L/(4\pi d^2)$ où $L$ est sa luminosité. En observant une céphéide, on connait à la fois $L$ par le biais de sa période $T$ facilement observable (de l'ordre de grandeur de la journée) et d'autre part  la puissance reçue par unité de surface. Cela donne donc la distance $d = \sqrt{\dfrac{L}{4 \pi \Phi}}$. On appelle de tels objets, pour lesquel la luminosité intrinsèque est connue, des "chandelles standards". </p>
          <p>
-             <b>Découverte de la relation luminosité-période</b> :
+             <b>Découverte de la relation luminosité-période</b> : La découverte de l'existence d'une relation entre luminosité et période des céphéides et due à Henrietta Leavitt. En 1908, cette astronome de l'observatoire de l'université d'Harvard étudie des milliers d'étoiles variables pulsantes appartenant aux nuages de Magellan (deux galaxies naines environ 20 fois plus proches de la Voie Lactée qu'Andromède) et mesure leur luminosité apparente (le flux reçu de leur part sur Terre) et leur période. Elle suppose que toutes les étoiles d'un même "nuage" sont environ à la même distance de la Terre, ce qui lui permet de supposer que deux étoile ayant la même luminosité apparente (flux) sur Terre ont la même luminosité intrinsèque. 
+             <figure src="luminosity_period.jpg" title="Magnitude des céphéides en fonction de leur période (Leavitt 1912)">La courbe de gauche donne les magnitudes maximale et minimale des étoiles en fonction de leur période. La courbe de droite donne les mêmes magnitudes en fonction du logarithme de la période.</figure>
          </p>
         <p>
             <b>Explication théorique par Eddington</b> :
@@ -370,6 +371,34 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <p><b>Principe d'équivalence fort</b>: </p>
             <p><b>Du principe d'équivalence au formalisme tensoriel :</b>
             </p>
+        </text>
+        <linkwords>
+            <linkword>principe d'équivalence</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="602">
+        <title>Magnitude</title>
+        <text><p>La <b>magnitude apparente</b> $m$ d'un objet céleste est une quantité mesurant le rapport entre le flux lumineux qu'un appareil reçoit de cet objet et un flux lumineux de référence (la définition actuelle est le flux émis par l'étoile Vega reçu sur Terre).
+            Plus exactement :
+            \begin{equation}
+            m = -2.5 \log {\dfrac{F_{objet}}{F_{reference}}}
+            \end{equation}
+            Souvent le flux est mesuré dans un intervalle restreint de longueurs d'ondes (appelé "bande") et il faut alors adapter la définition. 
+        </p>
+            <p>La <b>magnitude absolue</b> $M$ d'un objet céleste la magnitude apparente qu'on mesurerait si elle se trouvait à une distance de 10 parsecs.
+                Puisque cette quantité ne dépend pas de la distance entre cet objet et l'observateur, elle donne une mesure de sa luminosité intrinsèque (la puissance lumineuse qu'elle émet).</p>
+           <p> On peut établir une relation simple entre $m$ et $M$. Par définition on a :
+           \begin{equation}
+           M = -2.5 \log {\dfrac{F_{objet,10pc}}{F_{reference}}} = -2.5 \left ( \log {\dfrac{F_{objet}}{F_{objet,10pc}}} + \log {\dfrac{F_{objet}}{F_{reference}}}\right )
+           \end{equation}
+           
+           Or la luminosité est inversement proportionnelle au carré de la distance $d$ et donc :
+           \begin{equation}
+           M = -2.5 \left ( 2\log {\dfrac{10\mbox{ pc}}{d}} \right ) + m = m - 5 \log{\dfrac{10 \mbox{ pc}}{d}}
+           \end{equation}
+            
+           </p>
         </text>
         <linkwords>
             <linkword>principe d'équivalence</linkword>
