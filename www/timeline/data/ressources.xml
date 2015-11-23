@@ -110,9 +110,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <ressource id="104">
         <title>Équations de Friedmann</title>
         <text><p>Les équations de Friedmann sont les équations qui décrivent un Univers homogène isotrope obéissant aux équations d'Einstein. Pour un univers de facteur d'échelle $a$, de rayon de courbure $R$ et constitué de différentes formes d'énergie de densités $\rho_i$, de pression $P_i$ et d'équation d'état $f_i(\rho_i,P_i) = 0$ :\begin{equation}\left\{\begin{matrix}
-            \dot{a}^2-\dfrac{8 \pi G}{3c^2} \displaystyle \sum_i \rho_i a^2 &amp; = &amp; \dfrac{kc^2}{R^2} \mbox{ (1)}\\ 
-            \dfrac{d}{dt}\left ( \rho_i a^3 \right ) &amp; = &amp; -P_i \dfrac{d}{dt} \left (a^3 \right) \mbox{ (2)}\\ 
-            f_i(\rho_i,P_i) &amp; = &amp;0 \mbox{ (3)}\\ 
+            \dot{a}^2-\dfrac{8 \pi G}{3c^2} \displaystyle \sum_i \rho_i a^2 &amp; = &amp; \dfrac{kc^2}{R^2}  &amp; \mbox{ (1)}\\ 
+            \dfrac{d}{dt}\left ( \rho_i a^3 \right ) &amp; = &amp; -P_i \dfrac{d}{dt} \left (a^3 \right) &amp;  \mbox{ (2)}\\ 
+            f_i(\rho_i,P_i) &amp; = &amp;0  &amp; \mbox{ (3)}\\ 
             \end{matrix}\right.\end{equation}
         La première équation décrit la dynamique de l'Univers en fonction de son contenu. La seconde équation traduit le premier principe de la thermodynamique. La troisième équation indique simplement la relation entre densité et pression imposée par l'équation d'état de la $i$-ème forme d'énergie. On distingue aujourd'hui trois formes d'énergie caractéristiques d'équations d'état particulières :
             <ul>
@@ -139,7 +139,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         
         Il y a alors 3 solutions possibles :
         <ul>
-            <li>Pour un Univers plat ($k/R^2 = 0$), la solution est alors $a^{3/2}(t) - a_i^{3/2} = \sqrt{\dfrac{8\piG}{3c^2}} (t-t_i)$
+            <li>Pour un Univers plat ($k/R^2 = 0$), la solution est alors $a^{3/2}(t) - a_i^{3/2} = \sqrt{\dfrac{8\pi G}{3c^2}} (t-t_i)$
                 Si on choisit $a_i = t_i = 0$ alors on constate que cet univers "nait" à $t=0$ et ne cesse de s'expandre depuis. </li>
             <li>Pour un Univers hyperbolique ($k/R^2 &lt; 0$), la solution est alors TODO: http://forums.futura-sciences.com/physique/667953-lnfluence-de-lune-un-objet-situe-terre-2.html#post5023488 !</li>
         </ul>
@@ -150,7 +150,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a^2} = \dfrac{kc^2}{R^2}
         \end{equation}
         
-        La solution en Univers plat est alors simple : $a^2(t) - a^2_i = \sqrt{\dfrac{8\piG}{3c^2}} (t-t_i)$</p>
+        La solution en Univers plat est alors simple : $a^2(t) - a^2_i = \sqrt{\dfrac{8\pi G}{3c^2}} (t-t_i)$</p>
         </text>
         <linkwords>
             <linkword>équations de Friedmann</linkword>
