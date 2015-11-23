@@ -129,19 +129,20 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         \begin{equation}
         \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a} = \dfrac{kc^2}{R^2}
         \end{equation}
-        Cette équation ressemble beaucoup à l'équation du mouvement d'une particule-test dans le champ gravitationnel d'une masse $M$ :
+        Cette équation ressemble beaucoup à l'équation du mouvement d'une particule-test dans le champ gravitationnel d'une masse $M$ (problème à deux corps) :
         
         \begin{equation}
-        \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a} = \dfrac{kc^2}{R^2}
+        \dfrac{1}{2}\dot{x}^2 - \dfrac{GM}{x} = E
         \end{equation}
         
         Cela est naturel puisque la matière froide interagit uniquement de façon gravitationnelle et non relativiste ce qui correspond au champ d'application de la mécanique newtonienne.
         
-        Il y a alors 3 solutions possibles :
+        Il y a alors 3 solutions possibles selon le signe de $k/R^2$, de même qu'il existe trois solutions possibles au problème à deux corps (trajetoire hyperbolique, parabolique ou elliptique).
         <ul>
             <li>Pour un Univers plat ($k/R^2 = 0$), la solution est alors $a^{3/2}(t) - a_i^{3/2} = \sqrt{\dfrac{9}{4}\dfrac{8\pi G}{3c^2}} (t-t_i)$
                 Si on choisit $a_i = t_i = 0$ alors on constate que cet univers "nait" à $t=0$ et ne cesse de s'expandre depuis. </li>
-            <li>Pour un Univers hyperbolique ($k/R^2 &lt; 0$), la solution est alors TODO: http://forums.futura-sciences.com/physique/667953-lnfluence-de-lune-un-objet-situe-terre-2.html#post5023488 !</li>
+            <li>Pour un Univers hyperbolique ($k/R^2 &lt; 0$), la solution est alors TODO: http://forums.futura-sciences.com/physique/667953-lnfluence-de-lune-un-objet-situe-terre-2.html#post5023488 !
+            Faire equivalance : distance à vitesse nulle $x_0 \to a_0 = \dfrac{8\pi GR^2}{3c^4}$, $GM \to \dfrac{4\piG}{3c^2}$, période $\dfrac{T^2}{a_0^3} = \dfrac{\pi^2}{2GM}$ et $T^2 = \dfrac{1}{2} \left ( \dfrac{32\pi^2 GR^2\rho_0}{3c^4}\right )^2</li>
         </ul>
         </p>
         <p><b>Univers de lumière</b> : Un univers dominé par les radiations obéit à l'équation d'état $P = \rho/3$. L'équation (2) donne alors $\rho a^4 = \mbox{ cste } = \rho_0$.
