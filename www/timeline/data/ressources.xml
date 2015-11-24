@@ -161,7 +161,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <li>Tant que $a^2 &gt; -\dfrac{8 \pi G \rho_0 R^2}{3kc^4}$ : 
                    
                     \begin{equation}
-                    \dfrac{R}{c\sqrt{|k|}} \left [ \sqrt{a^2+\dfrac{8 \pi G \rho_0 R^2}{3kc^4}} \\ - \sqrt{a_i^2 + dfrac{8 \pi G \rho_0 R^2}{3kc^4}} \right ]  = t-t_i
+                    \dfrac{R}{c\sqrt{|k|}} \left [ \sqrt{a^2+\dfrac{8 \pi G \rho_0 R^2}{3kc^4}} \\ - \sqrt{a_i^2 + \dfrac{8 \pi G \rho_0 R^2}{3kc^4}} \right ]  = t-t_i
                 \end{equation}
                 
                 Preuve : \begin{equation}
@@ -205,15 +205,15 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 En utilisant par ailleurs les égalités $\sinh(x+y) = \sinh(x)\cosh(y) + \sinh(y) \cosh(x)$ et $\cosh^2 x- \sinh^2 x = 1$ :
                 \begin{equation}
-                \dfrac{\beta}{\alpha}a(t) = \sinh{\pm\sqrt{\beta}(t-t_0)} \sqrt{1+\dfrac{\beta^2}{\alpha^2}} + \cosh{\pm\sqrt{\beta}(t-t_0)} \dfrac{\beta}{\alpha}
+                \dfrac{\beta}{\alpha}a(t) = \sqrt{1+\dfrac{\beta^2}{\alpha^2}}\sinh{\pm\sqrt{\beta}(t-t_0)}  + \cosh{\pm\sqrt{\beta}(t-t_0)} \dfrac{\beta}{\alpha}
                 \end{equation}
                 
                 Donc finalement : \begin{equation}
-                a(t) = \sinh{\pm\sqrt{\beta}(t-t_0)} \sqrt{1+\dfrac{\alpha^2}{\beta^2}} + \cosh{\sqrt{\beta}(t-t_0)}
+                a(t) = \sqrt{1+\dfrac{\alpha^2}{\beta^2}}\sinh{\pm\sqrt{\beta}(t-t_0)} + \cosh{\sqrt{\beta}(t-t_0)}
                 \end{equation}</spoiler></li>
                 <li>$k&gt;0$
                 \begin{equation}
-                \sqrt{x^2+x-1} = \sqrt{\dfrac{\beta}{-\alpha} + \sqrt{\dfrac{\beta}{-\alpha}} - 1} \exp \pm \left [  \sqrt{\beta} (t-t_0) \right ]
+                \sqrt{x^2+x-1} = \sqrt{\dfrac{\beta}{\alpha} + \sqrt{\dfrac{\beta}{\alpha}} - 1} \exp \pm \left [  \sqrt{\beta} (t-t_0) \right ]
                 \end{equation}</li>
             
             </ul></p>
