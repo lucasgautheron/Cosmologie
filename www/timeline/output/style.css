@@ -47,7 +47,7 @@ div.spoiler
     width:100%;
     border: 1px solid black;
     padding: 5px;
-    margin: 5px;
+    margin: 0;
 }
 
 div.spoiler div
