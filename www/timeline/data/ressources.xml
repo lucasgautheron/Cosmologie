@@ -182,7 +182,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     \end{equation}
                     Un tel Univers peut alors s'expandre ou se contracter de façon exponentielle.</li>
                 <li>$k>0$ : \begin{equation}
-                    a(t) = \sqrt{1+\left ( \dfrac{8 \pi G \rho_0 R^2}{3kc^4}\right )^2}  \sh{\left ( \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}}(t-t_0) \right )} + \ch{\left ( \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}(t-t_0) \right )}
+                    a(t) = \sqrt{1+\left ( \dfrac{8 \pi G \rho_0 R^2}{3kc^4}\right )^2}  \sinh{\left ( \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}(t-t_0) \right )} + \ch{\left ( \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}(t-t_0) \right )}
                 \end{equation}
                 
                 Preuve 
@@ -191,21 +191,21 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \end{equation}
                 
                 De là \begin{equation}
-                \dfrac{1}{\sqrt{\beta}} \argsh{\dfrac{\beta}{\alpha}a(t)} - \dfrac{1}{\sqrt{\beta}} \argsh{\dfrac{\beta}{\alpha}} = t-t_0
+                \dfrac{1}{\sqrt{\beta}} \sinh^{-1}{\dfrac{\beta}{\alpha}a(t)} - \dfrac{1}{\sqrt{\beta}} \sinh^{-1}{\dfrac{\beta}{\alpha}} = t-t_0
                 \end{equation}
                 
                 Donc
                 
                 \begin{equation}
-                \argsh{\dfrac{\beta}{\alpha}a(t)} = \sqrt{\beta}}(t-t_0) + \argsh{\dfrac{\beta}{\alpha}}
+                \sinh^{-1}{\dfrac{\beta}{\alpha}a(t)} = \sqrt{\beta}}(t-t_0) + \sinh^{-1}{\dfrac{\beta}{\alpha}}
                 \end{equation}
                 
                 Donc \begin{equation}
-                \dfrac{\beta}{\alpha}a(t) = \sh{\sqrt{\beta}}(t-t_0)} \sqrt{1+\dfrac{\beta^2}{\alpha^2}} + \ch{\sqrt{\beta}}(t-t_0)} \dfrac{\beta}{\alpha}
+                \dfrac{\beta}{\alpha}a(t) = \sinh{\sqrt{\beta}}(t-t_0)} \sqrt{1+\dfrac{\beta^2}{\alpha^2}} + \ch{\sqrt{\beta}}(t-t_0)} \dfrac{\beta}{\alpha}
                 \end{equation}
                 
                 Donc \begin{equation}
-                a(t) = \sh{\sqrt{\beta}}(t-t_0)} \sqrt{1+\dfrac{\alpha^2}{\beta^2}} + \ch{\sqrt{\beta}}(t-t_0)}
+                a(t) = \sinh{\sqrt{\beta}}(t-t_0)} \sqrt{1+\dfrac{\alpha^2}{\beta^2}} + \ch{\sqrt{\beta}}(t-t_0)}
                 \end{equation}</li>
             
             </ul></p>
