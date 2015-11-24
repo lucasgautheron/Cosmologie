@@ -176,37 +176,45 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \rho_0 a^2 = \dfrac{kc^2}{R^2}
             \end{equation}
             <ul>
-                <li>Les solutions en Univers plat sont alors :
+                <li>La solution en Univers plat est alors :
                     \begin{equation}
                     a(t) = \exp{\pm \left[ \sqrt{\dfrac{8 \pi G \rho_0}{3c^2} }  \left ( t-t_0 \right ) \right ]}
                     \end{equation}
                     Un tel Univers peut alors s'expandre ou se contracter de façon exponentielle.</li>
                 <li>$k>0$ : \begin{equation}
-                    a(t) = \sqrt{1+\left ( \dfrac{8 \pi G \rho_0 R^2}{3kc^4}\right )^2}  \sinh{\left ( \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}(t-t_0) \right )} + \cosh{\left ( \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}(t-t_0) \right )}
+                    a(t) = \sqrt{1+\left ( \dfrac{8 \pi G \rho_0 R^2}{3kc^4}\right )^2}  \sinh{\pm\left ( \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}(t-t_0) \right )} + \cosh{\left ( \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}(t-t_0) \right )}
                 \end{equation}
                 
                 Preuve 
-                <spoiler>\begin{equation}
-                \dfrac{da}{\sqrt{\alpha + \beta a^2}} = \dfrac{1}{\sqrt{\beta}}\dfrac{\sqrt{\dfrac{\beta}{\alpha}}da}{\sqrt{1+\left (\sqrt{ \dfrac{\beta}{\alpha} }a \right )^2}} = dt
+                <spoiler>
+                    En écrivant l'équation de Friedmann sous la forme $\left (\dfrac{da}{dt}\right)^2 - \beta a^2 = \alpha$, avec $\alpha > 0$ (puisque $k>0$) et $\beta > 0$ (toujours vrai) on obtient :
+                    \begin{equation}
+                    \dfrac{da}{\sqrt{\alpha + \beta a^2}} = \dfrac{1}{\sqrt{\beta}}\dfrac{\sqrt{\dfrac{\beta}{\alpha}}da}{\sqrt{1+\left (\sqrt{ \dfrac{\beta}{\alpha} }a \right )^2}} = \pm dt
                 \end{equation}
                 
-                De là \begin{equation}
-                \dfrac{1}{\sqrt{\beta}} \sinh^{-1}{\dfrac{\beta}{\alpha}a(t)} - \dfrac{1}{\sqrt{\beta}} \sinh^{-1}{\dfrac{\beta}{\alpha}} = t-t_0
+                De là par intégration entre $a(t_0) = 1$ et $a(t)$ on trouve :
+                \begin{equation}
+                \dfrac{1}{\sqrt{\beta}} \sinh^{-1}{\dfrac{\beta}{\alpha}a(t)} - \dfrac{1}{\sqrt{\beta}} \sinh^{-1}{\dfrac{\beta}{\alpha}} = \pm(t-t_0)
                 \end{equation}
                 
-                Donc
+                Donc en réarrangeant les termes :
                 
                 \begin{equation}
-                \sinh^{-1}{\dfrac{\beta}{\alpha}a(t)} = \sqrt{\beta}(t-t_0) + \sinh^{-1}{\dfrac{\beta}{\alpha}}
+                \sinh^{-1}{\dfrac{\beta}{\alpha}a(t)} = \pm\sqrt{\beta}(t-t_0) + \sinh^{-1}{\dfrac{\beta}{\alpha}}
                 \end{equation}
                 
-                Donc \begin{equation}
-                \dfrac{\beta}{\alpha}a(t) = \sinh{\sqrt{\beta}(t-t_0)} \sqrt{1+\dfrac{\beta^2}{\alpha^2}} + \cosh{\sqrt{\beta}(t-t_0)} \dfrac{\beta}{\alpha}
+                En utilisant par ailleurs les égalités $\sinh(x+y) = \sinh(x)\cosh(y) + \sinh(y) \cosh(x)$ et $\cosh^2 x- \sinh^2 x = 1$ :
+                \begin{equation}
+                \dfrac{\beta}{\alpha}a(t) = \sinh{\pm\sqrt{\beta}(t-t_0)} \sqrt{1+\dfrac{\beta^2}{\alpha^2}} + \cosh{\pm\sqrt{\beta}(t-t_0)} \dfrac{\beta}{\alpha}
                 \end{equation}
                 
-                Donc \begin{equation}
-                a(t) = \sinh{\sqrt{\beta}(t-t_0)} \sqrt{1+\dfrac{\alpha^2}{\beta^2}} + \cosh{\sqrt{\beta}(t-t_0)}
+                Donc finalement : \begin{equation}
+                a(t) = \sinh{\pm\sqrt{\beta}(t-t_0)} \sqrt{1+\dfrac{\alpha^2}{\beta^2}} + \cosh{\sqrt{\beta}(t-t_0)}
                 \end{equation}</spoiler></li>
+                <li>$k&gt;0$
+                \begin{equation}
+                \sqrt{x^2+x-1} = \sqrt{\dfrac{\beta}{-\alpha} + \sqrt{\dfrac{\beta}{-\alpha}} - 1} \exp \pm \left [  \sqrt{\beta} (t-t_0) \right ]
+                \end{equation}</li>
             
             </ul></p>
         </text>
