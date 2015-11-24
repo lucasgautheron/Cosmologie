@@ -40,7 +40,7 @@ function update()
     });
     $("div.spoiler a.spoiler_toggle").unbind();
     $("div.spoiler a.spoiler_toggle").click(function() {
-          $(this).parent().("div").toggle();
+          $(this).parent().find("div").toggle();
     });
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
