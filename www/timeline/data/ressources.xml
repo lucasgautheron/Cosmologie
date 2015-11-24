@@ -158,8 +158,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         \end{equation}
             <ul>
                 <li>La solution en Univers plat est alors simple : $a^2(t) - a^2_i = \sqrt{\dfrac{1}{2}\dfrac{8\pi G}{3c^2}} (t-t_i)$</li>
-                <li>Si $a_i = 0$ et $t_i = 0$ :\begin{equation}
-                    \dfrac{1}{4}\sqrt{\dfrac{3c^2}{8 \pi G \rho_0}} \sqrt{a^2+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}} = t
+                <li>Si $a_i = 0$ et $t_i = 0$ et tant que $a^2 &gt; -\dfrac{8 \pi G \rho_0 R^2}{3kc^4}}$ : 
+                    \begin{equation}
+                    \dfrac{1}{4} \dfrac{R}{c\sqrt{|k|}} \sqrt{a^2+\dfrac{8 \pi G \rho_0 R^2}{3kc^4}} = t
                 \end{equation}</li>
             </ul>
         </p>
