@@ -201,11 +201,24 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \end{equation}
                 Par ailleurs $a(0) = 1$ donc $\lambda = 1$.
                 D'autre part $\dot{a}^2(0) = \alpha+\beta$
-                Donc $\mu ^2 \beta = \alpha + \beta$ et $\mu = \sqrt{1+\dfrac{\alpha}{\beta}}$
+                Donc $\mu ^2 \beta = \alpha + \beta$ et $\mu = \pm \sqrt{1+\dfrac{\alpha}{\beta}}$
+                Si $\alpha &lt; 0$, 
                 Et finalement :
                 \begin{equation}
-                a(t) = \cosh(\sqrt{\beta} t) + \sqrt{1+\dfrac{\alpha}{\beta}} \sinh(\sqrt{\beta} t)
+                a(t) = \cosh(\sqrt{\beta} t) \pm \sqrt{1+\dfrac{\alpha}{\beta}} \sinh(\sqrt{\beta} t)
                 \end{equation}
+                
+                On veut mettre ceci sous la forme $a(t) = a_{min} \cosh {\sqrt{\beta}(t-t_{min})}$. On utilise pour cela la relation $\cosh (x+y) = \cosh(x) \cosh(y) + \sinh(x) \sinh(y)$. 
+                On a alors :
+                \begin{equation}
+                a_{min}  \cosh {\sqrt{\beta}t}  \cosh {\sqrt{\beta}t_{min}} + a_{min} \sinh {\sqrt{\beta}t}  \sinh {\sqrt{\beta}t_{min}} = \cosh(\sqrt{\beta} t) \pm \sqrt{1+\dfrac{\alpha}{\beta}} \sinh(\sqrt{\beta} t)
+                \end{equation}
+                De cela on tire à la fois $a_{min}\cosh {\sqrt{\beta}t_{min}} = 1$ et $\pm a_{min}\sinh{\sqrt{\beta}t_{min}} =  \sqrt{1+\dfrac{\alpha}{\beta}}$.
+                Ce qui entraine :
+                \begin{equation}\left\{\begin{matrix}
+                t_{min} &amp; = &amp; \pm \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}} \\
+                a_{min} &amp; = &amp; 1+\dfrac{\alpha}{\beta}
+                \end{matrix}\right.\end{equation}
                 </spoiler>
                 
                 </li>
