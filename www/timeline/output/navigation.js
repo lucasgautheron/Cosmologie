@@ -12,6 +12,7 @@ $(document).ready(function() {
   });
   $("div.spoiler a.spoiler_toggle").click(function() {
       $(this).parent().find("div").toggle();
+      return false;
   });
   $("#show_timeline").click(function() {
       show_timeline();
@@ -41,6 +42,7 @@ function update()
     $("div.spoiler a.spoiler_toggle").unbind();
     $("div.spoiler a.spoiler_toggle").click(function() {
           $(this).parent().find("div").toggle();
+          return false;
     });
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
