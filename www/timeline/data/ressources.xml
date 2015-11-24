@@ -158,9 +158,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         \end{equation}
             <ul>
                 <li>La solution en Univers plat est alors simple : $a^2(t) - a^2_i = \sqrt{\dfrac{1}{2}\dfrac{8\pi G}{3c^2}} (t-t_i)$</li>
-                <li>Si $a_i = 0$ et $t_i = 0$ et tant que $a^2 &gt; -\dfrac{8 \pi G \rho_0 R^2}{3kc^4}}$ : 
+                <li>Si $a_i = 0$ et $t_i = 0$ et tant que $a^2 &gt; -\dfrac{8 \pi G \rho_0 R^2}{3kc^4}$ : 
                     \begin{equation}
-                    \dfrac{1}{4} \dfrac{R}{c\sqrt{|k|}} \sqrt{a^2+\dfrac{8 \pi G \rho_0 R^2}{3kc^4}} = t
+                    \dfrac{R}{c\sqrt{|k|}} \sqrt{a^2+\dfrac{8 \pi G \rho_0 R^2}{3kc^4}} = t
                 \end{equation}</li>
             </ul>
         </p>
@@ -173,7 +173,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             
             Les solutions en Univers plat sont alors :
             \begin{equation}
-            a(t) = \exp{\pm \left[ \sqrt{\dfrac{8 \pi G}{3c^2} \rho_0}  \left ( t-t_0 \right ) \right ]}
+            a(t) = \exp{\pm \left[ \sqrt{\dfrac{8 \pi G \rho_0}{3c^2} }  \left ( t-t_0 \right ) \right ]}
             \end{equation}
             Un tel Univers peut alors s'expandre ou se contracter de façon exponentielle.</p>
         </text>
