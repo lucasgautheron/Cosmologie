@@ -142,12 +142,12 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <li>Pour un Univers plat ($k/R^2 = 0$), la solution est alors $a^{3/2}(t) - a_i^{3/2} = \sqrt{\dfrac{9}{4}\dfrac{8\pi G}{3c^2}} (t-t_i)$
                 Si on choisit $a_i = t_i = 0$ alors on constate que cet univers "nait" à $t=0$ et ne cesse de s'expandre depuis. </li>
             <li>Pour un Univers hyperbolique ($k/R^2 &lt; 0$), la solution est alors TODO: http://forums.futura-sciences.com/physique/667953-lnfluence-de-lune-un-objet-situe-terre-2.html#post5023488 !
-            Faire equivalance : distance à vitesse nulle $x_0 \to a_0 = \dfrac{8\pi GR^2}{3c^4}$, $GM \to \dfrac{4\pi G}{3c^2}$, période $\dfrac{T^2}{a_0^3} = \dfrac{\pi^2}{2GM}$ et $T^2 = \dfrac{1}{2} \left ( \dfrac{32\pi^2 GR^2\rho_0}{3c^4}\right )^2$
+            Faire equivalance : distance à vitesse nulle $x_0 \to a_0 = \dfrac{8\pi GR^2}{3c^4}$, $GM \to \dfrac{4\pi G \rho_0}{3c^2}$, période $\dfrac{T^2}{a_0^3} = \dfrac{\pi^2}{2GM}$ et $T^2 = \dfrac{1}{2} \left ( \dfrac{32\pi^2 GR^2\rho_0}{3c^4}\right )^2$
             \begin{equation}
-            \sqrt{2\dfrac{4\pi G}{3c^2}}(t-t_0) = \sqrt{a_0 a(t)(a_0 - a(t))}+\dfrac{1}{2}a_0^{3/2} \left [ \arctan{\dfrac{a_0-2 a(t)}{{2 \sqrt{ a (a_0-a(t))}}} + \frac{\pi}{2} \right ]
+            \sqrt{\dfrac{8\pi G \rho_0}{3c^2}}(t-t_0) = \sqrt{a_0 a(t)(a_0 - a(t))} \\ + \dfrac{1}{2}a_0^{3/2} \left [ \arctan{ \dfrac{a_0-2 a(t)} {2 \sqrt{ a (a_0-a(t))}}} + \frac{\pi}{2} \right ]
             \end{equation} _et_ périodique</li>
             <li>\begin{equation}
-                \sqrt{2\dfrac{4\pi G}{3c^2}}(t-t_0) = \sqrt{a_0 a(t)(a_0 + a(t))}-\dfrac{1}{2}a_0^{3/2}  \log{\left [ 2\left ( \sqrt{a(t)(a(t) + a_0)}\right ) + a_0 \right ]}
+                \sqrt{\dfrac{8\pi G \rho_0}{3c^2}}(t-t_0) = \sqrt{a_0 a(t)(a_0 + a(t))} \\ -\dfrac{1}{2}a_0^{3/2}  \log{\left [ 2\left ( \sqrt{a(t)(a(t) + a_0)}\right ) + a_0 \right ]}
                 \end{equation}</li>
         </ul>
         </p>
