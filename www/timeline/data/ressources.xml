@@ -330,7 +330,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             Plusieurs types de champ peuvent être envisagés, comme un champ d'ordre 4 de forme $V(\phi) = \dfrac{1}{2}m^2\phi^2 + \dfrac{g}{4!}\phi^4$ (qui peut être un champ de Higgs par exemple).
             Le système des équations de Friedmann peut alors être résolu en y intégrant l'équation d'euler-lagrange associée à ce champ scalaire :
             \begin{equation}
-            \partial_\mu \partial^\mu \phi = V'(\phi)
+            \partial_\mu \partial^\mu \phi + V'(\phi) = 0
             \end{equation}
             </p>
         </text>
