@@ -71,6 +71,7 @@ div.text ul
 div.text li
 {
     margin: 0;
+    padding: 4px;
 }
 
 div.clear
