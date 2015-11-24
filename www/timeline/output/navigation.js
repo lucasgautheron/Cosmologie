@@ -11,7 +11,7 @@ $(document).ready(function() {
       return false;
   });
   $("div.spoiler a.spoiler_toggle").click(function() {
-      $(this).parent().("div").toggle();
+      $(this).parent().find("div").toggle();
   });
   $("#show_timeline").click(function() {
       show_timeline();
