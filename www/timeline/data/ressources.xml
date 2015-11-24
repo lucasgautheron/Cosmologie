@@ -121,7 +121,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <li>L'énergie du vide. Cette énergie d'équation d'état $P=-\rho$ est équivalente à l'introduction d'une constante cosmologique.</li>
             </ul></p>
         <h3>Démonstration</h3>
-        <p>TODO: lien ? ou récap ?</p>
+        <p><spoiler>...</spoiler></p>
         <h3>Solutions particulières de l'équation de Friedmann</h3>
         <p>On peut résoudre l'équation de Friedmann dans un certain nombre de configurations particulières. Par exemple on peut considérer en effet que l'Univers est dominé par une certaine forme d'énergie</p>
         <p><b>Univers de poussière</b> : 
@@ -293,7 +293,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <text><p>Le facteur d'échelle à l'instant $t$ noté $a(t)$ est le rapport entre la distance séparant deux points immobiles dans l'espace homogène isotrope à l'instant $t$ et cette distance à un instant de référence $t_0$ tel que $a(t_0)=1$. Ainsi, dans un univers en expansion, $a$ augmente.</p>
             <p>Dans une métrique homogène isotrope, le facteur d'échelle intervient dans le tenseur métrique. L'intervalle $ds^2$ est alors donné par :
             \begin{equation}
-            ds^2 = c^2 dt^2 - a^2 (t) \left ( \dfrac{dr^2}{1-k r^2/R^2} + r^2 d\Omega^2\right )
+            ds^2 = c^2 dt^2 - a^2(t) \left [ \dfrac{dr^2}{1-kr^2/R^2} + r^2 \left ( d\theta^2 + \sin^2 {\theta} d\phi^2 \right )\right ]
             \end{equation}
             Ici, $k$ peut valoir $1$ (géométrie sphérique), ou -1 (géométrie hyperbolique), et la constante R est le rayon de courbure de l'univers (c'est par conséquent la longueur typique à partir de laquelle le caractère non euclidien de l'espace devient sensible). Si $R=\infty$, l'Univers est plat (géométrie euclidienne). (TODO: virer $k$ et autoriser $R \in \mathbb{C}$ ?)</p>
         </text>
@@ -327,7 +327,11 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             w = \dfrac{P}{\rho} = \dfrac{\dfrac{1}{2}\dot{\phi}^2 - V(\phi)}{\dfrac{1}{2}\dot{\phi}^2 + V(\phi)}
             \end{equation}
             Dans le cas où le champ varie très lentement (énergie cinétique du champ nulle), alors $w=-1$ et son énergie se comporte bien comme une constante cosmologique.
-            Plusieurs types de champ peuvent être envisagés, comme un champ d'ordre 4 $V(\phi) = \dfrac{1}{2}m^2\phi^2 + \dfrac{g}{4!}\phi^4$ (qui peut être un champ de Higgs par exemple). 
+            Plusieurs types de champ peuvent être envisagés, comme un champ d'ordre 4 de forme $V(\phi) = \dfrac{1}{2}m^2\phi^2 + \dfrac{g}{4!}\phi^4$ (qui peut être un champ de Higgs par exemple).
+            Le système des équations de Friedmann peut alors être résolu en y intégrant l'équation d'euler-lagrange associée à ce champ scalaire :
+            \begin{equation}
+            \partial_\mu \partial^\mu \phi = V'(\phi)
+            \end{equation}
             </p>
         </text>
         <linkwords>
