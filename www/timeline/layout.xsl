@@ -54,6 +54,10 @@
     <div class="figure"><img src="../images/{./@src}" title="{.}" /> <span class="caption"><b><xsl:value-of select="./@title" /> </b><br /><xsl:value-of select="." /></span></div>
   </xsl:template>
   
+  <xsl:template match="spoiler">
+    <div class="spoiler"><span><a href="#" class="spoiler_toggle" >Afficher/Masquer</a></span><div><xsl:value-of select="." /></div></div>
+  </xsl:template>
+  
 <xsl:template match="/">
   <html>
     <head>

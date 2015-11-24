@@ -10,6 +10,9 @@ $(document).ready(function() {
       show_ressource($(this).data('rid'), true);
       return false;
   });
+  $("div.spoiler a.spoiler_toggle").click(function() {
+      $(this).parent().("div").toggle();
+  });
   $("#show_timeline").click(function() {
       show_timeline();
       update_hash();
@@ -34,6 +37,10 @@ function update()
     $("a.ressource").click(function() {
       show_ressource($(this).data('rid'), true);
       return false;
+    });
+    $("div.spoiler a.spoiler_toggle").unbind();
+    $("div.spoiler a.spoiler_toggle").click(function() {
+          $(this).parent().("div").toggle();
     });
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }

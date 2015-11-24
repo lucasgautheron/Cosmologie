@@ -186,7 +186,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \end{equation}
                 
                 Preuve 
-                \begin{equation}
+                <spoiler>\begin{equation}
                 \dfrac{da}{\sqrt{\alpha + \beta a^2}} = \dfrac{1}{\sqrt{\beta}}\dfrac{\sqrt{\dfrac{\beta}{\alpha}}da}{\sqrt{1+\left (\sqrt{ \dfrac{\beta}{\alpha} }a \right )^2}} = dt
                 \end{equation}
                 
@@ -206,7 +206,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 Donc \begin{equation}
                 a(t) = \sinh{\sqrt{\beta}(t-t_0)} \sqrt{1+\dfrac{\alpha^2}{\beta^2}} + \cosh{\sqrt{\beta}(t-t_0)}
-                \end{equation}</li>
+                \end{equation}</spoiler></li>
             
             </ul></p>
         </text>

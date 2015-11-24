@@ -42,6 +42,19 @@ div.figure img
     margin: 0 auto;
 }
 
+div.spoiler
+{
+    width:100%;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+div.spoiler div
+{
+    display: none;
+}
+
 span.caption { width: 100%; padding: 5px; font-family: inherit; font-size: 80%; line-height: 1.1em; display: block; }
 
 div.text
