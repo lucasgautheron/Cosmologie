@@ -184,19 +184,19 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <li>$k>0$ : 
                     
                     \begin{equation}\left\{\begin{matrix}
-                    a(t) &amp; = &amp; A\cosh \left ( t/\tau \right ) \\
-                    T &amp; = &amp; \pm \tau \tanh^{-1} \sqrt{\dfrac{1}{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}}} \\
-                    A &amp; = &amp; +\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
-                    \tau &amp; = &amp; \sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
+                    a(t) &amp; = A\cosh \left [ (t-T)/\tau \right ] \\
+                    T &amp; = \pm \tau \tanh^{-1} \sqrt{\dfrac{1}{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}}} \\
+                    A &amp; = +\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
+                    \tau &amp; = \sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
                     \end{matrix}\right.\end{equation}
                     Cet Univers atteint une densité maximale à la date $T$, soit antérieure, soit postérieure à la date actuelle. 
                 </li>
                 <li>$k&lt;0$
                     \begin{equation}\left\{\begin{matrix}
-                    a(t) &amp; = &amp; A\sinh \left ( t/\tau \right ) \\
-                    T &amp; = &amp; \pm \tau \tanh^{-1} \sqrt{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}} \\
-                    A &amp; = &amp; -\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
-                    \tau &amp; = &amp; \sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
+                    a(t) &amp; = A\sinh \left [ (t-T)/\tau \right ] \\
+                    T &amp; = \pm \tau \tanh^{-1} \sqrt{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}} \\
+                    A &amp; = -\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
+                    \tau &amp; = \sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
                     \end{matrix}\right.\end{equation}
                     Cet Univers atteint une densité infinie à la date $T$, soit antérieure, soit postérieure à la date actuelle.
                 </li>
