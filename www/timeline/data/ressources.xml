@@ -156,8 +156,13 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         \begin{equation}
         \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a^2} = \dfrac{kc^2}{R^2}
         \end{equation}
-        
-        La solution en Univers plat est alors simple : $a^2(t) - a^2_i = \sqrt{\dfrac{1}{2}\dfrac{8\pi G}{3c^2}} (t-t_i)$</p>
+            <ul>
+                <li>La solution en Univers plat est alors simple : $a^2(t) - a^2_i = \sqrt{\dfrac{1}{2}\dfrac{8\pi G}{3c^2}} (t-t_i)$</li>
+                <li>Si $a_i = 0$ et $t_i = 0$ :\begin{equation}
+                    \dfrac{1}{4}\sqrt{\dfrac{3c^2}{8 \pi G \rho_0}} \sqrt{a^2+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}} = t
+                \end{equation}</li>
+            </ul>
+        </p>
             
             <p><b>Univers d'énergie du vide :</b>
             L'énergie du vide a pour équation d'état $P=-\rho$ ce qui après résolution de (2) donne $\rho = \mbox{ cste } = \rho_0$. Dès lors :
