@@ -63,6 +63,16 @@ div.text
     text-align: justify;
 }
 
+div.text ul
+{
+    margin: 0;
+}
+
+div.text li
+{
+    margin: 0;
+}
+
 div.clear
 {
     clear: both;
