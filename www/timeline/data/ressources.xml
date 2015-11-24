@@ -161,7 +161,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <li>Tant que $a^2 &gt; -\dfrac{8 \pi G \rho_0 R^2}{3kc^4}$ : 
                    
                     \begin{equation}
-                    \dfrac{R}{c\sqrt{|k|}} \left [ \sqrt{a^2+\dfrac{8 \pi G \rho_0 R^2}{3kc^4}} \\ - \sqrt{a_i^2 + \dfrac{8 \pi G \rho_0 R^2}{3kc^4}} \right ]  = t-t_i
+                    \dfrac{R}{c\sqrt{|k|}} \left [ \sqrt{a^2+\dfrac{8 \pi G \rho_0 R^2}{3kc^4}} - \sqrt{a_i^2 + \dfrac{8 \pi G \rho_0 R^2}{3kc^4}} \right ]  \\ = t-t_i
                 \end{equation}
                 
                 Preuve : \begin{equation}
@@ -182,7 +182,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     \end{equation}
                     Un tel Univers peut alors s'expandre ou se contracter de façon exponentielle.</li>
                 <li>$k>0$ : \begin{equation}
-                    a(t) = \sqrt{1+\left ( \dfrac{8 \pi G \rho_0 R^2}{3kc^4}\right )^2}  \sinh{\pm\left ( \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}(t-t_0) \right )} + \cosh{\left ( \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}(t-t_0) \right )}
+                    a(t) = \sqrt{1+\left ( \dfrac{8 \pi G \rho_0 R^2}{3kc^4}\right )^2}  \sinh{\pm\left ( \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}(t-t_0) \right )} \\ + \cosh{\left ( \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}(t-t_0) \right )}
                 \end{equation}
                 
                 Preuve 
