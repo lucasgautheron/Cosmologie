@@ -178,12 +178,28 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <ul>
                 <li>La solution en Univers plat est alors :
                     \begin{equation}
-                    a(t) = \exp{\pm \left[ \sqrt{\dfrac{8 \pi G \rho_0}{3c^2} } t\right ]}
+                    a(t) = \exp{\pm \left( \dfrac{t}{\tau}\right )} \mbox{ et } \ \tau = \sqrt{\dfrac{8 \pi G \rho_0}{3c^2} } 
                     \end{equation}
                     Un tel Univers peut alors s'expandre ou se contracter de façon exponentielle.</li>
-                <li>$k>0$ : \begin{equation}
-                    a(t) = \sqrt{1+\left ( \dfrac{8 \pi G \rho_0 R^2}{3kc^4}\right )^2}  \sinh{\pm\left ( \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}t \right )} \\ + \cosh{\left ( \sqrt{\dfrac{8\pi G\rho_0}{3c^2}} t \right )}
-                \end{equation}
+                <li>$k>0$ : 
+                    
+                    \begin{equation}\left\{\begin{matrix}
+                    a(t) &amp; = &amp; A\cosh \left ( t/\tau \right )
+                    T &amp; = &amp; \pm \tau \tanh^{-1} \sqrt{\dfrac{1}{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}}} \\
+                    A &amp; = &amp; +\dfrac{3kc^4}{8 \pi G \rho_0 R^2}
+                    \tau &amp; = &amp; \sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
+                    \end{matrix}\right.\end{equation}
+                    Cet Univers atteint une densité maximale à la date $T$, soit antérieure, soit postérieure à la date actuelle. 
+                </li>
+                <li>$k&lt;0$
+                    \begin{equation}\left\{\begin{matrix}
+                    a(t) &amp; = &amp; A\sinh \left ( t/\tau \right )
+                    T &amp; = &amp; \pm \tau \tanh^{-1} \sqrt{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}} \\
+                    A &amp; = &amp; -\dfrac{3kc^4}{8 \pi G \rho_0 R^2}
+                    \tau &amp; = &amp; \sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
+                    \end{matrix}\right.\end{equation}
+                    Cet Univers atteint une densité infinie à la date $T$, soit antérieure, soit postérieure à la date actuelle.
+                </li>
                 
                 Preuve 
                 <spoiler>
@@ -191,41 +207,48 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     \begin{equation}
                     \dot{a}^2 - \beta a^2 = \alpha
                     \end{equation}
-                  En la dérivant il vient alors :
-                \begin{equation}
-                \ddot{a} - \beta a = 0
-                \end{equation}
-                La solution générale de cette équation a donc pour forme :
-                \begin{equation}
-                a(t) = \lambda \cosh(\sqrt{\beta} t) + \mu \sinh(\sqrt{\beta} t)
-                \end{equation}
-                Par ailleurs $a(0) = 1$ donc $\lambda = 1$.
-                D'autre part $\dot{a}^2(0) = \alpha+\beta$
-                Donc $\mu ^2 \beta = \alpha + \beta$ et $\mu = \pm \sqrt{1+\dfrac{\alpha}{\beta}}$
-                Si $\alpha &lt; 0$, 
-                Et finalement :
-                \begin{equation}
-                a(t) = \cosh(\sqrt{\beta} t) \pm \sqrt{1+\dfrac{\alpha}{\beta}} \sinh(\sqrt{\beta} t)
-                \end{equation}
-                
-                On veut mettre ceci sous la forme $a(t) = a_{min} \cosh {\sqrt{\beta}(t-t_{min})}$. On utilise pour cela la relation $\cosh (x+y) = \cosh(x) \cosh(y) + \sinh(x) \sinh(y)$. 
-                On a alors :
-                \begin{equation}
-                a_{min}  \cosh {\sqrt{\beta}t}  \cosh {\sqrt{\beta}t_{min}} + a_{min} \sinh {\sqrt{\beta}t}  \sinh {\sqrt{\beta}t_{min}} \\ = \cosh(\sqrt{\beta} t) \pm \sqrt{1+\dfrac{\alpha}{\beta}} \sinh(\sqrt{\beta} t)
-                \end{equation}
-                De cela on tire à la fois $a_{min}\cosh {\sqrt{\beta}t_{min}} = 1$ et $\pm a_{min}\sinh{\sqrt{\beta}t_{min}} =  \sqrt{1+\dfrac{\alpha}{\beta}}$.
-                Ce qui entraine :
-                \begin{equation}\left\{\begin{matrix}
-                t_{min} &amp; = &amp; \pm \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}} \\
-                a_{min} &amp; = &amp; \dfrac{\alpha}{\beta}
-                \end{matrix}\right.\end{equation}
+                    En la dérivant il vient alors :
+                    \begin{equation}
+                    \ddot{a} - \beta a = 0
+                    \end{equation}
+                    La solution générale de cette équation a donc pour forme :
+                    \begin{equation}
+                    a(t) = \lambda \cosh(\sqrt{\beta} t) + \mu \sinh(\sqrt{\beta} t)
+                    \end{equation}
+                    Par ailleurs $a(0) = 1$ donc $\lambda = 1$.
+                    D'autre part $\dot{a}^2(0) = \alpha+\beta$
+                    Donc $\mu ^2 \beta = \alpha + \beta$ et $\mu = \pm \sqrt{1+\dfrac{\alpha}{\beta}}$
+                    Si $\alpha &lt; 0$, 
+                    Et finalement :
+                    \begin{equation}
+                    a(t) = \cosh(\sqrt{\beta} t) \pm \sqrt{1+\dfrac{\alpha}{\beta}} \sinh(\sqrt{\beta} t)
+                    \end{equation}
+                    
+                    On veut mettre ceci sous la forme $a(t) = A \cosh {\sqrt{\beta}(t-T)}$. On utilise pour cela la relation $\cosh (x+y) = \cosh(x) \cosh(y) + \sinh(x) \sinh(y)$. 
+                    On a alors :
+                    \begin{equation}
+                    A \cosh {\sqrt{\beta}t}  \cosh {\sqrt{\beta}T} + A \sinh {\sqrt{\beta}t}  \sinh {\sqrt{\beta}T} \\ = \cosh(\sqrt{\beta} t) \pm \sqrt{1+\dfrac{\alpha}{\beta}} \sinh(\sqrt{\beta} t)
+                    \end{equation}
+                    De cela on tire à la fois $A\cosh {\sqrt{\beta}T} = 1$ et $\pm A\sinh{\sqrt{\beta}T} =  \sqrt{1+\dfrac{\alpha}{\beta}}$.
+                    Ce qui entraine :
+                    \begin{equation}\left\{\begin{matrix}
+                    T &amp; = &amp; \pm \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}} \\
+                    A &amp; = &amp; -\dfrac{\alpha}{\beta}
+                    \end{matrix}\right.\end{equation}
+                    
+                    Ceci n'est donc possible que si $\alpha &lt; 0$. Dans ce cas on a bien :
+                    \begin{equation}
+                    a(t) = -\dfrac{\alpha}{\beta} \cosh { \left [ \sqrt{\beta} t - \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}}\right ] }
+                    \end{equation}
+                    
+                    Dans le cas $\alpha &gt; 0$, on peut écrire $a(t)$ sous la forme $A \sinh {\sqrt{\beta}(t-T)}$. On invoque cette fois l'égalité $\sinh (x+y) = \sinh(x)\cosh(y) + \sinh(y)\cosh(x)$. Cette fois il apparait que :
+                    \begin{equation}\left\{\begin{matrix}
+                    T &amp; = &amp; \pm \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{\dfrac{1}{1+\dfrac{\alpha}{\beta}}} \\
+                    A &amp; = &amp; +\dfrac{\alpha}{\beta}
+                    \end{matrix}\right.\end{equation}
+                    
+                    Enfin, si $\alpha = 0$, alors $\mu = \pm 1$, donc $a(t) = \exp{\dfrac{1}{\sqrt{\beta}}t}$
                 </spoiler>
-                
-                </li>
-                <li>$k&gt;0$
-                \begin{equation}
-                \sqrt{x^2+x-1} = \sqrt{\dfrac{\beta}{\alpha} + \sqrt{\dfrac{\beta}{\alpha}} - 1} \exp \pm \left [  \sqrt{\beta} t \right ]
-                \end{equation}</li>
             
             </ul></p>
         </text>
