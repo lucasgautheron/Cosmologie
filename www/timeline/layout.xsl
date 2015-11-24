@@ -99,6 +99,12 @@
             <li><b><xsl:value-of select="./@date" /></b> : <a href="#" data-cid="{./@content-id}"><xsl:value-of select="." /></a></li>
           </xsl:for-each>
         </ul>
+        <div>Les conventions suivantes sont utilisées :
+          <ul>
+            <li>Signature métrique $(+,-,-,-)$</li>
+            <li>$c$ apparait explicitement dans les équations (les distances sont donc exprimées en mètres et les temps en secondes) sauf mention contraire</li>
+            <li>L'origine du temps cosmologique $t=0$ correspond au temps actuel (la coordonnée $t$ du big bang est donc égale à l'opposé de l'âge de l'Univers)</li>
+          </ul></div>
       </div>
       
       <div id="content">
