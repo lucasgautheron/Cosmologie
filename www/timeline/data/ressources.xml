@@ -141,7 +141,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <ul>
             <li>Pour un Univers plat ($k/R^2 = 0$), la solution est alors $a^{3/2}(t) - a_i^{3/2} = \sqrt{\dfrac{9}{4}\dfrac{8\pi G}{3c^2}} (t-t_i)$
                 Si on choisit $a_i = t_i = 0$ alors on constate que cet univers "nait" à $t=0$ et ne cesse de s'expandre depuis. </li>
-            <li>Pour un Univers hyperbolique ($k/R^2 &lt; 0$), la solution est alors TODO: http://forums.futura-sciences.com/physique/667953-lnfluence-de-lune-un-objet-situe-terre-2.html#post5023488 !
+            <li>Pour un Univers sphérique ($k/R^2 &lt; 0$), la solution est alors TODO: http://forums.futura-sciences.com/physique/667953-lnfluence-de-lune-un-objet-situe-terre-2.html#post5023488 !
             Faire equivalance : distance à vitesse nulle $x_0 \to a_0 = \dfrac{8\pi GR^2}{3c^4}$, $GM \to \dfrac{4\pi G \rho_0}{3c^2}$, période $\dfrac{T^2}{a_0^3} = \dfrac{\pi^2}{2GM}$ et $T^2 = \dfrac{1}{2} \left ( \dfrac{32\pi^2 GR^2\rho_0}{3c^4}\right )^2$
             \begin{equation}
             \sqrt{\dfrac{8\pi G \rho_0}{3c^2}}(t-t_0) = \sqrt{a_0 a(t)(a_0 - a(t))} \\ + \dfrac{1}{2}a_0^{3/2} \left [ \arctan{ \dfrac{a_0-2 a(t)} {2 \sqrt{ a (a_0-a(t))}}} + \frac{\pi}{2} \right ]
@@ -158,7 +158,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         \end{equation}
             <ul>
                 <li>La solution en Univers plat est alors simple : $a^2(t) - 1 = \sqrt{\dfrac{1}{2}\dfrac{8\pi G\rho_0}{3c^2}} t$</li>
-                <li>Pour $k \neq 0$ :
+                <li>Pour $k \neq 0$ 
                    
                     \begin{equation}
                     \dfrac{R}{c\sqrt{|k|}} \left [ \sqrt{a^2+\dfrac{8 \pi G \rho_0 R^2}{3kc^4}} - \sqrt{1 + \dfrac{8 \pi G \rho_0 R^2}{3kc^4}} \right ]  \\ = t
@@ -200,7 +200,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     a(t) = \exp{\pm \left( \dfrac{t}{\tau}\right )} \mbox{ et } \ \tau = \sqrt{\dfrac{8 \pi G \rho_0}{3c^2} } 
                     \end{equation}
                     Un tel Univers peut alors s'expandre ou se contracter de façon exponentielle.</li>
-                <li>$k>0$ : 
+                <li>$k>0$ (géométrie hyperbolique) : 
                     
                     \begin{equation}\left\{\begin{matrix}
                     a(t) = &amp;A\cosh \left [ (t-T)/\tau \right ] \\
@@ -210,7 +210,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     \end{matrix}\right.\end{equation}
                     Cet Univers atteint une densité maximale à la date $T$, soit antérieure, soit postérieure à la date actuelle. 
                 </li>
-                <li>$k&lt;0$
+                <li>$k&lt;0$ (géométrie sphérique)
                     \begin{equation}\left\{\begin{matrix}
                     a(t) = &amp;A\sinh \left [ (t-T)/\tau \right ] \\
                     T = &amp;\pm \tau \tanh^{-1} \sqrt{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}} \\
@@ -275,7 +275,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \begin{equation}
             \dot{a}^2 = \dfrac{kc^2}{R^2}
             \end{equation}
-            Un tel Univers ne peut être de géométrie hyperbolique !
+            Un tel Univers ne peut être de géométrie sphérique !
             La solution est alors ($k \geq 0$) :
             \begin{equation}
             a(t) = \pm \dfrac{c}{R} t + 1
@@ -364,9 +364,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <text><p>Le facteur d'échelle à l'instant $t$ noté $a(t)$ est le rapport entre la distance séparant deux points immobiles dans l'espace homogène isotrope à l'instant $t$ et cette distance à un instant de référence $t_0$ tel que $a(t_0)=1$. Ainsi, dans un univers en expansion, $a$ augmente.</p>
             <p>Dans une métrique homogène isotrope, le facteur d'échelle intervient dans le tenseur métrique. L'intervalle $ds^2$ est alors donné par :
             \begin{equation}
-            ds^2 = c^2 dt^2 - a^2(t) \left [ \dfrac{dr^2}{1-kr^2/R^2} + r^2 \left ( d\theta^2 + \sin^2 {\theta} d\phi^2 \right )\right ]
+            ds^2 = c^2 dt^2 - a^2(t) \left [ \dfrac{dr^2}{1+kr^2/R^2} + r^2 \left ( d\theta^2 + \sin^2 {\theta} d\phi^2 \right )\right ]
             \end{equation}
-            Ici, $k$ peut valoir $1$ (géométrie sphérique), ou -1 (géométrie hyperbolique), et la constante R est le rayon de courbure de l'univers (c'est par conséquent la longueur typique à partir de laquelle le caractère non euclidien de l'espace devient sensible). Si $R=\infty$, l'Univers est plat (géométrie euclidienne). (TODO: virer $k$ et autoriser $R \in \mathbb{C}$ ?)</p>
+            Ici, $k$ peut valoir $1$ (géométrie hyperbolique), ou -1 (géométrie sphérique), et la constante R est le rayon de courbure de l'univers (c'est par conséquent la longueur typique à partir de laquelle le caractère non euclidien de l'espace devient sensible). Si $R=\infty$, l'Univers est plat (géométrie euclidienne). (TODO: virer $k$ et autoriser $R \in \mathbb{C}$ ? ou ne faire apparaitre que $K=k/R^2$ ?)</p>
         </text>
         <linkwords>
             <linkword>facteur d'échelle</linkword>
