@@ -72,6 +72,22 @@
         <file>relativity_origin.pdf</file>
     </reference>
     
+    <reference id="10" content-id="5">
+        <title>On the relation between the expansion and the mean density of the Universe</title>
+        <author>Einstein / de Sitter</author>
+        <text>Dans cet article Einstein et de Sitter proposent un modèle cosmologique en expansion minimal qu'ils mettent en relation avec le contenu de l'Univers</text>
+        <date>1932</date>
+        <file>einstein-de-sitter_1932.pdf</file>
+    </reference>
+    
+    <reference id="11" content-id="5">
+        <title>On the relation between the expansion and the mean density of the Universe</title>
+        <author>Einstein / de Sitter</author>
+        <text>Dans cet article Einstein et de Sitter proposent un modèle cosmologique en expansion minimal qu'ils mettent en relation avec le contenu de l'Univers</text>
+        <date>1932</date>
+        <file>einstein-de-sitter_1932.pdf</file>
+    </reference>
+    
     
     
 </references>
