@@ -380,7 +380,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <text><p>L'Univers d'Enstein-De Sitter est un modèle cosmologique minimal proposé au début des années 1930 par les deux physiciens ayant pour but de répondre aux observations faites à l'époque. Un tel Univers doit être en expansion, plat (pas de signe de courbure à l'époque), constitué uniquement de matière non relativiste et sans constante cosmologique.</p>
             <p>La solution est donnée par les équations de Friedmann :
             \begin{equation}
-            a^{3/2}(t) = 1+\dfrac{3}{2}\\sqrt{dfrac{8\pi G \rho_0}{3c^2}} t
+            a^{3/2}(t) = 1+\dfrac{3}{2}\sqrt{\dfrac{8\pi G \rho_0}{3c^2}} t
             \end{equation}
             
             Afin de vérifier la validité de ce modèle, Einstein et de Sitter calculent la "constante de Hubble" associée :
