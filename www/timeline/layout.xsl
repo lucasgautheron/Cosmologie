@@ -15,7 +15,7 @@
     <xsl:choose>
       <xsl:when test="$linkword[1]">
         <xsl:value-of select="substring-before($text, $linkword[2])"/>
-        <a href="#" class="ressource" data-rid="{$linkword[1]}"><xsl:value-of select="$linkword[2]"/></a>
+        <a href="ressources/ressource_{$linkword[1]}.html" class="ressource" data-rid="{$linkword[1]}"><xsl:value-of select="$linkword[2]"/></a>
         <xsl:copy-of select="doc:add-links(substring-after($text, $linkword[2]))"/>
       </xsl:when>
       <xsl:otherwise><xsl:value-of select="$text"/></xsl:otherwise>
@@ -96,7 +96,7 @@
         <ul>
           <xsl:for-each select="root/events/event[not(@hidden=1)]">
             <xsl:sort select="./@date" />
-            <li><b><xsl:value-of select="./@date" /></b> : <a href="#" data-cid="{./@content-id}"><xsl:value-of select="." /></a></li>
+            <li><b><xsl:value-of select="./@date" /></b> : <a href="contents/content_{./@content-id}.html" data-cid="{./@content-id}"><xsl:value-of select="." /></a></li>
           </xsl:for-each>
         </ul>
         <div>Les conventions suivantes sont utilisées :
