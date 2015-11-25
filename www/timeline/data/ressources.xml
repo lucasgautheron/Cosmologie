@@ -237,7 +237,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     Par ailleurs $a(0) = 1$ donc $\lambda = 1$.
                     D'autre part $\dot{a}^2(0) = \alpha+\beta$
                     Donc $\mu ^2 \beta = \alpha + \beta$ et $\mu = \pm \sqrt{1+\dfrac{\alpha}{\beta}}$
-                    Si $\alpha &lt; 0$, 
+                     
                     Et finalement :
                     \begin{equation}
                     a(t) = \cosh(\sqrt{\beta} t) \pm \sqrt{1+\dfrac{\alpha}{\beta}} \sinh(\sqrt{\beta} t)
@@ -405,6 +405,10 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \begin{equation}
             \partial_\mu \partial^\mu \phi + V'(\phi) = 0 \mbox{ donc } \ \ddot{\phi} + c^2 V'(\phi) = 0
             \end{equation}
+            </p>
+            <p><b>Création de matière</b> :
+                La particularité de la constante cosmologique est d'être équivalente à une densité d'énergie constante malgré l'expansion de l'Univers. Une explication possible suggérée par le physicien Hoyle est alors que l'énergie du vide est en fait simplement l'énergie de masse de la matière de l'Univers, et que de la matière est créée en permanence de sorte à ce que cela maintienne la densité constante avec l'expansion. Ce modèle d'Univers est appelé "théorie de l'état stationnaire" ("Steady-state universe" en anglais). 
+                <spoiler>TODO: expliquer champ C etc calculs.</spoiler>
             </p>
         </text>
         <linkwords>
