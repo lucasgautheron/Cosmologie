@@ -14,9 +14,9 @@ body
 ul { list-style-position: inside; margin: 5px; }
 ul li { padding: 3px; }
 
-h1 { margin: 15px; font-size: 180%; }
-h2 { margin: 10px; font-size: 150%; }
-h3 { margin: 5px; font-size: 120%; }
+h1 { margin: 1em 0; font-size: 180%; }
+h2 { margin: 0.7em 0; font-size: 150%; }
+h3 { margin: 0.4em 0; font-size: 120%; }
 
 p { margin-bottom: 1em; }
 
