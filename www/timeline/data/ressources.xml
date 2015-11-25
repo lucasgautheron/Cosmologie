@@ -406,7 +406,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <h3>Abandon de la constante cosmologique</h3>
             <p>Ce modèle marque le début du rejet de la constante cosmologique. Dans un Univers non statique celle-ci n'est plus utile et on peut d'après les observations de l'époque se passer d'elle a priori. <quote author="Einstein" date="1932">Historically the term containing the "cosmological constant" $\Lambda$ was introduced into the field equations in order to enable us to account theoratically for the existence of a fiinite mean density in a static universe. It now appears that in the dynamical case this end can be reached without the introduction of $\Lambda$.</quote>
             Einstein dira plus tard que son introduction était la plus grande erreur qu'il a ait commise.</p>
-            <figure src="einstein-ds_universe.svg">Facteur d'échelle dans le modèle d'Einstein - de Sitter, exprimé en fonction du temps normalisé, avec comme origine la singularité initiale.</figure>
+            <figure src="einstein-ds_universe.svg" title="Evolution du facteur d'échelle">Facteur d'échelle dans le modèle d'Einstein - de Sitter, exprimé en fonction du temps normalisé, avec comme origine la singularité initiale.</figure>
         </text>
         <linkwords>
             <linkword>espace d'Einstein-de Sitter</linkword>
