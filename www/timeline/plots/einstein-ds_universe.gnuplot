@@ -1,5 +1,5 @@
 f(x) = ((3.0/2.0) * x)**(2.0/3.0)
-set xrange [0.001:1]
+set xrange [0:1]
 set yrange [0:1.3]
 set xlabel 'H_0 t'
 set ylabel 'a(t)'
