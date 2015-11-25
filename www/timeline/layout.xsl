@@ -59,7 +59,7 @@
   </xsl:template>
   
   <xsl:template match="quote">
-    <div class="quote"><xsl:value-of select="." /></div>
+    <div class="quote"><div><xsl:value-of select="." /></div><span><xsl:value-of select="./@author" />, <xsl:value-of select="./@date" /></span></div>
   </xsl:template>
   
 <xsl:template match="/">

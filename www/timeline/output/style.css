@@ -12,7 +12,7 @@ body
 }
 
 ul { list-style-position: inside; margin: 5px; }
-ul li { padding: 5px; }
+ul li { padding: 3px; }
 
 h1 { margin: 15px; font-size: 180%; }
 h2 { margin: 10px; font-size: 150%; }
@@ -70,9 +70,21 @@ span.caption { width: 100%; padding: 5px; font-family: inherit; font-size: 80%; 
 
 div.quote
 {
-    padding: 10px 10px 10px 20px;
-    font-style: italic;
+    margin: 10px 10px 10px 20px;
+    padding: 10px;
     border-left: 2px solid gray;
+}
+
+div.quote div
+{
+    font-style: italic;
+}
+
+div.quote span
+{
+    display: inline-block;
+    text-align: right;
+    width: 100%;
 }
 
 div.text
