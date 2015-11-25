@@ -32,7 +32,7 @@
     <xsl:apply-templates />
   </xsl:template>
   
- <!-- <xsl:template match="b">
+ <xsl:template match="b">
     <span style="font-weight:bold;">
       <xsl:apply-templates />
     </span>  
@@ -48,7 +48,7 @@
     <p>
       <xsl:apply-templates />
     </p>  
-  </xsl:template>-->
+  </xsl:template>
   
   <xsl:template match="figure">
     <div class="figure"><img src="../images/{./@src}" title="{.}" /> <span class="caption"><b><xsl:value-of select="./@title" /> </b><br /><xsl:value-of select="." /></span></div>
@@ -59,7 +59,7 @@
   </xsl:template>
   
   <xsl:template match="quote">
-    <div class="quote"><div><xsl:value-of select="." /></div><span><xsl:value-of select="./@author" />, <xsl:value-of select="./@date" /></span></div>
+    <div class="quote"><div><xsl:apply-templates /></div><span><xsl:value-of select="./@author" />, <xsl:value-of select="./@date" /></span></div>
   </xsl:template>
   
 <xsl:template match="/">
