@@ -164,7 +164,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     \dfrac{R}{c\sqrt{|k|}} \left [ \sqrt{a^2+\dfrac{8 \pi G \rho_0 R^2}{3kc^4}} - \sqrt{1 + \dfrac{8 \pi G \rho_0 R^2}{3kc^4}} \right ]  \\ = t
                 \end{equation}
                 
-                Si de plus $k&lt;0$ (géométrie sphérique), alors l'Univers a commencé par un état de densité maximal et son âge est $\sqrt{\dfrac{\dfrac{kc^2}{R^2}+\dfrac{8 \pi G \rho_0}{3c^2}}}$.
+                Si de plus $k&lt;0$ (géométrie sphérique), alors l'Univers a commencé par un état de densité maximal et son âge est $T = \sqrt{\dfrac{kc^2}{R^2}+\dfrac{8
+                \pi G \rho_0}{3c^2}}$.
                 
                 Preuve : 
                 <spoiler>
