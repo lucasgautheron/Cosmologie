@@ -58,6 +58,10 @@
     <div class="spoiler"><span><a href="#" class="spoiler_toggle" >Afficher/Masquer</a></span><div><xsl:value-of select="." /></div></div>
   </xsl:template>
   
+  <xsl:template match="quote">
+    <div class="quote"><xsl:value-of select="." /></div>
+  </xsl:template>
+  
 <xsl:template match="/">
   <html>
     <head>

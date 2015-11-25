@@ -1,7 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body
 {
     margin: 0 auto;
-    padding: 0;
     width: 100%;
     font-family: "DejaVu Serif", serif;
     font-size: 14px;
@@ -48,7 +52,6 @@ div.spoiler
     width:100%;
     border: 1px solid black;
     padding: 5px;
-    margin: 0;
 }
 
 div.spoiler div
@@ -58,6 +61,12 @@ div.spoiler div
 
 span.caption { width: 100%; padding: 5px; font-family: inherit; font-size: 80%; line-height: 1.1em; display: block; }
 
+div.quote
+{
+    padding: 10px 10px 10px 20px;
+    font-style: italic;
+}
+
 div.text
 {
     text-align: justify;
@@ -65,14 +74,11 @@ div.text
 
 div.text ul
 {
-    margin: 0;
-    padding: 0;
     list-style-position: inside;
 }
 
 div.text li
 {
-    margin: 0;
     padding: 4px;
 }
 
