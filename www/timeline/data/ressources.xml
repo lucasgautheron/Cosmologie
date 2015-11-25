@@ -279,7 +279,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             La solution est alors ($k \geq 0$) :
             \begin{equation}
             a(t) = \pm \dfrac{c}{R} t + 1
-            \end{equation}</p>
+            \end{equation}
+            
+            L'âge d'un tel Univers (s'il est en expansion) ou son espérance de vie (s'il est en contraction) est alors $T = R/c$. Un Univers plat et vide est statique. </p>
         </text>
         <linkwords>
             <linkword>équations de Friedmann</linkword>
