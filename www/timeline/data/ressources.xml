@@ -164,7 +164,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     \dfrac{R}{c\sqrt{|k|}} \left [ \sqrt{a^2+\dfrac{8 \pi G \rho_0 R^2}{3kc^4}} - \sqrt{1 + \dfrac{8 \pi G \rho_0 R^2}{3kc^4}} \right ]  \\ = t
                 \end{equation}
                 
-                Si de plus $k&lt;0$ (géométrie sphérique), alors l'Univers a commencé par un état de densité maximal et son âge est $\sqrt{\dfrac{\dfrac{kc^2}{R^2}+\dfrac{8 \pi G \rho_0}{3c^2}}$.
+                Si de plus $k&lt;0$ (géométrie sphérique), alors l'Univers a commencé par un état de densité maximal et son âge est $\sqrt{\dfrac{\dfrac{kc^2}{R^2}+\dfrac{8 \pi G \rho_0}{3c^2}}}$.
                 
                 Preuve : 
                 <spoiler>
@@ -180,7 +180,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     
                     Ce qui intégré entre $a(t=0)=1$ et $a(t)$ donne :
                     \begin{equation}
-                    \dfrac{1}{\alpha} \left ( \sqrt{\alpha a^2 + \beta} - \sqrt{\alpha+\beta} \right ) \\ = \dfrac{1}{\sqrt{\alpha}} \left ( \sqrt{a^2 + \dfrac{\beta}{\alpha}} - \sqrt{1+\dfrac{\beta}{\alpha} \right )  = t
+                    \dfrac{1}{\alpha} \left ( \sqrt{\alpha a^2 + \beta} - \sqrt{\alpha+\beta} \right ) \\ = \dfrac{1}{\sqrt{\alpha}} \left ( \sqrt{a^2 + \dfrac{\beta}{\alpha}} - \sqrt{1+\dfrac{\beta}{\alpha}} \right )  = t
                     \end{equation}
                     
                      Cet Univers existe tant que $a^2 \geq - \dfrac{\alpha}{\beta}$. Si $k&lt;0$, alors ceci requiert $a \geq \sqrt{\dfrac{-\alpha}{\beta}} = a_{min}$. Ce facteur d'échelle minimum est atteint pour $t = -\sqrt{\alpha+\beta}$.  
@@ -202,19 +202,19 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <li>$k>0$ : 
                     
                     \begin{equation}\left\{\begin{matrix}
-                    a(t) &amp; = A\cosh \left [ (t-T)/\tau \right ] \\
-                    T &amp; = \pm \tau \tanh^{-1} \dfrac{1}{\sqrt{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}}} \\
-                    A &amp; = +\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
-                    \tau &amp; = \sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
+                    a(t) = &amp;A\cosh \left [ (t-T)/\tau \right ] \\
+                    T = &amp;\pm \tau \tanh^{-1} \dfrac{1}{\sqrt{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}}} \\
+                    A = &amp;+\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
+                    \tau = &amp;\sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
                     \end{matrix}\right.\end{equation}
                     Cet Univers atteint une densité maximale à la date $T$, soit antérieure, soit postérieure à la date actuelle. 
                 </li>
                 <li>$k&lt;0$
                     \begin{equation}\left\{\begin{matrix}
-                    a(t) &amp; = A\sinh \left [ (t-T)/\tau \right ] \\
-                    T &amp; = \pm \tau \tanh^{-1} \sqrt{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}} \\
-                    A &amp; = -\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
-                    \tau &amp; = \sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
+                    a(t) = &amp;A\sinh \left [ (t-T)/\tau \right ] \\
+                    T = &amp;\pm \tau \tanh^{-1} \sqrt{1+\dfrac{3kc^4}{8 \pi G \rho_0 R^2}} \\
+                    A = &amp;-\dfrac{3kc^4}{8 \pi G \rho_0 R^2} \\
+                    \tau = &amp;\sqrt{\dfrac{3c^2}{8\pi G\rho_0}}
                     \end{matrix}\right.\end{equation}
                     Cet Univers atteint une densité infinie à la date $T$, soit antérieure, soit postérieure à la date actuelle.
                 </li>
@@ -250,8 +250,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     De cela on tire à la fois $A\cosh {\sqrt{\beta}T} = 1$ et $\pm A\sinh{\sqrt{\beta}T} =  \sqrt{1+\dfrac{\alpha}{\beta}}$.
                     Ce qui entraine :
                     \begin{equation}\left\{\begin{matrix}
-                    T &amp; = &amp; \pm \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}} \\
-                    A &amp; = &amp; -\dfrac{\alpha}{\beta}
+                    T = &amp; \pm \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{1+\dfrac{\alpha}{\beta}} \\
+                    A = &amp; -\dfrac{\alpha}{\beta}
                     \end{matrix}\right.\end{equation}
                     
                     Ceci n'est donc possible que si $\alpha &lt; 0$. Dans ce cas on a bien :
@@ -261,8 +261,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     
                     Dans le cas $\alpha &gt; 0$, on peut écrire $a(t)$ sous la forme $A \sinh {\sqrt{\beta}(t-T)}$. On invoque cette fois l'égalité $\sinh (x+y) = \sinh(x)\cosh(y) + \sinh(y)\cosh(x)$. Cette fois il apparait que :
                     \begin{equation}\left\{\begin{matrix}
-                    T &amp; = &amp; \pm \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{\dfrac{1}{1+\dfrac{\alpha}{\beta}}} \\
-                    A &amp; = &amp; +\dfrac{\alpha}{\beta}
+                    T = &amp; \pm \dfrac{1}{\sqrt{\beta}} \tanh^{-1} \sqrt{\dfrac{1}{1+\dfrac{\alpha}{\beta}}} \\
+                    A = &amp; +\dfrac{\alpha}{\beta}
                     \end{matrix}\right.\end{equation}
                     
                     Enfin, si $\alpha = 0$, alors $\mu = \pm 1$, donc $a(t) = \exp{\dfrac{1}{\sqrt{\beta}}t}$
