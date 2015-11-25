@@ -1,4 +1,4 @@
-* {
+p,ul,li,div,span,h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
 }
@@ -17,6 +17,8 @@ ul li { padding: 3px; }
 h1 { margin: 15px; font-size: 180%; }
 h2 { margin: 10px; font-size: 150%; }
 h3 { margin: 5px; font-size: 120%; }
+
+p { margin-bottom: 1em; }
 
 div#content, div#ressource
 {
