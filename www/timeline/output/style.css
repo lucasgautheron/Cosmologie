@@ -92,7 +92,7 @@ div.quote span
 div.text
 {
     text-align: justify;
-    padding: 5px;
+    padding: 5px 0;
 }
 
 div.text ul
