@@ -460,7 +460,44 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     
     <ressource id="202">
         <title>Constante de Hubble</title>
-        <text><p>[...]</p>
+        <text><p>La constante de Hubble est la constante de proportionnalité qui lie le décalage spectral $z$ d'un objet céleste vu par un observateur à la distance entre les deux, dans la limite où cette distance est petite.</p>
+            <p>Démonstration
+                <spoiler>
+                Un objet émet un signal lumineux dès l'instant $t_e$ et celui-ci est reçu par l'observateur à l'instant postérieur $t_r$. 
+                Le signal ayant une certaine période $T_e$, un second "bip" est émis à un instant $t_e+T_e$ et est reçu par l'observateur à un instant $t_r+T_r$.
+                On suppose l'observateur ainsi que la source immobiles dans l'espace en expansion (càd "comobiles"). Les deux signaux parcourent donc la même distance comobile $d$ : 
+                \begin{equation}
+                \chi = \displaystyle\int_{t_e}^{t_r} \dfrac{cdt'}{a(t')} = \displaystyle\int_{t_e+T}^{t_r+T'} \dfrac{cdt'}{a(t')} \mbox{ (1)}
+                \end{equation}
+                L'intégrale de droite peut être décomposée en trois si bien que : 
+                \begin{equation}
+                \displaystyle\int_{t_e}^{t_r} \dfrac{cdt'}{a(t')} = \displaystyle\int_{t_e+T_e}^{t_e} \dfrac{cdt'}{a(t')} + \displaystyle\int_{t_e}^{t_r} \dfrac{cdt'}{a(t')} + \displaystyle\int_{t_r}^{t_r+T_r} \dfrac{cdt'}{a(t')}
+                \end{equation}
+                
+                Donc
+                \begin{equation}
+                \displaystyle\int_{t_e}^{t_e+T_e} \dfrac{cdt'}{a(t')} = \displaystyle\int_{t_r}^{t_r+T_r} \dfrac{cdt'}{a(t')}
+                \end{equation}
+                
+                La période $T$ a vocation à être très petite devant le temps de variation de $a$ (l'expansion de l'Univers pendant un cycle de lumière - $10^{14}$ Hz dans le visible - est négligeable).
+                Ainsi l'expression ci-dessus devient :
+                \begin{equation}
+                \dfrac{T_r}{T_e} = \dfrac{a(t_r)}{a(t_e)}
+                \end{equation}
+                
+                Soit en terme de l'ongueur d'onde :
+                \begin{equation}
+                1+z \equiv \dfrac{\lambda_r}{\lambda_e} = \dfrac{a(t_r)}{a(t_e)} 
+                \end{equation}
+                On constate qu'un Univers en expansion se traduit bien par un allongement des longueurs d'ondes. 
+                
+                Il s'agit désormais de relier le rapport $a(t_r)/a(t_e)$ à la distance entre la source et l'émetteur. Cette grandeur représente de combien l'Univers a grandi entre l'instant d'émission et celui de réception. Si ces temps sont très proches, alors $a(t_r) \simeq a(t_e) + (t_r-t_e) a'(t_e)$. De plus en linéarisant l'intégrale (1) on obtient $t_r-t_e = \chi a(t_e)/c$ donc :
+                \begin{equation}
+                \dfrac{a(t_r)}{a(t_e)} = 1+\chi \dfrac{a'(t_e)}{c} 
+                \end{equation}
+                
+                </spoiler>
+            </p>
         </text>
         <linkwords>
             <linkword>constante de Hubble</linkword>
