@@ -139,7 +139,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         
         Il y a alors 3 solutions possibles selon le signe de $k/R^2$, de même qu'il existe trois solutions possibles au problème à deux corps (trajectoire hyperbolique, parabolique ou elliptique).
         <ul>
-            <li>Pour un Univers plat ($k/R^2 = 0$), la solution est alors $a^{3/2}(t) - 1 = \sqrt{\dfrac{9}{4}\dfrac{8\pi G \rho_0}{3c^2}} t$
+            <li>Pour un Univers plat ($k/R^2 = 0$), la solution est alors, si $a(0) = 1$ :  $a^{3/2}(t) = 1 + \dfrac{3}{2}\sqrt{\dfrac{8\pi G \rho_0}{3c^2}} t$
                 Cet univers "nait" à $t=0$ et ne cesse de s'expandre depuis. Il a donc un âge fini $T = \sqrt{\dfrac{c^2}{6\pi G \rho_0}}$</li>
             <li>Pour un Univers sphérique ($k/R^2 &lt; 0$), la solution est alors TODO: http://forums.futura-sciences.com/physique/667953-lnfluence-de-lune-un-objet-situe-terre-2.html#post5023488 !
             Faire equivalance : distance à vitesse nulle $x_0 \to a_0 = \dfrac{8\pi GR^2}{3c^4}$, $GM \to \dfrac{4\pi G \rho_0}{3c^2}$, période $\dfrac{T^2}{a_0^3} = \dfrac{\pi^2}{2GM}$ et $T^2 = \dfrac{1}{2} \left ( \dfrac{32\pi^2 GR^2\rho_0}{3c^4}\right )^2$
@@ -428,6 +428,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 R^{\mu\nu} - \dfrac{1}{2} Rg^{\mu\nu} = \dfrac{8\pi G}{c^4} \tilde{T}^{\mu\nu}
                 \end{equation}
                 Et dans ce cas le tenseur $T_{vide}^{\mu\nu}$ est le tenseur énergie impulsion d'un fluide parfait tel que $P_v = -\rho_v = -\dfrac{\Lambda c^4}{8\pi G}$</p>
+            <h3>Effet sur l'Univers</h3>
+            <p>Les équations de Friedmann montrent que l'introduction d'une constante cosmologique implique une force de répulsion (si $\Lambda > 0$) ou d'attraction (si $\Lambda &lt; 0$ ) qui est proportionnelle au facteur d'échelle. Par conséquent, dans un Univers en expansion, l'effet de la constante cosmologique finit par dominer. </p>
             <h3>Formes possibles d'énergie du vide :</h3>
             <p><b>Champ scalaire</b> : Il existe plusieurs façons d'introduire une énergie du vide. Une d'entre-elles est de faire intervenir un champ scalaire $\phi \mapsto V(\phi)$ de lagrangien $\mathcal{L} = \dfrac{1}{2} (\partial_\mu \phi ) (\partial^\mu \phi) - V(\phi)$. Dès lors le tenseur-énergie impulsion associé à ce champ a pour expression :
             \begin{equation}
@@ -448,6 +450,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 La particularité de la constante cosmologique est d'être équivalente à une densité d'énergie constante malgré l'expansion de l'Univers. Une explication possible suggérée par le physicien Hoyle est alors que l'énergie du vide est en fait simplement l'énergie de masse de la matière de l'Univers, et que de la matière est créée en permanence de sorte à ce que cela maintienne la densité constante avec l'expansion. Ce modèle d'Univers est appelé "théorie de l'état stationnaire" ("Steady-state universe" en anglais). 
                 <spoiler>TODO: expliquer champ C etc calculs.</spoiler>
             </p>
+            <p>TODO: plus exactement, mécanismes équivalents à une constante cosmologique</p>
         </text>
         <linkwords>
             <linkword>constante cosmologique</linkword>
