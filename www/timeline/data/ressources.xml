@@ -457,6 +457,15 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <linkword>énergie du vide</linkword>
         </linkwords>
     </ressource>
+    
+    <ressource id="202">
+        <title>Constante de Hubble</title>
+        <text><p>[...]</p>
+        </text>
+        <linkwords>
+            <linkword>constante de Hubble</linkword>
+        </linkwords>
+    </ressource>
 
     <!--             -->
     <!-- EXPERIMENTS -->
