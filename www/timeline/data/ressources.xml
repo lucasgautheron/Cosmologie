@@ -114,7 +114,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \dfrac{d}{dt}\left ( \rho_i a^3 \right ) &amp; = &amp; -P_i \dfrac{d}{dt} \left (a^3 \right) &amp;  \mbox{ (2)}\\ 
             f_i(\rho_i,P_i) &amp; = &amp;0  &amp; \mbox{ (3)}\\ 
             \end{matrix}\right.\end{equation}
-        La première équation décrit la dynamique de l'Univers en fonction de son contenu. La seconde équation traduit le premier principe de la thermodynamique. La troisième équation indique simplement la relation entre densité et pression imposée par l'équation d'état de la $i$-ème forme d'énergie. On distingue aujourd'hui trois formes d'énergie caractéristiques d'équations d'état particulières :
+        La première équation décrit la dynamique de l'Univers en fonction de son contenu. La seconde équation traduit le premier principe de la thermodynamique. La troisième équation indique simplement la relation entre densité et pression imposée par l'équation d'état de la $i$-ème forme d'énergie. On distingue <!--aujourd'hui--> trois formes d'énergie caractéristiques d'équations d'état particulières :
             <ul>
                 <li>La matière "froide" (aussi dite non relativiste ou poussière). C'est la matière ordinaire massive dont la vitesse est très inférieure à celle de la lumière. Pour un gaz parfait non relativiste, $P/\rho \propto v^2/c^2$ et on peut considérer $P = 0$.</li>
                 <li>Les rayonnements. C'est la lumière ou de la matière ultrarelativiste comme les neutrinos ($v\sim c$). L'équation d'état est alors $P = \rho/3$. </li>
