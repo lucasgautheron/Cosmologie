@@ -15,7 +15,7 @@
                     <xsl:for-each select="root/contents/content">
                         <xsl:variable name="id" select="./@id"/>
                         <xsl:variable name="text" select="./text"/>
-                        <li><h3><xsl:value-of select="./title" /></h3><br />
+                        <li><h3><a href="index.html#/content/{$id}"><xsl:value-of select="./title" /></a></h3><br />
                             <h4>Evènements</h4>
                             <ul>
                                 <xsl:for-each select="//root/events/event[@content-id=$id]">
@@ -25,7 +25,7 @@
                             <h4>Ressources</h4>
                             <ul>
                                 <xsl:for-each select="//ressources/ressource/linkwords/linkword[contains($text, .)]">
-                                    <li><xsl:value-of select="."/></li>
+                                    <li><a href="index.html#/content/{$id}/ressource/{../../@id}"><xsl:value-of select="."/></a></li>
                                 </xsl:for-each>
                             </ul>
                             <h4>Références</h4>
