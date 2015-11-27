@@ -148,7 +148,7 @@
       <ul>
         <xsl:for-each select="/root/references/reference[@content-id=$id]">
           <xsl:sort select="./date" />
-          <li><i><a href="../references/{./file}" target="_blank"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
+          <li><i><a href="../references/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
         </xsl:for-each>
       </ul>
     </div>
