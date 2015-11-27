@@ -13,7 +13,11 @@ file_put_contents('data/cache', "<?xml version=\"1.0\" encoding=\"UTF-8\"?><root
 
 $start_time = microtime(true);
 exec('saxonb-xslt -s:data/cache -xsl:layout.xsl -o:output/index.html -ext:on');
-echo "HTML generation done (" . round(microtime(true) - $start_time, 4) . " s)\n";
+echo "HTML generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
+
+$start_time = microtime(true);
+exec('saxonb-xslt -s:data/cache -xsl:graph.xsl -o:output/graph.html -ext:on');
+echo "graph generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 
 // gnuplot
 $start_time = microtime(true);
@@ -26,4 +30,4 @@ foreach($plots as $plot)
     exec('gnuplot tmp');
 }
 if(is_file('tmp')) unlink('tmp');
-echo "plot generation done (" . round(microtime(true) - $start_time, 4) . " s)\n";
+echo "plot generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
