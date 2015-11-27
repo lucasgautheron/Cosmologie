@@ -368,7 +368,16 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \begin{equation}
             ds^2 = c^2 dt^2 - a^2(t) \left [ \dfrac{dr^2}{1+kr^2/R^2} + r^2 \left ( d\theta^2 + \sin^2 {\theta} d\phi^2 \right )\right ]
             \end{equation}
-            Ici, $k$ peut valoir $1$ (géométrie hyperbolique), ou -1 (géométrie sphérique), et la constante R est le rayon de courbure de l'univers (c'est par conséquent la longueur typique à partir de laquelle le caractère non euclidien de l'espace devient sensible). Si $R=\infty$, l'Univers est plat (géométrie euclidienne). (TODO: virer $k$ et autoriser $R \in \mathbb{C}$ ? ou ne faire apparaitre que $K=k/R^2$ ?)</p>
+            Ici, $k$ peut valoir $1$ (géométrie hyperbolique), ou -1 (géométrie sphérique), et la constante R est le rayon de courbure de l'univers (c'est par conséquent la longueur typique à partir de laquelle le caractère non euclidien de l'espace devient sensible). Si $R=\infty$, l'Univers est plat (géométrie euclidienne). (TODO: virer $k$ et autoriser $R \in \mathbb{C}$ ? ou ne faire apparaitre que $K=k/R^2$ ?)
+            On peut introduire la coordonnée comobile $\chi$ telle que :
+            
+            \begin{equation}\left\{\begin{matrix}
+            r &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&lt;0\\ 
+            r &amp; = &amp; \chi \mbox{ si } k=0\\ 
+            r &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&gt;0
+            \end{matrix}\right.\end{equation}
+            
+            TODO: définir $S_k$ (commodité d'écriture pour référence ultérieure).</p>
         </text>
         <linkwords>
             <linkword>facteur d'échelle</linkword>
@@ -427,7 +436,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <h3>Formalisme</h3>
             <p>TODO champ C équations etc</p>
             <h3>Échecs du modèle</h3>
-            <p>distance luminosité versus z ? + pb big bang + objets lointains (donc anciens) diférents</p>
+            <p>distance de luminosité versus z ? + pb big bang + objets lointains (donc anciens) diférents</p>
         </text>
         <linkwords>
             <linkword>théorie de l'état stationnaire</linkword>
@@ -439,12 +448,59 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <title>Distance de luminosité</title>
         <text>
             <p>
+                La distance de luminosité d'une source irradiant de la lumière est la distance $d_L$ telle que le flux $F$ que l'on en reçoit est égal à :
+                \begin{equation}
+                F = \dfrac{L}{4\pi d_L^2}
+                \end{equation}
+                Où $L$ est la luminosité (en W) de la source.
                 
             </p>
             <p>
+                TODO: vérifier et transformer le résultat final (intégrale sur z, expression $\Lambda\mbox{CDM}$ etc.)
+                Soit une source $A$ comobile émettant $N$ photons de fréquence $\nu_e$ en un temps $\Delta t_e$ à partir de l'instant $t_e$. 
+                La puissance émise est alors $L = \dfrac{N \hbar \nu_e}{\Delta t_e}$.
+                On place un récepteur $B$ comobile à une distance comobile $\chi$ de $A$.
+                L'onde lumineuse se propage et atteint sa cible au temps $t_r$. Le rayon du front d'onde est alors donné par :
+                \begin{equation}
+                l(\chi) = r(\chi) a(t_r) = a(t_r) S_k \left ( \displaystyle\int_{t_e}^{t_r} \dfrac{cdt}{a(t)} \right )
+                \end{equation}
                 
+                La surface du front d'onde vaut alors $4\pi l^2$.
+                Les $N$ photons (leur nombre est conservé) sont reçus entre $t_r$ et $t_r + \Delta t_r$. Puisque le dernier et le premier photon ont parcouru la même distance comobile $\chi$ il vient que :
+                \begin{equation}
+                \displaystyle\int_{t_e}^{t_r} \dfrac{cdt}{a(t)} = \displaystyle\int_{t_e+\Delta t_e}^{t_r+\Delta t_r} \dfrac{cdt}{a(t)}
+                Dans la limite où $\Delta t_e \to 0$ (on étudie le flux instantané de photons), alors en décomposant cette intégrale par relation de Chasles et en négligeant les variations de $a(t)$ on trouve :
+                \begin{equation}
+                \dfrac{\Delta t_r}{\Delta t_e} = \dfrac{a(t_r)}{a(t_e)} = 1+z
+                \end{equation}
+                
+                Par ailleurs les photons qui arrivent en B ont subi un décalage spectral $z$ de même valeur si bien que leur fréquence à l'"arrivée" vérifie :
+                \begin{equation}
+                \dfrac{\nu_r}{\nu_e} = \dfrac{a(t_e)}{a(t_r)} = 1+z = \dfrac{\Delta t_r}{\Delta t_e}
+                \end{equation}
+                
+                Finalement il vient donc que la puissance reçue sur la totalité du front d'onde est :
+                
+                \begin{equation}
+                P = \dfrac{N \hbar \nu_r}{\Delta t_r} = \dfrac{L}{(1+z)^2}
+                \end{equation}
+                
+                Par ailleurs puisque le front d'onde a une surface $4\pi l^2$ il vient :
+                
+                \begin{equation}
+                F = \dfrac{P}{4\pi l^2} = \dfrac{L}{4\pi \left ( l (1+z) \right ) ^2}
+                \end{equation}
+                
+                De là :
+                \begin{equation}
+                d_L = (1+z) a(t_r) S_k \left ( \displaystyle\int_{t_e}^{t_r} \dfrac{cdt}{a(t)} \right )
+                \end{equation}
             </p>
         </text>
+        <linkwords>
+            <linkword>distance de luminosité</linkword>
+            <linkword>distance lumineuse</linkword>
+        </linkwords>
     </ressource>
     
     <ressource id="112">
@@ -457,6 +513,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
             </p>
         </text>
+        <linkwords>
+            <linkword>distance angulaire</linkword>
+        </linkwords>
     </ressource>
     
 
@@ -512,7 +571,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <spoiler>
                 Un objet émet un signal lumineux dès l'instant $t_e$ et celui-ci est reçu par l'observateur à l'instant postérieur $t_r$. 
                 Le signal ayant une certaine période $T_e$, un second "bip" est émis à un instant $t_e+T_e$ et est reçu par l'observateur à un instant $t_r+T_r$.
-                On suppose l'observateur ainsi que la source immobiles dans l'espace en expansion (càd "comobiles"). Les deux signaux parcourent donc la même distance comobile $d$ : 
+                On suppose l'observateur ainsi que la source immobiles dans l'espace en expansion (càd "comobiles"). Les deux signaux parcourent donc la même distance comobile $\chi$ : 
+                TODO: vos notations
                 \begin{equation}
                 \chi = \displaystyle\int_{t_e}^{t_r} \dfrac{cdt'}{a(t')} = \displaystyle\int_{t_e+T}^{t_r+T'} \dfrac{cdt'}{a(t')} \mbox{ (1)}
                 \end{equation}
@@ -538,6 +598,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \end{equation}
                 On constate qu'un Univers en expansion se traduit bien par un allongement des longueurs d'ondes. 
                 
+                TODO: finir suite + DL ordre 2 ?
                 Il s'agit désormais de relier le rapport $a(t_r)/a(t_e)$ à la distance entre la source et l'émetteur. Cette grandeur représente de combien l'Univers a grandi entre l'instant d'émission et celui de réception. Si ces temps sont très proches, alors $a(t_r) \simeq a(t_e) + (t_r-t_e) a'(t_e)$. De plus en linéarisant l'intégrale (1) on obtient $t_r-t_e = \chi a(t_e)/c$ donc :
                 \begin{equation}
                 z = \dfrac{a(t_r)}{a(t_e)} -1 \simeq \chi \dfrac{a'(t_e)}{c} \simeq \dfrac{d H'(t_e)}{c}
