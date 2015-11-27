@@ -405,11 +405,28 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <p>Ce modèle a la particularité de faire apparaitre une "singularité", un état de densité infinie. Ceci fait apparaitre un âge maximal pour l'Univers, mais on ne sait pas dans les années 1930-1940 si celui-ci est vraiment "né" de cet état particulier. Certains physiciens rejettent alors l'idée d'une singularité initiale pour des raisons philosophiques (apparentée à une hypothèse religieuse). </p>
             <h3>Abandon de la constante cosmologique</h3>
             <p>Ce modèle marque le début du rejet de la constante cosmologique. Dans un Univers non statique celle-ci n'est plus utile et on peut d'après les observations de l'époque se passer d'elle a priori. <quote author="Einstein" date="1932">Historically the term containing the "cosmological constant" $\Lambda$ was introduced into the field equations in order to enable us to account theoratically for the existence of a fiinite mean density in a static universe. It now appears that in the dynamical case this end can be reached without the introduction of $\Lambda$.</quote>
-            Einstein dira plus tard que son introduction était la plus grande erreur qu'il a ait commise.</p>
+            Einstein dira plus tard que son introduction était "la plus grande erreur de sa vie".</p>
             <figure src="einstein-ds_universe.svg" title="Evolution du facteur d'échelle">Facteur d'échelle dans le modèle d'Einstein - de Sitter, exprimé en fonction du temps normalisé, avec comme origine la singularité initiale.</figure>
         </text>
         <linkwords>
             <linkword>espace d'Einstein-de Sitter</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="110">
+        <title>Théorie de l'état stationnaire</title>
+        <text>
+            <p>La théorie de l'état stationnaire, ou "steady-state theory" en anglais, est une théorie avancée par Fred Hoyle en 1948. Son objectif était de résoudre un certain nombre de problèmes des modèles d'Einstein-de Sitter et de Lemaitre-Friedmann, notamment celui de l'âge de l'Univers que ces théories prédisaient puisqu'il était trop petit par rapport à l'âge de certains objets comme la Terre.</p>
+            <p>Cette théorie repose sur l'idée que de la matière est créée en permanence dans l'univers de façon à compenser exactement la diminution de densité due à l'expansion. Ainsi, dans ce modèle, la densité de matière demeure constante et l'Univers est en tout âge semblable bien qu'il soit en expansion : il respecte le principe cosmologique parfait.</p>
+            <p>Un tel Univers se comporte comme un Univers vide avec constante cosmologique non nulle (puisque celle-ci est équivalente à une densité d'énergie constante). </p>
+            <h3>Formalisme</h3>
+            <p>TODO champ C équations etc</p>
+            <h3>Échecs du modèle</h3>
+            <p>distance luminosité versus z ? + pb big bang + objets lointains (donc anciens) diférents</p>
+        </text>
+        <linkwords>
+            <linkword>théorie de l'état stationnaire</linkword>
+            <linkword>steady-state universe</linkword>
         </linkwords>
     </ressource>
 

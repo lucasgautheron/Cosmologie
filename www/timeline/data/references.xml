@@ -79,4 +79,12 @@
         <date>1932</date>
         <file>einstein-de-sitter_1932.pdf</file>
     </reference>
+    
+    <reference id="10" content-id="5">
+        <title>A new model for the expanding Universe</title>
+        <author>F. Hoyle</author>
+        <text>Cet article de Fred Hoyle décrit sa théorie de l'état-stationnaire d'un Univers éternellement semblable.</text>
+        <date>1948</date>
+        <file>hoyle_1948.pdf</file>
+    </reference>
 </references>
