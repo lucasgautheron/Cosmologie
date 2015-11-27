@@ -557,7 +557,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
 
     <ressource id="301">
         <title>Expérience de Michelson-Morley</title>
-        <text>...</text>
+        <text><p>L'expérience de Michelson-Morley est une expérience interférométrique réalisée par Michelson et Morley et qui avait pour but à l'époque de calculer la vitesse de la Terre par rapport à un hypothétique "éther". Le résultat négatif, à savoir que tout se passait comme si la Terre était immobile dans l'éther, conduisit avec d'autres constatations expérimentales à l'invention de la relativité restreinte.</p>
+        <p>TODO: calculs + schémas. relier aux déplacements attendus etc</p>
+        </text>
         <linkwords>
             <linkword>Michelson-Morley</linkword>
         </linkwords>
