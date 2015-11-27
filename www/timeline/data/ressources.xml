@@ -197,7 +197,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <ul>
                 <li>La solution en Univers plat est alors :
                     \begin{equation}
-                    a(t) = \exp{\pm \left( \dfrac{t}{\tau}\right )} \mbox{ et } \ \tau = \sqrt{\dfrac{8 \pi G \rho_0}{3c^2} } 
+                    a(t) = \exp{\pm \left( \dfrac{t}{\tau}\right )} \mbox{ et } \ \tau = \sqrt{\dfrac{3c^2}{8 \pi G \rho_0} } 
                     \end{equation}
                     Un tel Univers peut alors s'expandre ou se contracter de façon exponentielle.</li>
                 <li>$k>0$ (géométrie hyperbolique) : 
@@ -418,7 +418,12 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <text>
             <p>La théorie de l'état stationnaire, ou "steady-state theory" en anglais, est une théorie avancée par Fred Hoyle en 1948. Son objectif était de résoudre un certain nombre de problèmes des modèles d'Einstein-de Sitter et de Lemaitre-Friedmann, notamment celui de l'âge de l'Univers que ces théories prédisaient puisqu'il était trop petit par rapport à l'âge de certains objets comme la Terre.</p>
             <p>Cette théorie repose sur l'idée que de la matière est créée en permanence dans l'univers de façon à compenser exactement la diminution de densité due à l'expansion. Ainsi, dans ce modèle, la densité de matière demeure constante et l'Univers est en tout âge semblable bien qu'il soit en expansion : il respecte le principe cosmologique parfait.</p>
-            <p>Un tel Univers se comporte comme un Univers vide avec constante cosmologique non nulle (puisque celle-ci est équivalente à une densité d'énergie constante). </p>
+            <p>Un tel Univers se comporte comme un Univers vide avec constante cosmologique non nulle (puisque celle-ci est équivalente à une densité d'énergie constante). S'il est plat, alors le facteur d'échelle évolue simplement selon :
+            \begin{equation}
+            a(t) = \exp{H_0 t} \mbox{ et } H_0 = \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}
+            \end{equation}
+            
+            Où $\rho_0$ est la densité d'énergie de masse de l'Univers, identique à toute date. On remarque que la relation densité-constante de Hubble est identique à celle de l'Univers d'Einstein-de Sitter, or à l'époque on pensait que celle-ci donnait de bons résultats. Le modèle d'Hoyle reprend donc les succès des modèles non-stationnaires (expansion et relation densité-constante de Hubble) et semble par ailleurs en résoudre d'autres (âge de l'Univers). Il faudra attendre de nouvelles observations et une dizaine d'années avant que les physiciens le rejettent. TODO rephrase ou virer </p>
             <h3>Formalisme</h3>
             <p>TODO champ C équations etc</p>
             <h3>Échecs du modèle</h3>
