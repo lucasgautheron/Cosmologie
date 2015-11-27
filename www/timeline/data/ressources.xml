@@ -458,7 +458,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <p>
                 TODO: vérifier et transformer le résultat final (intégrale sur z, expression $\Lambda\mbox{CDM}$ etc.)
                 Soit une source $A$ comobile émettant $N$ photons de fréquence $\nu_e$ en un temps $\Delta t_e$ à partir de l'instant $t_e$. 
-                La puissance émise est alors $L = \dfrac{N \hbar \nu_e}{\Delta t_e}$.
+                La puissance émise est alors $L = \dfrac{N h \nu_e}{\Delta t_e}$.
                 On place un récepteur $B$ comobile à une distance comobile $\chi$ de $A$.
                 L'onde lumineuse se propage et atteint sa cible au temps $t_r$. Le rayon du front d'onde est alors donné par :
                 \begin{equation}
@@ -483,7 +483,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 Finalement il vient donc que la puissance reçue sur la totalité du front d'onde est :
                 
                 \begin{equation}
-                P = \dfrac{N \hbar \nu_r}{\Delta t_r} = \dfrac{L}{(1+z)^2}
+                P = \dfrac{N h \nu_r}{\Delta t_r} = \dfrac{L}{(1+z)^2}
                 \end{equation}
                 
                 Par ailleurs puisque le front d'onde a une surface $4\pi l^2$ il vient :
