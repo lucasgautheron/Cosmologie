@@ -420,7 +420,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <p>Cette théorie repose sur l'idée que de la matière est créée en permanence dans l'univers de façon à compenser exactement la diminution de densité due à l'expansion. Ainsi, dans ce modèle, la densité de matière demeure constante et l'Univers est en tout âge semblable bien qu'il soit en expansion : il respecte le principe cosmologique parfait. L'apport de matière se ferait par la création ininterrompue et homogène de particules dans l'espace (par exemple des atomes d'hydrogène). </p>
             <p>Un tel Univers se comporte comme un Univers vide avec constante cosmologique non nulle (puisque celle-ci est équivalente à une densité d'énergie constante). S'il est plat, alors le facteur d'échelle évolue simplement selon :
             \begin{equation}
-            a(t) = \exp{H_0 t} \mbox{ et } H_0 = \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}
+            a(t) = \exp{\left ( H_0 t \right )} \mbox{ et } H_0 = \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}
             \end{equation}
             
             Où $\rho_0$ est la densité d'énergie de masse de l'Univers, identique à toute date. On remarque que la relation densité-constante de Hubble est identique à celle de l'Univers d'Einstein-de Sitter, or à l'époque on pensait que celle-ci donnait de bons résultats. Le modèle d'Hoyle reprend donc les succès des modèles non-stationnaires (expansion et relation densité-constante de Hubble) et semble par ailleurs en résoudre d'autres (âge de l'Univers). Il faudra attendre de nouvelles observations et une dizaine d'années avant que les physiciens le rejettent. TODO rephrase ou virer </p>
@@ -540,7 +540,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 Il s'agit désormais de relier le rapport $a(t_r)/a(t_e)$ à la distance entre la source et l'émetteur. Cette grandeur représente de combien l'Univers a grandi entre l'instant d'émission et celui de réception. Si ces temps sont très proches, alors $a(t_r) \simeq a(t_e) + (t_r-t_e) a'(t_e)$. De plus en linéarisant l'intégrale (1) on obtient $t_r-t_e = \chi a(t_e)/c$ donc :
                 \begin{equation}
-                \dfrac{a(t_r)}{a(t_e)} = 1+\chi \dfrac{a'(t_e)}{c} 
+                z = \dfrac{a(t_r)}{a(t_e)} -1 \simeq \chi \dfrac{a'(t_e)}{c} \simeq \dfrac{d H'(t_e)}{c}
                 \end{equation}
                 
                 </spoiler>
