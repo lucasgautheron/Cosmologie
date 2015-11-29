@@ -475,7 +475,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \begin{equation}\left\{\begin{matrix}
                 S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&lt;0\\ 
                 S_k(\chi) &amp; = &amp; \chi \mbox{ si } k=0\\ 
-                S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&gt;0
+                S_k(\chi) &amp; = &amp; R \sinh \dfrac{\chi}{R} \mbox{ si } k&gt;0
                 \end{matrix}\right.\end{equation}
                 
                 La surface du front d'onde vaut alors $4\pi l^2$.
@@ -524,12 +524,12 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 Et : 
                 
                 \begin{equation}
-                d_L = (1+z) S_k \left (\displaystyle\int_{0}^{z} \dfrac{dz'}{H_0 \sqrt{\Omega_{\Lambda} + \left ( 1-\Omega_{\Lambda}-\Omega_m\right ) (1+z')^2 + \Omega_m (1+z')^3 }} \right )
+                d_L = (1+z) S_k \left (\displaystyle\int_{0}^{z} \dfrac{c dz'}{H_0 \sqrt{\Omega_{\Lambda} + \left ( 1-\Omega_{\Lambda}-\Omega_m\right ) (1+z')^2 + \Omega_m (1+z')^3 }} \right )
                 \end{equation}
                 
                 Pour un Univers plat cette expression se simplifie en :
                 \begin{equation}
-                d_L = (1+z) \displaystyle\int_{0}^{z} \dfrac{dz'}{H_0 \sqrt{\Omega_{\Lambda} + \Omega_m (1+z')^3 }} 
+                d_L = (1+z) \dfrac{c}{H_0} \displaystyle\int_{0}^{z} \dfrac{dz'}{H_0 \sqrt{\Omega_{\Lambda} + \Omega_m (1+z')^3 }} 
                 \end{equation}
             </p>
         </text>
