@@ -518,7 +518,18 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 On peut montrer à partir de l'équation de Friedmann que cette intégrale vaut, dans un Univers de poussière et d'énergie du vide :
                 \begin{equation}
-                \displaystyle\int_{t_e}^{0} \dfrac{cdt}{a(t)} = \displaystyle\int_{0}^{z} \dfrac{dz'}{H_0 \sqrt{\Omega_{\Lambda} + \left ( 1-\Omega_{\Lambda}-\Omega_m\right ) (1+z)^2 + \Omega_m (1+z)^3 }}
+                \displaystyle\int_{t_e}^{0} \dfrac{cdt}{a(t)} = \displaystyle\int_{0}^{z} \dfrac{dz'}{H_0 \sqrt{\Omega_{\Lambda} + \left ( 1-\Omega_{\Lambda}-\Omega_m\right ) (1+z')^2 + \Omega_m (1+z')^3 }}
+                \end{equation}
+                
+                Et : 
+                
+                \begin{equation}
+                d_L = (1+z) S_k \left ( \displaystyle\int_{t_e}^{0} \displaystyle\int_{0}^{z} \dfrac{dz'}{H_0 \sqrt{\Omega_{\Lambda} + \left ( 1-\Omega_{\Lambda}-\Omega_m\right ) (1+z')^2 + \Omega_m (1+z')^3 }} \right )
+                \end{equation}
+                
+                Pour un Univers plat cette expression se simplifie en :
+                \begin{equation}
+                d_L = (1+z) \displaystyle\int_{t_e}^{0} \displaystyle\int_{0}^{z} \dfrac{dz'}{H_0 \sqrt{\Omega_{\Lambda} + \Omega_m (1+z')^3 }} 
                 \end{equation}
             </p>
         </text>
