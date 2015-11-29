@@ -116,16 +116,22 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \end{matrix}\right.\end{equation}
         La première équation décrit la dynamique de l'Univers en fonction de son contenu. La seconde équation traduit le premier principe de la thermodynamique. La troisième équation indique simplement la relation entre densité et pression imposée par l'équation d'état de la $i$-ème forme d'énergie. On distingue <!--aujourd'hui--> trois formes d'énergie caractéristiques d'équations d'état particulières :
             <ul>
-                <li>La matière "froide" (aussi dite non relativiste ou poussière). C'est la matière ordinaire massive dont la vitesse est très inférieure à celle de la lumière. Pour un gaz parfait non relativiste, $P/\rho \propto v^2/c^2$ et on peut considérer $P = 0$.</li>
-                <li>Les rayonnements. C'est la lumière ou de la matière ultrarelativiste comme les neutrinos ($v\sim c$). L'équation d'état est alors $P = \rho/3$. </li>
-                <li>L'énergie du vide. Cette énergie d'équation d'état $P=-\rho$ est équivalente à l'introduction d'une constante cosmologique.</li>
+                <li>La matière "froide" (aussi dite non relativiste ou poussière). C'est la matière ordinaire massive dont la vitesse est très inférieure à celle de la lumière. Pour un gaz parfait non relativiste, $P/\rho \propto v^2/c^2$ et on peut considérer $P = 0$. L'équation (2) donne alors $\rho a^3 = \mbox{ cste } = \rho_0$.</li>
+                <li>Les rayonnements. C'est la lumière ou de la matière ultrarelativiste comme les neutrinos ($v\sim c$). L'équation d'état est alors $P = \rho/3$. L'équation (2) donne cette fois $\rho a^4 = \mbox{ cste } = \rho_0$.</li>
+                <li>L'énergie du vide. Cette énergie d'équation d'état $P=-\rho$ est équivalente à l'introduction d'une constante cosmologique. Selon l'équation (2), $\rho = \mbox{cste} = \rho_0$. </li>
             </ul></p>
+        <h3>Paramètres de densité</h3>
+        <p>TODO def $\Omega_k$ et mq
+            \begin{equation}
+            \left (\dfrac{1}{H_0}\dfrac{\dot{a}}{a} \right )^2 = \Omega_{\Lambda} + \Omega_k a^2 + \Omega_m a^3 + \Omega_r a^4 \mbox{ et } \Omega_k = 1-(\Omega_r + \Omega_m + \Omega_v)
+            \end{equation}
+        </p>   
         <h3>Démonstration</h3>
         <p><spoiler>...</spoiler></p>
         <h3>Solutions particulières de l'équation de Friedmann</h3>
         <p>On peut résoudre l'équation de Friedmann dans un certain nombre de configurations particulières. Par exemple on peut considérer en effet que l'Univers est dominé par une certaine forme d'énergie</p>
         <p><b>Univers de poussière</b> : 
-        Dans un tel univers, $P=0$. L'équation (2) donne par ailleurs $\rho a^3 = \mbox{ cste } = \rho_0$. De là le facteur d'échelle obéit à l'équation :
+        Dans un tel univers, $P=0$. De là le facteur d'échelle obéit à l'équation :
         \begin{equation}
         \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a} = \dfrac{kc^2}{R^2}
         \end{equation}
@@ -465,6 +471,13 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 l(\chi) = r(\chi) a(t_r) = a(t_r) S_k \left ( \displaystyle\int_{t_e}^{t_r} \dfrac{cdt}{a(t)} \right )
                 \end{equation}
                 
+                où : 
+                \begin{equation}\left\{\begin{matrix}
+                S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&lt;0\\ 
+                S_k(\chi) &amp; = &amp; \chi \mbox{ si } k=0\\ 
+                S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&gt;0
+                \end{matrix}\right.\end{equation}
+                
                 La surface du front d'onde vaut alors $4\pi l^2$.
                 Les $N$ photons (leur nombre est conservé) sont reçus entre $t_r$ et $t_r + \Delta t_r$. Puisque le dernier et le premier photon ont parcouru la même distance comobile $\chi$ il vient que :
                 \begin{equation}
@@ -495,6 +508,17 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 De là :
                 \begin{equation}
                 d_L = (1+z) a(t_r) S_k \left ( \displaystyle\int_{t_e}^{t_r} \dfrac{cdt}{a(t)} \right )
+                \end{equation}
+                
+                Les observations que nous faisons sont réalisées à $t_r = 0$, donc :
+                
+                \begin{equation}
+                d_L = (1+z) S_k \left ( \displaystyle\int_{t_e}^{0} \dfrac{cdt}{a(t)} \right )
+                \end{equation}
+                
+                On peut montrer à partir de l'équation de Friedmann que cette intégrale vaut, dans un Univers de poussière et d'énergie du vide :
+                \begin{equation}
+                \displaystyle\int_{t_e}^{0} \dfrac{cdt}{a(t)} = \displaystyle\int_{0}^{z} \dfrac{dz'}{H_0 \sqrt{\Omega_{\Lambda} + \left ( 1-\Omega_{\Lambda}-\Omega_m\right ) (1+z)^2 + \Omega_m (1+z)^3 }}
                 \end{equation}
             </p>
         </text>
