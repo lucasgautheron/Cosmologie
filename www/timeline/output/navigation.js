@@ -131,6 +131,9 @@ function show_content(id, updatehash)
       $('#content .references').html(data_object.find('#references').html());
       $('#content .image').html(data_object.find('#image').html());
       $('#content').show();
+      $(data_object).filter('script').each(function(){
+            $.globalEval(this.text || this.textContent || this.innerHTML || '');
+      });
       setTimeout(update, 100);
     },
     error: function(e) {
