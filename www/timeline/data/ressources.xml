@@ -49,7 +49,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
 
     <ressource id="101">
         <title>Tenseur Énergie-Impulsion</title>
-        <text>...</text>
+        <text><p>Description, déf, fluide parfait. Construction formalisme lagrangien + réduction par liberté en requérant symétrie. </p></text>
         <linkwords>
             <linkword>tenseur énergie-impulsion</linkword>
         </linkwords>
@@ -529,7 +529,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 Pour un Univers plat cette expression se simplifie en :
                 \begin{equation}
-                d_L = (1+z) \dfrac{c}{H_0} \displaystyle\int_{0}^{z} \dfrac{dz'}{H_0 \sqrt{\Omega_{\Lambda} + \Omega_m (1+z')^3 }} 
+                d_L = (1+z) \dfrac{c}{H_0} \displaystyle\int_{0}^{z} \dfrac{c dz'}{H_0 \sqrt{\Omega_{\Lambda} + \Omega_m (1+z')^3 }} 
                 \end{equation}
             </p>
         </text>
@@ -602,7 +602,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     
     <ressource id="202">
         <title>Constante de Hubble</title>
-        <text><p>La constante de Hubble est la constante de proportionnalité $H_0$ qui lie le décalage spectral $z$ d'un objet céleste vu par un observateur à la distance entre les deux, dans la limite où cette distance est petite. Historiquement, la fuite des galaxies était interprétée en terme d'effet Doppler à faible vitesse pour lequel $z \simeq v/c$. On écrivait donc $v/c = H_0 d$. Sa première estimation "précise" est due à Hubble en 1929 et était d'environ 500 km/s/Mpc, mais la méthode qui conduisit à cette valeur comportait une erreur. Aujourd'hui on l'évalue à 70 km/s/Mpc.</p>
+        <text><p>La constante de Hubble est la constante de proportionnalité $H_0$ qui lie le décalage spectral $z=\lambda_{rec}/\lambda_{em}$ d'un objet céleste vu par un observateur à la distance entre les deux, dans la limite où cette distance est petite. Historiquement, la fuite des galaxies était interprétée en terme d'effet Doppler à faible vitesse pour lequel $z \simeq v/c$. On écrivait donc $v/c = H_0 d$. Sa première estimation "précise" est due à Hubble en 1929 et était d'environ 500 km/s/Mpc, mais la méthode qui conduisit à cette valeur comportait une erreur. Aujourd'hui on l'évalue à 70 km/s/Mpc.</p>
             <p>Démonstration de la relation entre taux d'expansion et distance et de la loi de Hubble
                 <spoiler>
                 Un objet émet un signal lumineux dès l'instant $t_e$ et celui-ci est reçu par l'observateur à l'instant postérieur $t_r$. 
@@ -628,16 +628,16 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \dfrac{T_r}{T_e} = \dfrac{a(t_r)}{a(t_e)}
                 \end{equation}
                 
-                Soit en terme de l'ongueur d'onde :
+                Soit en terme de l'ongueur d'onde et de redshift $z$ :
                 \begin{equation}
                 1+z \equiv \dfrac{\lambda_r}{\lambda_e} = \dfrac{a(t_r)}{a(t_e)} 
                 \end{equation}
                 On constate qu'un Univers en expansion se traduit bien par un allongement des longueurs d'ondes. 
                 
-                TODO: finir suite + DL ordre 2 ?
-                Il s'agit désormais de relier le rapport $a(t_r)/a(t_e)$ à la distance entre la source et l'émetteur. Cette grandeur représente de combien l'Univers a grandi entre l'instant d'émission et celui de réception. Si ces temps sont très proches, alors $a(t_r) \simeq a(t_e) + (t_r-t_e) a'(t_e)$. De plus en linéarisant l'intégrale (1) on obtient $t_r-t_e = \chi a(t_e)/c$ donc :
+                Pour de faibles distances, $t_r - t_e \simeq d/c$, et donc $a(t_e) \simeq a(t_r) - d \dot{a}(t_r)/c$.
+                Par ailleurs si $t_r$ correspond au temps présent, alors $a(t_r) = 1$ et $\dot{a}(t_r) = H_0$ donc :
                 \begin{equation}
-                z = \dfrac{a(t_r)}{a(t_e)} -1 \simeq \chi \dfrac{a'(t_e)}{c} \simeq \dfrac{d H'(t_e)}{c}
+                z = \dfrac{\lambda_r-\lambda_e}{\lambda_e} \simeq H_0 d / c
                 \end{equation}
                 
                 </spoiler>
