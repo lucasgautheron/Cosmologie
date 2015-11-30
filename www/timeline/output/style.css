@@ -20,6 +20,8 @@ h3 { margin: 0.4em 0; font-size: 120%; }
 
 p { margin-bottom: 1em; }
 
+a { color: #BF1717; }
+
 div#content, div#ressource
 {
     line-height: 1.4em;
