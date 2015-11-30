@@ -693,10 +693,10 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <p>Si la source émet un signal lumineux (donc à vitesse la $c$) et se déplace à une vitesse v constante par rapport à l'émetteur dirigée selon sa ligne de visée, alors on montre à l'aide des transformations de Lorentz que : 
         
         \begin{equation}
-        f_{rec} = f_0 \sqrt{\dfrac{1-\beta}{1+\beta}}
+        \nu_{rec} = \nu_0 \sqrt{\dfrac{1-\beta}{1+\beta}}
         \end{equation}
         
-        Pour de petites vitesses, cette expression vaut environ $f_0 (1-v/c)$ et il est alors clair que si la vitesse est dirigée selon la ligne de visée, la source s'éloigne si $v$ est positif et dans ce cas il y a bien diminution de la fréquence apparente. </p>
+        Pour de petites vitesses, cette expression vaut environ $\nu_0 (1-v/c)$ et il est alors clair que si la vitesse est dirigée selon la ligne de visée, la source s'éloigne si $v$ est positif et dans ce cas il y a bien diminution de la fréquence apparente. </p>
         
         La preuve est rapide à partir de la transformation de Lorentz (TODO: donner preuve)
         </text>
@@ -764,7 +764,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \begin{equation}
             m = -2.5 \log {\dfrac{F_{objet}}{F_{reference}}}
             \end{equation}
-            Souvent le flux est mesuré dans un intervalle restreint de longueurs d'ondes (appelé "bande") et il faut alors adapter la définition. 
+            Souvent le flux est mesuré dans un intervalle restreint de longueurs d'ondes (appelé "bande") en opposition à la magnitude dite "bolométrique" qui utilise le flux total.
         </p>
             <p>La <b>magnitude absolue</b> $M$ d'un objet céleste la magnitude apparente qu'on mesurerait si elle se trouvait à une distance de 10 parsecs.
                 Puisque cette quantité ne dépend pas de la distance entre cet objet et l'observateur, elle donne une mesure de sa luminosité intrinsèque (la puissance lumineuse qu'elle émet).</p>
