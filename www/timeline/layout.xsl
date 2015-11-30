@@ -117,7 +117,19 @@
             <li>$c$ apparait explicitement dans les équations (les distances sont donc exprimées en mètres et les temps en secondes) sauf mention contraire</li>
             <li>L'origine du temps cosmologique $t=0$ correspond au temps actuel (la coordonnée $t$ du big bang est donc égale à l'opposé de l'âge de l'Univers)</li>
             <li>Pour un univers homogène et isotrope, $R$ est le rayon de courbure de l'Univers, et $k$ un entier relatif pouvant valoir $-1$ (géométrie sphérique), $0$ (géométrie euclidienne), $1$ (géométrie hyperbolique)</li>
-          </ul></div>
+          </ul>
+        </div>
+        <div>
+          Le site fait appel aux technologies et programmes suivants :
+          <ul>
+            <li><a href="http://www.w3schools.com/xml/xml_xsl.asp">XML/XSLT</a> pour le contenu et sa traduction en HTML</li>
+            <li><a href="https://www.mathjax.org/">MathJax</a> pour les équations LaTeX</li>
+            <li><a href="http://photino.github.io/jquery-feyn">JQuery Feyn</a> pour les diagrammes de Feynman</li>
+            <li><a href="http://gnuplot.sourceforge.net/">Gnuplot</a> pour les plots</li>
+            <li><a href="https://root.cern.ch/">ROOT</a> et le langage C pour les simulations</li>
+            <li><a href="http://github.com/">github</a> pour la gestion du projet</li>
+          </ul>
+        </div>
       </div>
       
       <div id="content">
