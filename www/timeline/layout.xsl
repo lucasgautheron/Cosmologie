@@ -7,7 +7,7 @@
   <xsl:variable name="linkwords" select="//ressources/ressource/linkwords/linkword"/>
   <xsl:function name="doc:find-matching-linkword">
     <xsl:param name="text"/>
-    <xsl:copy-of select="(data(($linkwords[contains($text, .)])[1]/../../@id), ($linkwords[contains($text, .)])[1])"/>
+    <xsl:copy-of select="(data(($linkwords[contains($text, .)])[1]/../../@id), ($linkwords[contains($text, .)])[1], data(($linkwords[contains($text, .)])[1]/../../title))"/>
   </xsl:function>
   <xsl:function name="doc:add-links" as="item()*">
     <xsl:param name="text"/>
