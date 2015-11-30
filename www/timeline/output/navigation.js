@@ -164,6 +164,10 @@ function show_ressource(id, updatehash)
       $('#ressource .text').html(data_object.find('#text').html());
       $('#ressource .references').html(data_object.find('#references').html());
       $('#ressource').show();
+      data_object.find('#text script').each(function(){
+        $.globalEval(this.innerHTML);
+            
+      });
       setTimeout(update, 100);
     },
     error: function(e) {
