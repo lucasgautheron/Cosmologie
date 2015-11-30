@@ -26,7 +26,7 @@ $plots = glob("*.gnuplot");
 foreach($plots as $plot)
 {
     $plot = preg_replace('/\\.(gnuplot)/', '', $plot);
-    file_put_contents("tmp", "set term svg enhanced dashed; set out '../images/$plot.svg'; \n" . file_get_contents("$plot.gnuplot"));
+    file_put_contents("tmp", "set term svg enhanced dashed font 'DejaVuSerif,14'; set out '../images/$plot.svg'; \n" . file_get_contents("$plot.gnuplot"));
     exec('gnuplot tmp');
 }
 if(is_file('tmp')) unlink('tmp');
