@@ -57,7 +57,7 @@
   <xsl:template match="feynman">
     <div class="feynman" data-fid="{./@id}"><div class="diagram"></div><span class="caption"><b><xsl:value-of select="./@title" /> </b></span></div>
     <script>
-      $('.feynman[data-fid="{./@id}"] diagram').feyn({<xsl:value-of select="." />});
+      $('.feynman[data-fid="<xsl:value-of select="./@id" />"] diagram').feyn({<xsl:value-of select="." />});
     </script>
   </xsl:template>
   

@@ -124,15 +124,16 @@ function show_content(id, updatehash)
       current_content = id;
       if(updatehash) update_hash();
       hide_timeline();
-      data_object = $($.parseHTML(data)); 
+      data_object = $($.parseHTML(data, document, true)); 
       $('#content #timeline').html(data_object.find('#horizontal_timeline').html());
       $('#content .title').text(data_object.find('#title').text());
       $('#content .text').html(data_object.find('#text').html());
       $('#content .references').html(data_object.find('#references').html());
       $('#content .image').html(data_object.find('#image').html());
       $('#content').show();
-      $(data).filter('script').each(function(){
-            $.globalEval(this.text || this.textContent || this.innerHTML || '');
+      data_object.find('#text script').each(function(){
+        $.globalEval(this.innerHTML);
+            
       });
       setTimeout(update, 100);
     },
