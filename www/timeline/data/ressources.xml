@@ -165,7 +165,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <h3>Paramètres de densité</h3>
         <p>TODO def $\Omega_k$ et mq
             \begin{equation}
-            \left (\dfrac{1}{H_0}\dfrac{\dot{a}}{a} \right )^2 = \Omega_{\Lambda} + \Omega_k a^2 + \Omega_m a^3 + \Omega_r a^4 \mbox{ et } \Omega_k = 1-(\Omega_r + \Omega_m + \Omega_v)
+            \left (\dfrac{1}{H_0}\dfrac{\dot{a}}{a} \right )^2 = \Omega_{\Lambda} + \Omega_k / a^2 + \Omega_m / a^3 + \Omega_r / a^4 \mbox{ et } \Omega_k = 1-(\Omega_r + \Omega_m + \Omega_v)
             \end{equation}
         </p>   
         <h3>Démonstration</h3>
