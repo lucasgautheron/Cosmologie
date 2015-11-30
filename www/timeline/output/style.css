@@ -89,6 +89,7 @@ div.quote span:last-child
     display: inline-block;
     text-align: right;
     width: 100%;
+    font-weight: 600;
 }
 
 div.text
