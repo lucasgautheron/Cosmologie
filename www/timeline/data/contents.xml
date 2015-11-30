@@ -130,6 +130,22 @@
                 t5: ['190,15', '$=-ig^2\\big[\\!f^{abe}f^{cde}(\\eta^{\\mu\\rho}\\eta^{\\nu\\sigma}-\\eta^{\\mu\\sigma}\\eta^{\\nu\\rho})\\\\\\qquad+f^{ace}f^{bde}(\\eta^{\\mu\\nu}\\eta^{\\rho\\sigma}-\\eta^{\\mu\\sigma}\\eta^{\\nu\\rho})\\\\\\qquad+f^{ade}f^{bce}(\\eta^{\\mu\\nu}\\eta^{\\rho\\sigma}-\\eta^{\\mu\\rho}\\eta^{\\nu\\sigma})\\big]$', 290, 100]},
                 mathjax: true
             </feynman>
+            
+            <feynman id="nu_e" title="electron neutrino scattering">
+                description: 'Neutrino / electron pair annihilation',
+                width: 480,
+                height: 160,
+                incoming: {i1: '40,20', i2: '40,140'},
+                incoming: {o1: '240,20', o2: '240,140'},
+                vertex: {v1: '160,50', v2:'160,110'},
+                fermion: {line: 'i1-v1-o1', 'i2-v2-o2'},
+                photon: {line: 'v1-v2'},
+                node: {show: 'v', type: 'dot', fill: 'black', radius: 2},
+                label: {t1: ['50,10', '$\nu_e$', 20], t2: ['50,150', '$e^-$', 20], 
+                        t3: ['150,80', '$W^-$', 20],
+                        t4: ['150,10', '$e^-$', 20], t5: ['150,150', '$\nu_e$', 20]},
+                mathjax: true
+            </feynman>
         </text>
     </content>
 </contents>
