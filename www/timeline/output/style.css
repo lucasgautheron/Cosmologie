@@ -82,7 +82,7 @@ div.quote div
     font-style: italic;
 }
 
-div.quote span
+div.quote span:last-child
 {
     display: inline-block;
     text-align: right;
