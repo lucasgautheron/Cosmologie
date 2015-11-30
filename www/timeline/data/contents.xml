@@ -134,16 +134,15 @@
             <feynman id="nu_e" title="electron neutrino scattering">
                 description: 'Neutrino / electron pair annihilation',
                 width: 480,
-                height: 160,
+                height: 220,
                 incoming: {i1: '40,20', i2: '40,140'},
-                incoming: {o1: '240,20', o2: '240,140'},
-                vertex: {v1: '160,50', v2:'160,110'},
-                fermion: {line: 'i1-v1-o1', 'i2-v2-o2'},
+                outgoing: {o1: '240,20', o2: '240,140'},
+                vertex: {v1: '140,50', v2:'140,110'},
+                fermion: {line: 'i2-v2-o2,i1-v1-o1'},
                 photon: {line: 'v1-v2'},
-                node: {show: 'v', type: 'dot', fill: 'black', radius: 2},
-                label: {t1: ['50,10', '$\nu_e$', 20], t2: ['50,150', '$e^-$', 20], 
-                        t3: ['150,80', '$W^-$', 20],
-                        t4: ['150,10', '$e^-$', 20], t5: ['150,150', '$\nu_e$', 20]},
+                label: {t1: ['50,0', '$\\nu_e$'], t2: ['50,150', '$e^-$'], 
+                t3: ['100,80', '$W^-$'],
+                t4: ['230,0', '$e^-$'], t5: ['230,150', '$\\nu_e$']},
                 mathjax: true
             </feynman>
         </text>
