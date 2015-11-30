@@ -84,12 +84,12 @@ div.quote div
     font-style: italic;
 }
 
-div.quote span:last-child
+div.quote span.quote
 {
     display: inline-block;
     text-align: right;
     width: 100%;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 div.text
