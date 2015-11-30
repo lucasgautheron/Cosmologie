@@ -27,6 +27,48 @@
             <linkword>V. Slipher</linkword>
         </linkwords>
     </ressource>
+    
+    <ressource id="3">
+        <title>Henrietta Leavitt</title>
+        <text><p>1868-1921. Astrononome Américaine. </p>
+            
+            <p>Le travail réalisé par H. Leavitt à l'observatoire d'Harvard dès la fin du 19ème sicèle et sa découverte de la relation luminosité-période des céphéides a ouvert d'importantes perspectives pour l'astronomie en offrant un nouveau moyen de mesures de distances.</p></text>
+        <linkwords>
+            <linkword>Henrietta Leavitt</linkword>
+            <linkword>Leavitt</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="4">
+        <title>Eddington</title>
+        <text><p>1882-1944. Physicien britannique. </p>
+            
+            <p></p></text>
+        <linkwords>
+            <linkword>Eddington</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="6">
+        <title>Willem de Sitter</title>
+        <text><p>1872-1934. Physicien et mathématicien néerlandais. </p>
+            
+            <p></p></text>
+        <linkwords>
+            <linkword>Willem de Sitter</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="7">
+        <title>Alexandre Friedmann</title>
+        <text><p>1888-1925. Physicien et mathématicien russe. </p>
+            
+            <p></p></text>
+        <linkwords>
+            <linkword>Alexandre Friedmann</linkword>
+            <linkword>A. Friedmann</linkword>
+        </linkwords>
+    </ressource>
 
     <!--           -->
     <!-- EQUATIONS -->
