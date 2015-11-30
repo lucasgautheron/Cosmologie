@@ -534,7 +534,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <h3>Application</h3>
             <p>TODO détailler
             <figure src="SNIa.svg" title="Relation magnitude/redshift SNIa et fit modèle LCDM">
-                La relation magnitude-redshift observée pour des supernovaes de type Ia est comparée à un modèle théorique ce qui permet de déterminer les valeurs de $\Omega_m$ et $\Omega_v$ donnant le meilleur accord.
+                La relation magnitude-redshift observée pour des supernovaes de type Ia est comparée à un modèle théorique $\Lambda$CDM ce qui permet de déterminer les valeurs de $\Omega_m$ et $\Omega_v$ donnant le meilleur accord. Ici on trouve $\Omega_m = 0,25$ et $\Omega_v = 0.75$.
             </figure></p>
         </text>
         <linkwords>
