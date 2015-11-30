@@ -44,14 +44,14 @@ div#ressource
     color: white;*/
 }
 
-div.figure
+div.figure, div.feynman
 {
     text-align: center;
     margin: 0 auto;
     padding: 10px;
 }
 
-div.figure img
+div.figure img, div.feynman div.diagram
 {
     width:100%;
     max-width: 500px;
