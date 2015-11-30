@@ -462,9 +462,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
             </p>
             <p>
-                TODO: vérifier et transformer le résultat final (intégrale sur z, expression $\Lambda\mbox{CDM}$ etc.)
-                Soit une source $A$ comobile émettant $N$ photons de fréquence $\nu_e$ en un temps $\Delta t_e$ à partir de l'instant $t_e$. 
-                La puissance émise est alors $L = \dfrac{N h \nu_e}{\Delta t_e}$.
+                Soit une source $A$ comobile émettant $\Delta N$ photons de fréquence $\nu_e$ en un temps $\Delta t_e$ à partir de l'instant $t_e$. 
+                La puissance émise est alors $L = \dfrac{\Delta N h \nu_e}{\Delta t_e}$.
                 On place un récepteur $B$ comobile à une distance comobile $\chi$ de $A$.
                 L'onde lumineuse se propage et atteint sa cible au temps $t_r$. Le rayon du front d'onde est alors donné par :
                 \begin{equation}
@@ -479,7 +478,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \end{matrix}\right.\end{equation}
                 
                 La surface du front d'onde vaut alors $4\pi l^2$.
-                Les $N$ photons (leur nombre est conservé) sont reçus entre $t_r$ et $t_r + \Delta t_r$. Puisque le dernier et le premier photon ont parcouru la même distance comobile $\chi$ il vient que :
+                Les $\Delta N$ photons (leur nombre est conservé) sont reçus entre $t_r$ et $t_r + \Delta t_r$. Puisque le dernier et le premier photon ont parcouru la même distance comobile $\chi$ il vient que :
                 \begin{equation}
                 \displaystyle\int_{t_e}^{t_r} \dfrac{cdt}{a(t)} = \displaystyle\int_{t_e+\Delta t_e}^{t_r+\Delta t_r} \dfrac{cdt}{a(t)}
                 \end{equation}
@@ -496,7 +495,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 Finalement il vient donc que la puissance reçue sur la totalité du front d'onde est :
                 
                 \begin{equation}
-                P = \dfrac{N h \nu_r}{\Delta t_r} = \dfrac{L}{(1+z)^2}
+                P = \dfrac{\Delta N h \nu_r}{\Delta t_r} = \dfrac{L}{(1+z)^2}
                 \end{equation}
                 
                 Par ailleurs puisque le front d'onde a une surface $4\pi l^2$ il vient :
@@ -529,9 +528,14 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 Pour un Univers plat cette expression se simplifie en :
                 \begin{equation}
-                d_L = (1+z) \dfrac{c}{H_0} \displaystyle\int_{0}^{z} \dfrac{c dz'}{H_0 \sqrt{\Omega_{\Lambda} + \Omega_m (1+z')^3 }} 
+                d_L = (1+z) \dfrac{c}{H_0} \displaystyle\int_{0}^{z} \dfrac{dz'}{H_0 \sqrt{\Omega_{\Lambda} + \Omega_m (1+z')^3 }} 
                 \end{equation}
             </p>
+            <h3>Application</h3>
+            <p>TODO détailler
+            <figure src="SNIa.svg" title="Relation magnitude/redshift SNIa et fit modèle LCDM">
+                La relation magnitude-redshift observée pour des supernovaes de type Ia est comparée à un modèle théorique ce qui permet de déterminer les valeurs de $\Omega_m$ et $\Omega_v$ donnant le meilleur accord.
+            </figure></p>
         </text>
         <linkwords>
             <linkword>distance de luminosité</linkword>
@@ -551,6 +555,23 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         </text>
         <linkwords>
             <linkword>distance angulaire</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="113">
+        <title>Distances en cosmologie</title>
+        <text>
+            <h3>Distance comobile</h3>
+            <p></p>
+            <h3>Distance physique</h3>
+            <p></p>
+            <h3>Distance de luminosité</h3>
+            <p></p>
+            <h3>Distance de angulaire</h3>
+            <p></p>
+        </text>
+        <linkwords>
+            <linkword>distances en cosmologie</linkword>
         </linkwords>
     </ressource>
     
