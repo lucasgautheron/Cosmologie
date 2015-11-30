@@ -111,4 +111,25 @@
             <p>nucléosynthèse, CMB : gamow alpher herman</p>
         </text>
     </content>
+    
+    <content id="particules">
+        <title>Evolution de la physique des particules</title>
+        <image></image>
+        <text>
+            <p>Test</p>
+            <feynman id="test" title="Test !">
+                description: 'Four-gluon vertex for QCD',
+                width: 480,
+                height: 140,
+                incoming: {i1: '40,120', i2: '140,120', i3: '40,20', i4: '140,20'},
+                vertex: {v1: '90,70'},
+                gluon: {line: 'v1-i1,v1-i2,v1-i3,v1-i4'},
+                node: {show: 'v', type: 'dot', fill: 'black', radius: 2},
+                label: {t1: ['15,110', '$c,\\rho$', 30], t2: ['140,110', '$d,\\sigma$', 30],
+                t3: ['15,10', '$b,\\nu$', 30], t4: ['140,10', '$a,\\mu$', 30],
+                t5: ['190,15', '$=-ig^2\\big[\\!f^{abe}f^{cde}(\\eta^{\\mu\\rho}\\eta^{\\nu\\sigma}-\\eta^{\\mu\\sigma}\\eta^{\\nu\\rho})\\\\\\qquad+f^{ace}f^{bde}(\\eta^{\\mu\\nu}\\eta^{\\rho\\sigma}-\\eta^{\\mu\\sigma}\\eta^{\\nu\\rho})\\\\\\qquad+f^{ade}f^{bce}(\\eta^{\\mu\\nu}\\eta^{\\rho\\sigma}-\\eta^{\\mu\\rho}\\eta^{\\nu\\sigma})\\big]$', 290, 100]},
+                mathjax: true
+            </feynman>
+        </text>
+    </content>
 </contents>

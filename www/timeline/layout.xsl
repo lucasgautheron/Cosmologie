@@ -54,6 +54,13 @@
     <div class="figure"><img src="../images/{./@src}" title="{.}" /> <span class="caption"><b><xsl:value-of select="./@title" /> </b><br /><xsl:value-of select="." /></span></div>
   </xsl:template>
   
+  <xsl:template match="feynman">
+    <div class="feynman" data-fid="{./@id}"><div class="diagram"></div><span class="caption"><b><xsl:value-of select="./@title" /> </b></span></div>
+    <script>
+      $('.feynman[data-fid="{./@id}"] diagram').feyn({<xsl:value-of select="." />});
+    </script>
+  </xsl:template>
+  
   <xsl:template match="spoiler">
     <div class="spoiler"><span><a href="#" class="spoiler_toggle" >Afficher/Masquer</a></span><div><xsl:value-of select="." /></div></div>
   </xsl:template>
@@ -69,6 +76,7 @@
       <meta charset="utf-8" />
       <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="feynman.js"></script>
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       config: ["MMLorHTML.js"],
