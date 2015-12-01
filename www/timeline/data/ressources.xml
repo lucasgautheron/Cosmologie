@@ -578,14 +578,17 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \end{equation}
             </p>
             <h3>Application</h3>
-            <p>TODO détailler
+            <p>
+                Dans le graphe ci-dessous, la relation $z\mapsto d_L(z)$ est calculée pour 3 modèles différents. Pour des valeurs suffisantes de $z$ les divergences permettent de contraindre les paramètres cosmologiques.
+                <figure src="dl.svg" title="Distance de luminosité en fonction du redshift">
+                    Courbe $z \mapsto d_L(z)$ pour plusieurs modèles cosmologiques : Einstein-de Sitter, Hoyle, et $\Lambda$CDM d'après Planck 2013.
+                </figure>
+            </p>
+            <p>Les supernovas de type Ia constituent de bonnes chandelles standard. On connait donc à la fois leur magnitude absolue et apparente ce qui donne leur distance de luminosité $d_L$. Un fit est réalisé ci-dessous dans le cadre d'un Univers plat constitué de matière froide et d'énergie noire.
             <figure src="SNIa.svg" title="Relation magnitude/redshift SNIa et fit modèle LCDM">
                 La relation magnitude-redshift observée pour des supernovaes de type Ia est comparée à un modèle théorique $\Lambda$CDM ce qui permet de déterminer les valeurs de $\Omega_m$ et $\Omega_v$ donnant le meilleur accord. Ici on trouve $\Omega_m = 0,25$ et $\Omega_v = 0.75$.
             </figure>
-            
-                <figure src="dl.svg" title="Distance de luminosité en fonction du redshift">
-                    Courbe $z \mapsto d_L(z)$ pour plusieurs modèles cosmologiques : Einstein-de Sitter, Hoyle, et $\Lambda$CDM d'après Planck 2013.
-                </figure></p>
+            </p>
         </text>
         <linkwords>
             <linkword>distance de luminosité</linkword>
