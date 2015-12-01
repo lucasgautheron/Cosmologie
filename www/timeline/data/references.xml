@@ -87,4 +87,11 @@
         <date>1948</date>
         <file>hoyle_1948.pdf</file>
     </reference>
+    
+    <reference id="12" content-id="7">
+        <title>Discovery of the Hot Big-Bang : What happened in 1948</title>
+        <author>P. J. E. Peebles</author>
+        <date>2013</date>
+        <file>hot_bigbang_1948.pdf</file>
+    </reference>
 </references>
