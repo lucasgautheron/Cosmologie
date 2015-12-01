@@ -631,7 +631,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <ressource id="114">
         <title>Modèle Lambda CDM</title>
         <text>
-            
+            <p>Le modèle $\Lambda$ CDM (Lambda - Cold Dark Matter) est le modèle "standard" de la cosmologie. Comme son nom l'indique dans ce modèle l'Univers est dominé par la constante cosmologique et la matière (noire principalement) froide (pression nulle).</p>
+            <p>TODO: donner paramètres etc. </p>
         </text>
         <linkwords>
             <linkword>modèle $\Lambda$CDM</linkword>
