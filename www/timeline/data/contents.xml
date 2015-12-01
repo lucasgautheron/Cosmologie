@@ -110,8 +110,11 @@
         <image>bigbang.jpg</image>
         <text>
             <p>A la fin des années 1940, deux modèles cosmologiques principaux sont en confrontation : le modèle Einstein-de Sitter-Friedmann-Lemaitre (TODO: ...) dans lequel l'Univers est arbitrairement dense à son origine, et le modèle stationnaire de Hoyle dans lequel l'Univers est toujours semblable. A l'époque, les données issues de l'astronomie ne sont pas encore suffisantes pour déterminer la vraisemblance relative de ces modèles. En revanche, la présence d'une période très dense n'est pas anodine. Plusieurs physiciens s'intéressent donc alors à la dynamique de l'Univers dans cette phase que Hoyle surnomme alors "Big Bang".</p>
-            <p>A cette époque, [...] TODO décrire rapidement état $\phi$ particules.</p>
-            <p>En 1948, les physiciens Gamow, Alpher et Hernam publient de nombreux papiers [..]</p>
+            <p>A cette époque, [...] TODO décrire rapidement état $\phi$ particules. protons, neutrons, capture  neutronique, beta decay, neutron decay</p>
+            <p>En 1948, les physiciens Gamow, Alpher et Hernam publient de nombreux papiers dans lesquelles ils proposent une théorie expliquant la formation des noyaux des atomes dans cet Univers en expansion. Ils suggèrent le processus suivant :
+            Etat dense neutrons -> mélange neutrons protons après decay neutrons -> formation deutéron -> captures neutroniques successives donnent des éléments à nombre de nucléons plus grand que 2 -> les neutrons des noyaux deviennent des protons par beta decay jusqu'à stabilité
+            TODO: schéma ? animation ? montrer évolution. Pb de léquilibre p+n = d + y. 
+            E(d) - E(p+n) = 2 MeV. Donc si $k_BT \ll $ 2 MeV et T plus petit que 1e10 K. </p>
         </text>
     </content>
     
