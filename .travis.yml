@@ -1,0 +1,17 @@
+language: php
+
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y libsaxonb-java
+  - sudo apt-get install -y gnuplot
+  - sudo apt-get install -y default-jre
+
+script: cd www/timeline && php compile.php
+
+notifications:
+  email:
+    recipients:
+      - lucas.gautheron@gmail.com
+      - lucas@sciencestechniques.fr
+    on_success: change # default: change
+    on_failure: always
