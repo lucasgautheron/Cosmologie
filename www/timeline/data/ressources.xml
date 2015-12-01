@@ -502,6 +502,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \end{equation}
                 Où $L$ est la luminosité (en W) de la source.
                 
+                Cette grandeur est très utile en astronomie et a permis de grandes avancées en cosmologie. En effet, elle est accessible expérimentalement pour tous les objets dont on connait la magnitude absolue (ou luminosité intrinsèque), comme les céphéides ou les supernovas Ia. Pour de petites distances, la distance de luminosité est égale à la "distance" usuelle et cela en donne une mesure directe (c'est ainsi que furent mesurées les distances aux nébuleuses spirales et que fut découverte la loi de Hubble). 
+                Pour de grandes distances, dans un Univers en expansion, $d_L$ évolue de façon particulière : le redshift (décalage vers le rouge) et l'augmentation du temps de parcours de la lumière avec le temps diluent l'énergie de la source ; par ailleurs l'expansion affecte directement la taille du front d'onde lumineux. Pour un modèle cosmologique donné, on peut calculer la distance $d_L$ à partir du seul redshift $z$ d'un objet céleste. Or, le redshift $z$ est également accessible expérimentalement. Cela permet de contraindre ou rejeter des modèles d'expansion.
+                
             </p>
             <p>
                 Soit une source $A$ comobile émettant $\Delta N$ photons de fréquence $\nu_e$ en un temps $\Delta t_e$ à partir de l'instant $t_e$. 
