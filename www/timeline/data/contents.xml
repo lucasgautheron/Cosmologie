@@ -116,12 +116,19 @@
             <ol>
                <li>Dans ses premiers instants, l'Univers se trouve dans un état où il est dominé par des neutrons</li> 
                <li>Les neutrons s'agglomèrent très vite par capture neutronique pour former successivement des éléments contenant de plus en plus de nucléons. Ceci doit se faire très rapidement étant donné le temps de demie-vie du neutron qui se désintègre en environ 1000 s : sinon, tous les neutrons seraient devenus des protons avant de s'agglomérer.</li> 
-               <li>Les neutrons finissent par se désintégrer, et par ailleurs l'expansion ralentit la chaine d'agglomérations</li>
                <li>Ces éléments lourds qui se forment se stabilisent par radioactivité $\beta^-$ (leurs neutrons deviennent des protons) donnant les atomes stables dont on mesure aujourd'hui l'abondance.</li>
+               <li>Les neutrons finissent par se désintégrer, et par ailleurs l'expansion ralentit la chaine d'agglomérations.</li>
             </ol>
             
             </p>
-            <p>En 1948, Gamow, Alpher et Herman publient de nombreux papiers dans le cadre de cette théorie. </p>
+            <p>En 1948, Gamow, Alpher et Herman publient de nombreux papiers dans le cadre de cette théorie. Ils comprennent que pour expliquer la présence importante d'hydrogène, il est nécessaire que les protons issus de la désintégration des neutrons libres n'aient pas tous formé avec eux du deutéron (noyau constitué d'un proton et d'un neutron). Ils proposent alors que la formation du deutéron soit en fait un équilibre :
+            \begin{equation}
+            n+p \rightleftharpoons d+\gamma 
+            \end{equation}
+            Cet équilibre maintient la quantité de neutrons en empêchant leur désintégration (les neutrons libres réagissent pour former du deutéron puis sont libérés à nouveau très vite par rapport à leur temps de demi-vie). 
+            Pour que la réaction inverse (et donc l'équilibre) soit possible, il faut que l'Univers contienne de l'énergie sous forme de photons à un niveau comparable à l'énergie de dissociation du deutéron, ce qui correspond d'après les trois physiciens à un rayonnement d'une température de l'ordre de ($10^9$ K). Avec l'expansion, l'énergie des photons diminue jusqu'à ce que la réaction inverse soit impossible.  
+            Ils comprennent alors que l'Univers devait être très chaud, et que la densité d'énergie de radiation $\sim \sigma T^4/c$ était très supérieure à la densité d'énergie de la matière non relativiste.
+            Ils font donc la une constation intéressante : dans ce modèle, l'Univers, à son commencement, devait être dominé par l'énergie de rayonnement.</p>
             <p><!--A la fin des années 1940, deux modèles cosmologiques principaux sont en confrontation : le modèle Einstein-de Sitter-Friedmann-Lemaitre (TODO: ...) dans lequel l'Univers est arbitrairement dense à son origine, et le modèle stationnaire de Hoyle dans lequel l'Univers est toujours semblable. A l'époque, les données issues de l'astronomie ne sont pas encore suffisantes pour déterminer la vraisemblance relative de ces modèles. En revanche, la présence d'une période très dense n'est pas anodine. Plusieurs physiciens s'intéressent donc alors à la dynamique de l'Univers dans cette phase que Hoyle surnomme alors "Big Bang".--></p>
             <p>A cette époque, [...] TODO décrire rapidement état $\phi$ particules. protons, neutrons, capture  neutronique, beta decay, neutron decay</p>
             <p>En 1948, les physiciens Gamow, Alpher et Hernam publient de nombreux papiers dans lesquelles ils proposent une théorie expliquant la formation des noyaux des atomes dans cet Univers en expansion. Ils suggèrent le processus suivant :
