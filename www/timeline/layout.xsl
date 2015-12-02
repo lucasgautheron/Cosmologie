@@ -62,7 +62,7 @@
   </xsl:template>
   
   <xsl:template match="spoiler">
-    <div class="spoiler"><span><a href="#" class="spoiler_toggle" >Afficher/Masquer</a></span><div><xsl:value-of select="." /></div></div>
+    <div class="spoiler"><span><a href="#" class="spoiler_toggle" >Afficher/Masquer</a></span><div><xsl:apply-templates /></div></div>
   </xsl:template>
   
   <xsl:template match="quote">
