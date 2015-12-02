@@ -98,16 +98,6 @@ div.text
     padding: 5px 0;
 }
 
-div.text ul
-{
-    list-style-position: inside;
-}
-
-div.text li
-{
-    padding: 4px;
-}
-
 div.clear
 {
     clear: both;
