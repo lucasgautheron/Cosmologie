@@ -2,7 +2,7 @@ sudo: false
 
 language: php
 
-# cache: apt
+cache: apt
 
 addons:
   apt:
