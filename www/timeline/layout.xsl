@@ -106,7 +106,7 @@
     </script>
     </head>
     <body>
-      <div><a href="#" id="show_timeline" style="display: none;">Show timeline</a> | <a href="#" id="show_previous" style="display: none;">Previous</a> | <a href="#" id="show_next" style="display: none;">Next</a></div>
+      <div id="navigation"><a href="#" id="show_timeline">Show timeline</a> | <a href="#" id="show_previous">Previous</a> | <a href="#" id="show_next">Next</a></div>
       <div id="timeline">
       <h1>Timeline</h1>
         <ul>

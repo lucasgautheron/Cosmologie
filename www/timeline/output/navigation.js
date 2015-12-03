@@ -19,6 +19,14 @@ $(document).ready(function() {
       update_hash();
       return false;
   });
+  $("#show_previous").click(function() {
+      show_previous();
+      return false;
+  });
+  $("#show_next").click(function() {
+      show_next();
+      return false;
+  });
   $("a.note_indicator").click(function(event) {
        var x = event.pageX,
            y = event.pageY;
@@ -124,14 +132,24 @@ function show_timeline()
 {
   hide_content();
   hide_ressource();
-  $("#show_timeline").hide();
+  //$("#show_timeline").hide();
   $("#timeline").show();
 }
 
 function hide_timeline()
 {
   $("#timeline").hide();
-  $("#show_timeline").show();
+  //$("#show_timeline").show();
+}
+
+function show_previous()
+{
+    show_content(current_content > 1 ? current_content-1 : 1, true);
+}
+
+function show_next()
+{
+    show_content(current_content > 1 ? current_content+1 : 1, true);
 }
 
 function show_content(id, updatehash)
