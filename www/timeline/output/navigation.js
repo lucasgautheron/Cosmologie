@@ -20,14 +20,14 @@ $(document).ready(function() {
       return false;
   });
   $("a.note_indicator").click(function(event) {
-     var x = event.pageX,
-         y = event.pageY;
-     var div = $(this).parent().parent().find("div.note");
-     div.css({ position: "absolute",
-        marginLeft: 0, marginTop: 0,
-        top: y+10, left: x+10});
-     div.toggle(); 
-  });
+       var x = event.pageX,
+           y = event.pageY;
+       var div = $(this).parent().parent().find("div.note");
+       div.css({top: y-10, left: x+10});
+       div.toggle(); 
+       return false;
+    });
+  $("div.note").click(function() { div.hide(); });
 
   load_hash();
   window.onhashchange = load_hash;
@@ -45,22 +45,25 @@ function update()
 {
     $("a.ressource").unbind("click");
     $("a.ressource").click(function() {
-      show_ressource($(this).data('rid'), true);
-      return false;
+         show_ressource($(this).data('rid'), true);
+         return false;
     });
     $("div.spoiler a.spoiler_toggle").unbind();
     $("div.spoiler a.spoiler_toggle").click(function() {
-          $(this).parent().parent().find("div").toggle();
-          return false;
+         $(this).parent().parent().find("div").toggle();
+         return false;
     });
-   $("a.note_indicator").click(function(event) {
+    $("a.note_indicator").unbind();
+    $("a.note_indicator").click(function(event) {
          var x = event.pageX,
              y = event.pageY;
          var div = $(this).parent().parent().find("div.note");
-         div.css({top: y+10, left: x+10});
+         div.css({top: y-10, left: x+10});
          div.toggle(); 
          return false;
     });
+    $("div.note").unbind();
+    $("div.note").click(function() { div.hide(); });
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
