@@ -92,6 +92,15 @@ div.quote span.quote
     font-weight: bold;
 }
 
+a.note_indicator { font-size:75%; vertical-align:25%; }
+
+div.note
+{
+    display: none;
+    background-color: #FF9D7D;
+    border: 1px solid black;
+}
+
 div.text
 {
     text-align: justify;

@@ -69,6 +69,10 @@
     <div class="quote"><div><xsl:apply-templates /></div><span class="quote"><xsl:value-of select="./@author" />, <xsl:value-of select="./@date" /></span></div>
   </xsl:template>
   
+  <xsl:template match="note">
+    <a class="note_indicator" href="#"><sup>[?]</sup></a><div class="note"><xsl:apply-templates /></div>
+  </xsl:template>
+  
 <xsl:template match="/">
   <html>
     <head>

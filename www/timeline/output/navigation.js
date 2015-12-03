@@ -19,6 +19,15 @@ $(document).ready(function() {
       update_hash();
       return false;
   });
+  $("a.note_indicator").click(function(event) {
+     var x = event.pageX,
+         y = event.pageY;
+     var div = $(this).parent().parent().find("div.note");
+     div.css({ position: "absolute",
+        marginLeft: 0, marginTop: 0,
+        top: y+10, left: x+10});
+     div.toggle(); 
+  });
 
   load_hash();
   window.onhashchange = load_hash;
@@ -43,6 +52,15 @@ function update()
     $("div.spoiler a.spoiler_toggle").click(function() {
           $(this).parent().parent().find("div").toggle();
           return false;
+    });
+   $("a.note_indicator").click(function(event) {
+         var x = event.pageX,
+             y = event.pageY;
+         var div = $(this).parent().parent().find("div.note");
+         div.css({ position: "absolute",
+            marginLeft: 0, marginTop: 0,
+            top: y+10, left: x+10});
+         div.toggle(); 
     });
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
@@ -166,7 +184,6 @@ function show_ressource(id, updatehash)
       $('#ressource').show();
       data_object.find('#text script').each(function(){
         $.globalEval(this.innerHTML);
-            
       });
       setTimeout(update, 100);
     },
