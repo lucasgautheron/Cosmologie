@@ -144,12 +144,14 @@ function hide_timeline()
 
 function show_previous()
 {
-    show_content(current_content > 1 ? current_content-1 : 1, true);
+    var index = parseInt(current_content);
+    show_content(index > 1 ? index-1 : 1, true);
 }
 
 function show_next()
 {
-    show_content(current_content >= 1 ? current_content+1 : 1, true);
+    var index = parseInt(current_content);
+    show_content(index > 0 ? index+1 : 1, true);
 }
 
 function show_content(id, updatehash)
