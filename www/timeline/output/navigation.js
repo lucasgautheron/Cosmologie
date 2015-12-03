@@ -149,7 +149,7 @@ function show_previous()
 
 function show_next()
 {
-    show_content(current_content > 1 ? current_content+1 : 1, true);
+    show_content(current_content >= 1 ? current_content+1 : 1, true);
 }
 
 function show_content(id, updatehash)
