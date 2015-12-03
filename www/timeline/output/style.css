@@ -99,6 +99,8 @@ div.note
     display: none;
     background-color: #FF9D7D;
     border: 1px solid black;
+    position: absolute;
+    padding: 10px;
 }
 
 div.text

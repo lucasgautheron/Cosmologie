@@ -57,10 +57,9 @@ function update()
          var x = event.pageX,
              y = event.pageY;
          var div = $(this).parent().parent().find("div.note");
-         div.css({ position: "absolute",
-            marginLeft: 0, marginTop: 0,
-            top: y+10, left: x+10});
+         div.css({top: y+10, left: x+10});
          div.toggle(); 
+         return false;
     });
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
