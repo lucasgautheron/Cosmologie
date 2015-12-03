@@ -25,11 +25,9 @@ $(document).ready(function() {
        var div = $(this).parent().parent().find("div.note");
        div.css({top: y-10, left: x+10});
        div.toggle(); 
-
-       div.unbind();
-       div.click(function() { div.hide(); }); 
        return false;
-    });
+   });
+   $("body").click(function() { $("div.note").hide(); });
 
   load_hash();
   window.onhashchange = load_hash;
@@ -62,11 +60,10 @@ function update()
          var div = $(this).parent().parent().find("div.note");
          div.css({top: y-10, left: x+10});
          div.toggle();
-
-         div.unbind();
-         div.click(function() { div.hide(); }); 
          return false;
     });
+    $("body").unbind();
+    $("body").click(function() { $("div.note").hide(); });
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
