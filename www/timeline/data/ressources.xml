@@ -631,7 +631,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <ressource id="114">
         <title>Modèle Lambda CDM</title>
         <text>
-            <p>Le modèle $\Lambda$ CDM (Lambda - Cold Dark Matter) est le modèle "standard" de la cosmologie. Comme son nom l'indique dans ce modèle l'Univers est dominé par la constante cosmologique et la matière (noire principalement) froide (pression nulle).</p>
+            <p>Le modèle $\Lambda$ CDM (Lambda - Cold Dark Matter) est le modèle "standard" de la cosmologie. Deux composantes dominent : la constante cosmologique (équivalente à une énergie du vide appelée "énergie noire"), et de la matière à pression nulle (froide) n'interragissant pas avec les photons du fond diffus cosmologique. TODO paramètres (noire).</p>
             <p>TODO: donner paramètres etc. </p>
         </text>
         <linkwords>
@@ -809,6 +809,36 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <linkword>fond diffus cosmologique</linkword>
             <linkword>CMB</linkword>
             <linkword>cosmic microwave background</linkword>
+        </linkwords>
+    </ressource>
+    
+    <ressource id="502">
+        <title>Supernovas Ia</title>
+        <text>
+           <h3></h3>
+            <h3>Masse de Chandrasekhar</h3>
+            <p>
+                Faire le calcul sachant que hydrostatique => (btw: relat pas nécessaire)
+                \begin{equation}
+                0 = 4\pi r^2 \rho(r) \ddot{\xi} = P'(r) - \dfrac{Gm(r)\rho(r)}{r^2}
+                \end{equation}
+                
+                Donc \begin{equation}
+                r^2 P'(r) = G \rho (r) \displaystyle\int_0^r 4\pi r'^2 \rho(r') dr' 
+                \end{equation}
+                
+                begin{equation}
+                n(E) = \dfrac{1}{e^{\left (E - \mu\right )/k_B T}+1} \mbox{ et }  E = \sqrt{p^2c^2 + m^2c^4}
+                \end{equation}
+                
+                et 
+                \begin{equation}
+                P = \dfrac{1}{3} \displaystyle\int_0^{+\infty} n(p)
+                \end{equation}
+            </p>
+        </text>
+        <linkwords>
+            <linkword>supernovas Ia</linkword>
         </linkwords>
     </ressource>
     
