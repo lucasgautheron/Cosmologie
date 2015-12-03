@@ -27,7 +27,6 @@ $(document).ready(function() {
        div.toggle(); 
        return false;
     });
-  $("div.note").click(function() { div.hide(); });
 
   load_hash();
   window.onhashchange = load_hash;
@@ -59,11 +58,12 @@ function update()
              y = event.pageY;
          var div = $(this).parent().parent().find("div.note");
          div.css({top: y-10, left: x+10});
-         div.toggle(); 
+         div.toggle();
+
+         div.unbind();
+         div.click(function() { div.hide(); }); 
          return false;
     });
-    $("div.note").unbind();
-    $("div.note").click(function() { div.hide(); });
     MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
