@@ -853,7 +853,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 donc
                 \begin{equation}
-                \rho = \dfrac{4\pi}{h^3 pE}\displaystyle\int_{mc^2}^{+\infty} \dfrac{dE}{e^{\left (E - \mu\right )/k_B T}+1}
+                \rho = \dfrac{4\pi}{c^2 h^3}\displaystyle\int_{mc^2}^{+\infty} pE^2\dfrac{dE}{e^{\left (E - \mu\right )/k_B T}+1}
                 \end{equation}
                 
                 et 
