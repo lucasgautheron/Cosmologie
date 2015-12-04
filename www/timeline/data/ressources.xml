@@ -865,17 +865,19 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \begin{equation}
                 i\hbar \gamma^\mu \partial_\mu \psi - mc \psi = 0
                 \end{equation}
-                SOlution :
+                SOlution (dirac spinor)
                 \begin{equation}
                 \psi (t,\vec{x}) = \begin{pmatrix}
                 \phi\\ 
-                \left [ \dfrac{\sigma \vec{p}}{E+mc^2} \right ] \phi
+                \left [ \dfrac{\vec{\sigma} \vec{p}}{E+mc^2} \right ] \phi
                 \end{pmatrix} e^{\frac{i}{\hbar}\left( Et - \vec{p} \cdot \vec{x}\right )}
                 \end{equation}
                 
                 et $E = +\sqrt{m^2c^4 + p^2c^2}$ si pas d'antiparticules.
                 
                 Et bien sur $\psi(t, \vec{x}) = 0$ si $x_i = 0 \mbox{ ou } L$.
+                
+                Condition aux limites donnent comme attendu $p_i = 2\pi\hbar n_i / L$. 
                 
                 Montrer qtification etc. puis transformation somme intégrale type gaz de fermi (http://forums.futura-sciences.com/physique/715280-physique-solide-densite-detats-dun-gaz-delectrons.html#post5402921) pour $L\to +\infty$.
             </p>
