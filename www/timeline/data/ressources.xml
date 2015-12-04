@@ -166,30 +166,27 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <h3>Paramètres de densité</h3>
         <p>On divise l'équation (1) par le carré de la constante de Hubble actuelle $H_0 = \dot{a}/a (t=0)$, puis on la redivise par $a^2$. On trouve alors :
             \begin{equation}
-            \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \displaystyle \sum_i \dfrac{\rho_i(t)}{\rho_c} &amp; = &amp; \dfrac{kc^2}{R^2 H_0^2 a^2}
+            \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \displaystyle \sum_i \dfrac{\rho_i(t)}{\rho_c} =  \dfrac{kc^2}{R^2 H_0^2 a^2}
             \end{equation}
             
             Où $\rho_c = \dfrac{3c^2 H_0^2}{8\pi G}$ est une nouvelle constante appelée densité critique.
             
             On suppose que l'Univers est constitué de matière froide ($\rho_m = \rho_m^0/a^3$), de rayonnement ($\rho_r = \rho_r^0/a^4$), d'énergie du vide ($\rho_v = \rho_v^0$) et d'une espèce telle que $P = w\rho$ donc $\rho_w = \rho_w^0 a^{-3(1+w)}$.
             
-            Alors, en définissant $\Omega_i \equiv \dfrac{\rho_i^0}{\rho_c}$, le rapport entre la densité d'une espèce aujourd'hui et la densité critique actuelle, et $\Omega_k = \dfrac{kc^2}{R^2 H_0^2 a^2}$, l'équation devient :
+            Alors, en définissant $\Omega_i \equiv \dfrac{\rho_i^0}{\rho_c}$, le rapport entre la densité d'une espèce aujourd'hui et la densité critique actuelle, et $\Omega_k = \dfrac{kc^2}{R^2 H_0^2}$, l'équation devient :
             
             \begin{equation}
-            \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \left ( \dfrac{\Omega_m}{a^3} + \dfrac{\Omega_r}{a^4} + \dfrac{\Omega_v} + \dfrac{\Omega_w}{a^{3(1+w)}}\right )&amp; = &amp; \Omega_k
+            \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \left ( \dfrac{\Omega_m}{a^3} + \dfrac{\Omega_r}{a^4} + \dfrac{\Omega_v} + \dfrac{\Omega_w}{a^{3(1+w)}}\right ) =  \dfrac{\Omega_k}{a^2}
             \end{equation}
             
-            Les quantités $\Omega_i$ sont appelées "paramètres de densité". Comprise entre 0 et 1, leur valeur indique la proportion d'énergie contenue sous une forme précise.
+            Les quantités $\Omega_i$ sont appelées "paramètres de densité", et sont plus utilisées que les densités elles mêmes. Comprise entre 0 et 1, leur valeur indique la proportion d'énergie contenue sous une forme précise.
             En évaluant l'équation à $t=0$ il vient :
             
             \begin{equation}
-            1-\Omega_m - \Omega_r - \Omega_v = \Omega_k
+            1-\Omega_m - \Omega_r - \Omega_v - \Omega_w = \Omega_k
             \end{equation}
             
-            TODO def $\Omega_k$ et mq
-            \begin{equation}
-            \left (\dfrac{1}{H_0}\dfrac{\dot{a}}{a} \right )^2 = \Omega_{\Lambda} + \Omega_k / a^2 + \Omega_m / a^3 + \Omega_r / a^4 \mbox{ et } \Omega_k = 1-(\Omega_r + \Omega_m + \Omega_v)
-            \end{equation}
+            Cette équation signifie que la courbure de l'Univers est imposée différence entre la densité critique et la densité totale $\rho_{total}$. Une densité totale inférieure à $\rho_c$ implique $\Omega_k > 0$ et donc un Univers hyperbolique. A l'inverse, $\rho_{total} &lt; \rho_c$ implique une géométrie sphérique. Le cas d'égalité correspond à un Univers plat. 
         </p>   
         <h3>Démonstration</h3>
         <p><spoiler>...</spoiler></p>
