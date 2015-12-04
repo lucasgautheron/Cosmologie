@@ -176,7 +176,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             Alors, en définissant $\Omega_i \equiv \dfrac{\rho_i^0}{\rho_c}$, le rapport entre la densité d'une espèce aujourd'hui et la densité critique actuelle, et $\Omega_k = \dfrac{kc^2}{R^2 H_0^2}$, l'équation devient :
             
             \begin{equation}
-            \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \left ( \dfrac{\Omega_m}{a^3} + \dfrac{\Omega_r}{a^4} + \dfrac{\Omega_v} + \dfrac{\Omega_w}{a^{3(1+w)}}\right ) =  \dfrac{\Omega_k}{a^2}
+            \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \left ( \dfrac{\Omega_m}{a^3} + \dfrac{\Omega_r}{a^4} + Omega_v + \dfrac{\Omega_w}{a^{3(1+w)}}\right ) =  \dfrac{\Omega_k}{a^2}
             \end{equation}
             
             Les quantités $\Omega_i$ sont appelées "paramètres de densité", et sont plus utilisées que les densités elles mêmes. Comprise entre 0 et 1, leur valeur indique la proportion d'énergie contenue sous une forme précise.
