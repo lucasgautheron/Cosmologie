@@ -121,7 +121,7 @@
                <li>Les neutrons finissent par se désintégrer, et par ailleurs l'expansion ralentit la chaine d'agglomérations.</li>
             </ol>
             
-                <figure src="neutron_capture_abundance.png" title="Corrélation entre section efficace de capture neutronique et abondance">Ce graphe tiré de "The theory of origin and relative abundances distribution of the elements"<note>Alpher et Herman, Physical Review 22.153</note> montre la corrélation entre abondance relative d'une noyau $_{Z}^{A}X$ et la section efficace de capture neutronique $_{Z}^{A}X+n \rightarrow $_{Z}^{A+1}X$. Ceci montre que les éléments les moins abondants sont les plus susceptibles de capturer un neutron, ce qui suggère un mécanisme comme celui proposé par Gamow. </figure>
+                <figure src="neutron_capture_abundance.png" title="Corrélation entre section efficace de capture neutronique et abondance">Ce graphe tiré de "The theory of origin and relative abundances distribution of the elements"<note>Alpher et Herman, Physical Review 22.153</note> montre la corrélation entre abondance relative d'une noyau $_{Z}^{A}X$ et la section efficace de capture neutronique $_{Z}^{A}X+n \rightarrow _{Z}^{A+1}X$. Ceci montre que les éléments les moins abondants sont les plus susceptibles de capturer un neutron, ce qui suggère un mécanisme comme celui proposé par Gamow. </figure>
             </p>
             
             <h3>L'univers jeune dominé par les photons</h3>
