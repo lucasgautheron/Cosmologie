@@ -161,9 +161,32 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <li>La matière "froide" (aussi dite non relativiste ou poussière). C'est la matière ordinaire massive dont la vitesse est très inférieure à celle de la lumière. Pour un gaz parfait non relativiste, $P/\rho \propto v^2/c^2$ et on peut considérer $P = 0$. L'équation (2) donne alors $\rho a^3 = \mbox{ cste } = \rho_0$.</li>
                 <li>Les rayonnements. C'est la lumière ou de la matière ultrarelativiste comme les neutrinos ($v\sim c$). L'équation d'état est alors $P = \rho/3$. L'équation (2) donne cette fois $\rho a^4 = \mbox{ cste } = \rho_0$.</li>
                 <li>L'énergie du vide. Cette énergie d'équation d'état $P=-\rho$ est équivalente à l'introduction d'une constante cosmologique. Selon l'équation (2), $\rho = \mbox{cste} = \rho_0$. </li>
+                <li>De façon plus générale, pour une énergie d'équation d'état $P=w\rho$ où $w$ est une constante, alors l'équation (2) implique $\rho a^{3(1+w)} = \mbox{cste}$</li>
             </ul></p>
         <h3>Paramètres de densité</h3>
-        <p>TODO def $\Omega_k$ et mq
+        <p>On divise l'équation (1) par le carré de la constante de Hubble actuelle $H_0 = \dot{a}/a (t=0)$, puis on la redivise par $a^2$. On trouve alors :
+            \begin{equation}
+            \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \displaystyle \sum_i \dfrac{\rho_i(t)}{\rho_c} &amp; = &amp; \dfrac{kc^2}{R^2 H_0^2 a^2}
+            \end{equation}
+            
+            Où $\rho_c = \dfrac{3c^2 H_0^2}{8\pi G}$ est une nouvelle constante appelée densité critique.
+            
+            On suppose que l'Univers est constitué de matière froide ($\rho_m = \rho_m^0/a^3$), de rayonnement ($\rho_r = \rho_r^0/a^4$), d'énergie du vide ($\rho_v = \rho_v^0$) et d'une espèce telle que $P = w\rho$ donc $\rho_w = \rho_w^0 a^{-3(1+w)}$.
+            
+            Alors, en définissant $\Omega_i \equiv \dfrac{\rho_i^0}{\rho_c}$, le rapport entre la densité d'une espèce aujourd'hui et la densité critique actuelle, et $\Omega_k = \dfrac{kc^2}{R^2 H_0^2 a^2}$, l'équation devient :
+            
+            \begin{equation}
+            \dfrac{1}{H_0^2} \left (\dfrac{\dot{a}}{a}\right )^2 - \left ( \dfrac{\Omega_m}{a^3} + \dfrac{\Omega_r}{a^4} + \dfrac{\Omega_v} + \dfrac{\Omega_w}{a^{3(1+w)}}\right )&amp; = &amp; \Omega_k
+            \end{equation}
+            
+            Les quantités $\Omega_i$ sont appelées "paramètres de densité". Comprise entre 0 et 1, leur valeur indique la proportion d'énergie contenue sous une forme précise.
+            En évaluant l'équation à $t=0$ il vient :
+            
+            \begin{equation}
+            1-\Omega_m - \Omega_r - \Omega_v = \Omega_k
+            \end{equation}
+            
+            TODO def $\Omega_k$ et mq
             \begin{equation}
             \left (\dfrac{1}{H_0}\dfrac{\dot{a}}{a} \right )^2 = \Omega_{\Lambda} + \Omega_k / a^2 + \Omega_m / a^3 + \Omega_r / a^4 \mbox{ et } \Omega_k = 1-(\Omega_r + \Omega_m + \Omega_v)
             \end{equation}
