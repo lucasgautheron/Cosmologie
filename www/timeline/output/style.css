@@ -59,7 +59,7 @@ div.figure img, div.feynman div.diagram
 }
 
 div.figure .label { font-weight: bold; }
-div.figure .caption { text-align: left; }
+div.figure .caption { text-align: left; font-size: 80%; }
 
 div.spoiler
 {
