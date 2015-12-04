@@ -51,7 +51,7 @@
   </xsl:template>
   
   <xsl:template match="figure">
-    <div class="figure"><img src="../images/{./@src}" title="{.}" /> <span class="caption"><b><xsl:value-of select="./@title" /> </b><br /><xsl:value-of select="." /></span></div>
+    <div class="figure"><img src="../images/{./@src}" title="{.}" /> <div class="label"><xsl:value-of select="./@title" /></div><div class="caption"><xsl:apply-templates /></div></div>
   </xsl:template>
   
   <xsl:template match="feynman">
