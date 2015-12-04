@@ -847,19 +847,37 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 r^2 P'(r) = G \rho (r) \displaystyle\int_0^r 4\pi r'^2 \rho(r') dr' 
                 \end{equation}
                 
-                begin{equation}
+                \begin{equation}
                 n(E)d(E) = \dfrac{4\pi}{h^3 pE}\dfrac{1}{e^{\left (E - \mu\right )/k_B T}+1} dE \mbox{ et }  E = \sqrt{p^2c^2 + m^2c^4}
                 \end{equation}
                 
                 donc
                 \begin{equation}
-                \rho = \dfrac{4\pi}{c^2 h^3}\displaystyle\int_{mc^2}^{+\infty} pE^2\dfrac{dE}{e^{\left (E - \mu\right )/k_B T}+1}
+                \rho = g\dfrac{4\pi}{c^2 h^3}\displaystyle\int_{mc^2}^{+\infty} pE^2\dfrac{dE}{e^{\left (E - \mu\right )/k_B T}+1}
                 \end{equation}
                 
                 et 
                 \begin{equation}
-                P = \dfrac{4\pi}{3h^3} \displaystyle\int_{mc^2}^{+\infty} p^3 \dfrac{dE}{e^{\left (E - \mu\right )/k_B T}+1}
+                P = g\dfrac{4\pi}{3h^3} \displaystyle\int_{mc^2}^{+\infty} p^3 \dfrac{dE}{e^{\left (E - \mu\right )/k_B T}+1}
                 \end{equation}
+                
+                TODO: pr le montrer, résoudre dirac dans une boite
+                \begin{equation}
+                i\hbar \gamma^\mu \partial_\mu \psi - mc \psi = 0
+                \end{equation}
+                SOlution :
+                \begin{equation}
+                \psi (t,\vec{x}) = \begin{pmatrix}
+                \phi\\ 
+                \left [ \dfrac{\sigma \vec{p}}{E+mc^2} \right ] \phi
+                \end{pmatrix} e^{\frac{i}{\hbar}\left( Et - \vec{p} \cdot \vec{x}\right )}
+                \end{equation}
+                
+                et $E = +\sqrt{m^2c^4 + p^2c^2}$ si pas d'antiparticules.
+                
+                Et bien sur $\psi(t, \vec{x}) = 0$ si $x_i = 0 \mbox{ ou } L$.
+                
+                Montrer qtification etc. puis transformation somme intégrale type gaz de fermi (http://forums.futura-sciences.com/physique/715280-physique-solide-densite-detats-dun-gaz-delectrons.html#post5402921) pour $L\to +\infty$.
             </p>
         </text>
         <linkwords>
