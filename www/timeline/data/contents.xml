@@ -140,10 +140,23 @@
             \end{equation}
             Ainsi, Hayashi trouve un ratio protons/neutrons $n_p/n_n \sim 4$ au lieu de $1/7$ environ comme estimé par Gamow, Alpher et Herman en ne considérant que la désintégration des neutrons. Or, cette valeur ne permet pas de rendre compte de l'abondance observée des éléments pour une nucléosynthèse par capture neutronique successive. 
             
-            Puisque la détermination de ce ratio $n/p$ est cruciale pour déterminer la vraisemblance de la nucléosynthèse par capture neutronique, Alpher, Herman et Follin publient un papier en 1953 visant à estimer l'état initial de l'Univers avant la nucléosynthèse, selon les développements théoriques récents (qui leur permettent de décrire assez précisemment les phénomènes en jeu jusqu'à une température d'environ 100 MeV ~ $10^12$ K et en étudiant la dépendance en certaines valeurs expérimentales mal connues (par exemple, le temps de demie-vie du neutron). Ils estiment que $p/n$ est compris entre $4,5$ et $6$, ce qui remet en cause la nucléosynthèse par capture neutronique. Ce papier constitue cependant une base importante en tant que description alors la plus détaillée des premiers instants d'un big bang chaud.
+            Puisque la détermination de ce ratio $p/n$ est cruciale pour déterminer la vraisemblance de la nucléosynthèse par capture neutronique, Alpher, Herman et Follin publient un papier en 1953 visant à estimer l'état initial de l'Univers avant la nucléosynthèse, selon les développements théoriques à leur disposition (qui leur permettent de décrire assez précisemment les phénomènes en jeu jusqu'à une température d'environ 100 MeV ~ $10^12$ K) et en étudiant la dépendance en certaines valeurs expérimentales mal connues (par exemple, le temps de demie-vie du neutron). Ils estiment que $p/n$ est compris entre $4,5$ et $6$, ce qui remet en effet en cause la nucléosynthèse par capture neutronique. Ce papier constitue cependant une base importante en tant que description alors la plus détaillée des premiers instants d'un big bang chaud.
             <figure src="1953_bigbang_timetable.png" title="Récapitulatif des différentes étapes du Big Bang selon Alpher-Hermann-Follin 1953" width="300">
                 
             </figure>
+            </p>
+        </text>
+    </content>
+    
+    <content id="8">
+        <title>Nucléosynthèse stellaire et nucléosynthèse primordiale</title>
+        <image>nucleosynthese_stellaire.jpg</image>
+        <text>
+            <p>
+                Grâce aux travaux d'Alpher, Gamow et Herman, on sait décrire dans les années 1950 un Univers en évolution de type Big Bang dans son jeune âge. On sait que le refroidissement rapide à partir de températures très élevées permet d'expliquer la formation d'éléments légers (jusqu'à $A = 5$), mais pas des éléments plus lourds. On sait par ailleurs qu'il doit subsister, dans ce modèle, une densité de rayonnement non nulle à notre époque, équivalente à un rayonnement de corps noir dont la température actuelle devrait être de l'ordre de grandeur $1-10 K$. Cependant, à l'époque, l'idée de Big Bang demeure assez spéculative et souffre de plusieurs problèmes<note>comsic age problem</note> et la situation en reste là.
+            </p>
+            <p>
+                En 1957, 
             </p>
         </text>
     </content>
