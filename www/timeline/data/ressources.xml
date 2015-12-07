@@ -225,7 +225,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         \dot{a}^2 - \dfrac{8 \pi G}{3c^2} \dfrac{\rho_0}{a^2} = \dfrac{kc^2}{R^2}
         \end{equation}
             <ul>
-                <li>La solution en Univers plat est alors simple : $a^2(t) - 1 = \sqrt{\dfrac{1}{2}\dfrac{8\pi G\rho_0}{3c^2}} t$</li>
+                <li>La solution en Univers plat est alors simple : $a^2(t) - 1 = \sqrt{\dfrac{32\pi G\rho_0}{3c^2}} t$</li>
                 <li>Pour $k \neq 0$ 
                    
                     \begin{equation}
