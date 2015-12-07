@@ -104,6 +104,7 @@ div.note
     border: 1px solid black;
     position: absolute;
     padding: 10px;
+    z-index: 1000;
 }
 
 div.text
