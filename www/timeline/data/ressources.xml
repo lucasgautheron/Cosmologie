@@ -899,7 +899,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 La densité d'énergie est simplement $\rho = U/L^3$, et donc :
                 
                 \begin{equation}
-                \rho = \dfrac{4\pi g}{h^3}  \displaystyle\int_{0}{+\infty} \dfrac{p^2 E(p) dp}{e^{E(p)/k_B T} + 1}
+                \rho = \dfrac{4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty} \dfrac{p^2 E(p) dp}{e^{E(p)/k_B T} + 1}
                 \end{equation}
                 
                 Ceci ne dépend pas de $L$ puisque la limite $L\to \infty$ que nous avons considérée supprime les effets de bords. Cette équation est vraie pour des systèmes de taille $L \gg L_0 = \dfrac{hc}{k_B T}$. A T = 1000 K (donc vraiment en dessous du minimum pour une étoile), $L_0 \sim 1 \mbox{ m}$, ce qui est négligeable par rapport à la taille de l'étoile. L'équation d'état est donc valable à l'échelle locale : on peut l'appliquer au contenu de l'étoile entre $r$ et $r+dr$. 
