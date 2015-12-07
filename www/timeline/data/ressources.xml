@@ -881,7 +881,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 On peut donc transformer les sommes en intégrales selon :
                 
                 \begin{equation}
-                \sum_{n_x = -\infty}{+\infty} \to \dfrac{L}{h} \displaystyle\int_{-\infty}^{+\infty} dp_x
+                \sum_{n_x = -\infty}^{+\infty} \to \dfrac{L}{h} \displaystyle\int_{-\infty}^{+\infty} dp_x
                 \end{equation}
                 
                 L'expression de l'énergie devient alors :
