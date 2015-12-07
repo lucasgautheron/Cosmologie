@@ -58,8 +58,8 @@ div.figure img, div.feynman div.diagram
     margin: 0 auto;
 }
 
-div.figure .label { font-weight: bold; }
-div.figure .caption { text-align: left; font-size: 80%; }
+div.figure .label { margin: 5px; font-weight: bold; }
+div.figure .caption { margin: 5px; text-align: left; font-size: 80%; }
 
 div.spoiler
 {
