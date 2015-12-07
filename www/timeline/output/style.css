@@ -54,6 +54,7 @@ div.figure, div.feynman
 
 div.figure img, div.feynman div.diagram
 {
+    max-width: 500px;
     margin: 0 auto;
 }
 
