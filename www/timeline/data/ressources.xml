@@ -931,7 +931,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     <note>
                         \begin{equation}p = \dfrac{mv}{\sqrt{1-v^2/c^2}}\end{equation}
                         donc \begin{equation}v^2\left (1+\frac{p^2}{m^2c^2} \right ) = \frac{p^2}{m^2c^2}\end{equation}
-                        et \begin{equation}v^2 = \dfrac{p^2}{m^2 + p^2/c^2} = \dfrac{p^2 c^2}{E^2}\end{equation}
+                        et \begin{equation}v^2 = \dfrac{p^2}{m^2 c^2 + p^2} = \dfrac{p^2 c^2}{E^2}\end{equation}
                     </note> De là :
                 \begin{equation}
                 P = \dfrac{4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty}f \left (E(p)\right )  E(p) p^2 dp
