@@ -864,17 +864,17 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 Les électrons étant des fermions, ils suivent la distribution de Fermi-Dirac. Ainsi, le nombre d'électrons $n_i$ dans un état $i$ est donné par :
                 \begin{equation}
-                n_i = \dfrac{g}{e^{E_i/k_B T} + 1}
+                f_i(E_i) = \dfrac{g}{e^{E_i/k_B T} + 1}
                 \end{equation}
                 
                 Où $g$ est la dégénérescence de spin (pour un spin 1/2 comme c'est le cas pour les électrons, $g=2$).
                 
                 Ici, chaque état est déterminé par les nombres quantique $n_x,n_y,n_z$ tels que $p^2 = \frac{h^2}{L^2} (n_x^2 + n_y^2 + n_z^2)$. 
                 
-                L'énergie totale du système $U$ est donnée par la somme des énergies moyennes de chaque état $U_i = n_i E_i$. En sommant sur tous les états autorisés on trouve :
+                Le nombre $N$ d'électrons est donné par la somme des espérances moyennes associées à chaque état :
                 
                 \begin{equation}
-                U = g \displaystyle \sum_{n_x = -\infty}^{+\infty} \displaystyle \sum_{n_y = -\infty}^{+\infty} \displaystyle \sum_{n_z = -\infty}^{+\infty} \dfrac{E(n_x, n_y, n_z)}{e^{E(n_x, n_y, n_z)/k_B T} + 1}
+                N = f_i(E_i) = g \sum_{n_x = -\infty}^{+\infty} \displaystyle \sum_{n_y = -\infty}^{+\infty} \displaystyle \sum_{n_z = -\infty}^{+\infty} f \left (E(n_x, n_y, n_z)\right )
                 \end{equation}
                 
                 Remarquons que les niveaux d'impulsions (et donc d'énergie) sont de moins en moins espacés quand $L\to +\infty$, si bien que l'écart entre deux niveaux consécutifs devient infinitésimal. 
@@ -884,16 +884,36 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \sum_{n_x = -\infty}^{+\infty} \to \dfrac{L}{h} \displaystyle\int_{-\infty}^{+\infty} dp_x
                 \end{equation}
                 
-                L'expression de l'énergie devient alors :
+                L'expression du nombre d'électrons $N$ devient alors :
                 
                 \begin{equation}
-                U = g\dfrac{L^3}{h^3}  \displaystyle\int_{-\infty}^{+\infty}  \displaystyle\int_{-\infty}^{+\infty}  \displaystyle\int_{-\infty}^{+\infty}\dfrac{E(p_x, p_y, p_z) dp_x dp_y dp_z}{e^{E(p_x, p_y, p_z)/k_B T} + 1}
+                N = g\dfrac{L^3}{h^3}  \displaystyle\int_{-\infty}^{+\infty}  \displaystyle\int_{-\infty}^{+\infty}  \displaystyle\int_{-\infty}^{+\infty} f \left (E(p_x, p_y, p_z)\right ) dp_x dp_y dp_z
                 \end{equation}
                 
                 L'intégrande ne dépendant que de $E$ qui ne dépend que de la norme de $\vec{p}$ (pas de sa direction), il est intéressant de passer en coordonnées sphériques : 
                 
                 \begin{equation}
-                U = g\dfrac{L^3}{h^3}  \displaystyle\int_{\theta = 0}^{2\pi}  \displaystyle\int_{\phi = 0}^{\pi}  \displaystyle\int_{p = 0}^{+\infty}\dfrac{p^2 \sin{(\phi)} E(p) dp}{e^{E(p)/k_B T} + 1} \\ = 4\pi g\dfrac{L^3}{h^3}  \displaystyle\int_{0}^{+\infty} \dfrac{p^2 E(p) dp}{e^{E(p)/k_B T} + 1}
+                N = g\dfrac{L^3}{h^3}  \displaystyle\int_{\theta = 0}^{2\pi}  \displaystyle\int_{\phi = 0}^{\pi}  \displaystyle\int_{p = 0}^{+\infty}p^2 \sin{(\phi)} f(E(p)) E(p) dp \\ = 4\pi g\dfrac{L^3}{h^3}  \displaystyle\int_{0}^{+\infty} f(E(p)) E(p) dp
+                \end{equation}
+                
+                Enfin, la densité d'électrons $n$ vaut simplement $N/L^3$ et donc :
+                \begin{equation}
+                n =\dfrac{ 4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty} f(E(p)) E(p) dp
+                \end{equation}
+                
+                Ceci ne dépend pas de $L$ puisque la limite $L\to \infty$ que nous avons considérée supprime les effets de bords. Cette équation est vraie pour des systèmes de taille $L \gg L_0 = \dfrac{hc}{k_B T}$. A T = 1000 K (donc vraiment en dessous du minimum pour une étoile), $L_0 \sim 1 \mbox{ m}$, ce qui est négligeable par rapport à la taille de l'étoile. Cette relation est donc valable à l'échelle locale : on peut l'appliquer au contenu de l'étoile entre $r$ et $r+dr$. 
+                
+                
+                L'énergie totale du système $U$ est donnée par la somme des énergies moyennes de chaque état $U_i = f_i E_i$. En sommant sur tous les états autorisés on trouve :
+                
+                \begin{equation}
+                U = g \displaystyle \sum_{n_x = -\infty}^{+\infty} \displaystyle \sum_{n_y = -\infty}^{+\infty} \displaystyle \sum_{n_z = -\infty}^{+\infty} \dfrac{E(n_x, n_y, n_z)}{e^{E(n_x, n_y, n_z)/k_B T} + 1}
+                \end{equation}
+                
+                Cette somme est discrétisée par le même processus que précédemment. La seule différence est la présence d'un facteur $E$ supplémentaire dans l'intégrale :
+                
+                \begin{equation}
+                U = 4\pi g\dfrac{L^3}{h^3}  \displaystyle\int_{0}^{+\infty} \dfrac{p^2 E(p) dp}{e^{E(p)/k_B T} + 1}
                 \end{equation}
                 
                 La densité d'énergie est simplement $\rho = U/L^3$, et donc :
@@ -901,10 +921,12 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \begin{equation}
                 \rho = \dfrac{4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty} \dfrac{p^2 E(p) dp}{e^{E(p)/k_B T} + 1}
                 \end{equation}
+               
+               
+               
+                TODO: pression.
+                Pour un gaz ultrarelativiste, la relation pression / densité d'énergie est $P = \dfrac{1}{3}\rho$.
                 
-                Ceci ne dépend pas de $L$ puisque la limite $L\to \infty$ que nous avons considérée supprime les effets de bords. Cette équation est vraie pour des systèmes de taille $L \gg L_0 = \dfrac{hc}{k_B T}$. A T = 1000 K (donc vraiment en dessous du minimum pour une étoile), $L_0 \sim 1 \mbox{ m}$, ce qui est négligeable par rapport à la taille de l'étoile. L'équation d'état est donc valable à l'échelle locale : on peut l'appliquer au contenu de l'étoile entre $r$ et $r+dr$. 
-                
-                TODO pression. 
                 </p>
                 
                 <p></p>
