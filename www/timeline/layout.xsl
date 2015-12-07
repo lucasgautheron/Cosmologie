@@ -51,7 +51,23 @@
   </xsl:template>
   
   <xsl:template match="figure">
-    <div class="figure"><img src="../images/{./@src}" title="{.}" /> <div class="label"><xsl:value-of select="./@title" /></div><div class="caption"><xsl:apply-templates /></div></div>
+    <div class="figure">
+      <a href="../images/{./@src}" target="_blank">
+        <xsl:choose>
+          <xsl:when test="string(./@width)">
+            <img src="../images/{./@src}" title="{.}" width="{./@width}" />
+          </xsl:when>
+          <xsl:otherwise>
+            <img src="../images/{./@src}" title="{.}" />
+          </xsl:otherwise>
+        </xsl:choose>
+      </a>
+      <div class="label">
+        <xsl:value-of select="./@title" />
+      </div>
+      <div class="caption">
+        <xsl:apply-templates />
+      </div></div>
   </xsl:template>
   
   <xsl:template match="feynman">
