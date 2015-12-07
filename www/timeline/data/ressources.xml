@@ -934,7 +934,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                         et \begin{equation}v^2 = \dfrac{p^2}{m^2 + p^2/c^2} = \dfrac{p^2 c^4}{E^2}\end{equation}
                     </note> De là :
                 \begin{equation}
-                P = \dfrac{4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty}f \left (E(p)\right )  \dfrac{p^4 c}{E(p)} dp
+                P = \dfrac{4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty}f \left (E(p)\right )  \dfrac{p^4 c^2}{E(p)} dp
                 \end{equation}
                 
                 Si les électrons sont à l'équilibre thermique, ils suivent la distribution de fermi-dirac et donc :
@@ -942,7 +942,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 \begin{equation}\left\{\begin{matrix}
                 n &amp; = &amp; \dfrac{ 4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty} \dfrac{p^2 dp}{e^{E(p)/k_B T} + 1}\\ 
-                \rho &amp;  = &amp; \dfrac{4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty} \dfrac{p^2 E(p) dp}{e^{E(p)/k_B T} + 1}
+                \rho &amp;  = &amp; \dfrac{4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty} \dfrac{p^2 E(p) dp}{e^{E(p)/k_B T} + 1} \\
+                P &amp;  = &amp; \dfrac{4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty}f \left (E(p)\right )   \dfrac{1}{E(p)} \dfrac{p^4 c^2 dp}{e^{E(p)/k_B T} + 1} dp
                 \end{matrix}\right.\end{equation}
                
 
