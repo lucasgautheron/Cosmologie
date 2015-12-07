@@ -846,7 +846,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 Pour les décrire, on apparente le système qu'ils forment à une boite de dimension $L\times L \times L$ remplie d'électrons. 
                 Pour commencer, il faut déterminer les différents états microscopiques autorisés. Pour cela on résout l'équation de Dirac (pour conserver une description quantique et relativiste), en considérant que les électrons ne peuvent s'échapper de la boite (fonction d'onde nulle aux bords) :
                 \begin{equation}
-                i\hbar \gamma^\mu \partial_\mu \psi - mc \psi = 0 \mbox{ et } \psi (t, \vex{x}) = 0 \mbox{ si } x_i \in \{ 0, L \}
+                i\hbar \gamma^\mu \partial_\mu \psi - mc \psi = 0 \mbox{ et } \psi (t, \vec{x}) = 0 \mbox{ si } x_i \in \{ 0, L \}
                 \end{equation}
                 
                 En recherchant les solutions sous formes d'ondes on trouve :
@@ -908,7 +908,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 </p>
                 
                 <p></p>
-                
+                <spoiler>
                 TODO: 
                 Faire le calcul sachant que hydrostatique => (btw: relat pas nécessaire)
                 \begin{equation}
@@ -952,6 +952,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 Condition aux limites donnent comme attendu $p_i = 2\pi\hbar n_i / L$. 
                 
                 Montrer qtification etc. puis transformation somme intégrale type gaz de fermi (http://forums.futura-sciences.com/physique/715280-physique-solide-densite-detats-dun-gaz-delectrons.html#post5402921) pour $L\to +\infty$.
+                </spoiler>
             </p>
         </text>
         <linkwords>
