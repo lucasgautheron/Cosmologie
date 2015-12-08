@@ -952,7 +952,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 n &amp; = &amp; \dfrac{ 4\pi g m^3 c^3}{h^3}  \displaystyle\int_{1}^{+\infty} \dfrac{u \sqrt{u^2-1}}{e^{ux} + 1}\\ 
                 \rho &amp;  = &amp; \dfrac{4\pi g m^4 c^5}{h^3}  \displaystyle\int_{1}^{+\infty} \dfrac{u^2 \sqrt{u^2-1}}{e^{ux} + 1} \\
                 P &amp;  = &amp; \dfrac{4\pi g m^4 c^5}{3h^3}  \displaystyle\int_{1}^{+\infty} \dfrac{(u^2-1)^{3/2}}{e^{ux} + 1} 
-                \end{matrix}\right.\end{equation
+                \end{matrix}\right.\end{equation}
                
 
                 TODO: pression.
