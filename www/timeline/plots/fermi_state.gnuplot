@@ -1,7 +1,7 @@
 set xlabel 'log(N)'
 set ylabel 'log(P)'
 
-set xrange [-25:16]
+set xrange [-20:16]
 set yrange [-40:40]
 
 set style fill transparent solid 0.2 border
