@@ -914,7 +914,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 U = g \displaystyle \sum_{n_x = -\infty}^{+\infty} \displaystyle \sum_{n_y = -\infty}^{+\infty} \displaystyle \sum_{n_z = -\infty}^{+\infty}  f \left (E(p_x, p_y, p_z)\right )  E(n_x, n_y, n_z) 
                 \end{equation}
                 
-                Cette somme est discrétisée par le même processus que précédemment. La seule différence est la présence d'un facteur $E$ supplémentaire dans l'intégrale :
+                Cette somme peut être transformée en intégrale par le même processus de continuisation que précédemment. La seule différence est la présence d'un facteur $E$ supplémentaire dans l'intégrale :
                 
                 \begin{equation}
                 U = 4\pi g\dfrac{L^3}{h^3}  \displaystyle\int_{0}^{+\infty} f \left (E(p)\right )  E(p) p^2 dp
@@ -943,8 +943,16 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \begin{equation}\left\{\begin{matrix}
                 n &amp; = &amp; \dfrac{ 4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty} \dfrac{p^2 dp}{e^{E(p)/k_B T} + 1}\\ 
                 \rho &amp;  = &amp; \dfrac{4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty} \dfrac{p^2 E(p) dp}{e^{E(p)/k_B T} + 1} \\
-                P &amp;  = &amp; \dfrac{4\pi g}{3h^3}  \displaystyle\int_{0}^{+\infty} \dfrac{1}{E(p)} \dfrac{p^4 c^2 dp}{e^{E(p)/k_B T} + 1} dp
+                P &amp;  = &amp; \dfrac{4\pi g}{3h^3}  \displaystyle\int_{0}^{+\infty} \dfrac{1}{E(p)} \dfrac{p^4 c^2 dp}{e^{E(p)/k_B T} + 1} 
                 \end{matrix}\right.\end{equation}
+                
+                Les intégrales peuvent être réécrites à l'aide des variables $u = E/mc^2 = 1+\frac{p^2}{m^2c^2}$ et $x = mc^2/(k_B T)$ :
+                
+                \begin{equation}\left\{\begin{matrix}
+                n &amp; = &amp; \dfrac{ 4\pi g m^3 c^3}{h^3}  \displaystyle\int_{1}^{+\infty} \dfrac{u \sqrt{u^2-1}}{e^{ux} + 1}\\ 
+                \rho &amp;  = &amp; \dfrac{4\pi g m^4 c^5}{h^3}  \displaystyle\int_{1}^{+\infty} \dfrac{u^2 \sqrt{u^2-1}}{e^{ux} + 1} \\
+                P &amp;  = &amp; \dfrac{4\pi g m^4 c^5}{3h^3}  \displaystyle\int_{1}^{+\infty} \dfrac{(u^2-1)^{3/2}}{e^{ux} + 1} 
+                \end{matrix}\right.\end{equation
                
 
                 TODO: pression.
