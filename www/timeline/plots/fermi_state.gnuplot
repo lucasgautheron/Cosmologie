@@ -1,4 +1,4 @@
-set xlabel 'log(N)'
+set xlabel 'log(n)'
 set ylabel 'log(P)'
 
 set xrange [-20:16]

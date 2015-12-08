@@ -958,10 +958,10 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 Les intégrales peuvent être évaluées numériquement. 
                 
-                Si les effets thermiques ne dominent plus, un cas extrême à envisager est le cas où tous les niveaux en dessous d'une certaine énergie de seuil $E_F$ sont occupé. On parle d'état dégénéré. Ceci permet de maximiser la densité d'électrons à une énergie total donnée. Dans ce cas la fonction $n(E)$ vaut 1 en dessous de $E_F$ et 0 au dessus :
+                Si les effets thermiques ne dominent plus, un cas extrême à envisager est le cas où tous les niveaux en dessous d'une certaine énergie de seuil $E_F$ sont occupé. On parle d'état dégénéré. Ceci permet de maximiser la densité d'électrons à une énergie total donnée. Dans ce cas la fonction $f(E)$ vaut 1 en dessous de $E_F$ et 0 au dessus :
                 
                 \begin{equation}
-                n_d(E) = \left\{\begin{matrix}
+                f_d(E) = \left\{\begin{matrix}
                 1 &amp; \mbox{ si } &amp; E \leq E_F \\
                 0 &amp; \mbox{ si } &amp; E > E_F
                 \end{matrix}\right.
@@ -980,12 +980,17 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     TODO: vérifier si la zone rouge est interdite par exclusion de Pauli.
                 </figure>
 
-                TODO: pression.
-                Pour un gaz ultrarelativiste, la relation pression / densité d'énergie est $P = \dfrac{1}{3}\rho$.
+                On observe pour un gaz dégénéré deux régimes différents :
+                <ul>
+                    <li>Faible densité : $P \propto n^{5/3}$ (courbe en pointillés)</li>
+                    <li>Haute densité : $P \propto n^{4/3}$ (courbe en traits discontinus)</li>
+                </ul>
+                    
+                Un gaz dicté par les effets thermiques se comporte comme un gaz dégénéré à forte densité et comme un gaz parfait à basse densité. (La relation pression/densité pour fermi dirac est une droite, 
                 
                 </p>
                 
-                <p></p>
+                <p>TODO : utiliser eq. einstein ? lourd et pas nécessaire ? pr montrer eq Lane–Emden.</p>
                 <spoiler>
                 TODO: 
                 Faire le calcul sachant que hydrostatique => (btw: relat pas nécessaire)
