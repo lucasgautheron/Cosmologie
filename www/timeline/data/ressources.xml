@@ -976,7 +976,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 Les courbes $n \mapsto P$ sont calculées numériquement (facteurs dimensionnés exclus). On trouve :
                 
-                <figure src="images/fermi_state.svg" title="Diagramme de phase gaz d'électrons">
+                <figure src="fermi_state.svg" title="Diagramme de phase gaz d'électrons">
                     TODO: vérifier si la zone rouge est interdite par exclusion de Pauli.
                 </figure>
 
