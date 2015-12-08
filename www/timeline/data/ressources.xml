@@ -958,7 +958,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 Les intégrales peuvent être évaluées numériquement. 
                 
-                Si les effets thermiques ne dominent plus, un cas extrême à envisager est le cas où tous les niveaux en dessous d'une certaine énergie de seuil $E_F$ sont occupé. On parle d'état dégénéré. Ceci permet de maximiser la densité d'électrons à une énergie total donnée. Dans ce cas la fonction $f(E)$ vaut 1 en dessous de $E_F$ et 0 au dessus :
+                Si les effets thermiques ne dominent plus, un cas extrême à envisager est le cas où tous les niveaux en dessous d'une certaine énergie de seuil $E_F$ sont occupé. On parle d'état dégénéré. Ceci permet de maximiser la densité d'électrons à une énergie totale donnée. Dans ce cas la fonction $f(E)$ vaut 1 en dessous de $E_F$ et 0 au dessus :
                 
                 \begin{equation}
                 f_d(E) = \left\{\begin{matrix}
@@ -979,7 +979,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 Les courbes $n \mapsto P$ sont calculées numériquement (facteurs dimensionnés exclus). On trouve :
                 
                 <figure src="fermi_state.svg" title="Diagramme de phase gaz d'électrons">
-                    TODO: vérifier si la zone rouge est interdite par exclusion de Pauli.
+                    TODO: vérifier si la zone rouge est interdite par exclusion de Pauli. Je pensais que oui mais on dirait que non. 
                 </figure>
 
                 On observe pour un gaz dégénéré deux régimes différents :
