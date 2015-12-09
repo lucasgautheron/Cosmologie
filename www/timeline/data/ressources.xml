@@ -1002,6 +1002,24 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     P'(r) = - \left (\rho_m(r) + \dfrac{P(r)}{c^2} \right ) \dfrac{G}{r^2} \dfrac{M(r) + 4\pi r^3 P(r)/c^2}{1-2GM(r)/rc^2}
                 \end{equation}</p>
                 
+                <p>
+                En supposant que la pression due aux électrons domine à ces densités, et que leur régime est relativiste : 
+                \begin{equation}
+                P(r) = \simeq P_0 \left ( \dfrac{n_e}{n_0} \right )^{4/3}
+                \end{equation}
+            
+            Si l'étoile est principalement constituée d'hydrogène, $\rho_m \simeq m_H n_H$. On définit le rapport entre densité particulaire d'hydrogène et d'électron $\mu \equiv n_H / n_e$. Alors on a $n_e = \rho_m / (\mu m_H)$. En définissant $\rho_0 = \mu n_0 m_H$ la pression sécrit simplement 
+                \begin{equation}
+                P = P_0 \left ( \dfrac{\rho_m}{\rho_0}\right )^{4/3}
+                \end{equation}
+                
+                Ce qui transposé dans l'équation de Tolman-Oppenheimer donne :
+                
+                \begin{equation}
+                P_0 \dfrac{\rho_m'(r)}{\rho_0}  \left ( \dfrac{\rho_m}{\rho_0}\right )^{1/3}  = - \left (\rho_m(r) + \dfrac{P_0 \left ( \dfrac{\rho_m}{\rho_0}\right )^{4/3}}{c^2} \right ) \dfrac{G}{r^2} \dfrac{M(r) + 4\pi r^3 P_0 \left ( \dfrac{\rho_m}{\rho_0}\right )^{4/3}/c^2}{1-2GM(r)/rc^2}
+                \end{equation}
+                </p>
+                
                 <p>TODO : utiliser eq. einstein ? lourd et pas nécessaire ? pr montrer eq Lane–Emden.</p>
                 <spoiler>
                     pr la partie gravité, http://ads.harvard.edu/books/1989fsa..book/AbookC06.pdf semble intéressant. 
