@@ -105,6 +105,7 @@ div.note
     position: absolute;
     padding: 10px;
     z-index: 1000;
+    max-width: 500px;
 }
 
 div.text
