@@ -986,8 +986,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
 
                 On observe pour un gaz dégénéré deux régimes différents :
                 <ul>
-                    <li>Faible densité : $P \propto n^{5/3}$ (courbe en pointillés)</li>
-                    <li>Haute densité : $P \propto n^{4/3}$ (courbe en traits discontinus)</li>
+                    <li>Faible densité : $P \simeq P_0 \left ( \dfrac{n}{n_0} \right )^{5/3}$ (courbe en pointillés)</li>
+                    <li>Haute densité : $P \propto \left ( \dfrac{n}{n_0} \right )^{4/3}$ (courbe en traits discontinus)</li>
                 </ul>
                     
                 Un gaz dicté par les effets thermiques se comporte comme un gaz dégénéré à forte densité et comme un gaz parfait à basse densité. (La relation pression/densité pour fermi dirac est une droite, 
