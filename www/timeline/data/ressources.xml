@@ -976,7 +976,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 TODO: expressions analytiques.
                 
-                Les courbes $n \mapsto P$ sont calculées numériquement (facteurs dimensionnés exclus). On trouve :
+                On note $n_0 = \dfrac{ 4\pi g m^3 c^3}{h^3} $ et $P_0 = \dfrac{4\pi g m^4 c^5}{3h^3}$.
+                
+                Les courbes $n/n_0 \mapsto P/P_0$ sont calculées numériquement (facteurs dimensionnés exclus). On trouve
                 
                 <figure src="fermi_state.svg" title="Diagramme de phase gaz d'électrons">
                     TODO: vérifier si la zone rouge est interdite par exclusion de Pauli. Je pensais que oui mais on dirait que non. 
