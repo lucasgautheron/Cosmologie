@@ -28,13 +28,13 @@ $(document).ready(function() {
       return false;
   });
   $("a.note_indicator").click(function(event) {
-       var x = event.pageX,
-           y = event.pageY;
-       var div = $(this).siblings("div.note");
-       div.css({top: y-10, left: x+10});
-       div.toggle(); 
-       return false;
-   });
+         var x = event.pageX,
+             y = event.pageY;
+         var div = $(this).("div.note[data-nid=" + '"' + $(this).data('nid') + ' "' + "]");
+         div.css({top: y-10, left: x+10});
+         div.toggle();
+         return false;
+    });
    $("body").click(function() { $("div.note").hide(); });
 
   load_hash();
@@ -65,7 +65,7 @@ function update()
     $("a.note_indicator").click(function(event) {
          var x = event.pageX,
              y = event.pageY;
-         var div = $(this).siblings("div.note");
+         var div = $(this).("div.note[data-nid=" + '"' + $(this).data('nid') + ' "' + "]");
          div.css({top: y-10, left: x+10});
          div.toggle();
          return false;
