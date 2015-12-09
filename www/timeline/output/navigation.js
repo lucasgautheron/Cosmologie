@@ -30,7 +30,7 @@ $(document).ready(function() {
   $("a.note_indicator").click(function(event) {
        var x = event.pageX,
            y = event.pageY;
-       var div = $(this).parent().find("div.note");
+       var div = $(this).siblings("div.note");
        div.css({top: y-10, left: x+10});
        div.toggle(); 
        return false;
@@ -65,7 +65,7 @@ function update()
     $("a.note_indicator").click(function(event) {
          var x = event.pageX,
              y = event.pageY;
-         var div = $(this).parent().find("div.note");
+         var div = $(this).siblings("div.note");
          div.css({top: y-10, left: x+10});
          div.toggle();
          return false;
