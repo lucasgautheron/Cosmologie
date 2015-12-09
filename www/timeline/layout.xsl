@@ -86,7 +86,7 @@
   </xsl:template>
   
   <xsl:template match="note">
-    <a class="note_indicator" href="#"><sup>[?]</sup></a><div class="note"><xsl:apply-templates /></div>
+    <div class="note_container"><a class="note_indicator" href="#"><sup>[?]</sup></a><div class="note"><xsl:apply-templates /></div></div>
   </xsl:template>
   
 <xsl:template match="/">
