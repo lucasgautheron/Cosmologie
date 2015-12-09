@@ -164,8 +164,8 @@
             <p>
                 En 1957, Geoffrey Burbidge, Margarett Burbidge, William Fowler et Fred Hoyle publient un article très détaillé intitulé "Synthesis of the Elements in Stars", dans lequel ils classent et décrivent très précisément différents processus nucléaires possibles dans les étoiles, afin d'expliquer la formation de la plupart des éléments naturels, des plus légers aux plus lourds (jusqu'à l'Uranium), à partir de l'hydrogène seulement. On peut résumer très rapidement cette classification ainsi :
                 <ul>
-                    <li>Hydrogen Burning, Helium Burning et Processus $\alpha$ : Fusions consécutives d'éléments $X_i$ et d'hydrogène ou d'hélium. Formation de quelques éléments $A \leq 25$, notamment le carbone et l'oxygène. </li>
-                    <li>Processus $e$ : Atteinte d'un état d'équilibre thermique des protons et neutrons qui s'associent en partie pour former de façon privilégiée des éléments très stables (autour du Fer, $A45 \leq A \leq 65$, intervalle dans laquelle elle domine)</li>
+                    <li>Hydrogen Burning, Helium Burning et Processus $\alpha$ : Fusions consécutives d'éléments $X_i$ et d'hydrogène ou d'hélium. Formation d'éléments plutôt légers $A \leq 25$, notamment le carbone et l'oxygène. </li>
+                    <li>Processus $e$ : Atteinte d'un état d'équilibre thermique des protons et neutrons qui s'associent en partie pour former de façon privilégiée des éléments très stables (autour du Fer, $45 \leq A \leq 65$, intervalle dans laquelle elle domine)</li>
                     <li>Processus $s$ : Captures neutroniques lentes (les éléments se stabilisent par radioactivité bêta plus vite qu'ils ne se forment par capture). Domine dans le domaine $25 \leq A \leq 45$ et est signicatif dans l'intervalle $65 \leq A \leq 200$</li>
                     <li>Processus $r$ : Captures neutroniques rapides (les éléments se stabilisent par radioactivité $\beta$ plus lentement qu'ils ne sont formés). Significatif pour des éléments lourds, $A \geq 70$. </li>
                     <li>Processus $p$</li>
