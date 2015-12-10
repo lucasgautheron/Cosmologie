@@ -1060,7 +1060,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 $Y(x) = 4\pi x^2 Z(x)$. 
                 
                 \begin{equation}
-                \alpha \dfrac{xY''(x) - 2Y'(x)}{x}  = - 4\pi  \left (\beta \left (  \dfrac{Z(x)}{x} + Z'(x) \right )^{2/3} + \dfrac{Z(x)}{x} + Z'(x)\right ) \dfrac{  x^2 Z(x)+ x^3 \left ( \dfrac{Z(x)}{x} + Z'(x) \right )^{4/3}/\beta}{1-2Y(x)/(4\pi \alpha x)}
+                \alpha \left [ x^2 Z''(x) + 2xZ'(x)-2Z(x)\right ]  = - 4\pi  \left (\beta \left (  \dfrac{Z(x)}{x} + Z'(x) \right )^{2/3} + \dfrac{Z(x)}{x} + Z'(x)\right ) \dfrac{  x^2 Z(x)+ x^3 \left ( \dfrac{Z(x)}{x} + Z'(x) \right )^{4/3}/\beta}{1-24\pi Z(x)/ \alpha}
                 \end{equation}
                 Alors :
                 </p>
