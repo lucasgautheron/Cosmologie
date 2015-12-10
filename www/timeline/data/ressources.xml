@@ -1022,19 +1022,39 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 On définit $x \equiv \dfrac{r}{R}$, $y \equiv \dfrac{\rho_m}{\rho_0}$, $Y(x) \equiv \dfrac{M(x)}{\rho_0 R^3} = 4\pi \displaystyle\int_{0}^{x} t^2 y(t) dt$ . L'équation devient :
                 
                 \begin{equation}
-                \dfrac{P_0}{R} y'(x) y^{1/3}  = - \left (\rho_0 y(x) + \dfrac{P_0 y^{4/3}}{c^2} \right ) \dfrac{G}{r^2} \dfrac{ \rho_0 R^3 Y(x) + 4\pi R^3 x^3 P_0 y^{4/3}/c^2}{1-2G\rho_0 R^2 Y(x)/xc^2}
+                \dfrac{RP_0}{G} y'(x) y^{1/3}  = - \left (\rho_0 y(x) + \dfrac{P_0 y^{4/3}}{c^2} \right ) \dfrac{1}{x^2} \dfrac{ \rho_0 R^3 Y(x) + 4\pi R^3 x^3 P_0 y^{4/3}/c^2}{1-2G\rho_0 R^2 Y(x)/xc^2}
                 \end{equation}
                 
                 Donc
                 
                 \begin{equation}
-                \dfrac{P_0}{R} y'(x)  = - \left (\rho_0 y(x)^{2/3} + \dfrac{P_0 y}{c^2} \right ) \dfrac{G}{r^2} \dfrac{ \rho_0 R^3 Y(x) + 4\pi R^3 x^3 P_0 y^{4/3}/c^2}{1-2G\rho_0 R^2 Y(x)/xc^2}
+                \dfrac{RP_0}{G} y'(x)  = - \left (\rho_0 y(x)^{2/3} + \dfrac{P_0 y}{c^2} \right ) \dfrac{1}{x^2} \dfrac{ \rho_0 R^3 Y(x) + 4\pi R^3 x^3 P_0 y^{4/3}/c^2}{1-2G\rho_0 R^2 Y(x)/xc^2}
                 \end{equation}
                 
                 Puisque $y(x) = \dfrac{Y'(x)}{4\pi x^2}$ et $y'(x) = \dfrac{xY''(x) - 2Y'(x)}{4\pi x^3}$ alors :
                 
                 \begin{equation}
-                \dfrac{P_0}{R} \dfrac{xY''(x) - 2Y'(x)}{4\pi x^3}  = - \left (\rho_0 \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{2/3} + \dfrac{P_0}{c^2} \dfrac{Y'(x)}{4\pi x^2}\right ) \dfrac{G}{r^2} \dfrac{ \rho_0 R^3 Y(x) + 4\pi R^3 x^3 P_0 \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{4/3}/c^2}{1-2G\rho_0 R^2 Y(x)/xc^2}
+                \dfrac{RP_0}{G} \dfrac{xY''(x) - 2Y'(x)}{4\pi x^3}  = - \left (\rho_0 \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{2/3} + \dfrac{P_0}{c^2} \dfrac{Y'(x)}{4\pi x^2}\right ) \dfrac{1}{x^2} \dfrac{ \rho_0 R^3 Y(x) + 4\pi R^3 x^3 P_0 \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{4/3}/c^2}{1-2G\rho_0 R^2 Y(x)/xc^2}
+                \end{equation}
+                
+                \begin{equation}
+                \dfrac{RP_0}{G} \dfrac{xY''(x) - 2Y'(x)}{4\pi x}  = - \left (\rho_0 \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{2/3} + \dfrac{P_0}{c^2} \dfrac{Y'(x)}{4\pi x^2}\right ) \dfrac{ \rho_0 R^3 Y(x) + 4\pi R^3 x^3 P_0 \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{4/3}/c^2}{1-2G\rho_0 R^2 Y(x)/xc^2}
+                \end{equation}
+                
+                \begin{equation}
+                \dfrac{Rc^2}{G} \dfrac{xY''(x) - 2Y'(x)}{4\pi x}  = - \left ( \dfrac{\rho_0 c^2}{P_0} \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{2/3} +} \dfrac{Y'(x)}{4\pi x^2}\right ) \dfrac{ \rho_0 R^3 Y(x) + 4\pi R^3 x^3 P_0 \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{4/3}/c^2}{1-2G\rho_0 R^2 Y(x)/xc^2}
+                \end{equation}
+                
+                begin{equation}
+                \dfrac{c^2}{G\rho_0 R^2} \dfrac{xY''(x) - 2Y'(x)}{4\pi x}  = - \left ( \dfrac{\rho_0 c^2}{P_0} \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{2/3} +} \dfrac{Y'(x)}{4\pi x^2}\right ) \dfrac{  Y(x) + 4\pi  x^3 \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{4/3}/(\rho_ 0 c^2 / P_0)}{1-2G\rho_0 R^2 Y(x)/xc^2}
+                \end{equation}
+                
+                On définit $\alpha = c^2/{G\rho_0 R^2}$ et $\beta = \dfrac{\rho_0 c^2}{P_0}$
+                
+                Alors 
+                
+                begin{equation}
+                \alpha \dfrac{xY''(x) - 2Y'(x)}{4\pi x}  = - \left (\beta \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{2/3} +} \dfrac{Y'(x)}{4\pi x^2}\right ) \dfrac{  Y(x) + 4\pi  x^3 \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{4/3}/\beta}{1-2Y(x)/(\alpha x)}
                 \end{equation}
                 </p>
                 
