@@ -1092,9 +1092,12 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     
     <ressource id="601">
         <title>Principe d'équivalence</title>
-        <text><p>Il existe plusieurs formulations du principe d'équivalence. Toutes reposent cependant sur le résultat suivant : la chute d'un corps d'influence négligeable dans un champ de pesanteur est indépendant de sa nature (en particulier de sa masse). On dit aussi que la masse inerte d'un corps $m_i$ (qui intervient dans la deuxième loi de Newton, $\vec{F} = m_i\vec{a}$) est égale à sa masse grave $m_g$ (qui intervient dans l'expression de la force de gravitation $\vec{F}_g = m_g \vec{g}$. Si en effet $m_i = m_g = m$ alors le principe fondamental de la dynamique appliqué à un corps en chute libre donne $\vec{a} = \vec{g}$ ce qui ne dépend plus de la nature des corps. Expérimentalement, Eötvös avait montré en 1909 que la différence relative entre ces deux masses était inférieure à $10^{-8}$.</p>
-            <p>Le principe d'équivalence tel qu'énoncé par Einstein en 1907 peut être formulé ainsi : <i>the outcome of any local, nongravitational test experiment is independent of the experimental apparatus’ velocity relative to the gravitational field and is independent of where and when in the gravitational field the experiment is performed (http://arxiv.org/pdf/gr-qc/0103067v1.pdf).</i>. </p>
-            <p><b>Principe d'équivalence faible</b>: <i>La chute d'une particule-test ne dépend pas de sa nature donc de sa masse en particulier.</i> Ceci signifie qu'une particule sensible uniquement au champ de gravitation, et sans effet sur le système qui l'entoure, tombe de la même manière dans un champ de pesanteur quelque soit sa masse. </p>
+        <text><p>Le principe d'équivalence formule de façon générale l'idée selon laquelle la nature d'un objet n'affecte pas la façon dont il se meut dans un champ de gravitation. Cette idée était déjà présente en mécanique Newtonienne, dans laquelle un corps de masse $m$ dans un champ de gravitation $\vec{g}$ obéit à la troisième loi de Newton $m_i\dfrac{d\vec{v}}{dt} = m_g\vec{g}$. La masse inertielle $m_i$ étant considérée comme identique à la masse $m_g$ chez Newton, il vient que pour tout corps $\dfrac{d\vec{v}}{dt} = \vec{g}$. 
+        todo EXPLIQUER démarche einstein
+        </p>
+        <p>Le principe d'équivalence tel qu'énoncé par Einstein en 1907 peut être formulé ainsi : <i>the outcome of any local, nongravitational test experiment is independent of the experimental apparatus’ velocity relative to the gravitational field and is independent of where and when in the gravitational field the experiment is performed (http://arxiv.org/pdf/gr-qc/0103067v1.pdf).</i>. </p>
+        <p>On distingue deux formulations du principe d'équivalence :</p>
+            <p><b>Principe d'équivalence faible</b>: </p>
             <p><b>Principe d'équivalence fort</b>: </p>
             <p><b>Du principe d'équivalence au formalisme tensoriel :</b>
             </p>
