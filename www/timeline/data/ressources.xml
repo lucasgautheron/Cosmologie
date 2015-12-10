@@ -1049,7 +1049,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \dfrac{c^2}{G\rho_0 R^2} \dfrac{xY''(x) - 2Y'(x)}{4\pi x}  = - \left ( \dfrac{\rho_0 c^2}{P_0} \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{2/3} + \dfrac{Y'(x)}{4\pi x^2}\right ) \dfrac{  Y(x) + 4\pi  x^3 \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{4/3}/(\rho_ 0 c^2 / P_0)}{1-2G\rho_0 R^2 Y(x)/xc^2}
                 \end{equation}
                 
-                On définit $\alpha = c^2/{G\rho_0 R^2}$ et $\beta = \dfrac{\rho_0 c^2}{P_0}$
+                On définit $\alpha = c^2/{G\rho_0 R^2} = \dfrac{c^2}{GR^2} $ et $\beta = \dfrac{\rho_0 c^2}{P_0}$
                 
                 Alors 
                 
@@ -1060,7 +1060,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 $Y(x) = 4\pi x^2 Z(x)$. 
                 
                 \begin{equation}
-                \alpha \left [ x^2 Z''(x) + 2xZ'(x)-2Z(x)\right ]  = - 4\pi  \left (\beta \left (  \dfrac{Z(x)}{x} + Z'(x) \right )^{2/3} + \dfrac{Z(x)}{x} + Z'(x)\right ) \dfrac{  x^2 Z(x)+ x^3 \left ( \dfrac{Z(x)}{x} + Z'(x) \right )^{4/3}/\beta}{1-24\pi Z(x)/ \alpha}
+                \alpha \left [ x^2 Z''(x) + 2xZ'(x)-2Z(x)\right ]  = - 4\pi  \left (\beta \left (  \dfrac{Z(x)}{x} + Z'(x) \right )^{2/3} + \dfrac{Z(x)}{x} + Z'(x)\right ) \dfrac{  x^2 Z(x)+ x^3 \left ( \dfrac{Z(x)}{x} + Z'(x) \right )^{4/3}/\beta}{1-8\pi Z(x)/ \alpha}
                 \end{equation}
                 Alors :
                 </p>
