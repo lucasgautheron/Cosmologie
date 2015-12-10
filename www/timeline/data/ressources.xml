@@ -1045,7 +1045,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \dfrac{Rc^2}{G} \dfrac{xY''(x) - 2Y'(x)}{4\pi x}  = - \left ( \dfrac{\rho_0 c^2}{P_0} \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{2/3} +} \dfrac{Y'(x)}{4\pi x^2}\right ) \dfrac{ \rho_0 R^3 Y(x) + 4\pi R^3 x^3 P_0 \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{4/3}/c^2}{1-2G\rho_0 R^2 Y(x)/xc^2}
                 \end{equation}
                 
-                begin{equation}
+                \begin{equation}
                 \dfrac{c^2}{G\rho_0 R^2} \dfrac{xY''(x) - 2Y'(x)}{4\pi x}  = - \left ( \dfrac{\rho_0 c^2}{P_0} \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{2/3} +} \dfrac{Y'(x)}{4\pi x^2}\right ) \dfrac{  Y(x) + 4\pi  x^3 \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{4/3}/(\rho_ 0 c^2 / P_0)}{1-2G\rho_0 R^2 Y(x)/xc^2}
                 \end{equation}
                 
@@ -1053,7 +1053,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 Alors 
                 
-                begin{equation}
+                \begin{equation}
                 \alpha \dfrac{xY''(x) - 2Y'(x)}{4\pi x}  = - \left (\beta \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{2/3} +} \dfrac{Y'(x)}{4\pi x^2}\right ) \dfrac{  Y(x) + 4\pi  x^3 \left ( \dfrac{Y'(x)}{4\pi x^2}\right )^{4/3}/\beta}{1-2Y(x)/(\alpha x)}
                 \end{equation}
                 </p>
