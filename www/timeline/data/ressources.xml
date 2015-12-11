@@ -546,7 +546,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 La surface du front d'onde vaut alors $4\pi l^2$.
                 Les $\Delta N$ photons (leur nombre est conservé) sont reçus entre $t_r$ et $t_r + \Delta t_r$. Puisque le dernier et le premier photon ont parcouru la même distance comobile $\chi$ il vient que :
                 \begin{equation}
-                \chi \displaystyle\int_{t_e}^{t_r} \dfrac{cdt}{a(t)} = \displaystyle\int_{t_e+\Delta t_e}^{t_r+\Delta t_r} \dfrac{cdt}{a(t)}
+                \chi = \displaystyle\int_{t_e}^{t_r} \dfrac{cdt}{a(t)} = \displaystyle\int_{t_e+\Delta t_e}^{t_r+\Delta t_r} \dfrac{cdt}{a(t)}
                 \end{equation}
                 Dans la limite où $\Delta t_e \to 0$ (on étudie le flux instantané de photons), alors en décomposant cette intégrale par relation de Chasles et en négligeant les variations de $a(t)$ on trouve :
                 \begin{equation}
