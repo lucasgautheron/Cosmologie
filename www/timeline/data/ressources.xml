@@ -1039,7 +1039,12 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 En définissant les variables adimensionnées $\alpha \equiv \dfrac{P_0}{\rho_0 c^2} = $ et $\beta = \dfrac{P_0}{G R_{\odot}^2 \rho_0^2}$ alors :
                 
                 \begin{equation}
-                \beta p'(\chi) = - \frac{1}{\chi^2} \left(\mu x/ 3+ \alpha p(\chi) \right) \left(m(\chi) + 4 \alpha \pi \chi^3   p(\chi) \right) \left( 1 - \frac{2 \alpha m(\chi)}{\beta \chi} \right)^{-1}
+                \beta p'(\chi) = - \frac{1}{\chi^2} \left(\mu x(\chi)/ 3+ \alpha p(\chi) \right) \left(m(\chi) + 4 \alpha \pi \chi^3   p(\chi) \right) \left( 1 - \frac{2 \alpha m(\chi)}{\beta \chi} \right)^{-1}
+                \end{equation}
+                
+                et 
+                \begin{equation}
+                m'(\chi) = 4\pi \chi^2 \dfrac{\rho(\chi)}{\rho_0} = \dfrac{4}{3}\mu \pi\chi^2 x 
                 \end{equation}
                 </p>
                 <spoiler>
