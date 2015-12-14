@@ -996,18 +996,18 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                  Le régime dégénéré peut être résolu analytiquement :
                 \begin{equation}
-                \displaystyle\int_{1}^{u_F} u \sqrt{u^2-1} du = \dfrac{1}{2} \displaystyle\int_{0}^{u_F^2 - 1} \sqrt{t} dt = \left (u_F^2 - 1\right )^{3/2}
+                \displaystyle\int_{1}^{u_F} u \sqrt{u^2-1} du = \dfrac{1}{2} \displaystyle\int_{0}^{u_F^2 - 1} \sqrt{t} dt = \dfrac{1}{3} \left (u_F^2 - 1\right )^{3/2}
                 \end{equation}
                 
                 Et 
                 
                 \begin{equation}
-                \displaystyle\int_{1}^{u_F} (u^2-1)^{3/2} du = \displaystyle\int_{0}^{\cosh^{-1} u_F}\sinh^4{(t)} dt = \dfrac{3}{8} \cosh^{-1} u_F - \dfrac{1}{2} u_F \sqrt{u_F^2 - 1} + \dfrac{1}{8}  \sqrt{u_F^2 - 1} (2u_F3 - u_F) 
+                \displaystyle\int_{1}^{u_F} (u^2-1)^{3/2} du = \displaystyle\int_{0}^{\cosh^{-1} u_F}\sinh^4{(t)} dt = \dfrac{3}{8} \cosh^{-1} u_F - \dfrac{1}{2} u_F \sqrt{u_F^2 - 1} + \dfrac{1}{8} u_F \sqrt{u_F^2 - 1} (2u_F^2 - 1) 
                 \end{equation}
                 
-                Ce qui donne 
+                Ce qui donne, en définissant $x = 3\dfrac{n}{n_0}$ : 
                 \begin{equation}
-                P = P_0 \left [ \dfrac{3}{8} \sinh^{-1} \left ( \dfrac{n}{n_0} \right )  - \dfrac{1}{2}  \left ( \dfrac{n}{n_0} \right )^{1/3} \left (1+  \left ( \dfrac{n}{n_0} \right )^{2/3}\right )  + \dfrac{1}{8}\dfrac{n}{n_0} \left (1+  \left ( \dfrac{n}{n_0} \right )^{2/3}\right )\right ]
+                P = P_0 \left [ \dfrac{3}{8} \sinh^{-1}x - \dfrac{1}{2} x^{1/3} \left (1+  x^{2/3}\right )  + \dfrac{1}{8}x \left (1+x^{2/3}\right ) + \dfrac{1}{8}   x^{1/3} \left (1+ x^{4/3}\right )\right ]
                 \end{equation}
                 </p>
                 
