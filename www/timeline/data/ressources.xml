@@ -1007,7 +1007,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 Ce qui donne, en définissant $x = 3\dfrac{n}{n_0}$ : 
                 \begin{equation}
-                P = P_0 \left [ \dfrac{3}{8} \sinh^{-1}{\left (x^{1/3} \right )} - \dfrac{1}{2} x^{1/3}\sqrt{1+  x^{2/3}} + \dfrac{1}{8}x \sqrt{1+  x^{2/3}}+ \dfrac{1}{8}   x^{1/3} \sqrt{1+  x^{2/3}}\right ]
+                P = P_0 \left [ \dfrac{3}{8} \sinh^{-1}{\left (x^{1/3} \right )} + \sqrt{1+  x^{2/3}} \left ( - \dfrac{1}{2} x^{1/3} + \dfrac{1}{8}x + \dfrac{1}{8}   x^{1/3} (1+  x^{2/3}) \right ) \right ]
                 \end{equation}
                 </p>
                 
