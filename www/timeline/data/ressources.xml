@@ -1020,7 +1020,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 <p>Montrer ? équation de Tolman Oppenheimer</p>
                 <p>\begin{equation}
-                P'(r) = - \frac{G}{r^2} \left( \rho(r) + \frac{P(r)}{c^2} \right) \left(M(r) + 4 \pi r^3 \frac{P(r)}{c^2} \right) \left( 1 - \frac{2 G M(r)}{c^2 r} \right)^{-1}
+                P'(r) = - \frac{G}{r^2} \left( \rho(r) + \epsilon/c^2 + \frac{P(r)}{c^2} \right) \left(M(r) + 4 \pi r^3 \frac{P(r)}{c^2} \right) \left( 1 - \frac{2 G M(r)}{c^2 r} \right)^{-1}
                 \end{equation}
                 
                 et \begin{equation}
@@ -1073,7 +1073,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 <p>
                 	<figure src="wd_mass_radius.svg" title="Masse d'une naine blanche en fonction de son rayon.">
-                		La masse est exprimée en unités de masses solaires. La masse maximale est d'environ 1,44 $M_{\odot}$. Le calcul entièrement relativiste donne une masse maximale de $1,4 $M_{\odot}$
+                		La masse est exprimée en unités de masses solaires. La masse maximale est d'environ 1,44 $M_{\odot}$. 
                 	</figure>
                 </p>
                 
