@@ -54,12 +54,12 @@ const int steps = 2500000;
 
 bool calculate_star(const double x0, const bool relativistic, double &radius, double &mass, double &external_mass)
 {
-    double x[2], m[2], M[2], p[2], chi[2];
+    double x[2], m[2], M[2], p[2], e[2], chi[2];
     
     // initialisation
     for(int i = 0; i < 2; ++i)
     {
-        x[i] = m[i] = M[i] = p[i] = chi[i] = 0;
+        x[i] = m[i] = M[i] = p[i] = e[i] = chi[i] = 0;
     }
     
     // conditions aux limites
@@ -80,15 +80,17 @@ bool calculate_star(const double x0, const bool relativistic, double &radius, do
         double dm = _dchi * (4.0/3.0) * PI * mu * beta * chi[1] * chi[1] * x[0];
         m[1] = m[0] + dm;
         M[1] = M[0] + dm / sqrt(1-M[0]*chi[1]*r);
+        double e_correction = + 3 * alpha * e[0];
         if(relativistic)
         {
-            p[1] = p[0] - _dchi * (r/(2*alpha*chi[1]*chi[1])) * (mu * x[0]/3.0 + alpha * p[0]) * (m[0] + 4*PI*alpha * beta * chi[1]*chi[1]*chi[1]*p[0]) / (1-r*m[0]/chi[1]);
+            p[1] = p[0] - _dchi * (r/(2*alpha*chi[1]*chi[1])) * (mu * x[0]/3.0 + alpha * p[0] + e_correction ) * (m[0] + 4*PI*alpha * beta * chi[1]*chi[1]*chi[1]*p[0]) / (1-r*m[0]/chi[1]);
         }
         else
         {
-            p[1] = p[0] - _dchi * (r/(2*alpha*chi[1]*chi[1])) * mu * x[0]/3.0 * m[0];
+            p[1] = p[0] - _dchi * (r/(2*alpha*chi[1]*chi[1])) * (mu * x[0]/3.0 + e_correction) * m[0];
         }
         x[1] = find_x_from_pressure(p[1], x[0]);
+        e[1] = energy(x[0]);
         
         if(p[1] < 0) 
         {
@@ -103,6 +105,7 @@ bool calculate_star(const double x0, const bool relativistic, double &radius, do
         m[0] = m[1];
         M[0] = M[1];
         p[0] = p[1];
+        e[0] = e[1];
         x[0] = x[1];
     }
     
