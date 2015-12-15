@@ -1057,6 +1057,19 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \begin{equation}
                 m'(\chi) = 4\pi \chi^2 \dfrac{\rho(\chi)}{\rho_0} = \dfrac{4}{3}\mu \pi\chi^2 \dfrac{\rho_0 R_{\odot}^3}{M_{\odot}}x 
                 \end{equation}
+                
+                On peut aussi employer l'équation hydrostatique non relativiste :
+                \begin{equation}
+                \dfrac{P_0R_{\odot}}{GM_{\odot}\rho_0} p'(\chi) = \dfrac{\mu m(\chi) x / 3}{\chi^2}
+                \end{equation}
+                </p>
+                
+                <h4>Résultat</h4>
+                
+                <p>
+                	<figure src="wd_mass_radius.svg" title="Masse d'une naine blanche en fonction de son rayon.">
+                		La masse est exprimée en unités de masses solaires. La masse maximale est d'environ 1,44 $M_{\odot}$.
+                	</figure>
                 </p>
                 
                 <p>TODO : utiliser eq. einstein ? lourd et pas nécessaire ? pr montrer eq Lane–Emden.</p>
