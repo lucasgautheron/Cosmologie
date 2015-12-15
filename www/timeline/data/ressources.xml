@@ -1009,6 +1009,11 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \begin{equation}
                 P = P_0 \left [ \dfrac{3}{8} \sinh^{-1}{\left (x^{1/3} \right )} + \sqrt{1+  x^{2/3}} \left ( \dfrac{1}{4}x- \dfrac{3}{8} x^{1/3} \right ) \right ]
                 \end{equation}
+                
+                Similairement on peut montrer que l'énergie peut s'écrire :
+                \begin{equation}
+                \epsilon =\dfrac{1}{8} \epsilon_0  \left [  \sinh^{-1}{\left (x^{1/3} \right )} + \sqrt{1+  x^{2/3}} \left ( 2x- x^{1/3} \right ) \right ]
+                \end{equation}
                 </p>
                 
                 <h4>Relativité générale</h4>

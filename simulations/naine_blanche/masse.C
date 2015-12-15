@@ -9,6 +9,13 @@ double pressure(double x)
 {
     double root = pow(x, 1.0/3.0);
     return (3.0/8.0) * log(root + sqrt(root*root+1)) + sqrt(1+root*root) * (0.25 * x - (3.0/8.0) * root); 
+    
+}
+
+double energy(double x)
+{
+    double root = pow(x, 1.0/3.0);
+    return (1.0/8.0) * ( log(root + sqrt(root*root+1)) + sqrt(1+root*root) * (2 * x - root) ); 
 }
 
 double dpressure(double x)
@@ -36,57 +43,71 @@ double find_x_from_pressure(double p, double x0 = 1)
 
 const double mu = 2;
 
-const double alpha = 0.00018181636;
-const double beta = 499699.060742;
-const double r = 0.00000424425; // r scharw / r sun
+const double radmodifier = 0.001;
 
-const double dchi = 0.00000005;
+const double alpha = 0.00018181636;
+const double beta = 499699.060742 * (radmodifier * radmodifier * radmodifier);
+const double r = 0.00000424425 / radmodifier; // r scharw / r sun
+
+const double dchi = 0.0000001;
 const int steps = 2500000;
 
-bool calculate_star(const double x0, double &radius, double &mass)
+bool calculate_star(const double x0, const bool relativistic, double &radius, double &mass, double &external_mass)
 {
-    double x[2], m[2], p[2], chi[2];
+    double x[2], m[2], M[2], p[2], chi[2];
     
     // initialisation
     for(int i = 0; i < 2; ++i)
     {
-        x[i] = m[i] = p[i] = chi[i] = 0;
+        x[i] = m[i] = M[i] = p[i] = chi[i] = 0;
     }
     
     // conditions aux limites
-    m[0] = 0;
+    m[0] = M[0] = 0;
     x[0] = x0;
     p[0] = pressure(x[0]);
     
     FILE *fp = fopen("masse.res", "w+");
     
     bool converged = false;
-    for(int i = 1; i < steps; ++i)
+    double _dchi = x0 > 1e4 ? 0.000001 : 0.0001;
+    int i = 1;
+    for(; i < steps; ++i)
     {
-        double _dchi = max(dchi, chi[1]/50000);
-        //chi[1] = double(i) * dchi;
-        chi[1] += _dchi;
+        
+        chi[1] = double(i) * _dchi;
+        //chi[1] += _dchi;
         double dm = _dchi * (4.0/3.0) * PI * mu * beta * chi[1] * chi[1] * x[0];
         m[1] = m[0] + dm;
-        p[1] = p[0] - _dchi * (r/(2*alpha*chi[1]*chi[1])) * (mu * x[0] /3.0 + alpha * p[0]) * (m[0] + 4*PI*alpha * beta * chi[1]*chi[1]*chi[1]*p[0]) / (1-r/chi[1]);
+        M[1] = M[0] + dm / sqrt(1-M[0]*chi[1]*r);
+        if(relativistic)
+        {
+            p[1] = p[0] - _dchi * (r/(2*alpha*chi[1]*chi[1])) * (mu * x[0]/3.0 + alpha * p[0]) * (m[0] + 4*PI*alpha * beta * chi[1]*chi[1]*chi[1]*p[0]) / (1-r*m[0]/chi[1]);
+        }
+        else
+        {
+            p[1] = p[0] - _dchi * (r/(2*alpha*chi[1]*chi[1])) * mu * x[0]/3.0 * m[0];
+        }
         x[1] = find_x_from_pressure(p[1], x[0]);
         
         if(p[1] < 0) 
         {
-            mass = m[0];
+            mass = M[0];
             radius = chi[1];
-            
+            external_mass = m[0];
             converged = true;
             break;
         }
         
-        fprintf(fp, "%f %f %f %f\n", chi[1], m[1], p[1], x[1]);
+        //fprintf(fp, "%f %f %f %f\n", chi[1], m[1], p[1], x[1]);
         m[0] = m[1];
+        M[0] = M[1];
         p[0] = p[1];
         x[0] = x[1];
     }
     
     if(!converged) printf("DID NOT CONVERGE : ADD MORE STEPS");
+    else printf("%d steps\n", i);
     
     fclose(fp);
 }
@@ -95,16 +116,28 @@ bool calculate_star(const double x0, double &radius, double &mass)
 int main()
 {
     FILE *fp = fopen("masse_rayon.res", "w+");
-    const int N = 250;
+    const int N = 150;
     
     for(int i = 0; i < N; ++i)
     {
-        double radius, mass;
-        double x0 = pow(10, 2+4.5*double(i)/double(N));
+        double radius, mass, external_mass;
+        double x0 = pow(10, -1.2+7.5*double(i)/double(N));
         
-        calculate_star(x0, radius, mass);
+        calculate_star(x0, false, radius, mass, external_mass);
         printf("%d / %d done.\n", i+1, N);
-        fprintf(fp, "%f %f %f\n", x0, radius, mass);
+        fprintf(fp, "%f %f %f %f\n", x0, radius * radmodifier, mass, external_mass);
+    }
+    fclose(fp);
+    
+    fp = fopen("masse_rayon_relativistic.res", "w+");
+    for(int i = 0; i < N; ++i)
+    {
+        double radius, mass, external_mass;
+        double x0 = pow(10, -1.2+7.5*double(i)/double(N));
+        
+        calculate_star(x0, true, radius, mass, external_mass);
+        printf("%d / %d done.\n", i+1, N);
+        fprintf(fp, "%f %f %f %f\n", x0, radius * radmodifier, mass, external_mass);
     }
     fclose(fp);
     return 0;
