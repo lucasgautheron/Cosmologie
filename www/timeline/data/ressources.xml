@@ -837,7 +837,6 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <text>
            <h3></h3>
             <h3>Masse de Chandrasekhar</h3>
-            <p>
                 <h3>Démonstration</h3>
                 <h4>Equation d'état du gaz d'électrons</h4>
                 <p>
@@ -926,7 +925,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \rho = \dfrac{4\pi g}{h^3}  \displaystyle\int_{0}^{+\infty}f \left (E(p)\right )  E(p) p^2 dp
                 \end{equation}
                 
-                La pression des électrons d'impulsion $p$ est $pv/3$ (c'est la quantité de mouvement traversant chaque seconde une surface unitaire). 
+                La pression des électrons d'impulsion $p$ est $pv/3$ <note>La pression est la quantité de mouvement transmise à une paroi contenant le gaz par unité de surface et de temps. Montrer pv/3</note>
                 Par ailleurs $v = pc^2/E$.
                     <note>
                         \begin{equation}p = \dfrac{mv}{\sqrt{1-v^2/c^2}}\end{equation}
@@ -1016,7 +1015,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \end{equation}
                 </p>
                 
-                <h4>Relativité générale</h4>
+                <h4>Résistance à la gravité</h4>
                 
                 <p>Montrer ? équation de Tolman Oppenheimer</p>
                 <p>\begin{equation}
@@ -1073,7 +1072,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 <p>
                 	<figure src="wd_mass_radius.svg" title="Masse d'une naine blanche en fonction de son rayon.">
-                		La masse est exprimée en unités de masses solaires. La masse maximale est d'environ 1,44 $M_{\odot}$ selon la gravité Newtonienne et d'environ 1,4 $M_{\odot$ avec une approche entièrement relativiste. ($\mu = 2$).
+                		La masse est exprimée en unités de masses solaires. La masse maximale est d'environ 1,44 $M_{\odot}$ selon la gravité Newtonienne et d'environ 1,4 $M_{\odot}$ avec une approche entièrement relativiste. ($\mu = 2$).
                 	</figure>
                 </p>
                 
@@ -1082,7 +1081,6 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     pr la partie gravité, http://ads.harvard.edu/books/1989fsa..book/AbookC06.pdf semble intéressant. 
                     
                 </spoiler>
-            </p>
         </text>
         <linkwords>
             <linkword>supernovas Ia</linkword>
