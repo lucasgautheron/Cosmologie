@@ -988,8 +988,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
 
                 On observe pour un gaz dégénéré deux régimes différents :
                 <ul>
-                    <li>Faible densité : $P \simeq P_0 \left ( \dfrac{n}{n_0} \right )^{5/3}$ (courbe en pointillés)</li>
-                    <li>Haute densité : $P \simeq P_0 \left ( \dfrac{n}{n_0} \right )^{4/3}$ (courbe en traits discontinus)</li>
+                    <li>Faible densité : $P \sim P_0 \left ( \dfrac{n}{n_0} \right )^{5/3}$ (courbe en pointillés)</li>
+                    <li>Haute densité : $P \sim P_0 \left ( \dfrac{n}{n_0} \right )^{4/3}$ (courbe en traits discontinus)</li>
                 </ul>
                     
                 Un gaz dicté par les effets thermiques se comporte comme un gaz dégénéré à forte densité et comme un gaz parfait à basse densité. (La relation pression/densité pour fermi dirac est une droite, 
@@ -1012,7 +1012,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 Similairement on peut montrer que l'énergie peut s'écrire :
                 \begin{equation}
-                \epsilon =\dfrac{1}{8} \epsilon_0  \left [  \sinh^{-1}{\left (x^{1/3} \right )} + \sqrt{1+  x^{2/3}} \left ( 2x- x^{1/3} \right ) \right ]
+                \epsilon =\dfrac{3}{8} P_0  \left [  \sinh^{-1}{\left (x^{1/3} \right )} + \sqrt{1+  x^{2/3}} \left ( 2x- x^{1/3} \right ) \right ]
                 \end{equation}
                 </p>
                 
@@ -1073,7 +1073,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 <p>
                 	<figure src="wd_mass_radius.svg" title="Masse d'une naine blanche en fonction de son rayon.">
-                		La masse est exprimée en unités de masses solaires. La masse maximale est d'environ 1,44 $M_{\odot}$. 
+                		La masse est exprimée en unités de masses solaires. La masse maximale est d'environ 1,44 $M_{\odot}$ selon la gravité Newtonienne et d'environ 1,4 $M_{\odot$ avec une approche entièrement relativiste. ($\mu = 2$).
                 	</figure>
                 </p>
                 
