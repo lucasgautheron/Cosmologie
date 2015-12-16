@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <omp.h>
 
 #define PI 3.141592654
 
@@ -26,7 +27,7 @@ double dpressure(double x)
 double find_x_from_pressure(double p, double x0 = 1)
 {
     const double max_error = 1e-10;
-    const int max_iterations = 10000;
+    const int max_iterations = 1000;
     
     double x = x0, x1 = x0, error = max_error+1;
     
@@ -50,7 +51,7 @@ const double beta = 499699.060742 * (radmodifier * radmodifier * radmodifier);
 const double r = 0.00000424425 / radmodifier; // r scharw / r sun
 
 const double dchi = 0.0000001;
-const int steps = 2500000;
+const int steps = 5000000;
 
 bool calculate_star(const double x0, const bool relativistic, double &radius, double &mass, double &external_mass)
 {
@@ -71,6 +72,7 @@ bool calculate_star(const double x0, const bool relativistic, double &radius, do
     
     bool converged = false;
     double _dchi = x0 > 1e4 ? 0.000001 : 0.0001;
+    //double _dchi = x0 > 1e4 ? 0.000001 : 0.0001;
     int i = 1;
     for(; i < steps; ++i)
     {
@@ -78,16 +80,18 @@ bool calculate_star(const double x0, const bool relativistic, double &radius, do
         chi[1] = double(i) * _dchi;
         //chi[1] += _dchi;
         double dm = _dchi * (4.0/3.0) * PI * mu * beta * chi[1] * chi[1] * x[0];
-        m[1] = m[0] + dm;
-        M[1] = M[0] + dm / sqrt(1-M[0]*chi[1]*r);
         double e_correction = + 3 * alpha * e[0];
+        M[1] = M[0] + dm / sqrt(1-M[0]*chi[1]*r);
+        if(relativistic) dm += _dchi * (4.0/3.0) * PI * beta * chi[1] * chi[1] * e_correction;
+        m[1] = m[0] + dm;
+        
         if(relativistic)
         {
             p[1] = p[0] - _dchi * (r/(2*alpha*chi[1]*chi[1])) * (mu * x[0]/3.0 + alpha * p[0] + e_correction ) * (m[0] + 4*PI*alpha * beta * chi[1]*chi[1]*chi[1]*p[0]) / (1-r*m[0]/chi[1]);
         }
         else
         {
-            p[1] = p[0] - _dchi * (r/(2*alpha*chi[1]*chi[1])) * (mu * x[0]/3.0 + e_correction) * m[0];
+            p[1] = p[0] - _dchi * (r/(2*alpha*chi[1]*chi[1])) * mu * x[0]/3.0 * m[0];
         }
         x[1] = find_x_from_pressure(p[1], x[0]);
         e[1] = energy(x[0]);
@@ -118,29 +122,39 @@ bool calculate_star(const double x0, const bool relativistic, double &radius, do
 
 int main()
 {
-    FILE *fp = fopen("masse_rayon.res", "w+");
     const int N = 150;
     
+    double radius[N], mass[N], external_mass[N], x0[N];
+    
+    #pragma omp parallel for
     for(int i = 0; i < N; ++i)
     {
-        double radius, mass, external_mass;
-        double x0 = pow(10, -1.2+7.5*double(i)/double(N));
+        x0[i] = pow(10, -1.5+7.5*double(i)/double(N));
         
-        calculate_star(x0, false, radius, mass, external_mass);
+        calculate_star(x0[i], false, radius[i], mass[i], external_mass[i]);
         printf("%d / %d done.\n", i+1, N);
-        fprintf(fp, "%f %f %f %f\n", x0, radius * radmodifier, mass, external_mass);
+    }
+    
+    FILE *fp = fopen("masse_rayon.res", "w+");
+    for(int i = 0; i < N; ++i)
+    {
+        fprintf(fp, "%f %f %f %f\n", x0[i], radius[i] * radmodifier, mass[i], external_mass[i]);
     }
     fclose(fp);
+    
+    #pragma omp parallel for
+    for(int i = 0; i < N; ++i)
+    {
+        x0[i] = pow(10, -1.5+7.5*double(i)/double(N));
+        
+        calculate_star(x0[i], true, radius[i], mass[i], external_mass[i]);
+        printf("%d / %d done.\n", i+1, N);
+    }
     
     fp = fopen("masse_rayon_relativistic.res", "w+");
     for(int i = 0; i < N; ++i)
     {
-        double radius, mass, external_mass;
-        double x0 = pow(10, -1.2+7.5*double(i)/double(N));
-        
-        calculate_star(x0, true, radius, mass, external_mass);
-        printf("%d / %d done.\n", i+1, N);
-        fprintf(fp, "%f %f %f %f\n", x0, radius * radmodifier, mass, external_mass);
+        fprintf(fp, "%f %f %f %f\n", x0[i], radius[i] * radmodifier, mass[i], external_mass[i]);
     }
     fclose(fp);
     return 0;
