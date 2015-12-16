@@ -4,15 +4,15 @@
 
 double a_dec(double t)
 {
-    return sqrt(t*t*t)+0.3;
+    return 0.5*sqrt(t*t*t)+1;
 }
 
 double a_acc(double t)
 {
-    return exp(t/2.5);
+    return exp(t/2.2);
 }
 
-int calculate(double (*a)(double), double *_x, double *_r, double *_z, double *_t, int n)
+int calculate(double (*a)(double), double *_x, double *_r, double *_z, double *_t, double *_dr, int n)
 {
     double xA = -1;
     double xB = 1;
@@ -35,6 +35,7 @@ int calculate(double (*a)(double), double *_x, double *_r, double *_z, double *_
         t += dt;
 
         _x[i] = x;
+        _dr[i] = ((x-xA) * a(t) - _r[i-1])/dt;
         _r[i] = (x-xA) * a(t);
         _t[i] = t;
         _z[i] = a(t)/a(0) - 1;
@@ -46,22 +47,22 @@ int calculate(double (*a)(double), double *_x, double *_r, double *_z, double *_
 int main()
 {
     const int n = 10000;
-    double x_acc[n], r_acc[n], z_acc[n], t_acc[n];
-    double x_dec[n], r_dec[n], z_dec[n], t_dec[n];
-    calculate(&a_acc, x_acc, r_acc, z_acc, t_acc, n);
-    calculate(&a_dec, x_dec, r_dec, z_dec, t_dec, n);
+    double x_acc[n], r_acc[n], z_acc[n], t_acc[n], dr_acc[n];
+    double x_dec[n], r_dec[n], z_dec[n], t_dec[n], dr_dec[n];
+    calculate(&a_acc, x_acc, r_acc, z_acc, t_acc, dr_acc, n);
+    calculate(&a_dec, x_dec, r_dec, z_dec, t_dec, dr_dec, n);
     FILE *fp = fopen("out_acc.res", "w+");
     for(int i = 0; i < n; ++i)
     {
         if(i && t_acc[i] < t_acc[i-1]) break;
-        fprintf(fp, "%f %f %f %f\n", t_acc[i], x_acc[i], r_acc[i], z_acc[i]);
+        fprintf(fp, "%f %f %f %f %f\n", t_acc[i], x_acc[i], r_acc[i], z_acc[i], dr_acc[i]);
     }
     fclose(fp);
     fp = fopen("out_dec.res", "w+");
     for(int i = 0; i < n; ++i)
     {
         if(i && t_dec[i] < t_dec[i-1]) break;
-        fprintf(fp, "%f %f %f %f\n", t_dec[i], x_dec[i], r_dec[i], z_dec[i]);
+        fprintf(fp, "%f %f %f %f %f\n", t_dec[i], x_dec[i], r_dec[i], z_dec[i], dr_dec[i]);
     }
     fclose(fp);
     return 0;
