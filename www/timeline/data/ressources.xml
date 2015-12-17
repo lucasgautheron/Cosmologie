@@ -1048,7 +1048,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
 	                \end{equation}
 	                
              	     \begin{equation}
-            	     \left( 1 - \frac{2 G M_{\odot} m(\xi)}{c^2 R_{\odot} \xi} \right) \dfrac{P_0R_{\odot }{G M_{\odot}\rho_0}p'(\xi) = - \frac{1}{\xi^2 c^2} \left( \rho_0 \mu x/ 3+ P_0 p(\xi) \right) \left(M_{\odot} m(\xi) + 4 \pi R_{\odot}^3 \xi^3 \frac{P_0 p(\xi)}{c^2} \right)
+            	     \left( 1 - \frac{2 G M_{\odot} m(\xi)}{c^2 R_{\odot} \xi} \right) \dfrac{P_0 R_{\odot }c^2}{\rho_0 G M_{\odot}}p'(\xi) = - \frac{1}{\xi^2 } \left( \rho_0 \mu x/ 3+ P_0 p(\xi) \right) \left(m(\xi) + 4 \pi \xi^3 \frac{R_{\odot}^3  P_0 p(\xi)}{M_{\odot}  c^2} \right)
            	     \end{equation}
 	                
 	                \begin{equation}
@@ -1057,12 +1057,12 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                  </note>
                 
                 \begin{equation}
-                2 \alpha \dfrac{R_{\odot}}{r_s}p'(\xi) = - \frac{1}{\xi^2} \left( \mu x (\xi)+ 3 \alpha \epsilon(\xi) + \alpha p(\xi) \right) \left( m(\xi) + 4 \alpha \beta \pi  \xi^3  p(\xi) \right) \left( 1 - \frac{r_s m(\xi)}{R_{\odot} \xi} \right)^{-1}
+                2 \alpha \dfrac{R_{\odot}}{r_s}p'(\xi) = - \frac{1}{\xi^2} \left( \mu x (\xi) + 3 \epsilon(\xi) + \alpha p(\xi) \right) \left( m(\xi) + 4 \alpha \beta \pi  \xi^3  p(\xi) \right) \left( 1 - \frac{r_s m(\xi)}{R_{\odot} \xi} \right)^{-1}
                 \end{equation}
                      
 	     Et par ailleurs :
                 \begin{equation}
-                m'(\xi) = 4\pi \xi^2 \dfrac{\rho(\xi)}{\rho_0} = \dfrac{4}{3} \pi\xi^2 \dfrac{\rho_0 R_{\odot}^3}{M_{\odot}}(\mu x + \epsilon .. )
+                m'(\xi) = 4\pi \xi^2 \dfrac{\rho(\xi)}{\rho_0} = \dfrac{4}{3} \pi\xi^2 \dfrac{\rho_0 R_{\odot}^3}{M_{\odot}}(\mu x + 3\epsilon )
                 \end{equation}
                 
                 On peut aussi employer l'équation hydrostatique non relativiste :
