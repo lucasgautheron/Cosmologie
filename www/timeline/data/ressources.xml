@@ -1009,9 +1009,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 P = P_0 \left [ \dfrac{3}{8} \sinh^{-1}{\left (x^{1/3} \right )} + \sqrt{1+  x^{2/3}} \left ( \dfrac{1}{4}x- \dfrac{3}{8} x^{1/3} \right ) \right ]
                 \end{equation}
                 
-                Similairement on peut montrer que l'énergie peut s'écrire :
+                Similairement on peut montrer que la densité d'énergie peut s'écrire :
                 \begin{equation}
-                \epsilon =\dfrac{3}{8} P_0  \left [  \sinh^{-1}{\left (x^{1/3} \right )} + \sqrt{1+  x^{2/3}} \left ( 2x- x^{1/3} \right ) \right ]
+                \rho_e =\dfrac{3}{8} P_0  \left [  \sinh^{-1}{\left (x^{1/3} \right )} + \sqrt{1+  x^{2/3}} \left ( 2x- x^{1/3} \right ) \right ]
                 \end{equation}
                 </p>
                 
@@ -1019,50 +1019,45 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 <p>Dans une naine blanche, la force qui compense la pression de dégénérescence des électrons est la gravité. On peut montrer à partir de la relativité générale que l'équilibre se traduit par l'équation de Tolman-Oppenheimer :</p>
                 <p>\begin{equation}
-                P'(r) = - \frac{G}{r^2} \left( \rho_m(r) + \epsilon/c^2 + \frac{P(r)}{c^2} \right) \left(M(r) + 4 \pi r^3 \frac{P(r)}{c^2} \right) \left( 1 - \frac{2 G M(r)}{c^2 r} \right)^{-1}
+                \left( 1 - \frac{2 G M(r)}{c^2 r} \right) P'(r) = - \frac{G}{r^2}\dfrac{1}{c^2} \left( \rho_m(r) + \rho_e(r) + P(r) \right) \left(M(r) + 4 \pi r^3 \frac{P(r)}{c^2} \right)
                 \end{equation}
                 
-                $P$ est la pression, $\rho_m$ la densité de matière baryonique (qui comprend l'essentiel de la masse d'une étoile), et $\epsilon$ l'énergie du gaz d'électrons. $M(r)$ est la masse comprise dans la sphère de rayon $r$ centrée au coeur de l'étoile.
+                $P$ est la pression, $\rho_m$ la densité d'énergie de masse de la matière baryonique (qui constitue l'essentiel de la masse d'une étoile), et $\rho_e$ celle du gaz d'électrons. $M(r)$ est la masse comprise dans la sphère de rayon $r$ centrée au coeur de l'étoile.
                 La pression qui domine est celle de dégénérescence donc $P$ est la pression du gaz d'électrons. 
                 
                 Par ailleurs la masse est reliée à la densité de matière et d'énergie par :
                 et \begin{equation}
-                M'(r) = 4\pi r^2 \left ( \rho_m(r) + \epsilon/c^2 \right )
+                M'(r) = 4\pi r^2 \left ( \rho_m(r)/c^2 + \rho_e/c^2 \right )
                 \end{equation}
                 
-                On peut écrire $\rho_m \simeq m_p n_b$. où on définit le rapport entre densité baryonique et d'électron $\mu \equiv n_b / n_e$. Alors on a $n_e = \rho_m / (\mu m_p)$. En définissant $\rho_0 \equiv n_0 m_p$, il vient que $x = 3 \rho_m / (\mu \rho_0)$. 
+                On peut écrire $\rho_m \simeq n_b m_p c^2 $. où on définit le rapport entre densité baryonique et d'électron $\mu \equiv n_b / n_e$. Alors on a $n_e = \rho_m / (\mu m_p c^2)$. En définissant $\rho_0 \equiv n_0 m_p c^2$, il vient que $x = 3 \rho_m / (\mu \rho_0)$. 
                 Les naines blanches étant principalement constituées d'éléments tels que le carbone, il y en moyenne un proton et un neutron pour chaque électron donc $\mu = 2$
                 
                 On définit les variables adimensionnées associées :
-                $p \equiv P/P_0$, $\xi = r/R_{\odot}$ et $m = M/M_{\odot}$
+                $p \equiv P/P_0$, $\epsilon = \rho_e/\rho_0$, $\xi = r/R_{\odot}$ et $m = M/M_{\odot}$
                 
                 L'équation devient :
                 \begin{equation}
                 \dfrac{P_0R_{\odot}^2}{G R_{\odot}}p'(\xi) = - \frac{1}{\xi^2} \left( \rho_0 \mu x/ 3+ \frac{P_0 p(\xi)}{c^2} \right) \left(M_{\odot} m(\xi) + 4 \pi R_{\odot}^3 \xi^3 \frac{P_0 p(\xi)}{c^2} \right) \left( 1 - \frac{2 G M_{\odot} m(\xi)}{c^2 R_{\odot} \xi} \right)^{-1}
                 \end{equation}
                 
-                 En définissant les variables adimensionnées $\alpha \equiv \dfrac{P_0}{\rho_0 c^2} = \dfrac{m_e}{3 m_p}$ et $\beta = \dfrac{\rho_0 R_{\odot}^3}{M_{\odot}} = \dfrac{ 4\pi g m_e^3 m_H c^3}{h^3} \dfrac{R_{\odot}^3}{M_{\odot}}$ alors :
-                
+                 En définissant les variables adimensionnées $\alpha \equiv \dfrac{P_0}{\rho_0 c^2} = \dfrac{m_e}{3 m_p}$ et $\beta = \dfrac{\rho_0 R_{\odot}^3}{M_{\odot}} = \dfrac{ 4\pi g m_e^3 m_H c^3}{h^3} \dfrac{R_{\odot}^3}{M_{\odot}}$ ainsi que le rayon de schwarszchild du Soleil $r_s = 2GM_{\odot}/c^2$   alors :
+                 <note>
+	                \begin{equation}
+	                \dfrac{P_0R_{\odot}}{G \rho_0}p'(\xi) = - \frac{1}{\xi^2} \left( \mu x/ 3+ \alpha p(\xi) \right) \left(M_{\odot} m(\xi) + 4 \pi R_{\odot}^3 \xi^3 \frac{P_0 p(\xi)}{c^2} \right) \left( 1 - \frac{2 G M_{\odot} m(\xi)}{c^2 R_{\odot} \xi} \right)^{-1}
+	                \end{equation}
+	                
+	                
+	                \begin{equation}
+	                \dfrac{P_0R_{\odot}}{G M_{\odot}\rho_0}p'(\xi) = - \frac{1}{\xi^2} \left( \mu x/ 3+ \alpha p(\xi) \right) \left( m(\xi) + 4 \alpha \pi \dfrac{\rho_0 R_{\odot}^3}{M_{\odot}} \xi^3  p(\xi) \right) \left( 1 - \frac{r_s m(\xi)}{R_{\odot} \xi} \right)^{-1}
+	                \end{equation}
+                 </note>
                 
                 \begin{equation}
-                \dfrac{P_0R_{\odot}}{G \rho_0}p'(\xi) = - \frac{1}{\xi^2} \left( \mu x/ 3+ \alpha p(\xi) \right) \left(M_{\odot} m(\xi) + 4 \pi R_{\odot}^3 \xi^3 \frac{P_0 p(\xi)}{c^2} \right) \left( 1 - \frac{2 G M_{\odot} m(\xi)}{c^2 R_{\odot} \xi} \right)^{-1}
+                2 \alpha \dfrac{R_{\odot}}{r_s}p'(\xi) = - \frac{1}{\xi^2} \left( \mu x (\xi)+ 3 \alpha \epsilon(\xi) + \alpha p(\xi) \right) \left( m(\xi) + 4 \alpha \beta \pi  \xi^3  p(\xi) \right) \left( 1 - \frac{r_s m(\xi)}{R_{\odot} \xi} \right)^{-1}
                 \end{equation}
-                
-                
-                \begin{equation}
-                \dfrac{P_0R_{\odot}}{G M_{\odot}\rho_0}p'(\xi) = - \frac{1}{\xi^2} \left( \mu x/ 3+ \alpha p(\xi) \right) \left( m(\xi) + 4 \alpha \pi \dfrac{\rho_0 R_{\odot}^3}{M_{\odot}} \xi^3  p(\xi) \right) \left( 1 - \frac{r_s m(\xi)}{R_{\odot} \xi} \right)^{-1}
-                \end{equation}
-                
-                \begin{equation}
-                2 \alpha \dfrac{R_{\odot}}{r_s}p'(\xi) = - \frac{1}{\xi^2} \left( \mu x/ 3+ \alpha p(\xi) \right) \left( m(\xi) + 4 \alpha \beta \pi  \xi^3  p(\xi) \right) \left( 1 - \frac{r_s m(\xi)}{R_{\odot} \xi} \right)^{-1}
-                \end{equation}
-                
-               
-                \begin{equation}
-                \beta p'(\xi) = - \frac{1}{\xi^2} \left(\mu x(\xi)/ 3+ \alpha p(\xi) \right) \left(m(\xi) + 4 \alpha \pi \xi^3   p(\xi) \right) \left( 1 - \frac{2 \alpha m(\xi)}{\beta \xi} \right)^{-1}
-                \end{equation}
-                
-                et 
+                     
+	     Et par ailleurs :
                 \begin{equation}
                 m'(\xi) = 4\pi \xi^2 \dfrac{\rho(\xi)}{\rho_0} = \dfrac{4}{3} \pi\xi^2 \dfrac{\rho_0 R_{\odot}^3}{M_{\odot}}(\mu x + \epsilon .. )
                 \end{equation}
