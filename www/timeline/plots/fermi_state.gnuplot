@@ -13,7 +13,7 @@ C(x) = k*x+l
 
 fit [-20:-14] A(x) 'data/fermi_state.res' u (log($4)):(log($5)) via a,b
 fit [-25:-18] B(x) 'data/fermi_state.res' u (log($2)):(log($3)) via c,d
-fit [6:16] C(x) 'data/fermi_state.res' u (log($4)):(log($5)) via k,l
+fit [9:16] C(x) 'data/fermi_state.res' u (log($4)):(log($5)) via k,l
 
 set label '.' at -5,-20 
 
