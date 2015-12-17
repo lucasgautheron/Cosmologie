@@ -1074,6 +1074,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 	</figure>
                 </p>
                 
+                <p>Piste : si accrétation, la naine peut acquérir du $J$ ? Si oui sa masse critique augmente = > massive white dwarf
+                </p>
+                
                <h4>Implications</h4>
                <p>
                 	
@@ -1138,6 +1141,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
            \begin{equation}
            M = -2.5 \left ( 2\log {\dfrac{d}{10\mbox{ pc}}} \right ) + m = m - 5 \log{\dfrac{d}{10 \mbox{ pc}}}
            \end{equation}
+           </p>
+           <p>On écrit ainsi parfois $M = m + 5 - 5 \log D$ où $D$ est la distance en parsecs.
            </p>
         </text>
         <linkwords>
