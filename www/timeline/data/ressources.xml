@@ -1062,7 +1062,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 On peut aussi employer l'équation hydrostatique non relativiste :
                 \begin{equation}
-                \dfrac{P_0R_{\odot}}{GM_{\odot}\rho_0} p'(\xi) = \dfrac{\mu m(\xi) x / 3}{\xi^2}
+                 2 \alpha \dfrac{R_{\odot}}{r_s}p'(\xi) = -\dfrac{\mu m(\xi) x(\xi)}{3 \xi^2}
                 \end{equation}
                 </p>
                 
