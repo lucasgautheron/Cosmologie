@@ -1030,7 +1030,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 \end{equation}
                 
                 On peut écrire $\rho_m \simeq n_b m_p c^2 $. où on définit le rapport entre densité baryonique et d'électron $\mu \equiv n_b / n_e$. Alors on a $n_e = \rho_m / (\mu m_p c^2)$. En définissant $\rho_0 \equiv n_0 m_p c^2$, il vient que $x = 3 \rho_m / (\mu \rho_0)$. 
-                Les naines blanches étant principalement constituées d'éléments tels que le carbone, il y en moyenne un proton et un neutron pour chaque électron donc $\mu = 2$
+                Les naines blanches étant principalement constituées d'éléments tels que le carbone, il y a en moyenne un proton et un neutron pour chaque électron donc $\mu = 2$
                 
                 On définit les variables adimensionnées associées :
                 $p \equiv P/P_0$, $\epsilon = \rho_e/\rho_0$, $\xi = r/R_{\odot}$ et $m = M/M_{\odot}$
@@ -1131,12 +1131,12 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 Puisque cette quantité ne dépend pas de la distance entre cet objet et l'observateur, elle donne une mesure de sa luminosité intrinsèque (la puissance lumineuse qu'elle émet).</p>
            <p> On peut établir une relation simple entre $m$ et $M$. Par définition on a :
            \begin{equation}
-           M = -2.5 \log {\dfrac{F_{objet,10pc}}{F_{reference}}} = -2.5 \left ( \log {\dfrac{F_{objet}}{F_{objet,10pc}}} + \log {\dfrac{F_{objet}}{F_{reference}}}\right )
+           M = -2.5 \log {\dfrac{F_{objet,10pc}}{F_{reference}}} = -2.5 \left ( \log {\dfrac{F_{objet,10pc}}{F_{objet}}} + \log {\dfrac{F_{objet}}{F_{reference}}}\right )
            \end{equation}
            
            Or la luminosité est inversement proportionnelle au carré de la distance $d$ et donc :
            \begin{equation}
-           M = -2.5 \left ( 2\log {\dfrac{10\mbox{ pc}}{d}} \right ) + m = m - 5 \log{\dfrac{10 \mbox{ pc}}{d}}
+           M = -2.5 \left ( 2\log {d}{\dfrac{10\mbox{ pc}}} \right ) + m = m - 5 \log{\dfrac{d}{10 \mbox{ pc}}}
            \end{equation}
            </p>
         </text>
