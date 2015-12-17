@@ -68,10 +68,13 @@ bool calculate_star(const double x0, const bool relativistic, double &radius, do
     x[0] = x0;
     p[0] = pressure(x[0]);
     
-    //FILE *fp = fopen("masse.res", "w+");
+    char filename[64] = "";
+    sprintf(filename, "masse_%.5f.res", x0);
+    FILE *fp = fopen(filename, "w+");
     
     bool converged = false;
-    double _dchi = x0 > 1e4 ? 0.000001 : 0.0001;
+    double _dchi = x0 > 1e4 ? 0.000001 : 0.00001;
+    if(x0 > 1e6) _dchi /= 2.0;
     //double _dchi = x0 > 1e4 ? 0.000001 : 0.0001;
     int i = 1;
     for(; i < steps; ++i)
@@ -105,7 +108,7 @@ bool calculate_star(const double x0, const bool relativistic, double &radius, do
             break;
         }
         
-        //fprintf(fp, "%f %f %f %f\n", chi[1], m[1], p[1], x[1]);
+        fprintf(fp, "%f %f %f %f %f %f\n", chi[1] * radmodifier, m[1], M[1], p[1], x[1]/3.0, x[1]/3.0 + e_correction);
         m[0] = m[1];
         M[0] = M[1];
         p[0] = p[1];
@@ -116,46 +119,18 @@ bool calculate_star(const double x0, const bool relativistic, double &radius, do
     if(!converged) printf("DID NOT CONVERGE : ADD MORE STEPS");
     else printf("%d steps\n", i);
     
-    //fclose(fp);
+    fclose(fp);
 }
 
 
 int main()
 {
-    const int N = 150;
+    double radius, mass, external_mass, x0 = 1000;
     
-    double radius[N], mass[N], external_mass[N], x0[N];
-    
-    #pragma omp parallel for
-    for(int i = 0; i < N; ++i)
-    {
-        x0[i] = pow(10, -1.5+7.5*double(i)/double(N));
-        
-        calculate_star(x0[i], false, radius[i], mass[i], external_mass[i]);
-        printf("%d / %d done.\n", i+1, N);
-    }
-    
-    FILE *fp = fopen("masse_rayon.res", "w+");
-    for(int i = 0; i < N; ++i)
-    {
-        fprintf(fp, "%f %f %f %f\n", x0[i], radius[i] * radmodifier, mass[i], external_mass[i]);
-    }
-    fclose(fp);
-    
-    #pragma omp parallel for
-    for(int i = 0; i < N; ++i)
-    {
-        x0[i] = pow(10, -1.5+7.5*double(i)/double(N));
-        
-        calculate_star(x0[i], true, radius[i], mass[i], external_mass[i]);
-        printf("%d / %d done.\n", i+1, N);
-    }
-    
-    fp = fopen("masse_rayon_relativistic.res", "w+");
-    for(int i = 0; i < N; ++i)
-    {
-        fprintf(fp, "%f %f %f %f\n", x0[i], radius[i] * radmodifier, mass[i], external_mass[i]);
-    }
-    fclose(fp);
+    calculate_star(0.1, true, radius, mass, external_mass);
+    calculate_star(1, true, radius, mass, external_mass);
+    calculate_star(10, true, radius, mass, external_mass);
+    calculate_star(100, true, radius, mass, external_mass);
+    calculate_star(10000, true, radius, mass, external_mass);
     return 0;
 }
