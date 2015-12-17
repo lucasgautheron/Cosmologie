@@ -1027,7 +1027,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 Par ailleurs la masse est reliée à la densité de matière et d'énergie par :
                 et \begin{equation}
-                M'(r) = 4\pi r^2 \left ( \rho_m(r)/c^2 + \rho_e/c^2 \right )
+                M'(r) = 4\pi r^2 \dfrac{\rho_m(r) + \rho_e(r)}{c^2}
                 \end{equation}
                 
                 On peut écrire $\rho_m \simeq n_b m_p c^2 $. où on définit le rapport entre densité baryonique et d'électron $\mu \equiv n_b / n_e$. Alors on a $n_e = \rho_m / (\mu m_p c^2)$. En définissant $\rho_0 \equiv n_0 m_p c^2$, il vient que $x = 3 \rho_m / (\mu \rho_0)$. 
@@ -1038,15 +1038,18 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 L'équation devient :
                 \begin{equation}
-                \dfrac{P_0R_{\odot}^2}{G R_{\odot}}p'(\xi) = - \frac{1}{\xi^2} \left( \rho_0 \mu x/ 3+ \frac{P_0 p(\xi)}{c^2} \right) \left(M_{\odot} m(\xi) + 4 \pi R_{\odot}^3 \xi^3 \frac{P_0 p(\xi)}{c^2} \right) \left( 1 - \frac{2 G M_{\odot} m(\xi)}{c^2 R_{\odot} \xi} \right)^{-1}
+                \left( 1 - \frac{2 G M_{\odot} m(\xi)}{c^2 R_{\odot} \xi} \right) \dfrac{P_0R_{\odot}^2 }{G R_{\odot}}p'(\xi) = - \frac{1}{\xi^2 c^2} \left( \rho_0 \mu x/ 3 + \rho_0 \epsilon + P_0 p(\xi) \right) \left(M_{\odot} m(\xi) + 4 \pi R_{\odot}^3 \xi^3 \frac{P_0 p(\xi)}{c^2} \right)
                 \end{equation}
                 
-                 En définissant les variables adimensionnées $\alpha \equiv \dfrac{P_0}{\rho_0 c^2} = \dfrac{m_e}{3 m_p}$ et $\beta = \dfrac{\rho_0 R_{\odot}^3}{M_{\odot}} = \dfrac{ 4\pi g m_e^3 m_H c^3}{h^3} \dfrac{R_{\odot}^3}{M_{\odot}}$ ainsi que le rayon de schwarszchild du Soleil $r_s = 2GM_{\odot}/c^2$   alors :
+                 En définissant les variables adimensionnées $\alpha \equiv \dfrac{P_0}{\rho_0} = \dfrac{m_e}{3 m_p}$ et $\beta = \dfrac{\rho_0 R_{\odot}^3}{M_{\odot}c^2} = \dfrac{ 4\pi g m_e^3 m_H c^3}{h^3} \dfrac{R_{\odot}^3}{M_{\odot}}$ ainsi que le rayon de schwarszchild du Soleil $r_s = 2GM_{\odot}/c^2$   alors :
                  <note>
 	                \begin{equation}
 	                \dfrac{P_0R_{\odot}}{G \rho_0}p'(\xi) = - \frac{1}{\xi^2} \left( \mu x/ 3+ \alpha p(\xi) \right) \left(M_{\odot} m(\xi) + 4 \pi R_{\odot}^3 \xi^3 \frac{P_0 p(\xi)}{c^2} \right) \left( 1 - \frac{2 G M_{\odot} m(\xi)}{c^2 R_{\odot} \xi} \right)^{-1}
 	                \end{equation}
 	                
+             	     \begin{equation}
+            	     \left( 1 - \frac{2 G M_{\odot} m(\xi)}{c^2 R_{\odot} \xi} \right) \dfrac{P_0R_{\odot }{G M_{\odot}\rho_0}p'(\xi) = - \frac{1}{\xi^2 c^2} \left( \rho_0 \mu x/ 3+ P_0 p(\xi) \right) \left(M_{\odot} m(\xi) + 4 \pi R_{\odot}^3 \xi^3 \frac{P_0 p(\xi)}{c^2} \right)
+           	     \end{equation}
 	                
 	                \begin{equation}
 	                \dfrac{P_0R_{\odot}}{G M_{\odot}\rho_0}p'(\xi) = - \frac{1}{\xi^2} \left( \mu x/ 3+ \alpha p(\xi) \right) \left( m(\xi) + 4 \alpha \pi \dfrac{\rho_0 R_{\odot}^3}{M_{\odot}} \xi^3  p(\xi) \right) \left( 1 - \frac{r_s m(\xi)}{R_{\odot} \xi} \right)^{-1}
