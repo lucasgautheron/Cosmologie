@@ -973,11 +973,29 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 P_d &amp;  = &amp; \dfrac{4\pi g m^4 c^5}{3h^3}  \displaystyle\int_{1}^{u_F} (u^2-1)^{3/2} du
                 \end{matrix}\right.\end{equation}
                 
-                
-                
-                TODO: expressions analytiques.
-                
                 On note $n_0 = \dfrac{ 4\pi g m^3 c^3}{h^3} $ et $P_0 = \dfrac{4\pi g m^4 c^5}{3h^3}$.
+                
+                Le régime dégénéré peut être résolu analytiquement :
+                \begin{equation}
+                \displaystyle\int_{1}^{u_F} u \sqrt{u^2-1} du = \dfrac{1}{2} \displaystyle\int_{0}^{u_F^2 - 1} \sqrt{t} dt = \dfrac{1}{3} \left (u_F^2 - 1\right )^{3/2}
+                \end{equation}
+                
+                Et 
+                
+                \begin{equation}
+                \displaystyle\int_{1}^{u_F} (u^2-1)^{3/2} du = \displaystyle\int_{0}^{\cosh^{-1} u_F}\sinh^4{(t)} dt \\
+                = \dfrac{3}{8} \cosh^{-1} u_F - \dfrac{1}{2} u_F \sqrt{u_F^2 - 1} + \dfrac{1}{8} u_F \sqrt{u_F^2 - 1} (2u_F^2 - 1) 
+                \end{equation}
+                
+                Ce qui donne, en définissant $x \equiv 3\dfrac{n}{n_0}$ : 
+                \begin{equation}
+                P = P_0 \left [ \dfrac{3}{8} \sinh^{-1}{\left (x^{1/3} \right )} + \sqrt{1+  x^{2/3}} \left ( \dfrac{1}{4}x- \dfrac{3}{8} x^{1/3} \right ) \right ]
+                \end{equation}
+                
+                Similairement on peut montrer que la densité d'énergie peut s'écrire :
+                \begin{equation}
+                \rho_e =\dfrac{3}{8} P_0  \left [  \sinh^{-1}{\left (x^{1/3} \right )} + \sqrt{1+  x^{2/3}} \left ( 2x- x^{1/3} \right ) \right ]
+                \end{equation}
                 
                 Les courbes $n/n_0 \mapsto P/P_0$ sont calculées numériquement (facteurs dimensionnés exclus). On trouve
                 
@@ -993,26 +1011,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                     
                 Un gaz dicté par les effets thermiques se comporte comme un gaz dégénéré à forte densité et comme un gaz parfait à basse densité. (La relation pression/densité pour fermi dirac est une droite, 
                 
-                 Le régime dégénéré peut être résolu analytiquement :
-                \begin{equation}
-                \displaystyle\int_{1}^{u_F} u \sqrt{u^2-1} du = \dfrac{1}{2} \displaystyle\int_{0}^{u_F^2 - 1} \sqrt{t} dt = \dfrac{1}{3} \left (u_F^2 - 1\right )^{3/2}
-                \end{equation}
-                
-                Et 
-                
-                \begin{equation}
-                \displaystyle\int_{1}^{u_F} (u^2-1)^{3/2} du = \displaystyle\int_{0}^{\cosh^{-1} u_F}\sinh^4{(t)} dt = \dfrac{3}{8} \cosh^{-1} u_F - \dfrac{1}{2} u_F \sqrt{u_F^2 - 1} + \dfrac{1}{8} u_F \sqrt{u_F^2 - 1} (2u_F^2 - 1) 
-                \end{equation}
-                
-                Ce qui donne, en définissant $x \equiv 3\dfrac{n}{n_0}$ : 
-                \begin{equation}
-                P = P_0 \left [ \dfrac{3}{8} \sinh^{-1}{\left (x^{1/3} \right )} + \sqrt{1+  x^{2/3}} \left ( \dfrac{1}{4}x- \dfrac{3}{8} x^{1/3} \right ) \right ]
-                \end{equation}
-                
-                Similairement on peut montrer que la densité d'énergie peut s'écrire :
-                \begin{equation}
-                \rho_e =\dfrac{3}{8} P_0  \left [  \sinh^{-1}{\left (x^{1/3} \right )} + \sqrt{1+  x^{2/3}} \left ( 2x- x^{1/3} \right ) \right ]
-                \end{equation}
+
                 </p>
                 
                 <h4>Résistance à la gravité</h4>
@@ -1068,14 +1067,17 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 </p>
                 
                 <h4>Résultat</h4>
-                
+                <p>Les équations d'équilibre sont résolues (Relativité générale ou gravitation newtonienne) et conduisent au résultat suivant :</p>
                 <p>
                 	<figure src="wd_mass_radius.svg" title="Masse d'une naine blanche en fonction de son rayon.">
                 		La masse est exprimée en unités de masses solaires. La masse maximale est d'environ 1,44 $M_{\odot}$ selon la gravité Newtonienne et d'environ 1,4 $M_{\odot}$ avec une approche entièrement relativiste. ($\mu = 2$).
                 	</figure>
                 </p>
                 
-                <p>TODO : utiliser eq. einstein ? lourd et pas nécessaire ? pr montrer eq Lane–Emden.</p>
+               <h4>Implications</h4>
+               <p>
+                	
+               </p>
                 <spoiler>
                     pr la partie gravité, http://ads.harvard.edu/books/1989fsa..book/AbookC06.pdf semble intéressant. 
                     
