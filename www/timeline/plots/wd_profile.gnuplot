@@ -1,4 +1,5 @@
 set xrange [ 0 : 4000 ]
+set yrange [ 0 : 35 ]
 
 set xtics 500
 
