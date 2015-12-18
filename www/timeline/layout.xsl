@@ -159,7 +159,7 @@
         <div class="references"></div>
       </div>
       
-      <div class="image"></div>
+      <div id="image"></div>
       
       <div id="ressource">
         <h2 class="title"></h2>
