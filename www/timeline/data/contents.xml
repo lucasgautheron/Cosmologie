@@ -170,7 +170,7 @@
                     <li>Processus $e$ : Atteinte d'un état d'équilibre thermique des protons et neutrons qui s'associent en partie pour former de façon privilégiée des éléments très stables (autour du Fer, $45 \leq A \leq 65$, intervalle dans laquelle elle domine)</li>
                     <li>Processus $s$ : Captures neutroniques lentes (les éléments se stabilisent par radioactivité bêta plus vite qu'ils ne se forment par capture). Domine dans le domaine $25 \leq A \leq 45$ et est signicatif dans l'intervalle $65 \leq A \leq 200$</li>
                     <li>Processus $r$ : Captures neutroniques rapides (les éléments se stabilisent par radioactivité $\beta$ plus lentement qu'ils ne sont formés). Significatif pour des éléments lourds, $A \geq 70$. </li>
-                    <li>Processus $p$ : capture protonique. TODO</li>
+                    <li>Processus $p$ : Capture protonique. Explique la formation d'éléments relativement riches en protons.</li>
                     <li>Processus $x$ : TODO</li>
                 </ul>
                 L'ensemble de ces mécanismes de formation d'éléments au sein des étoiles est regroupé sous le nom de "nucléosynthèse stellaire". 

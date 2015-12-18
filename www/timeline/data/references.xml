@@ -112,5 +112,13 @@
         <file>alpher_herman_follin_1953.pdf</file>
     </reference>
     
+       <reference id="15" content-id="8">
+        <title>B2FH, The CMB and Cosmology</title>
+        <author>Geoffrey Burbidge</author>
+        <text>Article rétrospectif de Geoffrey Burbidge à propos du papier de 1957 et de son impact dans le domaine de la cosmologie.</text>
+        <date>2007</date>
+        <file>burbidge_2007.pdf</file>
+    </reference>
+    
     
 </references>
