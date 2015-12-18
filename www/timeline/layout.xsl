@@ -159,13 +159,13 @@
         <div class="references"></div>
       </div>
       
-      <div id="image"></div>
-      
       <div id="ressource">
         <h2 class="title"></h2>
         <div class="text"></div>
         <div class="references"></div>
       </div>
+      
+        <!--<div id="image"></div>-->
 
     <div class="clear"></div>
     </body>
