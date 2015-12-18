@@ -230,7 +230,11 @@
     	<image>acceleration_expansion.jpg</image>
     	<text>
     	    <p>
-    	        
+    	        <ul>
+    	            <li>Récapituler connaissances paramètres cosmologiques en 1998 : $\Omega_m$, $\Omega_r$, $\Omega_v$, courbure, $H_0$ etc.</li>
+    	            <li>Distances luminosité, angulaire etc. Animation. Chandelles standard : supernovas Ia. Evoquer rapidement mécanisme</li>
+                       <li>Courbe de luminosité vs $z$ et fit</li>
+    	        </ul>
     	    </p>
     	</text>
     </content>
