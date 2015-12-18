@@ -194,8 +194,8 @@
       </ul>
     </div>
     <div id="image">
-      <img src="../images/{./image@src}" />
-      <div><xsl:value-of select="./image/." /></div>
+      <img src="../images/{./image/@src}" />
+      <span class="caption"><xsl:value-of select="./image/." /></span>
     </div>
   </div>
 </xsl:result-document>
