@@ -165,7 +165,7 @@
         <div class="references"></div>
       </div>
       
-        <!--<div id="image"></div>-->
+        <div id="image"></div>
 
     <div class="clear"></div>
     </body>

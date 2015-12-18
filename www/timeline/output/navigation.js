@@ -171,7 +171,7 @@ function show_content(id, updatehash)
       $('#content .text').html(data_object.find('#text').html());
       $('#content .references').html(data_object.find('#references').html());
       $('#image').html(data_object.find('#image').html());
-      //if(!current_ressource) $('#image').show();
+      if(!current_ressource) $('#image').show();
       $('#content').show();
       data_object.find('#text script').each(function(){
         $.globalEval(this.innerHTML);
