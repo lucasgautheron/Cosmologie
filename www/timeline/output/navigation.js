@@ -169,7 +169,7 @@ function show_content(id, updatehash)
       $('#content .title').text(data_object.find('#title').text());
       $('#content .text').html(data_object.find('#text').html());
       $('#content .references').html(data_object.find('#references').html());
-      $('#content .image').html(data_object.find('#image').html());
+      $('#image').html(data_object.find('#image').html());
       if(!current_ressource) $('#image').show();
       $('#content').show();
       data_object.find('#text script').each(function(){
