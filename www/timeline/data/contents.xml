@@ -25,7 +25,7 @@
     
     <content id="2">
         <title>Découverte de l'éloignement des galaxies</title>
-        <image src="nebulae.png">Nébuleuse spirale M51</image>
+        <image src="nebulae.jpg">Nébuleuse spirale M51</image>
         <text><p>En 1912, Vesto Slipher mesure la vitesse de la galaxie Andromède par rapport à nous. Pour cela, il utilise la spectroscopie : en étudiant le spectre d'Andromède, il observe que certaines raies d'émission associées à des atomes bien connus sont légèrement déplacées. C'est le cas par exemple de la raie $H\alpha$ qui correspond à une transition électronique particulière dans l'atome d'hydrogène, qui émet à une longueur d'onde de 656,3 nm mais qui est observée à une longeur d'onde légèrement inférieure (un décalage d'un millième en valeur relative !). V. Slipher pense que cet écart est du à l'effet Doppler : une onde émise par une source en mouvement est perçue à une longueur d'onde différente de la longueur d'onde d'émission. Il connait aussi la relation entre la vitesse radiale d'éloignement de la source et la différence de longueur d'onde :
         \begin{equation}
         v_{radiale} = \dfrac{\lambda_{rec} - \lambda_0}{\lambda_0} c
