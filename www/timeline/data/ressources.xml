@@ -228,7 +228,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         \dfrac{1}{2}\dot{x}^2 - \dfrac{GM}{x} = E
         \end{equation}
         
-        Cela est naturel puisque la matière froide interagit uniquement de façon gravitationnelle et non relativiste ce qui correspond au champ d'application de la mécanique newtonienne.
+        Cela est naturel puisque la matière froide n'est pas relativiste et la matière non relativiste est décrite par la mécanique newtonienne.
         
         Il y a alors 3 solutions possibles selon le signe de $k/R^2$, de même qu'il existe trois solutions possibles au problème à deux corps (trajectoire hyperbolique, parabolique ou elliptique).
         <ul>
