@@ -164,6 +164,7 @@ function show_content(id, updatehash)
       current_content = id;
       if(updatehash) update_hash();
       hide_timeline();
+      $('#image').hide();
       data_object = $($.parseHTML(data, document, true)); 
       $('#content #timeline').html(data_object.find('#horizontal_timeline').html());
       $('#content .title').text(data_object.find('#title').text());
