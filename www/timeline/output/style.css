@@ -22,7 +22,7 @@ p { margin-bottom: 1em; }
 
 a { color: #BF1717; }
 
-div#content, div#ressource
+div#content, div#ressource, div#image
 {
     line-height: 1.4em;
     margin: 5px;
@@ -43,6 +43,8 @@ div#ressource, div#image
     /*background-color: #444;
     color: white;*/
 }
+
+div#image img { width: 100%; }
 
 div.figure, div.feynman
 {

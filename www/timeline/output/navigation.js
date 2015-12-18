@@ -123,7 +123,11 @@ function load_hash()
             {
                  if(new_ressource) show_ressource(current_ressource, false);
             }
-            else hide_ressource();
+            else
+            {
+                hide_ressource();
+                if(current_content) $('#image').show();
+            }
         }
     }
 }
