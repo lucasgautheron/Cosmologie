@@ -193,7 +193,10 @@
         </xsl:for-each>
       </ul>
     </div>
-    <div id="image"><img src="../images/{./image}" /></div>
+    <div id="image">
+      <img src="../images/{./image@src}" />
+      <div><xsl:value-of select="./image/." /></div>
+    </div>
   </div>
 </xsl:result-document>
 </xsl:for-each>
