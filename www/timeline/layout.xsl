@@ -150,6 +150,9 @@
             <li><a href="http://github.com/">github</a> pour la gestion du projet</li>
           </ul>
         </div>
+        <div>
+          Pour signaler toute erreur, ou simplement pour poser des questions relatives au contenu, vous pouvez envoyer un email à l'adresse lucas <i>dot</i> gautheron <i>at</i> gmail <i>dot</i> com
+        </div>
       </div>
       
       <div id="content">
