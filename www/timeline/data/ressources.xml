@@ -69,6 +69,31 @@
             <linkword>A. Friedmann</linkword>
         </linkwords>
     </ressource>
+    
+       <ressource id="8">
+        <title>Georges Lemaitre</title>
+        <text><p>1894-1966. Physicien belge. </p>
+            
+            <p></p></text>
+        <linkwords>
+            <linkword>Georges Lemaitre</linkword>
+            <linkword>Lemaitre</linkword>
+        </linkwords>
+    </ressource>
+    
+       <ressource id="9">
+        <title>Fred Hoyle</title>
+        <text><p>1915-2001. Physicien britannique. </p>
+            
+            <p>Fred Hoyle est connu pour sa théorie de l'état stationnaire, qui est demeurée pendant longtemps une concurrente très plausible de la théorie du Big Bang. Il a également largement contribué à la théorie de la nucléosynthèse stellaire, et est connu pour avoir prédit la réaction triple $\alpha$ (formation de carbone par triple fusion de noyaux d'hélium). </p>
+            <p>En 1983, Fowler se voit attribué le prix Nobel pour le travail qu'il avait mené avec Hoyle sur la formation des éléments au sein des étoiles. Mais Hoyle, lui, n'est pas récompensé. ce qui est perçu comme une décision injuste davantage motivée par la personnalité de Hoyle que des critères scientifiques.
+            </p></text>
+        <linkwords>
+            <linkword>Fred Hoyle</linkword>
+            <linkword>F. Hoyle</linkword>
+            <linkword>Hoyle</linkword>
+        </linkwords>
+    </ressource>
 
     <!--           -->
     <!-- EQUATIONS -->
@@ -1074,10 +1099,14 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 	</figure>
                 </p>
                 
-                <p>Piste : si accrétation, la naine peut acquérir du $J$ ? Si oui sa masse critique augmente = > massive white dwarf
+                <h4>Implications</h4>
+                <p>
+                     
+                </p>
+                <p>Piste : si accrétion, la naine peut acquérir du $J$ ? Si oui sa masse critique augmente = > massive white dwarf
                 </p>
                 
-               <h4>Implications</h4>
+               
                <p>
                 	
                </p>
@@ -1110,10 +1139,10 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         todo EXPLIQUER démarche einstein
         </p>
         <p>Le principe d'équivalence tel qu'énoncé par Einstein en 1907 peut être formulé ainsi : <i>the outcome of any local, nongravitational test experiment is independent of the experimental apparatus’ velocity relative to the gravitational field and is independent of where and when in the gravitational field the experiment is performed (http://arxiv.org/pdf/gr-qc/0103067v1.pdf).</i>. </p>
-        <p>On distingue deux formulations du principe d'équivalence :</p>
-            <p><b>Principe d'équivalence faible</b>: </p>
-            <p><b>Principe d'équivalence fort</b>: </p>
-            <p><b>Du principe d'équivalence au formalisme tensoriel :</b>
+        <p>On distingue deux formulations type du principe d'équivalence :</p>
+            <p><b>Principe d'équivalence faible</b>: Des masses "tests" (d'influence gravitationnelle négligeable) se meuvent de la même façon dans un champ gravitationnel indépendamment de leur nature : leur mouvement ne dépend que de leur position et vitesse initiale dans l'espace-temps.</p>
+            <p><b>Principe d'équivalence fort</b>: Le résultat de toute expérience physique, pouvant inclure notamment la gravitation elle-même, est le même dans tout référentiel en chute libre, quelque soit sa position dans l'espace-temps..</p>
+            <p><b>Du principe d'équivalence au formalisme tensoriel :</b> Le principe d'équivalence suggère une formulation particulière de la gravitation. En particulier, si tous les objets en chute libre suivent la même trajectoire, cette trajectoire a un caractère universel. En relativité générale, celle-ci est une géodésique dans une variété riemannienne.
             </p>
         </text>
         <linkwords>
