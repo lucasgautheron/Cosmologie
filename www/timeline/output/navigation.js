@@ -31,7 +31,7 @@ $(document).ready(function() {
          var x = event.pageX,
              y = event.pageY;
          var div = $("div.note[data-nid='" + $(this).data('nid') + "']");
-         div.css({top: y-10, left: x+10});
+         div.css({top: y+20, left: x+10});
          div.toggle();
          return false;
     });
@@ -170,6 +170,7 @@ function show_content(id, updatehash)
       $('#content .text').html(data_object.find('#text').html());
       $('#content .references').html(data_object.find('#references').html());
       $('#content .image').html(data_object.find('#image').html());
+      if(!current_ressource) $('#image').show();
       $('#content').show();
       data_object.find('#text script').each(function(){
         $.globalEval(this.innerHTML);
@@ -203,6 +204,7 @@ function show_ressource(id, updatehash)
       $('#ressource .title').text(data_object.find('#title').text());
       $('#ressource .text').html(data_object.find('#text').html());
       $('#ressource .references').html(data_object.find('#references').html());
+      $('#image').hide();
       $('#ressource').show();
       data_object.find('#text script').each(function(){
         $.globalEval(this.innerHTML);

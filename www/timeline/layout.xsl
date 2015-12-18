@@ -157,8 +157,9 @@
         <div id="timeline"></div>
         <div class="text"></div>
         <div class="references"></div>
-        <div class="image"></div>
       </div>
+      
+      <div class="image"></div>
       
       <div id="ressource">
         <h2 class="title"></h2>

@@ -35,7 +35,7 @@ div#content
     width: 55%;
 }
 
-div#ressource
+div#ressource div#image
 {
     float: left;
     width: 32%;
