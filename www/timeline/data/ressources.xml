@@ -416,8 +416,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <ressource id="105">
         <title>Principe Cosmologique</title>
         <text><p>Le principe cosmologique est un ensemble d'hypothèses faites sur l'Univers à grande échelle. Ces hypothèses sont les suivantes :</p> 
-        <p><b>L'Univers est homogène</b> : </p>
-        <p><b>L'Univers est isotrope</b> : </p>
+        <p><b>L'Univers est homogène</b> : A chaque instant les propriétés de l'Univers sont identiques en tout point de l'espace</p>
+        <p><b>L'Univers est isotrope</b> : Il n'existe aucune direction privilégiée en aucun point de l'espace à chaque instant</p>
         
         Certains modèles cosmologiques sont basés sur le principe cosmologique dit "parfait", qui en plus du principe cosmologique standard contient l'hypothèse d'homogénéité du temps. Un exemple de modèle respectant ce principe est le Steady-State Universe TODO DEVELOPPER + TRAD</text>
         <linkwords>
