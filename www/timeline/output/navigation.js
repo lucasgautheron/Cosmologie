@@ -192,6 +192,7 @@ function show_content(id, updatehash)
 function hide_content(id)
 {
   current_content = null;
+  $("#image").hide();
   $("#content").hide();
 }
 
