@@ -117,6 +117,8 @@
                 <spoiler><figure src="abondance_equilibre_thermique.svg" title="logarithme de l'abondance relative des éléments et fit pour une distribution de boltzmann selon les énergies de liaison"> Le fit est réalisé sur la portion $0 \leq A \leq 80$ de la courbe La meilleure correspondance est atteinte pour une température d'équilibre de l'ordre de $10^{12}$ K, mais cela est incohérent avec le résultat pour des valeurs de $A$ supérieures (à partir d'environ 100-120) où la pente s'annulle inexplicablement.
                 TODO: évidemment TRES grossier puisque les états $(A,Z)$ ne sont pas équiv. Utiliser (x,y) (proportion neutrons, protons) + énergie de liaison PAR nucléon $E/A$ pour fit moins stupide? (sans compter le pb de signe !!)</figure></spoiler></p>
             <p>A partir de 1946, Gamow propose, en réponse à l'échec de cette explication, une autre théorie de formation des éléments basée sur un processus hors équilibre qu'il justifie par l'expansion rapide de l'Univers. Il montre dans le cadre du modèle d'Einstein-de Sitter que l'Univers se serait trouvé dans un état de densité suffisant pour autoriser des réactions nucléaires pendant un temps très court, vers ses tous premiers instants, pendant lequel un équilibre n'aurait pu être atteint. Gamow suggère alors un mécanisme, après qu'il ait remarqué une forte corrélation entre les sections efficaces de capture de neutrons par des noyaux et leur abondance :
+            <p>TODO parler de l'hélium
+            </p>
             <ol>
                <li>Dans ses premiers instants, l'Univers se trouve dans un état où il est dominé par des neutrons</li> 
                <li>Les neutrons s'agglomèrent très vite par capture neutronique pour former successivement des éléments contenant de plus en plus de nucléons. Ceci doit se faire très rapidement étant donné le temps de demie-vie du neutron qui se désintègre en environ 1000 s : sinon, tous les neutrons seraient devenus des protons avant de s'agglomérer.</li> 
@@ -173,7 +175,7 @@
                     <li>Processus $s$ : Captures neutroniques lentes (les éléments se stabilisent par radioactivité bêta plus vite qu'ils ne se forment par capture). Domine dans le domaine $25 \leq A \leq 45$ et est signicatif dans l'intervalle $65 \leq A \leq 200$</li>
                     <li>Processus $r$ : Captures neutroniques rapides (les éléments se stabilisent par radioactivité $\beta$ plus lentement qu'ils ne sont formés). Significatif pour des éléments lourds, $A \geq 70$. </li>
                     <li>Processus $p$ : Capture protonique. Explique la formation d'éléments relativement riches en protons.</li>
-                    <li>Processus $x$ : TODO</li>
+                    <li>Processus $x$ : Désigne le ou les processus qui expliqueraient la formation des éléments $D = ^{2}_{1}H$, $^{3}He$, $^{4}He$ et $^{7}Li$. </li>
                 </ul>
                 L'ensemble de ces mécanismes de formation d'éléments au sein des étoiles est regroupé sous le nom de "nucléosynthèse stellaire". 
                 Le succès de ce modèle est que les étoiles évoluant lentement, elles offrent une variétés de conditions physiques et donc de processus différents qui peuvent s'effectuer pendant un temps suffisant pour former une grande variété d'éléments.
