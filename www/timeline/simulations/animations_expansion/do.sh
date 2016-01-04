@@ -7,3 +7,5 @@ chmod +x video_vitesse.sh
 ./video_vitesse.sh acc
 ./video_vitesse.sh dec
 
+rm *.res
+rm -rf files/*
