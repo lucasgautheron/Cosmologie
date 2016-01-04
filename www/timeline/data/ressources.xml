@@ -668,9 +668,15 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <h3>Distance de angulaire</h3>
             <p></p>
             <p>
-                <video width="640" height="1024">
+                <video width="320" height="512">
                     <mp4>accelerated_redshift.mp4</mp4>
                     <webm>accelerated_redshift.webm</webm>
+                </video>
+            </p>
+            <p>
+                <video width="320" height="512">
+                    <mp4>decelerated_redshift.mp4</mp4>
+                    <webm>decelerated_redshift.webm</webm>
                 </video>
             </p>
         </text>
