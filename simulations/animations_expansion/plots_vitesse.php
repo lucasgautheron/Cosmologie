@@ -1,5 +1,5 @@
 <?php
-$type = "dec";
+$type = $_SERVER['argv'][1];
 
 function ticks($min, $max, $count, $round)
 {
@@ -15,8 +15,18 @@ $data = array();
 preg_match_all("#(.*) (.*) (.*) (.*) (.*)\n#u", $lines, $data);
 
 $lines = array();
+
+$x0 = 0;
+$d = 0;
+$t0 = 0;
 foreach($data[0] as $n => $line)
 {
+    if($n == 0)
+    {
+        $t0 = $data[1][$n];
+        $x0 = abs($data[2][$n]);
+        $d = 2*$x0;
+    }
     $lines[] = array($data[1][$n], $data[2][$n], $data[3][$n], $data[4][$n]);
     $max_ratio = 1+$data[4][$n];
     $max_time = $data[1][$n];
@@ -25,11 +35,13 @@ foreach($data[0] as $n => $line)
     $max_v = $data[5][$n];
 }
 
+$k = 0;
 foreach($lines as $n => $line)
 {
-    /*$skip = $n && $n < count($lines)-1 && $n%2;
-    if($skip) continue;*/
-    $index = sprintf("%04d", $n);
+    $skip = $n && $n < count($lines)-1 && $n%5;
+    if($skip) continue;
+    $index = sprintf("%06d", $k);
+    $k++;
     $mid = 0;
     $min_x = $mid + (- 1.5) * $max_ratio / (1+$line[3]);
     $max_x = $mid + (+ 1.5) * $max_ratio / (1+$line[3]);
@@ -43,7 +55,7 @@ foreach($lines as $n => $line)
 set multiplot layout 4, 1
 ";
     $code .= "
-set title  sprintf(\"t=%.2f, z=%.2f\",{$line[0]},{$line[3]})
+set title  sprintf(\"t=%.2f, z=%.2f\",{$line[0]}-$t0,{$line[3]})
 set lmargin at screen 0.1
 set rmargin at screen 0.9
 set bmargin at screen 0.7
@@ -61,10 +73,10 @@ set ytics $xtics
 set object 1 circle at first -1,0 size 0.05
 set object 2 circle at first 1,0 size 0.05
 
-plot 'out_$type.res' u ($2):($1 <= {$line[0]}+0.01 ? 0 : NaN) w l lt 1 lw 1.5
+plot 'out_$type.res' u ($2/$x0):($1 <= {$line[0]}+0.01 ? 0 : NaN) w l lt 1 lw 1.5
 ";
 
-    $mid = $line[1];
+    $mid = $line[1]/$x0;
     $min_x = $mid + (- 1.5) * $max_ratio / (1+$line[3]);
     $max_x = $mid + (+ 1.5) * $max_ratio / (1+$line[3]);
     
@@ -87,11 +99,11 @@ set ytics $xtics
 set object 1 circle at first -1,0 size 0.05
 set object 2 circle at first 1,0 size 0.05
 
-plot 'out_$type.res' u ($2):($1 <= {$line[0]}+0.01 ? 0 : NaN) w l lt 1 lw 1.5
+plot 'out_$type.res' u ($2/$x0):($1 <= {$line[0]}+0.01 ? 0 : NaN) w l lt 1 lw 1.5
 ";
     
-    $xtics = ticks(0, $max_time, 5, 0.25);
-    $ytics = ticks(0, $max_r, 5, 0.5);
+    $xtics = ticks(0, $max_time-$t0, 5, 0.25);
+    $ytics = ticks(0, $max_r, 5, $max_r < 5 ? 1 : 25);
     $code .= "
     set lmargin at screen 0.1
 set rmargin at screen 0.9
@@ -114,12 +126,12 @@ f(x) = x
     set xtics 0,$xtics,$max_time
     set xrange [ 0:$max_time ]
     set yrange [ 0:$max_r ]
-plot 'out_$type.res' u 1:($1 <= {$line[0]}+0.01 ? ($3) : NaN) w l, x
+plot 'out_$type.res' u ($1-$t0):($1 <= {$line[0]}+0.01 ? ($3) : NaN) w l, x
 ";
 
-    $xtics = ticks(0, $max_time, 5, 0.25);
+    $xtics = ticks(0, $max_time-$t0, 5, 0.25);
 
-    $ytics = ticks(0, $max_v, 5, 0.5);
+    $ytics = ticks(0, $max_v, 5, 1);
     $code .= "
 set lmargin at screen 0.1
 set rmargin at screen 0.9
@@ -139,7 +151,7 @@ set tmargin at screen 0.25
     set xtics 0,$xtics,$max_time
     set xrange [ 0:$max_time ]
     set yrange [ 0:$max_v ]
-plot 'out_$type.res' u 1:( ($1 <= {$line[0]}+0.01 && $5 > 0.01) ? ($5) : NaN) w l, 1
+plot 'out_$type.res' u ($1-$t0):( ($1 <= {$line[0]}+0.01 && $5 > 0.01) ? ($5) : NaN) w l, 1
 ";
 
     $code .= "
