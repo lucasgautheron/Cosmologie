@@ -55,6 +55,7 @@ if($perform_simulations)
         
         chdir('../..');
     }
+    echo "simulations execution completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 }
 
 // gnuplot
