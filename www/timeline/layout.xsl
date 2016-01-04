@@ -89,6 +89,17 @@
     <a class="note_indicator" href="#" data-nid="{generate-id(.)}"><sup>[?]</sup></a><div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
   </xsl:template>
   
+  <xsl:template match="video">
+    <video width="{./@width}" height="{./@height}" controls="controls">
+      <xsl:if test="./mp4">
+        <source src="../videos/{./mp4}"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+      </xsl:if>
+      <xsl:if test="./webm">
+        <source src="../videos/{./webm}" type='video/webm; codecs="vp8, vorbis"' />
+      </xsl:if>
+    </video>
+  </xsl:template>
+  
 <xsl:template match="/">
   <html>
     <head>
