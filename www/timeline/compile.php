@@ -3,6 +3,11 @@ chdir(__DIR__);
 $output = array();
 $return_code = $return = 0;
 
+$verbose = in_array('-V', $_SERVER['argv']);
+$perform_simulations = in_array('-S', $_SERVER['argv']);
+
+$redirect = $verbose ? "" : " > /dev/null 2>&1 ";
+
 function strip_decl($str)
 {
     return str_replace("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n", '', $str);
@@ -16,14 +21,41 @@ $files[3] = strip_decl(file_get_contents("data/references.xml"));
 file_put_contents('data/cache', "<?xml version=\"1.0\" encoding=\"UTF-8\"?><root>{$files[0]}{$files[1]}{$files[2]}{$files[3]}</root>");
 
 $start_time = microtime(true);
-exec('saxonb-xslt -s:data/cache -xsl:layout.xsl -o:output/index.html -ext:on', $output, $return_code);
+exec('saxonb-xslt -s:data/cache -xsl:layout.xsl -o:output/index.html -ext:on' . $redirect, $output, $return_code);
 $return |= $return_code;
 echo "HTML generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 
 $start_time = microtime(true);
-exec('saxonb-xslt -s:data/cache -xsl:graph.xsl -o:output/graph.html -ext:on', $output, $return_code);
+exec('saxonb-xslt -s:data/cache -xsl:graph.xsl -o:output/graph.html -ext:on' . $redirect, $output, $return_code);
 $return |= $return_code;
 echo "graph generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
+
+// simulations
+if($perform_simulations)
+{
+    $start_time = microtime(true);
+    
+    $simulations = glob('simulations/*', GLOB_ONLYDIR);
+    print_r($simulations);
+    foreach($simulations as $simulation)
+    {
+        if(!file_exists("$simulation/do.sh"))
+        {
+            if($verbose) echo "Skipped $simulation due to missing do.sh file\n";
+            continue;
+        }
+        
+        if($verbose) echo "Running simulation $simulation...";
+        
+        chdir($simulation);
+        
+        chmod('do.sh', 0755);
+        exec('./do.sh' . $redirect, $output, $return_code);
+        $return |= $return_code;
+        
+        chdir('../..');
+    }
+}
 
 // gnuplot
 $start_time = microtime(true);
@@ -33,10 +65,13 @@ foreach($plots as $plot)
 {
     $plot = preg_replace('/\\.(gnuplot)/', '', $plot);
     file_put_contents("tmp", "set term svg enhanced dynamic dashed font 'DejaVuSerif,14'; set out '../images/$plot.svg'; \n" . file_get_contents("$plot.gnuplot"));
-    exec('gnuplot tmp', $output, $return_code);
+    exec('gnuplot tmp' . $redirect, $output, $return_code);
     $return |= $return_code;
 }
 if(is_file('tmp')) unlink('tmp');
+
 echo "plot generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
+
+chdir('..');
 
 exit((int)$return);
