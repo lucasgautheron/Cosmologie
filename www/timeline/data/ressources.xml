@@ -1106,13 +1106,13 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <h4>Résultat</h4>
                 <p>Les équations d'équilibre sont résolues (Relativité générale ou gravitation newtonienne) et conduisent au résultat suivant :</p>
                 <p>
-                	<figure src="wd_mass_radius.svg" title="Masse d'une naine blanche en fonction de son rayon.">
+                	<figure src="wd_mass_radius.svg" title="Masse d'une naine blanche en fonction de son rayon." plot="wd_mass_radius" source="naine_blanche">
                 		La masse est exprimée en unités de masses solaires. La masse maximale est d'environ 1,44 $M_{\odot}$ selon la gravité Newtonienne et d'environ 1,4 $M_{\odot}$ avec une approche entièrement relativiste. ($\mu = 2$).
                 	</figure>
                 </p>
                 
                  <p>
-                	<figure src="wd_profile.svg" title="Profil de densité d'une naine blanche.">
+                	<figure src="wd_profile.svg" title="Profil de densité d'une naine blanche." plot="wd_profile" source="naine_blanche">
                 	    Profil de densité d'une naine blanche de rayon $R = $ 3700 km.  
                 	</figure>
                 </p>
