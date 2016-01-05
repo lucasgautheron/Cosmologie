@@ -1,5 +1,6 @@
 <?php
 $type = $_SERVER['argv'][1];
+$drop = $_SERVER['argv'][2];
 
 if(!is_dir('files')) mkdir('files');
 
@@ -40,7 +41,7 @@ foreach($data[0] as $n => $line)
 $k = 0;
 foreach($lines as $n => $line)
 {
-    $skip = $n && $n < count($lines)-1 && $n%5;
+    $skip = $n && $n < count($lines)-1 && ($n%$drop != 0);
     if($skip) continue;
     $index = sprintf("%06d", $k);
     $k++;

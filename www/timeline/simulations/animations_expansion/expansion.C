@@ -20,7 +20,8 @@ int calculate(const double d, const double t1, double (*a)(double), double *_x, 
     double xA = -d/2.0;
     double xB = d/2.0;
 
-    double dt = 0.005;
+    //double dt = 0.005;
+    double dt = 0.001;
     double x = xA, t = t1;
 
     for(int i = 0; i < n; ++i)
@@ -64,8 +65,8 @@ int main()
     
     printf("%.5f %.5f\n", t1_dec, d_dec);
     
-    double x_acc[n], r_acc[n], z_acc[n], t_acc[n], dr_acc[n];
-    double x_dec[n], r_dec[n], z_dec[n], t_dec[n], dr_dec[n];
+    double *x_acc = new double[n], *r_acc = new double[n], *z_acc = new double[n], *t_acc = new double[n], *dr_acc = new double[n];
+    double *x_dec = new double[n], *r_dec = new double[n], *z_dec = new double[n], *t_dec = new double[n], *dr_dec = new double[n];
     calculate(d_acc, t1_acc, &a_acc, x_acc, r_acc, z_acc, t_acc, dr_acc, n);
     calculate(d_dec, t1_dec, &a_dec, x_dec, r_dec, z_dec, t_dec, dr_dec, n);
     FILE *fp = fopen("out_acc.res", "w+");
