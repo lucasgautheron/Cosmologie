@@ -224,8 +224,8 @@
     	    <p>
     	        En 1980, le modèle du Big Bang fait consensus. Pourtant, il pose déjà plusieurs problèmes, et en 1980, Alan Guth propose une solution à deux d'entre eux :
     	        <ul>
-    	            <li><b>Problème de la platitude</b> (flatness problem) : on observe que la densité d'énergie $\rho$ est proche de la densité critique $\rho_c = \dfrac{3c^2H_0^2}{8\pi G}$  : $\rho \sim \rho_c$. La courbure d'un Univers étant donnée par $(\rho_c - \rho)/\rho_c$, l'Univers est proche d'être plat\note{Ajd on sait que $\Omega_k &lt; 10^{-4}$, mais à l'époque que sait-on exactement ? seulement que la densité de l'univers est du meme ordre de grandeur que la densité de fermeture ?}. TODO montrer fine tuning, modele simple, à la Guth à partir de $T_0 \sim $ MeV</li>
-    	            <li><b>problème de l'Horizon</b> : L'Univers est supposé en tout temps homogène et isotrope bien que régions aient été et sont "causalement déconnectées" (aucune interaction n'a pu se propager de l'une à l'autre, pas même la lumière), et donc ne peuvent être maintenues en équilibre par un processus physique.</li>
+    	            <li><b>Problème de la platitude</b> (flatness problem) : A l'époque, on n'observe aucune indication d'une courbure éventuelle de l'Univers. Le paramètre de courbure $\Omega_k$ étant relié à la densité d'énergie et la densité critique de l'Univers par $\Omega_k = \frac{\rho - \rho_c}{\rho_c}$, ces deux densités doivent être raisonnablement proches (pas plus d'un ordre de grandeur d'écart). Or... TODO montrer fine tuning, modele simple, à la Guth à partir de $T_0 \sim $ MeV</li>
+    	            <li><b>Problème de l'Horizon</b> : L'Univers est supposé en tout temps homogène et isotrope bien que régions aient été et sont "causalement déconnectées" (aucune interaction n'a pu se propager de l'une à l'autre, pas même la lumière), et donc ne peuvent être maintenues en équilibre par un processus physique.</li>
     	        </ul>
     	        
     	        La solution que propose Alan Guth repose sur une hypothétique phase d'expansion très rapide au début de l'Univers. EXpliquer etc. papier
