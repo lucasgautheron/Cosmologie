@@ -66,7 +66,7 @@
         <xsl:value-of select="./@title" />
         <xsl:choose>
            <xsl:when test="./@source and ./@plot">
-                (<a href="../plots/{./@plot}gnuplot">gnuplot</a> | <a href="../simulations/{./@source}.tar.gz">source</a>)
+                (<a href="../plots/{./@plot}.gnuplot">gnuplot</a> | <a href="../simulations/{./@source}.tar.gz">source</a>)
            </xsl:when>
            <xsl:when test="./@plot">
                 (<a href="../plots/{./@plot}.gnuplot">gnuplot</a>)
