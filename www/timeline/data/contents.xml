@@ -81,7 +81,7 @@
                 En 1948, F. Hoyle pointe quelques problèmes qui suggèrent le besoin de formuler une autre théorie pour l'Univers :
                 <ul>
                     <li>Problème de l'Âge de l'Univers : puisque le modèle d'Einstein-de Sitter implique que l'Univers soit né d'une singularité il entraine que celui-ci a un certain âge et que ses structures doivent être plus jeunes : dans ce cadre, et d'après la constante d'Hubble mesurée à l'époque, cet âge doit être d'un peu plus d'1 milliard d'années. Cependant, l'âge de la Terre était estimé à l'époque entre 1.5 et 3 milliards d'années (par des techniques radiométriques). </li>
-                    <li>Problème de la formation des galaxies : selon Hoyle, le modèle statique d'Einstein peut expliquer la formation de condensations de matière (donc formation de galaxies) puisqu'il est instable aux contractions (une petite augmentation perturbative de la densité entrainerait une condensation encore plus forte). En revanche selon lui, [...]TODO. Note : univers de hoyle = localement univers d'einstein dans lequel une petite contraction est instable et poursuit : condensation ! MAIS condensations anciennesrequires par univers ES/FL</li>
+                    <li>Problème de la formation des galaxies </li>
                     <li></li>
                 </ul>
                 Hoyle, à la suite de réflexions sur ce sujet avec les physiciens Gold et Bondi, propose alors un modèle d'univers appelé "théorie de l'état stationnaire" visant à résoudre ces problèmes. Dans sa théorie, il fait l'hypothèse que de la matière est créée continuument et de façon homogène - par exemple, sous forme d'atomes d'hydrogène - de sorte à ce que malgré l'expansion la densité d'énergie demeure constante. L'univers étant alors toujours de même densité, il est toujours semblable et n'a plus d'âge. TODO de plus localement Ein. Stat. donc condensations possible ? yes/no ?
@@ -225,7 +225,7 @@
     	        En 1980, le modèle du Big Bang fait consensus. Pourtant, il pose déjà plusieurs problèmes, et en 1980, Alan Guth propose une solution à deux d'entre eux :
     	        <ul>
     	            <li><b>Problème de la platitude</b> (flatness problem) : A l'époque, on n'observe aucune indication d'une courbure éventuelle de l'Univers. Le paramètre de courbure $\Omega_k$ étant relié à la densité d'énergie et la densité critique de l'Univers par $\Omega_k = \frac{\rho - \rho_c}{\rho_c}$, ces deux densités doivent être raisonnablement proches (pas plus d'un ordre de grandeur d'écart). Or... TODO montrer fine tuning, modele simple, à la Guth à partir de $T_0 \sim $ MeV</li>
-    	            <li><b>Problème de l'Horizon</b> : L'Univers est supposé en tout temps homogène et isotrope bien que régions aient été et sont "causalement déconnectées" (aucune interaction n'a pu se propager de l'une à l'autre, pas même la lumière), et donc ne peuvent être maintenues en équilibre par un processus physique.</li>
+    	            <li><b>Problème de l'Horizon</b> : L'Univers est supposé en tout temps homogène et isotrope bien que régions aient été et soient "causalement déconnectées" (aucune interaction n'a pu se propager de l'une à l'autre, pas même la lumière), et donc ne peuvent être maintenues en équilibre par un processus physique.</li>
     	        </ul>
     	        
     	        La solution que propose Alan Guth repose sur une hypothétique phase d'expansion très rapide au début de l'Univers. EXpliquer etc. papier
