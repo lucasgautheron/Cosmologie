@@ -8,5 +8,6 @@ chmod +x video_vitesse.sh
 #./video_vitesse.sh dec 5 15
 ./video_vitesse.sh dec 40 30
 
-rm *.res
-rm -rf files/*
+rm -f *.res
+rm -f tmp
+rm -f files/*

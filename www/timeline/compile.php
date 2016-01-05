@@ -36,7 +36,7 @@ if($perform_simulations)
     $start_time = microtime(true);
     
     $simulations = glob('simulations/*', GLOB_ONLYDIR);
-    print_r($simulations);
+    
     foreach($simulations as $simulation)
     {
         if(!file_exists("$simulation/do.sh"))
@@ -45,7 +45,9 @@ if($perform_simulations)
             continue;
         }
         
-        if($verbose) echo "Running simulation $simulation...";
+        exec("tar -zcvf $simulation.tar.gz $simulation"); 
+        
+        if($verbose) echo "Running simulation $simulation...\n";
         
         chdir($simulation);
         

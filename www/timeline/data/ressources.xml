@@ -625,7 +625,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <h3>Application</h3>
             <p>
                 Dans le graphe ci-dessous, la relation $z\mapsto d_L(z)$ est calculée pour 3 modèles différents. Pour des valeurs suffisantes de $z$ les divergences permettent de contraindre les paramètres cosmologiques.
-                <figure src="dl.svg" title="Distance de luminosité en fonction du redshift">
+                <figure src="dl.svg" title="Distance de luminosité en fonction du redshift" plot="dl" source="distance_luminosite">
                     Courbe $z \mapsto d_L(z)$ pour plusieurs modèles cosmologiques : Einstein-de Sitter, Hoyle, et $\Lambda$CDM d'après Planck 2013.
                 </figure>
             </p>
@@ -668,13 +668,13 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <h3>Distance de angulaire</h3>
             <p></p>
             <p>
-                <video width="320" height="512">
+                <video width="320" height="512" source="animations_expansion">
                     <mp4>accelerated_redshift.mp4</mp4>
                     <webm>accelerated_redshift.webm</webm>
                 </video>
             </p>
             <p>
-                <video width="320" height="512">
+                <video width="320" height="512" source="animations_expansion">
                     <mp4>decelerated_redshift.mp4</mp4>
                     <webm>decelerated_redshift.webm</webm>
                 </video>

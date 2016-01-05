@@ -11,4 +11,4 @@ cp masse_rayon.res ../../plots/data/wd_mass_radius.res
 cp masse_rayon_relativistic.res ../../plots/data/wd_mass_radius_relativistic.res
 cp masse_100.00000.res ../../plots/data/wd_profile.res
 
-rm *.res
+rm -f *.res

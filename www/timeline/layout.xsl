@@ -64,6 +64,17 @@
       </a>
       <div class="label">
         <xsl:value-of select="./@title" />
+        <xsl:choose>
+           <xsl:when test="./@source and ./@plot">
+                (<a href="../plots/{./plot}gnuplot">gnuplot</a> | <a href="../simulations/{./source}.tar.gz">source</a>)
+           </xsl:when>
+           <xsl:when test="./@plot">
+                (<a href="../plots/{./plot}gnuplot">gnuplot</a>)
+           </xsl:when>
+           <xsl:when test="./@source">
+                (<a href="../simulations/{./source}.tar.gz">source</a>)
+           </xsl:when>
+           </xsl:choose>
       </div>
       <div class="caption">
         <xsl:apply-templates />
@@ -98,6 +109,9 @@
         <source src="../videos/{./webm}" type='video/webm; codecs="vp8, vorbis"' />
       </xsl:if>
     </video>
+   <xsl:if test="./@source">
+   (<a href="../simulations/{./source}.tar.gz">source</a>)
+   </xsl:if>
   </xsl:template>
   
 <xsl:template match="/">
