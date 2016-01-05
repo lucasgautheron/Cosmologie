@@ -69,7 +69,7 @@
                 (<a href="../plots/{./@plot}gnuplot">gnuplot</a> | <a href="../simulations/{./@source}.tar.gz">source</a>)
            </xsl:when>
            <xsl:when test="./@plot">
-                (<a href="../plots/{./@plot}gnuplot">gnuplot</a>)
+                (<a href="../plots/{./@plot}.gnuplot">gnuplot</a>)
            </xsl:when>
            <xsl:when test="./@source">
                 (<a href="../simulations/{./@source}.tar.gz">source</a>)
