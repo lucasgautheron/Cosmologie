@@ -20,8 +20,7 @@ int calculate(const double d, const double t1, double (*a)(double), double *_x, 
     double xA = -d/2.0;
     double xB = d/2.0;
 
-    //double dt = 0.005;
-    double dt = 0.001;
+    double dt = 0.0025;
     double x = xA, t = t1;
 
     for(int i = 0; i < n; ++i)

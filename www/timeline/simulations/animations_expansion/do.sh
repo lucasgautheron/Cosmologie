@@ -4,9 +4,9 @@ chmod +x expansion
 chmod +x video_vitesse.sh
 
 ./expansion
-./video_vitesse.sh acc 5 75
-#./video_vitesse.sh dec 25 15
-./video_vitesse.sh dec 25 30
+./video_vitesse.sh acc 2 60
+#./video_vitesse.sh dec 5 15
+./video_vitesse.sh dec 40 30
 
 rm *.res
 rm -rf files/*
