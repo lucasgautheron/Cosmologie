@@ -1203,7 +1203,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
           <p>
           En définissant  la densité critique à chaque instant donné de l'histoire de l'Univers $\rho_c(t) = \dfrac{3c^2 H(t)^2}{8\pi G}$, avec $H(t) = \dot{a}/a$, la première des équations de Friedmann peut s'écrire :
           \begin{equation}
-          \left (\rho_c - \rho ) a^2 = \dfrac{3c^4}{8 \pi G} \dfrac{k}{R^2}
+          \left (\rho_c - \rho \right ) a^2 = \dfrac{3c^4}{8 \pi G} \dfrac{k}{R^2}
           \end{equation}
           
           En introduisant le paramètre de courbure $\Omega_k = \dfrac{\rho - \rho_c}{\rho_c}$ qui représente à une date donnée la différence relative entre la densité d'énergie dans l'Univers et la densité critique, il vient que :
@@ -1216,12 +1216,16 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
           \Omega_k \rho a^2 = \mbox{ cste }
           \end{equation}
           
-          Si la densité d'énergie dans l'Univers aujourd'hui est relativement proche de la densité critique, disons $|\Omega_{k0}| &lt; M$ où M est de l'ordre de la dizaine au maximum, cela signifie donc que $k/R^2$ est relativement petit et donc que l'Univers est à peu près plat.
+          Si la densité d'énergie dans l'Univers aujourd'hui est relativement proche de la densité critique, disons $|\Omega_{k0}| &lt; M$ où M de l'ordre de la dizaine au maximum, cela signifie donc que $k/R^2$ est relativement petit et donc que l'Univers est à peu près plat.
+          La limite $M$ peut être évaluée expérimentalement. Au début des années 1980 elle est évaluée à la dizaine, aujourd'hui à $10^{-4}$. C'est pourquoi on considère que l'Univers est "plat".
+          
           Or, d'après la relation précédente, on doit avoir :
           
-          $\Omega_k(t)  = \Omega_{k0}\dfrac{\rho_0}{\rho(t) a(t)^2}$
+          $|\Omega_k(t)|  = |\Omega_{k0}|\dfrac{\rho_0}{\rho(t) a(t)^2} \leq M \dfrac{\rho_0}{\rho(t) a(t)^2}$
           
           Dans les phases où l'expansion de l'Univers était la plus importante, la densité d'énergie a évolué en $\mathcal{O}(a^{-4})$ puis en $\mathcal{O}(a^{-3})$ si bien que $\Omega_k(t)$ a évolué en $\mathcal{O}(a^{n})$ avec $1 \leq n \leq 2$. 
+          La valeur du paramètre $\Omega_k$ était donc bien plus petite qu'actuellement vers les débuts de l'Univers - d'un facteur au moins inférieur à celui du facteur d'échelle à l'époque. 
+          Si l'on suppose que la physique du big bang est comprise et peut être décrite avec les théories jusqu'à une situation ou sa température était en dessous de $T_{max}$ cela permet d'affirmer que le paramètre de courbure devait à cet instant être au moins aussi petit qu'une certaine valeur. Pour $T_{max} \sim $ TeV, TODO calcul planck + TeV
           
           </p>
       </text>
