@@ -20,7 +20,7 @@ int calculate(const double d, const double t1, double (*a)(double), double *_x, 
     double xA = -d/2.0;
     double xB = d/2.0;
 
-    double dt = 0.0025;
+    double dt = 0.001;
     double x = xA, t = t1;
 
     for(int i = 0; i < n; ++i)
@@ -58,8 +58,8 @@ int main()
     t0_acc = 1;
     const double t1_acc = 0, d_acc = (z/(1+z)) * t0_acc;
     
-    t0_dec = 1;
-    const double t1_dec = 2, d_dec = (pow(z+1, (1-beta)/beta) - 1) * pow(t0_dec, beta) * pow(t1_dec, 1-beta) / (1-beta) * a_dec(t1_dec);
+    t0_dec = 2.0/3.0;
+    const double t1_dec = t0_dec * (1-0.93), d_dec = (pow(z+1, (1-beta)/beta) - 1) * pow(t0_dec, beta) * pow(t1_dec, 1-beta) / (1-beta) * a_dec(t1_dec);
     
     
     printf("%.5f %.5f\n", t1_dec, d_dec);

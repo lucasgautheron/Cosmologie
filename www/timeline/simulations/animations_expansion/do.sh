@@ -6,11 +6,11 @@ chmod +x video_luminosite.sh
 
 ./expansion
 
-./video_luminosite.sh acc 2 60
-./video_luminosite.sh dec 40 30
+./video_luminosite.sh acc 4 40
+./video_luminosite.sh dec 4 40
 
-./video_vitesse.sh acc 2 60
-./video_vitesse.sh dec 40 30
+./video_vitesse.sh acc 4 40
+./video_vitesse.sh dec 4 40
 #./video_vitesse.sh dec 5 15
 
 rm -f *.res
