@@ -1249,12 +1249,12 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
           \end{equation}
           En comparaison, la taille à $t_0$ d'une région de taille $L$ à $t$ est 
           \begin{equation}
-          L(t_0,t) = L \dfrac{a(t_0)}{a(t)}}
+          L(t_0,t) = L \dfrac{a(t_0)}{a(t)}
           \end{equation}
           
           Et donc : 
           \begin{equation}
-          \dfrac{l(t_0, t)}{L(t_0, t)} =  \left ( \dfrac{a(t)}{a(t_0)} \right ) ^2 \int_{t_0}^t \dfrac{c dt'}{a(t')}
+          \dfrac{l(t_0, t)}{L(t_0, t)} = \dfrac{c}{L}  \left ( \dfrac{a(t)}{a(t_0)} \right ) ^2 \int_{t_0}^t \dfrac{dt'}{a(t')}
           \end{equation}
           </p>
       </text>
