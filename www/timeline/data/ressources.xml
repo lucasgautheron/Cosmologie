@@ -1252,10 +1252,10 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
           L(t_0,t) = L \dfrac{a(t_0)}{a(t)}
           \end{equation}
           
-          Et donc : 
+          <!--Et donc : 
           \begin{equation}
           \dfrac{l(t_0, t)}{L(t_0, t)} = \dfrac{c}{L}  \left ( \dfrac{a(t)}{a(t_0)} \right ) ^2 \int_{t_0}^t \dfrac{dt'}{a(t')}
-          \end{equation}
+          \end{equation}-->
           </p>
       </text>
       <linkwords>
