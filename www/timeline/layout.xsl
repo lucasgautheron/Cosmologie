@@ -15,7 +15,7 @@
     <xsl:choose>
       <xsl:when test="$linkword[1]">
         <xsl:value-of select="substring-before($text, $linkword[2])"/>
-        <a href="ressources/ressource_{$linkword[1]}.html" class="ressource" data-rid="{$linkword[1]}" title="{$linkword[3]}"><xsl:value-of select="$linkword[2]"/></a>
+        <a href="html/ressources/ressource_{$linkword[1]}.html" class="ressource" data-rid="{$linkword[1]}" title="{$linkword[3]}"><xsl:value-of select="$linkword[2]"/></a>
         <xsl:copy-of select="doc:add-links(substring-after($text, $linkword[2]))"/>
       </xsl:when>
       <xsl:otherwise><xsl:value-of select="$text"/></xsl:otherwise>
@@ -52,13 +52,13 @@
   
   <xsl:template match="figure">
     <div class="figure">
-      <a href="../images/{./@src}" target="_blank">
+      <a href="images/{./@src}" target="_blank">
         <xsl:choose>
           <xsl:when test="string(./@width)">
-            <img src="../images/{./@src}" title="{.}" width="{./@width}" />
+            <img src="images/{./@src}" title="{.}" width="{./@width}" />
           </xsl:when>
           <xsl:otherwise>
-            <img src="../images/{./@src}" title="{.}" />
+            <img src="images/{./@src}" title="{.}" />
           </xsl:otherwise>
         </xsl:choose>
       </a>
@@ -66,13 +66,13 @@
         <xsl:value-of select="./@title" />
         <xsl:choose>
            <xsl:when test="./@source and ./@plot">
-                (<a href="../plots/{./@plot}.gnuplot">gnuplot</a> | <a href="../simulations/{./@source}.tar.gz">source</a>)
+                (<a href="plots/{./@plot}.gnuplot">gnuplot</a> | <a href="simulations/{./@source}.tar.gz">source</a>)
            </xsl:when>
            <xsl:when test="./@plot">
-                (<a href="../plots/{./@plot}.gnuplot">gnuplot</a>)
+                (<a href="plots/{./@plot}.gnuplot">gnuplot</a>)
            </xsl:when>
            <xsl:when test="./@source">
-                (<a href="../simulations/{./@source}.tar.gz">source</a>)
+                (<a href="simulations/{./@source}.tar.gz">source</a>)
            </xsl:when>
            </xsl:choose>
       </div>
@@ -103,14 +103,14 @@
   <xsl:template match="video">
     <video width="{./@width}" height="{./@height}" controls="controls">
       <xsl:if test="./mp4">
-        <source src="../videos/{./mp4}"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+        <source src="videos/{./mp4}"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
       </xsl:if>
       <xsl:if test="./webm">
-        <source src="../videos/{./webm}" type='video/webm; codecs="vp8, vorbis"' />
+        <source src="videos/{./webm}" type='video/webm; codecs="vp8, vorbis"' />
       </xsl:if>
     </video>
    <xsl:if test="./@source">
-   (<a href="../simulations/{./@source}.tar.gz">source</a>)
+   (<a href="simulations/{./@source}.tar.gz">source</a>)
    </xsl:if>
   </xsl:template>
   
@@ -201,7 +201,7 @@
 
 <xsl:for-each select="root/contents/content">
  <xsl:variable name="id" select="./@id"/>
-<xsl:result-document method="html" href="contents/content_{./@id}.html">
+<xsl:result-document method="html" href="html/contents/content_{./@id}.html">
   <div id="content">
     <div id="horizontal_timeline">
       <ul>
@@ -231,7 +231,7 @@
   
 <xsl:for-each select="root/ressources/ressource">
   <xsl:variable name="id" select="./@id"/>
-  <xsl:result-document method="html" href="ressources/ressource_{./@id}.html">
+  <xsl:result-document method="html" href="html/ressources/ressource_{./@id}.html">
     <div id="ressource">
       <h2 id="title"><xsl:value-of select="./title" /></h2>
       <div id="text"><xsl:apply-templates select="text" /></div>

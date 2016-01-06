@@ -161,7 +161,7 @@ function show_next()
 function show_content(id, updatehash)
 {
   $.ajax({
-    url: 'contents/content_' + id + '.html',
+    url: 'html/contents/content_' + id + '.html',
     type: 'GET',
     cache: false, // disable when ready
     success: function(data) {
@@ -200,7 +200,7 @@ function show_ressource(id, updatehash)
 {
   hide_timeline();
   $.ajax({
-    url: 'ressources/ressource_' + id + '.html',
+    url: 'html/ressources/ressource_' + id + '.html',
     type: 'GET',
     cache: false, // disable when ready
     success: function(data) {
