@@ -634,6 +634,19 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 La relation magnitude-redshift observée pour des supernovaes de type Ia est comparée à un modèle théorique $\Lambda$CDM ce qui permet de déterminer les valeurs de $\Omega_m$ et $\Omega_v$ donnant le meilleur accord. Ici on trouve $\Omega_m = 0,25$ et $\Omega_v = 0.75$.
             </figure>
             </p>
+            
+            <p>
+                <video width="480" height="960" source="animations_expansion">
+                    <mp4>accelerated_lum.mp4</mp4>
+                    <webm>accelerated_lum.webm</webm>
+                </video>
+            </p>
+            <p>
+                <video width="480" height="960" source="animations_expansion">
+                    <mp4>decelerated_lum.mp4</mp4>
+                    <webm>decelerated_lum.webm</webm>
+                </video>
+            </p>
         </text>
         <linkwords>
             <linkword>distance de luminosité</linkword>
