@@ -11,7 +11,7 @@ addons:
     - gnuplot
     - default-jre
 
-script: cd www/timeline && php compile.php
+script: cd www/timeline && php compile.php -V
 
 notifications:
   email:
