@@ -81,7 +81,7 @@
                 En 1948, F. Hoyle pointe quelques problèmes qui suggèrent le besoin de formuler une autre théorie pour l'Univers :
                 <ul>
                     <li>Problème de l'Âge de l'Univers : puisque le modèle d'Einstein-de Sitter implique que l'Univers soit né d'une singularité il entraine que celui-ci a un certain âge et que ses structures doivent être plus jeunes : dans ce cadre, et d'après la constante d'Hubble mesurée à l'époque, cet âge doit être d'un peu plus d'1 milliard d'années. Cependant, l'âge de la Terre était estimé à l'époque entre 1.5 et 3 milliards d'années (par des techniques radiométriques). </li>
-                    <li>Problème de la formation des galaxies </li>
+                    <li>Problème de la formation des galaxies : selon Hoyle, les galaxies n'ont pu se former que lorsque l'expansion est devenue suffisamment lente pour que l'attraction gravitationnelle l'emporte localement. (région de taille $R$, $M = \rho R^3$, $v_g^2 \sim G \rho R^2$, $v_H^2 \sim H^2 R^2$, $\rho G &gt; H^2$, or $$ </li>
                     <li></li>
                 </ul>
                 Hoyle, à la suite de réflexions sur ce sujet avec les physiciens Gold et Bondi, propose alors un modèle d'univers appelé "théorie de l'état stationnaire" visant à résoudre ces problèmes. Dans sa théorie, il fait l'hypothèse que de la matière est créée continuument et de façon homogène - par exemple, sous forme d'atomes d'hydrogène - de sorte à ce que malgré l'expansion la densité d'énergie demeure constante. L'univers étant alors toujours de même densité, il est toujours semblable et n'a plus d'âge. TODO de plus localement Ein. Stat. donc condensations possible ? yes/no ?
