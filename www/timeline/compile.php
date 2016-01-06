@@ -21,12 +21,12 @@ $files[3] = strip_decl(file_get_contents("data/references.xml"));
 file_put_contents('data/cache', "<?xml version=\"1.0\" encoding=\"UTF-8\"?><root>{$files[0]}{$files[1]}{$files[2]}{$files[3]}</root>");
 
 $start_time = microtime(true);
-exec('saxonb-xslt -s:data/cache -xsl:layout.xsl -o:output/index.html -ext:on' . $redirect, $output, $return_code);
+exec('saxonb-xslt -s:data/cache -xsl:layout.xsl -o:index.html -ext:on' . $redirect, $output, $return_code);
 $return |= $return_code;
 echo "HTML generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 
 $start_time = microtime(true);
-exec('saxonb-xslt -s:data/cache -xsl:graph.xsl -o:output/graph.html -ext:on' . $redirect, $output, $return_code);
+exec('saxonb-xslt -s:data/cache -xsl:graph.xsl -o:graph.html -ext:on' . $redirect, $output, $return_code);
 $return |= $return_code;
 echo "graph generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 
