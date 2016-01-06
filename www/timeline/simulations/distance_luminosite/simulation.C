@@ -9,7 +9,8 @@ int Integrate(const double o_m0, const double o_v0, const double z, const int N,
    
     for(int i = 0; i < N-1; ++i)
     {
-        I[i+1] = I[i] + dz / sqrt(o_m0*(1+I[i])*(1+I[i])*(1+I[i]) + o_v0);
+        const double lz = z * double(i) / double(N);
+        I[i+1] = I[i] + dz / sqrt(o_m0*(1+lz)*(1+lz)*(1+lz) + o_v0);
     }
     return 0;
 }

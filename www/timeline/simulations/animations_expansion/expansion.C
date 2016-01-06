@@ -59,7 +59,8 @@ int main()
     const double t1_acc = 0, d_acc = (z/(1+z)) * t0_acc;
     
     t0_dec = 2.0/3.0;
-    const double t1_dec = t0_dec * (1-0.93), d_dec = (pow(z+1, (1-beta)/beta) - 1) * pow(t0_dec, beta) * pow(t1_dec, 1-beta) / (1-beta) * a_dec(t1_dec);
+    // lookback time = 0.932 = int_0^5 dz/(1+z)^(5/2)
+    const double t1_dec = t0_dec * (1-0.932), d_dec = (pow(z+1, (1-beta)/beta) - 1) * pow(t0_dec, beta) * pow(t1_dec, 1-beta) / (1-beta) * a_dec(t1_dec);
     
     
     printf("%.5f %.5f\n", t1_dec, d_dec);
