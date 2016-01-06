@@ -102,7 +102,7 @@ plot 'out_$type.res' u ($1-$t0):($1 <= {$line[0]}+0.01 ? ($2/$x0) : NaN) w l
 
     $xtics = ticks(0, $max_time, 5, 0.25);
 
-    $ytics = ticks(0, $max_dl, 5, 0.5);
+    $ytics = ticks(0, $max_dl, 6, 0.5);
     $code .= "
 set lmargin at screen 0.1
 set rmargin at screen 0.9
