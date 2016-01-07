@@ -50,7 +50,7 @@ ul#timeline
   content: '';
   width: 12px;
   height: 12px;
-  background: #6fc173;
+  background: black;
   position: absolute;
   left: 56px;
   top: 18px;
