@@ -1267,7 +1267,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
           L(t_0,t) = L \dfrac{a(t_0)}{a(t)}
           \end{equation}
           
-          On observe aujourd'hui que l'Univers est plutôt homogène, et qu'il devait l'être également au début du big bang. Pour que cela soit le cas il semble qu'il faille que toutes les régions de l'Univers aujourd'hui observables aient été en interaction au début du Big Bang pour qu'elles aient été et demeurées homogènes.
+          On observe aujourd'hui que l'Univers est plutôt homogène, au moins à l'échelle que l'on peut observer. Pour que cela soit le cas il semble qu'il faille que toutes les régions de l'Univers aujourd'hui observable aient été en interaction au début du Big Bang afin qu'elles soient semblables. Pour vérifier que c'était bien le cas, on peut comparer la taille de la région correspondant à l'Univers actuellement observable (que l'on sait homogène) à une certaine date dans le passée, à l'échelle maximale de propagation des interactions depuis l'origine du Big Bang, qui correspond à la distance maximale parcourue par un signal lumineux créé à cet instant zéro. (On appelle cette distance "Horizon").
           Pour cela 
           
          On suppose que l'expansion de l'Univers était gouverné par le rayonnement jusqu'à $t_0$, que la taille actuelle de l'Univers observable actuel est $L$, alors on peut réaliser ce calcul en choisissant $a(t) = \sqrt{2H_0 t_0}$ :<note>En réalité $a(t)/a(t_0)$ est différent puisqu'une phase non néglieable de l'expansion s'est faite à un taux différent ($a \propto t^{2/3}$ plutôt que $a \propto t^{1/2}$). </note>
@@ -1285,7 +1285,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
           \left( \dfrac{l(t_0)}{L(t_0)} \right)^3 =2 \left (\dfrac{2,7 \mbox{ K}}{T_0} \right) ^3
           \end{equation}
           
-          SI $T_0 \sim$ TeV, ce rapport vaut de l'ordre de $10^{-32}$. Cela signifie que la région correspondant à l'Univers actuellement observable était constituée de l'ordre de $10^{30}$ régions causalement déconnectées (n'ayant jamais pu interagir physiquement) lorsque la température de l'Univers était de l'ordre du TeV, alors même que leurs propriétés physiques devaient être quasi-identiques ! 
+          Si $T_0 \sim$ TeV, ce rapport vaut de l'ordre de $10^{-32}$. Cela signifie que la région correspondant à l'Univers actuellement observable était constituée de l'ordre de $10^{32}$ régions causalement déconnectées (n'ayant jamais pu interagir physiquement) lorsque la température de l'Univers était de l'ordre du TeV, alors même que leurs propriétés physiques devaient être quasi-identiques ! 
+          C'est le problème de l'Horizon : un nombre immense de régions de l'Univers physiquement indépendantes avaient des propriétés tout à fait identiques ce qui semble être une très improbable coincidence.
           
           TODO verifier cohérence http://jamesowenweatherall.com/wp-content/uploads/2014/10/What-Is-the-Horizon-Problem.pdf
           
