@@ -1257,7 +1257,12 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
       <text>
           <p>
           
-          TODO corriger tout ça
+          On observe aujourd'hui que l'Univers est plutôt homogène, au moins à l'échelle que l'on peut observer. Pour que cela soit le cas il semble qu'il faille que toutes les régions de l'Univers aujourd'hui observable aient été en interaction au début du Big Bang afin qu'elles soient semblables. Pour vérifier que c'était bien le cas, on peut comparer la taille de la région correspondant à l'Univers actuellement observable (que l'on sait homogène) à une certaine date dans le passée, à l'échelle maximale de propagation des interactions depuis l'origine du Big Bang, qui correspond à la distance maximale parcourue par un signal lumineux créé à cet instant zéro. (On appelle cette distance "Horizon").</p>
+          
+         <p>
+         On suppose pour cela que l'expansion de l'Univers était gouverné par le rayonnement jusqu'à $t_0$, que la taille actuelle de l'Univers observable actuel est $L$, alors on peut réaliser ce calcul en choisissant $a(t) = \sqrt{2H_0 t_0}$ :<note>En réalité $a(t)/a(t_0)$ est différent puisqu'une phase non néglieable de l'expansion s'est faite à un taux différent ($a \propto t^{2/3}$ plutôt que $a \propto t^{1/2}$). </note>
+         
+                   
           La distance physique maximale qu'a pu couvrir un rayon lumineux depuis l'origine du big bang jusqu'à $t_0$ est :
           \begin{equation}
           l(0,t_0) = a(t) \int_{0}^{t_0} \dfrac{c dt'}{a(t')}
@@ -1267,10 +1272,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
           L(t_0,t) = L \dfrac{a(t_0)}{a(t)}
           \end{equation}
           
-          On observe aujourd'hui que l'Univers est plutôt homogène, au moins à l'échelle que l'on peut observer. Pour que cela soit le cas il semble qu'il faille que toutes les régions de l'Univers aujourd'hui observable aient été en interaction au début du Big Bang afin qu'elles soient semblables. Pour vérifier que c'était bien le cas, on peut comparer la taille de la région correspondant à l'Univers actuellement observable (que l'on sait homogène) à une certaine date dans le passée, à l'échelle maximale de propagation des interactions depuis l'origine du Big Bang, qui correspond à la distance maximale parcourue par un signal lumineux créé à cet instant zéro. (On appelle cette distance "Horizon").
-          Pour cela 
-          
-         On suppose que l'expansion de l'Univers était gouverné par le rayonnement jusqu'à $t_0$, que la taille actuelle de l'Univers observable actuel est $L$, alors on peut réaliser ce calcul en choisissant $a(t) = \sqrt{2H_0 t_0}$ :<note>En réalité $a(t)/a(t_0)$ est différent puisqu'une phase non néglieable de l'expansion s'est faite à un taux différent ($a \propto t^{2/3}$ plutôt que $a \propto t^{1/2}$). </note>
+          De là : 
           \begin{equation}
           l(0,t_0) = 2 ct_0
           \end{equation}
@@ -1288,12 +1290,18 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
           Si $T_0 \sim$ TeV, ce rapport vaut de l'ordre de $10^{-32}$. Cela signifie que la région correspondant à l'Univers actuellement observable était constituée de l'ordre de $10^{32}$ régions causalement déconnectées (n'ayant jamais pu interagir physiquement) lorsque la température de l'Univers était de l'ordre du TeV, alors même que leurs propriétés physiques devaient être quasi-identiques ! 
           C'est le problème de l'Horizon : un nombre immense de régions de l'Univers physiquement indépendantes avaient des propriétés tout à fait identiques ce qui semble être une très improbable coincidence.
           
+          <spoiler>
           TODO verifier cohérence http://jamesowenweatherall.com/wp-content/uploads/2014/10/What-Is-the-Horizon-Problem.pdf
+          </spoiler>
           
           <!--Et donc : 
           \begin{equation}
           \dfrac{l(t_0, t)}{L(t_0, t)} = \dfrac{c}{L}  \left ( \dfrac{a(t)}{a(t_0)} \right ) ^2 \int_{t_0}^t \dfrac{dt'}{a(t')}
           \end{equation}-->
+          </p>
+          <h3>Solution au problème</h3>
+          <p>
+              ...
           </p>
       </text>
       <linkwords>
