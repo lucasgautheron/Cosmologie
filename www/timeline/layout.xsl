@@ -148,12 +148,13 @@
     </head>
     <body>
       <div id="navigation"><a href="#" id="show_timeline">Frise</a> | <a href="#" id="show_previous">Précédent</a> | <a href="#" id="show_next">Suivant</a></div>
-      <div id="timeline">
+      <div>
       <h1>Timeline</h1>
-        <ul>
+        <ul id="timeline">
           <xsl:for-each select="root/events/event[not(@hidden=1)]">
             <xsl:sort select="./@date" />
-            <li><b><xsl:value-of select="./@date" /></b> : <a href="contents/content_{./@content-id}.html" data-cid="{./@content-id}"><xsl:value-of select="." /></a></li>
+            <xsl:variable name="cid" select="./@content-id"/>
+            <li><p class="timeline-date"><xsl:value-of select="./@date" /></p><div class="timeline-content" style="background-color: {/root/contents/content[@id=$cid][1]/color};"><a href="contents/content_{./@content-id}.html" data-cid="{./@content-id}"><xsl:value-of select="." /></a></div></li>
           </xsl:for-each>
         </ul>
         <div>Les conventions suivantes sont utilisées :
