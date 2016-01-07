@@ -1256,13 +1256,33 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
       <title>Problème de l'Horizon</title>
       <text>
           <p>
-          La distance physique maximale que peut couvrir un rayon lumineux entre les dates $t_0$ et $t$ est :
+          
+          TODO corriger tout ça
+          La distance physique maximale qu'a pu couvrir un rayon lumineux depuis l'origine du big bang jusqu'à $t_0$ est :
           \begin{equation}
-          l(t_0,t) = \dfrac{a(t)}{a(t_0)} \int_{t_0}^t \dfrac{c dt'}{a(t')}
+          l(0,t_0) = a(t) \int_{0}^{t_0} \dfrac{c dt'}{a(t')}
           \end{equation}
           En comparaison, la taille à $t_0$ d'une région de taille $L$ à $t$ est 
           \begin{equation}
           L(t_0,t) = L \dfrac{a(t_0)}{a(t)}
+          \end{equation}
+          
+          On observe aujourd'hui que l'Univers est plutôt homogène, et qu'il devait l'être également au début du big bang. Pour que cela soit le cas il semble qu'il faille que toutes les régions de l'Univers aujourd'hui observables aient été en interaction au début du Big Bang pour qu'elles aient été et demeurées homogènes.
+          Pour cela 
+          
+          En considérant que l'expansion a principalement eu lieu dans la phase où le rayonnement dominait, qu'elle a commencé à $t_0$ = origine du big big et s'est poursuivie jusqu'à $t$  = aujourd'hui, que la taille actuelle de l'Univers est $\sim 10 \mbox{Ga}.c$ alors on peut réaliser ce calcul en choisissant $a(t) = \sqrt{2H_0 t_0}$ :
+          \begin{equation}
+          l(0,t_0) = 2 ct_0
+          \end{equation}
+          et
+          \begin{equation}
+          \dfrac{l(t_0)}{L(t_0)} = \dfrac{2ct_0}{L} \sqrt{\dfrac{t_0}{t}}
+          \end{equation}
+          
+          Si $a(t)T(t) = \mbox{cste}$, alors $\dfrac{t_0}{t} \sim \left (\dfrac{2,7 \mbox{ K}}{T_0} \right) ^2$ et $L = ct$
+          
+          \begin{equation}
+          N = \left( \dfrac{l(t_0)}{L(t_0)} \right)^3 = \left ( \dfrac{2ct_0}{L} \sqrt{\dfrac{t_0}{t}} \right )^3 = 2 \left (\dfrac{2,7 \mbox{ K}}{T_0} \right) ^5
           \end{equation}
           
           <!--Et donc : 
