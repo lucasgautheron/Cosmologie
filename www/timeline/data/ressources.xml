@@ -1271,7 +1271,6 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
           Pour cela 
           
          On suppose que l'expansion de l'Univers était gouverné par le rayonnement jusqu'à $t_0$, que la taille actuelle de l'Univers observable actuel est $L$, alors on peut réaliser ce calcul en choisissant $a(t) = \sqrt{2H_0 t_0}$ :<note>En réalité $a(t)/a(t_0)$ est différent puisqu'une phase non néglieable de l'expansion s'est faite à un taux différent ($a \propto t^{2/3}$ plutôt que $a \propto t^{1/2}$). </note>
-         </note>
           \begin{equation}
           l(0,t_0) = 2 ct_0
           \end{equation}
