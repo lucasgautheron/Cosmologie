@@ -29,21 +29,24 @@ ul#timeline
   margin: 0;
   padding: 0;
   position: relative;
-
+  font-size: 1.2em;
 }
 #timeline .timeline-date
 {
   width: 60px;
   float: left;
-  margin-top: 15px;
+  padding: 0;
+  margin: 0;
 }
 #timeline .timeline-content
 {
+  padding: 0;
+  margin: 0;
   width: 75%;
   float: left;
   border-left: 3px #e5e5d1 solid;
-  padding: 15px;
   padding-left: 15px;
+  min-height: 2.4em;
 }
 #timeline .timeline-content:before
 {
@@ -53,7 +56,7 @@ ul#timeline
   background: black;
   position: absolute;
   left: 56px;
-  top: 18px;
+  top: 5px;
   border-radius: 100%;
 }
 
