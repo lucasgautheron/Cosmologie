@@ -1255,9 +1255,15 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
      <ressource id="604">
       <title>Problème de l'Horizon</title>
       <text>
+         <p>
+         Le problème de l'Horizon est un problème lié au Big Bang chaud gouverné par le rayonnement d'après lequel de très nombreuses régions de l'Univers vers ses premiers instants devaient avoir des propriétés physiques homogènes alors même qu'elles étaient causalement séparées (elles n'avaient pu encore interagir).
+         </p>
+         
+         <h3>Evaluation du problème</h3>
+         
           <p>
-          
-          On observe aujourd'hui que l'Univers est plutôt homogène, au moins à l'échelle que l'on peut observer. Pour que cela soit le cas il semble qu'il faille que toutes les régions de l'Univers aujourd'hui observable aient été en interaction au début du Big Bang afin qu'elles soient semblables. Pour vérifier que c'était bien le cas, on peut comparer la taille de la région correspondant à l'Univers actuellement observable (que l'on sait homogène) à une certaine date dans le passée, à l'échelle maximale de propagation des interactions depuis l'origine du Big Bang, qui correspond à la distance maximale parcourue par un signal lumineux créé à cet instant zéro. (On appelle cette distance "Horizon").</p>
+          On observe aujourd'hui que l'Univers est plutôt homogène, au moins à l'échelle que l'on peut observer. Pour que cela soit le cas il semble qu'il faille que toutes les régions de l'Univers aujourd'hui observable aient été en interaction au début du Big Bang afin qu'elles soient semblables. Pour vérifier que c'était bien le cas, on peut comparer la taille de la région correspondant à l'Univers actuellement observable (que l'on sait homogène) à une certaine date dans le passée, à l'échelle maximale de propagation des interactions depuis l'origine du Big Bang, qui correspond à la distance maximale parcourue par un signal lumineux créé à cet instant zéro. (On appelle cette distance "Horizon").
+          </p>
           
          <p>
          On suppose pour cela que l'expansion de l'Univers était gouverné par le rayonnement jusqu'à $t_0$, que la taille actuelle de l'Univers observable actuel est $L$, alors on peut réaliser ce calcul en choisissant $a(t) = \sqrt{2H_0 t_0}$ :<note>En réalité $a(t)/a(t_0)$ est différent puisqu'une phase non néglieable de l'expansion s'est faite à un taux différent ($a \propto t^{2/3}$ plutôt que $a \propto t^{1/2}$). </note>
