@@ -436,7 +436,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         E(a) = -\dfrac{8\pi G}{3} \left ( \dfrac{\rho_0}{a} + \rho_v a^2\right )
         \end{equation}
         Ici, $\rho_0$ est la densité d'énergie sous forme de matière non relativiste à notre époque (date à laquelle $a = 1$) et $\rho_v = \dfrac{\Lambda c^2}{8\pi G}$ représente l'"énergie du vide". 
-        La première équation se lit alors : "l'énergie cinétique de l'Univers + son énergie potentielle est égale à une constante K". La courbe de l'énergie potentielle est représentée sur la figure suivante : <figure src="einstein_universe.svg" title="Courbe d'énergie potentielle en fonction du facteur d'échelle."> On en déduit l'existence d'une position d'équilibre (instable), et que $K&lt;0$. </figure></p>
+        La première équation se lit alors : "l'énergie cinétique de l'Univers + son énergie potentielle est égale à une constante K". La courbe de l'énergie potentielle est représentée sur la figure suivante : <figure src="einstein_universe.svg" title="Courbe d'énergie potentielle en fonction du facteur d'échelle." plot="einstein_universe"> On en déduit l'existence d'une position d'équilibre (instable), et que $K&lt;0$. </figure></p>
         <p>Einstein pensant l'Univers statique, il est nécessaire que son modèle autorise une situation d'équilibre. Cet équilibre est atteint lorsque $E'(a) = 0$. Cela n'est possible que si $\rho_v \neq 0$ : c'est la raison pour laquelle Einstein fit intervenir la constante cosmologique. Le terme en $-1/a$ est un potentiel attractif de type gravitationnel newtonien classique. Le terme en $-a^2$ est un terme répulsif qui autorise un équilibre. Celui-ci est atteint si $\rho_o = 2\rho_v$, ce qui impose une valeur exacte pour $\Lambda$ ("fine-tuning").</p>
         <p>Le fait que $K$ doive être négatif signifie qu'un tel Univers possède une géométrie sphérique. Il faut également noter que l'équilibre est instable, et donc ne peut expliquer seul le caractère statique.</p></text>
         <linkwords>
@@ -1049,7 +1049,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 
                 Les courbes $n/n_0 \mapsto P/P_0$ sont calculées numériquement (facteurs dimensionnés exclus). On trouve
                 
-                <figure src="fermi_state.svg" title="Diagramme de phase gaz d'électrons">
+                <figure src="fermi_state.svg" title="Diagramme de phase gaz d'électrons" plot="fermi_state">
                     TODO: vérifier si la zone rouge est interdite par exclusion de Pauli. Je pensais que oui mais on dirait que non. 
                 </figure>
 
@@ -1256,7 +1256,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
       <title>Problème de l'Horizon</title>
       <text>
          <p>
-         Le problème de l'Horizon est un problème lié au Big Bang chaud gouverné par le rayonnement d'après lequel de très nombreuses régions de l'Univers vers ses premiers instants devaient avoir des propriétés physiques homogènes alors même qu'elles étaient causalement séparées (elles n'avaient pu encore interagir).
+         Le problème de l'Horizon est un problème lié au Big Bang chaud gouverné par le rayonnement d'après lequel de très nombreuses régions de l'Univers vers ses premiers instants devaient avoir des propriétés physiques identiques alors même qu'elles étaient causalement séparées (elles n'avaient pu encore interagir).
          </p>
          
          <h3>Evaluation du problème</h3>
