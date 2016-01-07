@@ -1276,16 +1276,18 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
           \end{equation}
           et
           \begin{equation}
-          \dfrac{l(t_0)}{L(t_0)} = \dfrac{2ct_0}{L} \sqrt{\dfrac{t}{t_0}} = \dfrac{2} \sqrt{\dfrac{t_0}{t}}
+           \dfrac{l(t_0)}{L(t_0)} = \dfrac{2ct_0}{L} \sqrt{\dfrac{t}{t_0}} = 2 \sqrt{\dfrac{t_0}{t}}
           \end{equation}
           
           Si $a(t)T(t) = \mbox{cste}$, alors $\dfrac{t_0}{t} \sim \left (\dfrac{2,7 \mbox{ K}}{T_0} \right) ^2$
           
           \begin{equation}
-          \left( \dfrac{l(t_0)}{L(t_0)} \right)^3 = \left (\dfrac{2,7 \mbox{ K}}{T_0} \right) ^3
+          \left( \dfrac{l(t_0)}{L(t_0)} \right)^3 =2 \left (\dfrac{2,7 \mbox{ K}}{T_0} \right) ^3
           \end{equation}
           
-          SI $T_0 \sim$ TeV, 
+          SI $T_0 \sim$ TeV, ce rapport vaut de l'ordre de $10^{-32}$. Cela signifie que 
+          
+          TODO verifier cohérence http://jamesowenweatherall.com/wp-content/uploads/2014/10/What-Is-the-Horizon-Problem.pdf
           
           <!--Et donc : 
           \begin{equation}
