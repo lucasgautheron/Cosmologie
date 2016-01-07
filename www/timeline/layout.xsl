@@ -155,9 +155,9 @@
             <xsl:sort select="./@date" />
             <xsl:variable name="cid" select="./@content-id"/>
             <xsl:if test="/root/contents/content[@id=$cid][1]/color">            
-            <style type="text/css">#timeline<xsl:value-of select="generate-id(./@content-id)" />.timeline-content:before { background-color: <xsl:value-of select="/root/contents/content[@id=$cid][1]/color" />;}</style>
+            <style type="text/css">#timeline<xsl:value-of select="generate-id(.)" />.timeline-content:before { background-color: <xsl:value-of select="/root/contents/content[@id=$cid][1]/color" />;}</style>
             </xsl:if>
-            <li><p class="timeline-date"><xsl:value-of select="./@date" /></p><div id="timeline{generate-id(./@content-id)}" class="timeline-content"><a href="contents/content_{./@content-id}.html" data-cid="{./@content-id}"><xsl:value-of select="." /></a></div></li>
+            <li><p class="timeline-date"><xsl:value-of select="./@date" /></p><div id="timeline{generate-id(.)}" class="timeline-content"><a href="contents/content_{./@content-id}.html" data-cid="{./@content-id}"><xsl:value-of select="." /></a></div></li>
           </xsl:for-each>
         </ul>
         <div>Les conventions suivantes sont utilisées :
