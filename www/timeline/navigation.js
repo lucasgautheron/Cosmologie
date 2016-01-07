@@ -2,7 +2,7 @@ var current_content = null;
 var current_ressource = null;
 
 $(document).ready(function() {
-  $("#timeline ul a").click(function() {
+  $("#timeline_container ul a").click(function() {
       show_content($(this).data('cid'), true);
       return false;
   });
@@ -137,12 +137,12 @@ function show_timeline()
   hide_content();
   hide_ressource();
   //$("#show_timeline").hide();
-  $("#timeline").show();
+  $("#timeline_container").show();
 }
 
 function hide_timeline()
 {
-  $("#timeline").hide();
+  $("#timeline_container").hide();
   //$("#show_timeline").show();
 }
 
@@ -170,7 +170,7 @@ function show_content(id, updatehash)
       hide_timeline();
       $('#image').hide();
       data_object = $($.parseHTML(data, document, true)); 
-      $('#content #timeline').html(data_object.find('#horizontal_timeline').html());
+      $('#content #timeline_container').html(data_object.find('#horizontal_timeline').html());
       $('#content .title').text(data_object.find('#title').text());
       $('#content .text').html(data_object.find('#text').html());
       $('#content .references').html(data_object.find('#references').html());

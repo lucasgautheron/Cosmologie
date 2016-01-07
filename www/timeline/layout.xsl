@@ -148,7 +148,7 @@
     </head>
     <body>
       <div id="navigation"><a href="#" id="show_timeline">Frise</a> | <a href="#" id="show_previous">Précédent</a> | <a href="#" id="show_next">Suivant</a></div>
-      <div>
+      <div id="timeline_container">
       <h1>Timeline</h1>
         <ul id="timeline">
           <xsl:for-each select="root/events/event[not(@hidden=1)]">
