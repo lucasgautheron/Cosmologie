@@ -53,7 +53,7 @@ set multiplot layout 3, 1
 ";
     $rad = $line[1]/$x0;
     $code .= "
-set title  sprintf(\"t=%.2f, z=%.2f\",{$line[0]},{$line[3]})
+set title  sprintf(\"t=%.2f, z=%.2f\",{$line[0]}-$max_time,{$line[3]})
 set lmargin at screen 0.15
 set rmargin at screen 0.85
 set bmargin at screen 0.50
