@@ -186,7 +186,7 @@
       
       <div id="content">
         <h2 class="title"></h2>
-        <div id="timeline"></div>
+        <div id="horizontal-timeline"></div>
         <div class="text"></div>
         <div class="references"></div>
       </div>
