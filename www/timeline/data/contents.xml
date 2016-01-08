@@ -196,13 +196,34 @@
     </content>
     
        <content id="9">
-    	<title>Découverte du fond diffus cosmologique et triomphe du Big Bang</title>
+    	<title>Découverte du fond diffus cosmologique</title>
     	<image>cmb.jpg</image>
+    	<color>#e4ee86</color>
     	<text>
+    	    <p>CMB only. rédiger article.
+    	    </p>
     	    <p>
-    	        Au début des années 1960, le débat 
+    	         Au début des années 1960, les travaux de Alpher, Gamow et Herman, qui ont suggéré qu'un Big Bang chaud entrainerait aujourd'hui la présence d'énergie distribuée de façon homogène sous forme de rayonnement de température comprise entre 5 et 50K sont restés sans impact.
+    	         TODO: phrase 0      
+    	    </p>
+    	    <p>
+    	        Au cours de l'année 1964, deux astronomes américains, Arno Penzias et Robert Wilson, travaillent sur l'antenne cornet d'Holmdel pour les laboratoires Bell. L'objectif de cet antenne était de détecter l'écho radar de satellites en forme de ballon agissant comme réflecteur. <br />
+    	        Une des difficultés de cette taĉhe est que le faible niveau du signal requiert l'élimination de nombreuses sources de bruit, et notamment du bruit d'origine thermique.  
+    	    </p>
+    	    <p>Parallèlement, ...
     	    </p>
     	</text>
+    </content>
+    
+    <content id="14">
+      <title>Victoire du Big Bang, rejet de l'Univers stationnaire</title>
+      <image>bigbang.jpg</image>
+      <color>#8681f0</color>
+      <text>
+        <p>
+        
+        </p>
+      </text>
     </content>
     
       <content id="10">
@@ -216,7 +237,7 @@
     </content>
     
       <content id="11">
-    	<title>Matière noire</title>
+    	<title>Découverte de la matière noire</title>
     	<image>matierenoire.jpg</image>
     	<text>
     	    <p>
