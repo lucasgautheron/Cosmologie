@@ -101,17 +101,22 @@
   </xsl:template>
   
   <xsl:template match="video">
-    <video width="{./@width}" height="{./@height}" controls="controls">
-      <xsl:if test="./mp4">
-        <source src="videos/{./mp4}"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-      </xsl:if>
-      <xsl:if test="./webm">
-        <source src="videos/{./webm}" type='video/webm; codecs="vp8, vorbis"' />
-      </xsl:if>
-    </video>
-   <xsl:if test="./@source">
-   (<a href="simulations/{./@source}.tar.gz">source</a>)
-   </xsl:if>
+    <div class="video">
+      <video width="{./@width}" height="{./@height}" controls="controls">
+        <xsl:if test="./@mp4">
+          <source src="videos/{./@mp4}"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+        </xsl:if>
+        <xsl:if test="./@webm">
+          <source src="videos/{./@webm}" type='video/webm; codecs="vp8, vorbis"' />
+        </xsl:if>
+      </video>
+    <xsl:if test="./@source">
+      (<a href="simulations/{./@source}.tar.gz">source</a>)
+    </xsl:if>
+     <div class="caption">
+       <xsl:apply-templates />
+     </div>
+   </div>
   </xsl:template>
   
 <xsl:template match="/">
