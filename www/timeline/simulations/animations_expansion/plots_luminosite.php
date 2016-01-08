@@ -94,10 +94,10 @@ set tmargin at screen 0.4
     unset object 2
     unset object 10
     set ytics -1,$ytics,1
-    set xtics 0,$xtics,$max_time-$t0
-    set xrange [ 0:$max_time-$t0 ]
+    set xtics $t0-$max_time,$xtics,0
+    set xrange [ $t0-$max_time:0 ]
     set yrange [ -1:1 ]
-plot 'out_$type.res' u ($1-$t0):($1 <= {$line[0]}+0.01 ? ($2/$x0) : NaN) w l 
+plot 'out_$type.res' u ($1-$max_time):($1 <= {$line[0]}+0.01 ? ($2/$x0) : NaN) w l 
 ";
 
     $xtics = ticks(0, $max_time, 5, 0.25);
@@ -119,10 +119,10 @@ set tmargin at screen 0.2
     unset object 1
     unset object 2
     set ytics 0,$ytics,$max_dl
-    set xtics 0,$xtics,$max_time-$t0
-    set xrange [ 0:$max_time-$t0 ]
+    set xtics $t0-$max_time,$xtics,0
+    set xrange [ $t0-$max_time:0 ]
     set yrange [ 0:$max_dl ]
-plot 'out_$type.res' u ($1-$t0):($1 <= {$line[0]}+0.01 ? ((1+$4)*$3) : NaN) w l t 'd_L(z)'
+plot 'out_$type.res' u ($1-$max_time):($1 <= {$line[0]}+0.01 ? ((1+$4)*$3) : NaN) w l t 'd_L(z)'
 ";
 
     $code .= "

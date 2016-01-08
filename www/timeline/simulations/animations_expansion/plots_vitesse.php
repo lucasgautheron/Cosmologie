@@ -58,7 +58,7 @@ foreach($lines as $n => $line)
 set multiplot layout 4, 1
 ";
     $code .= "
-set title  sprintf(\"t=%.2f, z=%.2f\",{$line[0]}-$t0,{$line[3]})
+set title  sprintf(\"t=%.2f, z=%.2f\",{$line[0]}-$max_time,{$line[3]})
 set lmargin at screen 0.1
 set rmargin at screen 0.9
 set bmargin at screen 0.7
@@ -105,7 +105,7 @@ set object 2 circle at first 1,0 size 0.05
 plot 'out_$type.res' u ($2/$x0):($1 <= {$line[0]}+0.01 ? 0 : NaN) w l lt 1 lw 1.5
 ";
     
-    $xtics = ticks(0, $max_time-$t0, 5, 0.25);
+    $xtics = ticks($t0-$max_time, 0, 5, 0.25);
     $ytics = ticks(0, $max_r, 5, $max_r < 5 ? 1 : 25);
     $code .= "
     set lmargin at screen 0.1
@@ -126,13 +126,13 @@ f(x) = x
     unset object 1
     unset object 2
     set ytics 0,$ytics,$max_r
-    set xtics 0,$xtics,$max_time
-    set xrange [ 0:$max_time ]
+    set xtics $t0-$max_time,$xtics,0
+    set xrange [ $t0-$max_time:0 ]
     set yrange [ 0:$max_r ]
-plot 'out_$type.res' u ($1-$t0):($1 <= {$line[0]}+0.01 ? ($3) : NaN) w l, x
+plot 'out_$type.res' u ($1-$max_time):($1 <= {$line[0]}+0.01 ? ($3) : NaN) w l, x+($max_time-$t0)
 ";
 
-    $xtics = ticks(0, $max_time-$t0, 5, 0.25);
+    $xtics = ticks($t0-$max_time, 0, 5, 0.25);
 
     $ytics = ticks(0, $max_v, 5, 1);
     $code .= "
@@ -151,10 +151,10 @@ set tmargin at screen 0.25
     unset object 1
     unset object 2
     set ytics 0,$ytics,$max_dl
-    set xtics 0,$xtics,$max_time
-    set xrange [ 0:$max_time ]
+    set xtics $t0-$max_time,$xtics,0
+    set xrange [ $t0-$max_time:0 ]
     set yrange [ 0:$max_v ]
-plot 'out_$type.res' u ($1-$t0):( ($1 <= {$line[0]}+0.01 && $5 > 0.01) ? ($5) : NaN) w l, 1
+plot 'out_$type.res' u ($1-$max_time):( ($1 <= {$line[0]}+0.01 && $5 > 0.01) ? ($5) : NaN) w l, 1
 ";
 
     $code .= "
