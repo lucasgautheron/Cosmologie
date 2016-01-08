@@ -137,12 +137,12 @@ function show_timeline()
   hide_content();
   hide_ressource();
   //$("#show_timeline").hide();
-  $("#timeline_container").show();
+  $("#timeline-container").show();
 }
 
 function hide_timeline()
 {
-  $("#timeline_container").hide();
+  $("#timeline-container").hide();
   //$("#show_timeline").show();
 }
 
