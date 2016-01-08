@@ -170,7 +170,7 @@ function show_content(id, updatehash)
       hide_timeline();
       $('#image').hide();
       data_object = $($.parseHTML(data, document, true)); 
-      $('#content #timeline_container').html(data_object.find('#horizontal_timeline').html());
+      $('#content #horizontal-timeline').html(data_object.find('#horizontal-timeline').html());
       $('#content .title').text(data_object.find('#title').text());
       $('#content .text').html(data_object.find('#text').html());
       $('#content .references').html(data_object.find('#references').html());

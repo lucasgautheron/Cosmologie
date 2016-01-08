@@ -148,7 +148,7 @@
     </head>
     <body>
       <div id="navigation"><a href="#" id="show_timeline">Frise</a> | <a href="#" id="show_previous">Précédent</a> | <a href="#" id="show_next">Suivant</a></div>
-      <div id="timeline_container">
+      <div id="timeline-container">
       <h1>Chronologie</h1>
         <ul id="timeline">
           <xsl:for-each select="root/events/event[not(@hidden=1)]">
@@ -207,7 +207,7 @@
  <xsl:variable name="id" select="./@id"/>
 <xsl:result-document method="html" href="html/contents/content_{./@id}.html">
   <div id="content">
-    <div id="horizontal_timeline">
+    <div id="horizontal-timeline">
       <ul>
       <xsl:for-each select="/root/events/event[@content-id=$id]">
         <xsl:sort select="./@date" />
