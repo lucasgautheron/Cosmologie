@@ -677,12 +677,18 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <ressource id="113">
         <title>Distances en cosmologie</title>
         <text>
+            <p>En cosmologie, la notion générale de "distance" devient floue. Il est facile de s'en rendre compte en remarquant déjà que dans un Univers en expansion, si deux objets sont "immobiles" par rapport à l'expansion (leurs coordonnées comobiles ne changent pas, comme les coordonnées angulaires d'un point à la surface d'un ballon qui gonfle ne changent pas), leur distance en terme de ces coordonnées (dites "comobile") ne doit pas varier. Pourtant, du fait de l'expansion, la distance effective entre ces deux objets augmente. 
+            Il convient donc de définir très méticuleusement toutes les distances que l'on introduit. </p>
             <h3>Distance comobile</h3>
-            <p></p>
+            <p>La distance comobile $\chi$ entre deux points est ... Elle est constante entre deux objets comobiles, c'est-à-dire qui ne possèdent pas de mouvement propre par rapport à l'expansion.<note>rephrase?</note></p>
             <h3>Distance physique</h3>
-            <p></p>
+            <p>La distance physique est la distance entre deux objets telle qu'elle pourrait être mesurée à l'aide d'une "règle" fictive (en comptant le nombre d'atomes qu'il faudrait aligner pour rattacher ces deux points). Evidemment ceci est impossible pour des objets astronomiques et cette distance n'est pas directement accessible expérimentalement. Pour deux objets comobiles, cette distance évolue avec l'expansion, proportionnellement au facteur d'échelle $a(t)$.</p>
             <h3>Distance de luminosité</h3>
-            <p>La distance de luminosité est la distance $d_L$ vérifiant...;</p>
+            <p>La distance de luminosité d'une source irradiant de la lumière est la distance $d_L$ telle que le flux $F$ que l'on en reçoit est égal à :
+                \begin{equation}
+                F = \dfrac{L}{4\pi d_L^2}
+                \end{equation}
+                Où $L$ est la luminosité (en W) de la source.</p>
             <h3>Distance de angulaire</h3>
             <p></p>
             <p>
