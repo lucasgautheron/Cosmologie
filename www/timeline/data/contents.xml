@@ -89,7 +89,7 @@
                     <li>Problème de la formation des galaxies : selon Hoyle, les galaxies n'ont pu se former que lorsque l'expansion est devenue suffisamment lente pour que l'attraction gravitationnelle l'emporte localement. (région de taille $R$, $M = \rho R^3$, $v_g^2 \sim G \rho R^2$, $v_H^2 \sim H^2 R^2$, $\rho G &gt; H^2$, or $$ </li>
                     <li></li>
                 </ul>
-                Hoyle, à la suite de réflexions sur ce sujet avec les physiciens Gold et Bondi, propose alors un modèle d'univers appelé "théorie de l'état stationnaire" visant à résoudre ces problèmes. Dans sa théorie, il fait l'hypothèse que de la matière est créée continuument et de façon homogène - par exemple, sous forme d'atomes d'hydrogène - de sorte à ce que malgré l'expansion la densité d'énergie demeure constante. L'univers étant alors toujours de même densité, il est toujours semblable et n'a plus d'âge. TODO de plus localement Ein. Stat. donc condensations possible ? yes/no ?
+                Hoyle, à la suite de réflexions sur ce sujet avec les physiciens Gold et Bondi, propose alors un modèle d'univers appelé "théorie de l'état stationnaire" visant à résoudre ces problèmes. Dans sa théorie, il fait l'hypothèse que de la matière est créée continuument et de façon homogène - par exemple, sous forme d'atomes d'hydrogène - de sorte à ce que malgré l'expansion la densité d'énergie demeure constante. L'univers étant alors toujours de même densité, il est toujours semblable et n'a plus d'âge. 
             </p>
             <p>
                 En 1950 on peut donc considérer qu'il existe deux classes de théories principales :
@@ -222,7 +222,8 @@
       <text>
         <p>
           - parler du CMB : difficilement explicable dans l'Univers d'Hoyle 
-          - radio sources : étude du nombre de sources de luminosité plus grande qu'un seuil $S$. Pour un univers stationnaire, il y a autant de sources partout à tout temps, et ils sont partout semblables : $N \propto d^3$, et $S \propto 1/d^2$ alors le nombre $N(\geq S) $ de sources plus "brillantes" que le seuil $S$ évolue comme$ S^{-3/2}$. Ainsi la courbe de $\log S \mapsto \log N$ doit avoir une pente de $-1.5$. 
+          - radio sources : étude du nombre de sources de luminosité plus grande qu'un seuil $S$. Pour un univers stationnaire, il y a autant de sources partout à tout temps (densité $n$ constante), et ils sont partout semblables (luminosité $L$ constante) : $N \propto n d^3$, et $S \propto L/d^2$ alors le nombre $N(\geq S) $ de sources plus "brillantes" que le seuil $S$ évolue comme$ S^{-3/2}$. Ainsi la courbe de $\log S \mapsto \log N$ doit avoir une pente de $-1.5$. Dans un Univers en Big Bang, la densité $n$ varie : 
+          - 
         </p>
       </text>
     </content>
