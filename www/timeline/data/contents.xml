@@ -241,7 +241,13 @@
     	<image>matierenoire.jpg</image>
     	<text>
     	    <p>
+    	        Depuis les années 1930 avec Yann Oort, plusieurs physiciens ont suggéré qu'il exisait dans l'Univers une certaine quantité de matière "invisible" afin d'expliquer la dynamique des galaxies observées. Cette idée reposait sur le fait qu'on peut estimer la masse d'une galaxie de deux façons différentes :
+    	        <ul>
+    	            <li>En "décomptant" le nombre de sources lumineuses, et en estimant leur masse à partir de leur luminosité, on peut calculer la masse "lumineuse" totale $M_L$</li>
+    	            <li>En observant la courbe de vitesse supposée d'origine gravitationnelle des objets d'une galaxie, on peut estimer la masse "gravifique" $M_G$ nécessaire pour que celles-ci se meuvent comme elles le font (une estimation rapide peut être obtenue à l'aide du théorème du Viriel)</li>
+    	        </ul>
     	        
+    	        Le problème est que, si l'on fait ce calcul, par exemple pour la Voie Lactée, on trouve que $M_L$ ne représente qu'un dixième de $M_G$ ! Il semble donc qu'une composante essentielle de la masse soit "invisible". 
     	    </p>
     	</text>
     </content>
