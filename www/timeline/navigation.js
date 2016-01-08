@@ -2,7 +2,7 @@ var current_content = null;
 var current_ressource = null;
 
 $(document).ready(function() {
-  $("#timeline_container ul a").click(function() {
+  $("#timeline-container ul a").click(function() {
       show_content($(this).data('cid'), true);
       return false;
   });
