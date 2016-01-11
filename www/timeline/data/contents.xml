@@ -171,7 +171,7 @@
         <text>
 
             <p>
-                Bien que la nucléosynthèse primordiale dans un Big Bang n'est pas acceptable pendant les anées 1950, l'idée selon laquelle il est nécessaire d'étudier les réactions nucléaires en détail pour comprendre le mécanisme à l'origine de l'abondance des éléments est plutôt bien admise. D'autre part, la seconde guerre mondiale ayant pris fin il y a peu, la physique nucléaire qui a fait l'objet d'intenses recherches à des fins militaires <note>Las Alamos etc. je n'ai pas énormément de références en faveur de cet argument, mais il semble correct et cest bien la déclassification de certains données qui a permis à Gamow de déceler la corrélation abondance -- neutron capture cross section</note> est en plein essor. Les données s'accumulent et permettent d'établir des réseaux de réactions nucléaires (et leurs sections efficaces) de façon assez complète.
+                Bien que la nucléosynthèse primordiale dans un Big Bang semble une impasse au début des années 1950, l'idée selon laquelle il est nécessaire d'étudier les réactions nucléaires en détail pour comprendre le mécanisme à l'origine de l'abondance des éléments est plutôt bien admise. D'autre part, la seconde guerre mondiale ayant pris fin il y a peu, la physique nucléaire qui a fait l'objet d'intenses recherches à des fins militaires <note>Las Alamos etc. je n'ai pas énormément de références en faveur de cet argument, mais il semble correct et cest bien la déclassification de certains données qui a permis à Gamow de déceler la corrélation abondance -- neutron capture cross section</note> est en plein essor. Les données s'accumulent et permettent d'établir des réseaux de réactions nucléaires (et leurs sections efficaces) de façon assez complète.
                 TODO donner exemples
             </p>
             <p>FIXME parler ici de Fermi/Turkevich ?</p>
@@ -259,6 +259,7 @@
     	<image>inflation.jpg</image>
     	<color>#46c4e5</color>
     	<text>
+    	TODO Parler de zeldovic
     	    <p>
     	        En 1980, le modèle du Big Bang fait consensus. Pourtant, il pose déjà plusieurs problèmes, et en 1980, Alan Guth propose une solution à deux d'entre eux :
     	        <ul>
