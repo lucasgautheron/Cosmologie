@@ -1210,7 +1210,6 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <ressource id="601">
         <title>Principe d'équivalence</title>
         <text><p>Le principe d'équivalence formule de façon générale l'idée selon laquelle la nature d'un objet n'affecte pas la façon dont il se meut dans un champ de gravitation. Cette idée était déjà présente en mécanique Newtonienne, dans laquelle un corps de masse $m$ dans un champ de gravitation $\vec{g}$ obéit à la troisième loi de Newton $m_i\dfrac{d\vec{v}}{dt} = m_g\vec{g}$. La masse inertielle $m_i$ étant considérée comme identique à la masse $m_g$ chez Newton, il vient que pour tout corps $\dfrac{d\vec{v}}{dt} = \vec{g}$. 
-        todo EXPLIQUER démarche einstein
         </p>
         <p>Le principe d'équivalence tel qu'énoncé par Einstein en 1907 peut être formulé ainsi : <i>the outcome of any local, nongravitational test experiment is independent of the experimental apparatus’ velocity relative to the gravitational field and is independent of where and when in the gravitational field the experiment is performed (http://arxiv.org/pdf/gr-qc/0103067v1.pdf).</i>. </p>
         <p>On distingue deux formulations type du principe d'équivalence :</p>
