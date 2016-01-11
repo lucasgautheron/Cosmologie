@@ -223,7 +223,7 @@
         <p>
           - parler du CMB : difficilement explicable dans l'Univers d'Hoyle 
           - radio sources : étude du nombre de sources de luminosité plus grande qu'un seuil $S$. Pour un univers stationnaire, il y a autant de sources partout à tout temps (densité $n$ constante), et ils sont partout semblables (luminosité $L$ constante) : $N \propto n d^3$, et $S \propto L/d^2$ alors le nombre $N(\geq S) $ de sources plus "brillantes" que le seuil $S$ évolue comme$ S^{-3/2}$. Ainsi la courbe de $\log S \mapsto \log N$ doit avoir une pente de $-1.5$. Dans un Univers en Big Bang, la densité $n$ varie : 
-          - 
+          - découverte des quasars : ces objets très caractéristiques (compacts, très forte luminosité). Les observations montrent qu'on en trouve surtout à une distance importante, ce sont donc des objets anciens, en contradiction avec le principe cosmologique parfait, ce qui porte un coup au modèle stationnaire de l'Univers. 
         </p>
       </text>
     </content>

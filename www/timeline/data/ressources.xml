@@ -1286,7 +1286,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
           
           Or, d'après la relation précédente, on doit avoir :
           
-          $|\Omega_k(t)|  = |\Omega_{k0}|\dfrac{\rho_0}{\rho(t) a(t)^2} \leq M \dfrac{\rho_0}{\rho(t) a(t)^2}$
+          $|\Omega_k(t)|  = |\Omega_{k0}| \dfrac{\rho_0}{\rho(t) a(t)^2} \leq M \dfrac{\rho_0}{\rho(t) a(t)^2}$
           
           Dans les phases où l'expansion de l'Univers était la plus importante, la densité d'énergie a évolué en $\mathcal{O}(a^{-4})$ puis en $\mathcal{O}(a^{-3})$ si bien que $\Omega_k(t)$ a évolué en $\mathcal{O}(a^{n})$ avec $1 \leq n \leq 2$. 
           La valeur du paramètre $\Omega_k$ était donc bien plus petite qu'actuellement vers les débuts de l'Univers - d'un facteur au moins inférieur à celui du facteur d'échelle à l'époque. 
