@@ -97,7 +97,7 @@
   </xsl:template>
   
   <xsl:template match="note">
-    <span><a class="note_indicator" href="#" data-nid="{generate-id(.)}"><sup>[?]</sup></a><div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div></span>
+    <note><a class="note_indicator" href="#" data-nid="{generate-id(.)}"><sup>[?]</sup></a><div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div></note>
   </xsl:template>
   
   <xsl:template match="video">
