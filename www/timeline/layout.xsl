@@ -44,12 +44,6 @@
     </span>  
   </xsl:template>
   
-  <xsl:template match="p">
-    <p>
-      <xsl:apply-templates />
-    </p>  
-  </xsl:template>
-  
   <xsl:template match="figure">
     <div class="figure">
       <a href="images/{./@src}" target="_blank">
@@ -97,7 +91,7 @@
   </xsl:template>
   
   <xsl:template match="note">
-    <a class="note_indicator" href="#" data-nid="{generate-id(.)}"><sup>[?]</sup></a><div class="note" data-nid="{generate-id(.)}"> <xsl:value-of select="." /></div>
+    <a class="note_indicator" href="#" data-nid="{generate-id(.)}"><sup>[?]</sup></a><div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
   </xsl:template>
   
   <xsl:template match="video">
