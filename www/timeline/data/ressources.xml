@@ -473,7 +473,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \begin{equation}
             ds^2 = c^2 dt^2 - a^2(t) \left [ \dfrac{dr^2}{1+kr^2/R^2} + r^2 \left ( d\theta^2 + \sin^2 {\theta} d\phi^2 \right )\right ]
             \end{equation}
-            Ici, $k$ peut valoir $1$ (géométrie hyperbolique), ou -1 (géométrie sphérique), et la constante R est le rayon de courbure de l'univers (c'est par conséquent la longueur typique à partir de laquelle le caractère non euclidien de l'espace devient sensible). Si $R=\infty$, l'Univers est plat (géométrie euclidienne). (TODO: virer $k$ et autoriser $R \in \mathbb{C}$ ? ou ne faire apparaitre que $K=k/R^2$ ?)
+            Ici, $k$ peut valoir $1$ (géométrie hyperbolique), ou -1 (géométrie sphérique), et la constante R est le rayon de courbure de l'univers (c'est par conséquent la longueur typique à partir de laquelle le caractère non euclidien de l'espace devient sensible).
             On peut introduire la coordonnée comobile $\chi$ telle que :
             
             \begin{equation}\left\{\begin{matrix}
@@ -482,7 +482,17 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             r &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&gt;0
             \end{matrix}\right.\end{equation}
             
-            TODO: définir $S_k$ (commodité d'écriture pour référence ultérieure).</p>
+            On écrit parfois :
+            \begin{equation}
+            r = S_k(\chi)
+            \end{equation}
+            
+            Où : 
+             \begin{equation}\left\{\begin{matrix}
+            S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&lt;0\\ 
+            S_k(\chi) &amp; = &amp; \chi \mbox{ si } k=0\\ 
+            S_k(\chi) &amp; = &amp; R \sin \dfrac{\chi}{R} \mbox{ si } k&gt;0
+            \end{matrix}\right.\end{equation}</p>
         </text>
         <linkwords>
             <linkword>facteur d'échelle</linkword>
