@@ -547,7 +547,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             a(t) = \exp{\left ( H_0 t \right )} \mbox{ et } H_0 = \sqrt{\dfrac{8\pi G\rho_0}{3c^2}}
             \end{equation}
             
-            Où $\rho_0$ est la densité d'énergie de masse de l'Univers, identique à toute date. On remarque que la relation densité-constante de Hubble est identique à celle de l'Univers d'Einstein-de Sitter, or à l'époque on pensait que celle-ci donnait de bons résultats. Le modèle d'Hoyle reprend donc les succès des modèles non-stationnaires (expansion et relation densité-constante de Hubble) et semble par ailleurs en résoudre d'autres (âge de l'Univers). Il faudra attendre de nouvelles observations et une dizaine d'années avant que les physiciens le rejettent. TODO rephrase ou virer </p>
+            Où $\rho_0$ est la densité d'énergie de masse de l'Univers, identique à toute date. On remarque que la relation densité-constante de Hubble est identique à celle de l'Univers d'Einstein-de Sitter, or à l'époque on pensait que celle-ci donnait de bons résultats. Le modèle d'Hoyle reprend donc les succès des modèles non-stationnaires (expansion et relation densité-constante de Hubble) et semble par ailleurs en résoudre d'autres (âge de l'Univers). </p>
             <h3>Formalisme</h3>
             <p>TODO champ C équations etc</p>
             <h3>Échecs du modèle</h3>
@@ -734,8 +734,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
     <ressource id="114">
         <title>Modèle Lambda CDM</title>
         <text>
-            <p>Le modèle $\Lambda$ CDM (Lambda - Cold Dark Matter) est le modèle "standard" de la cosmologie. Deux composantes dominent : la constante cosmologique (équivalente à une énergie du vide appelée "énergie noire"), et de la matière à pression nulle (froide) n'interragissant pas avec les photons du fond diffus cosmologique. TODO paramètres (noire).</p>
-            <p>TODO: donner paramètres etc. </p>
+            <p>Le modèle $\Lambda$ CDM (Lambda - Cold Dark Matter) est le modèle "standard" de la cosmologie. Deux composantes dominent : la constante cosmologique (équivalente à une énergie du vide appelée "énergie noire"), et de la matière à pression nulle (cold) n'interragissant pas avec les photons du fond diffus cosmologique (dark matter).</p>
+            <p> </p>
         </text>
         <linkwords>
             <linkword>modèle $\Lambda$CDM</linkword>
@@ -780,7 +780,6 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 La particularité de la constante cosmologique est d'être équivalente à une densité d'énergie constante malgré l'expansion de l'Univers. Une explication possible suggérée par le physicien Hoyle est alors que l'énergie du vide est en fait simplement l'énergie de masse de la matière de l'Univers, et que de la matière est créée en permanence de sorte à ce que cela maintienne la densité constante avec l'expansion. Ce modèle d'Univers est appelé "théorie de l'état stationnaire" ("Steady-state universe" en anglais). 
                 <spoiler>TODO: expliquer champ C etc calculs.</spoiler>
             </p>
-            <p>TODO: plus exactement, mécanismes équivalents à une constante cosmologique</p>
         </text>
         <linkwords>
             <linkword>constante cosmologique</linkword>
@@ -796,7 +795,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 Un objet émet un signal lumineux dès l'instant $t_e$ et celui-ci est reçu par l'observateur à l'instant postérieur $t_r$. 
                 Le signal ayant une certaine période $T_e$, un second "bip" est émis à un instant $t_e+T_e$ et est reçu par l'observateur à un instant $t_r+T_r$.
                 On suppose l'observateur ainsi que la source immobiles dans l'espace en expansion (càd "comobiles"). Les deux signaux parcourent donc la même distance comobile $\chi$ : 
-                TODO: vos notations
+
                 \begin{equation}
                 \chi = \displaystyle\int_{t_e}^{t_r} \dfrac{cdt'}{a(t')} = \displaystyle\int_{t_e+T}^{t_r+T'} \dfrac{cdt'}{a(t')} \mbox{ (1)}
                 \end{equation}
@@ -865,7 +864,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         
         Pour de petites vitesses, cette expression vaut environ $\nu_0 (1-v/c)$ et il est alors clair que si la vitesse est dirigée selon la ligne de visée, la source s'éloigne si $v$ est positif et dans ce cas il y a bien diminution de la fréquence apparente. </p>
         
-        La preuve est rapide à partir de la transformation de Lorentz (TODO: donner preuve)
+        (La preuve est rapide à partir de la transformation de Lorentz)
         </text>
         <linkwords>
             <linkword>effet Doppler</linkword>
@@ -901,9 +900,20 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <title>Fond diffus cosmologique</title>
         <text>
             <h3></h3>
-            <p>Le fond diffus cosmologique (ou "cosmic microwave background") est ...</p>
-            <h3>Première prédiction par Alpher et Herman</h3>
-            <p>La première prédiction par Alpher et Herman</p>
+            <p>Le fond diffus cosmologique (ou "cosmic microwave background") est un rayonnement de type corps noir (sous forme de photons) globalement homogène et isotrope, qui s'est découplé<note>a cessé d'interagir fortement avec la matière. Dès lors, les photons du fond diffus ont évolué indépendamment du reste du contenu de l'Univers</note> de la matière environ 380 000 ans après le big bang. Depuis, avec l'expansion de l'Univers, celui-ci a refroidi pour atteindre sa température actuelle de 2,7 K. Cette température correspond à peu près à un rayonnement de type micro-ondes, d'où l'appellation anglophone.</p>
+            <h3>Premières observations et prédictions</h3>
+            <p>Avant les travaux de Alpher, Gamow et Herman à la fin des années 1940, on pense que le rayonnement dans l'Univers est essentiellement d'origine stellaire. La température du milieu interstellaire serait donc la température d'équilibre d'un objet dans ce milieu avec le rayonnement provenant des étoiles. Cette température vérifierait donc :
+            \begin{equation}
+            \sigma T_{univers}^4 = p
+            \end{equation}
+            Où $p$ est la puissance moyenne reçue par unité de surface d'origine stellaire en moyenne dans le milieu interstellaire. Celle-ci doit valoir, si la luminosité moyenne des étoiles est proche de celle du Soleil, de l'ordre de $L_{\odot}/d^2$ où $L_{\odot}$ est la puissance émise par le Soleil et $d$ la distance moyenne entre étoiles.
+            Selon la région sur laquelle la moyenne $d$ est calculée, la valeur peut beaucoup varier - pour l'Univers observable, $d \sim $ 300 al. Mais globalement cela conduit à une valeur $T_{univers}$ de l'ordre de 0,1 K à quelques kelvins (la valeur étant bien sure plus élevée dans les zones où la densité d'étoiles est plus grande).
+            
+            Dans ce cas, le rayonnement possède une caractéristique particulière : son spectre est celui des étoiles qui l'émettent, c'est-à-dire entre l'IR, le visible et l'UV (soit des températures de rayonnement de quelques milliers à quelques dizaines de Kelvins).
+            </p>
+            <p>La première observation indiquant la présence du fond diffus cosmologique fut faite en 1940 par McKellar, bien qu'elle ne fut pas comprise comme telle à l'époque. McKellar étudiait avait employé un spectrographe installé à l'Observatoire du Mont Wilson pour mesurer le spectre de plusieurs régions du ciel. Les mesures indiquent notamment la présence d'un doublet associé à des transitions rotationnelles de la molécule $CN$. McKellar évalue à partir de cette observation une témparature limite pour le milieu interstellaire d'environ 2,3 K, mais reconnait ne pas être capable de déterminer si cette valeur a vraiment un sens.</p>
+            <p>La première prédiction correcte du fond diffus cosmologique est due à Alpher et Herman. En établissant avec Gamow leur théorie de la nucléosynthèse primordiale dans un Univers en Big Bang, ceux-ci remarquèrent que l'Univers devait être très chaud et surtout dominé par le rayonnement à son orgine. Ils soulignèrent alors que ceci impliquerait la présence aujourd'hui d'un fond de rayonnement vestige de cette ère où les photons étaient très énergétiques et gouvernaient l'expansion. A partir de 1948 ils firent plusieurs estimations de la température actuelle de ce rayonnement, estimée entre quelques Kelvins et quelques dizaines de Kelvins. Cependant, leur théorie de la nucléosynthèse semblait une impasse à l'époque, et leurs travaux ne reçurent pas beaucoup d'attention.
+            La différence majeure avec l'interprétation stellaire du fond de rayonnement est le spectre de celui-ci. Dans le cas d'un rayonnement issu des étoiles, le spectre est globalement autour du visible. Dans le cas d'un Univers en expansion, le spectre est celui d'un corps noir à la température du fond (quelques K). TODO rephrase.</p>
             <h3>Découverte</h3>
             <p></p>
             <h3>planck cobe etc etc..</h3>
