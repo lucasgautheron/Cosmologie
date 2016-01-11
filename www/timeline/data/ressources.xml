@@ -1092,7 +1092,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 Les courbes $n/n_0 \mapsto P/P_0$ sont calculées numériquement (facteurs dimensionnés exclus). On trouve
                 
                 <figure src="fermi_state.svg" title="Diagramme de phase gaz d'électrons" plot="fermi_state">
-                    TODO: vérifier si la zone rouge est interdite par exclusion de Pauli. Je pensais que oui mais on dirait que non. 
+                    Diagramme de phase d'un gaz d'électrons sans interactions. La courbe noire correspond à une distribution de fermi-dirac. La courbe rouge correspond à un gaz dégénéré, dans lequel tous les états en dessous d'une certaine énergie sont systématiquement occupés. La zone rouge est interdite par le principe d'exclusion de Pauli.
+                    Il existe deux régimes asymptotiques pour le gaz dégénéré.
                 </figure>
 
                 On observe pour un gaz dégénéré deux régimes différents :
