@@ -97,7 +97,7 @@
   </xsl:template>
   
   <xsl:template match="note">
-    <note><a class="note_indicator" href="#" data-nid="{generate-id(.)}"><sup>[?]</sup></a><div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div></note>
+    <a class="note_indicator" href="#" data-nid="{generate-id(.)}"><sup>[?]</sup></a>
   </xsl:template>
   
   <xsl:template match="video">
@@ -221,7 +221,11 @@
       </ul>
     </div>
     <h2 id="title"><xsl:value-of select="./title" /></h2>
-    <div id="text"><xsl:apply-templates select="text" /></div>
+    <div id="text"><xsl:apply-templates select="text" />
+      <xsl:for-each select="./text//note">
+        <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
+      </xsl:for-each></div>
+    
     <div id="references">
       <ul>
         <xsl:for-each select="/root/references/reference[@content-id=$id]">
@@ -243,7 +247,10 @@
   <xsl:result-document method="html" href="html/ressources/ressource_{./@id}.html">
     <div id="ressource">
       <h2 id="title"><xsl:value-of select="./title" /></h2>
-      <div id="text"><xsl:apply-templates select="text" /></div>
+      <div id="text"><xsl:apply-templates select="text" />
+      <xsl:for-each select="./text//note">
+        <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
+      </xsl:for-each></div>
       <div id="references">
         <ul>
           <xsl:for-each select="/root/references/reference[@ressource-id=$id]">
