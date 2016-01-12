@@ -257,6 +257,13 @@
             La radiométrie permet d'autres tests cosmologiques que la découverte du CMB. http://www.astro.ubc.ca/people/jvw/ASTROSTATS/Answers/Chap7/ans_7_1.pdf
             radio sources : étude du nombre de sources de luminosité plus grande qu'un seuil $S$. Pour un univers stationnaire, il y a autant de sources partout à tout temps (densité $n$ constante), et ils sont partout semblables (luminosité $L$ constante) : $N \propto n d^3$, et $S \propto L/d^2$ alors le nombre $N(\geq S) $ de sources plus "brillantes" que le seuil $S$ évolue comme$ S^{-3/2}$. Ainsi la courbe de $\log S \mapsto \log N$ doit avoir une pente de $-1.5$. Dans un Univers en Big Bang, la densité $n$ varie : 
             TODO account for le PDF ci-dessus.
+            \begin{equation}
+            N = \dfrac{4\pi}{3} (a(t) \chi)^3  
+            \end{equation}
+            
+            \begin{equation}
+            S = \dfrac{L}{4\pi d_L^2}  = \dfrac{L}{4\pi (1+z) (a(t) \chi)^2}
+            \end{equation}
         </p>
         
         <h3>Nouvelle mesure de la constante de Hubble</h3>
