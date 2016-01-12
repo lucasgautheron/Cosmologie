@@ -202,12 +202,12 @@
     	<text>
     	    <p>
     	        Au cours de l'année 1964, deux astronomes américains, Arno Penzias et Robert Wilson, travaillent sur l'antenne cornet d'Holmdel pour les laboratoires Bell. L'objectif de cet antenne construite en 1959 était de détecter l'écho radar de satellites en forme de ballon agissant comme réflecteur. Les deux physiciens devaient cependant s'en servir pour observer la voie lactée à des longueurs d'ondes aux alentours de 7 cm.<br />
-    	        Une des difficultés de cette taĉhe est que le faible niveau du signal requiert l'élimination de nombreuses sources de bruit, et notamment du bruit d'origine thermique. par exemple en refroidissant certains instruments jusqu'à 4 K (hélium liquide).
+    	        Une des difficultés de cette taĉhe est que le faible niveau du signal requiert l'élimination de nombreuses sources de bruit, et notamment du bruit d'origine thermique, par exemple en refroidissant certains instruments jusqu'à 4 K (hélium liquide).
     	        Malgré toutes ces précautions, les deux phyisiciens observèrent une bruit irréductible équivalent à une température d'environ 3,5 $\pm$ 1 K, indépendant des saisons, dépendant faiblement de la direction, ce qui semblait écarter une origine galactique. (todo + atmo + récepteur).
     	    </p>
     	    <p>
     	    Parallèlement, Dicke, Peebles, Roll et Wilkinson réétablissent indépendamment l'existence d'un fond de rayonnement photonique dans l'hypothèse d'un Univers né d'un Big Bang chaud. Ils entreprennent même d'établir un instrument pour mesurer cet hypothétique rayonnement. 
-    	    Penzias finit par avoir vent de leurs recherches, et joint Dicke par téléphone. Celui-ci comprend que le bruit mesuré par Penzias et Wilson doit être ce fameux rayonnement qu'ils cherchaient à mesurer.
+    	    Penzias finit par avoir vent de leurs recherches, et finit par contacter Dicke par téléphone pour lui exposer leur problème. Celui-ci comprend que le bruit mesuré par Penzias et Wilson doit être ce fameux rayonnement qu'ils cherchaient à mesurer.
     	    En 1965, les deux groupes publient simultanément un papier tenant compte de leurs résultats, marquant la découverte du fond diffus cosmologique ou CMB (pour Cosmic Microwave Background).
     	    </p>
     	    <p>
@@ -215,7 +215,15 @@
     	        En 1940, McKellar avait déjà mesuré une excitation d'une transition vibrationnelle dans la molécule $CN$ en étudiant le spectre micro-onde de certaines régions du ciel, associée à une longueur d'onde d'environ 7 cm. 
     	        Durant les années 1950, plus expériences de mesures dans les ondes radios comme celle d'Emile Le Roux ont rapporté l'existence d'un bruit d'une valeur d'environ 3 K mais avec de larges incertitudes.
     	        En 1960, Ohm, qui travaillait sur l'antenne d'Holmdel (plusieurs années avant Penzias et Wilson), avait déjà décelé et évalué un bruit de quelques Kelvins. Ce résultat avait été cité par deux physiciens russes en 1964 qui firent le lien avec un papier de Gamow évoquant le fond de rayonnement d'origine cosmologique, mais ils conclurent qu'une origine atmosphérique du bruit n'était pas écartée par les résultats de Ohms. Or, il s'agissait d'une erreur d'intérprétation puisqu'Ohm avait précisé dans son rapport que l'origine atmosphérique était écartée.
-    	       Par ailleurs Dicke assura qu'il n'était pas informé des travaux d'Alpher, Gamow et Herman sur un rayonnement d'origine primordiale, bien qu'il assista des années auparavant à un séminaire de Gamow sur ses recherches autour de la nucléosynthèse primordiale.
+    	        Par ailleurs, Dicke assura qu'il n'était pas informé des travaux d'Alpher, Gamow et Herman sur un rayonnement d'origine primordiale, bien qu'il assista des années auparavant à un séminaire de Gamow sur ses recherches autour de la nucléosynthèse primordiale.
+    	    </p>
+    	    
+    	    <p>
+    	       Cette découverte est majeure, puisqu'elle a deux conséquences immédiates :
+    	       <ul>
+    	           <li>Remise en cause de la théorie de l'état stationnaire au profit du Big Bang</li>
+    	           <li>Nouvelles perspectives observationnelles en Cosmologie puisque la mesure du CMB (température, spectre, anisotropies) est riche en informations</li>
+    	       </ul>
     	    </p>
     	</text>
     </content>
