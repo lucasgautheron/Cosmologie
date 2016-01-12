@@ -238,9 +238,36 @@
       <image>bigbang.jpg</image>
       <color>#8681f0</color>
       <text>
+        <p>Au cours des années 1960, plusieurs observations vont mettre en cause la théorie de l'état stationnaire. TODO: faire une vraie intro moins bâteau.
+        </p>
+        <h3>Découverte du fond diffus cosmologique</h3>
+        <p>
+           La découverte du fond diffus cosmologique en 1965 porte un coup sérieux à la théorie de l'Univers stationnaire et semble au contraire une confirmationpreuve solide de celle du Big Bang.
+           La présence de ce fond y est en effet très naturelle : si l'Univers a traversé une phase très chaude, le rayonnement devait dominer. En se découplant du reste de la matière, il a refroidi avec l'expansion jusqu'à atteindre sa température actuelle d'environ 3 K. Son spectre est alors très caractéristique, puisque c'est celui d'un corps noir à cette température.
+           L'Univers stationnaire possède aussi un fond de rayonnement mais aux caractéristiques bien différentes. Celui-ci est d'origine stellaire : le rayonnement émis par les étoiles emplit l'espace, et thermalise la poussière de l'Univers à une certaine température, qui varie localement avec la densité d'étoiles, mais grossièrement de l'ordre du Kelvin.
+           Il existe donc un rayonnement qui est la somme du rayonnement stellaire et du rayonnement thermique induit de la poussière qui y est exposé.
+           La matière étant distribuée de façon anisotrope à courte échelle (préférentiellement dans le plan galactique pour nous sur Terre), le rayonnement observé, s'il émanait des étoiles et poussières, devrait être anisotrope or il est remarquablement isotrope (il est équivalent à une même température quelque soit la direction, au premier ordre).
+           D'autre part, la poussière devrait émettre avec des écarts significatifs au spectre du corps noir. Des mesures plus précises montreront que le fond diffus suit très précisément le spectre du corps noir à une température de 2,7 K.
+          
+        </p>
+        
+        <h3>Distribution des sources radios</h3>
+        
+        <p>
+            La radiométrie permet d'autres tests cosmologiques que la découverte du CMB. http://www.astro.ubc.ca/people/jvw/ASTROSTATS/Answers/Chap7/ans_7_1.pdf
+            radio sources : étude du nombre de sources de luminosité plus grande qu'un seuil $S$. Pour un univers stationnaire, il y a autant de sources partout à tout temps (densité $n$ constante), et ils sont partout semblables (luminosité $L$ constante) : $N \propto n d^3$, et $S \propto L/d^2$ alors le nombre $N(\geq S) $ de sources plus "brillantes" que le seuil $S$ évolue comme$ S^{-3/2}$. Ainsi la courbe de $\log S \mapsto \log N$ doit avoir une pente de $-1.5$. Dans un Univers en Big Bang, la densité $n$ varie : 
+            TODO account for le PDF ci-dessus.
+        </p>
+        
+        <h3>Nouvelle mesure de la constante de Hubble</h3>
+        
+        <p>
+           
+        </p>
+        
         <p>
           - parler du CMB : difficilement explicable dans l'Univers d'Hoyle 
-          - radio sources : étude du nombre de sources de luminosité plus grande qu'un seuil $S$. Pour un univers stationnaire, il y a autant de sources partout à tout temps (densité $n$ constante), et ils sont partout semblables (luminosité $L$ constante) : $N \propto n d^3$, et $S \propto L/d^2$ alors le nombre $N(\geq S) $ de sources plus "brillantes" que le seuil $S$ évolue comme$ S^{-3/2}$. Ainsi la courbe de $\log S \mapsto \log N$ doit avoir une pente de $-1.5$. Dans un Univers en Big Bang, la densité $n$ varie : 
+          - 
           - découverte des quasars : ces objets très caractéristiques (compacts, très forte luminosité). Les observations montrent qu'on en trouve surtout à une distance importante, ce sont donc des objets anciens, en contradiction avec le principe cosmologique parfait, ce qui porte un coup au modèle stationnaire de l'Univers. 
         </p>
       </text>
