@@ -905,7 +905,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \begin{equation}
             \sigma T_{univers}^4 = p
             \end{equation}
-            Où $p$ est la puissance moyenne reçue par unité de surface d'origine stellaire en moyenne dans le milieu interstellaire. Celle-ci doit valoir, si la luminosité moyenne des étoiles est proche de celle du Soleil, de l'ordre de $L_{\odot}/d^2$ où $L_{\odot}$ est la puissance émise par le Soleil et $d$ la distance moyenne entre étoiles.
+            Où $p$ est la puissance moyenne reçue par unité de surface d'origine stellaire en moyenne dans le milieu interstellaire (il s'agit de la puissance totale, la forme du spectre n'ayant ici pas d'importance). Celle-ci doit valoir, si la luminosité moyenne des étoiles est proche de celle du Soleil, de l'ordre de $L_{\odot}/d^2$ où $L_{\odot}$ est la puissance émise par le Soleil et $d$ la distance moyenne entre étoiles.
             Selon la région sur laquelle la moyenne $d$ est calculée, la valeur peut beaucoup varier - pour l'Univers observable, $d \sim $ 300 al. Mais globalement cela conduit à une valeur $T_{univers}$ de l'ordre de 0,1 K à quelques kelvins (la valeur étant bien sure plus élevée dans les zones où la densité d'étoiles est plus grande).
             
             Dans ce cas, le rayonnement possède une caractéristique particulière : son spectre est celui des étoiles qui l'émettent, c'est-à-dire entre l'IR, le visible et l'UV (soit des températures de rayonnement de quelques milliers à quelques dizaines de Kelvins).

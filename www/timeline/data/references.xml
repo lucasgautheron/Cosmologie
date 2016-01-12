@@ -136,4 +136,19 @@
         <file>guth_1981.pdf</file>
     </reference>
     
+    <reference id="18" content-id="9">
+      <title>Cosmic Black-Body Radiation</title>
+      <author>Dicke, Peebles, Roll et Wilkinson</author>
+      <text>Texte dans lequel les 4 physiciens réétablissent le lien entre Big Bang chaud et fond de rayonnement, et évoquent le statut expérimental sur ce sujet</text>
+      <date>1965</date>
+      <file>dicke_1965.pdf</file>
+    </reference>
+    
+     <reference id="19" content-id="9">
+      <title>A measurement of excess antenna temperature at 4080 Mc/s</title>
+      <author>Penzias et Wilson</author>
+      <text>Papier dans lequel les deux astronomes donnent les caractéristiques de l'excès de rayonnement qu'ils ont décelé, qui s'avère être le fameux fond diffus cosmologique.</text>
+      <date>1965</date>
+      <file>penzias_1965.pdf</file>
+    </reference>
 </references>
