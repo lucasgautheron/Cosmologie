@@ -313,6 +313,20 @@
     	        </ul>
     	        
     	        Le problème est que, si l'on fait ce calcul, par exemple pour la Voie Lactée, on trouve que $M_L$ ne représente qu'un dixième de $M_G$ ! Il semble donc qu'une composante essentielle de la masse soit "invisible". 
+    	        
+    	        Vera et Kent
+    	        
+    	        
+    	        
+    	        Méthode de la vitesse rotationnelle $v$ :
+    	        
+    	        \begin{equation}
+    	        v(r) = \sqrt{\dfrac{4\pi G}{r} \int_{0}^{r} \rho(r') r'^2 dr'}
+    	        \end{equation}
+    	        
+    	        \begin{equation}
+    	        v'(r) =  \dfrac{1}{2r} \dfrac{\rho(r) r^3 - \int_{0}^{r} \rho(r') r'^2 dr'}{\sqrt{\int_{0}^{r} \dfrac{\rho(r')}{r'} dr'}}
+    	        \end{equation}
     	    </p>
     	</text>
     </content>
