@@ -325,7 +325,7 @@
     	        \end{equation}
     	        
     	        \begin{equation}
-    	        v'(r) =  \sqrt{4\pi G} \dfrac{1}{2r} \dfrac{\rho(r) r^3 - \frac{1}{2} \int_{0}^{r} \rho(r') r'^2 dr'}{\sqrt{\int_{0}^{r} \rho(r') dr'}}
+    	        v'(r) =  \dfrac{1}{r} \sqrt{\dfrac{4\pi G}{r}} \left [ \dfrac{\rho r^3 - \int_{0}^{r} \rho(r') r'^2 dr'}{\int_{0}^{r} \rho(r') r'^2 dr'} \right ]
     	        \end{equation}
     	    </p>
     	</text>
