@@ -33,9 +33,10 @@ ul#timeline
 }
 #timeline .timeline-date
 {
-  width: 60px;
+  text-align: right;
+  width: 110px;
+  padding: 0 10px 0 0;
   float: left;
-  padding: 0;
   margin: 0;
 }
 #timeline .timeline-content
@@ -55,7 +56,7 @@ ul#timeline
   height: 12px;
   background: black;
   position: absolute;
-  left: 56px;
+  left: 115px;
   top: 5px;
   border-radius: 100%;
 }
@@ -87,6 +88,12 @@ div#ressource, div#image
 }
 
 div#image img { width: 100%; }
+
+div#navigation
+{
+    padding: 1em;
+    background-color: #BBB;
+}
 
 div.figure, div.feynman
 {
