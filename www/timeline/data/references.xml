@@ -151,4 +151,12 @@
       <date>1965</date>
       <file>penzias_1965.pdf</file>
     </reference>
+    
+     <reference id="20" content-id="10">
+      <title>The Period-Luminosity relation of the Cepheids</title>
+      <author>Walter Baade</author>
+      <text>Dans cert article, W. Baade fait le point sur l'utilisation des étoiles variables comme chandelles standard.</text>
+      <date>1956</date>
+      <file>baade_1956.pdf</file>
+    </reference>
 </references>
