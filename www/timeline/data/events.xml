@@ -2,9 +2,9 @@
 <events>
     <event date="1905" content-id="1" hidden="0">Albert Einstein publie sa théorie de la Relativité Restreinte qui décrit l'électrodynamique classique </event>
     <event date="1912" content-id="2">Vesto M. Slipher mesure la vitesse de la galaxie d'Andromède par rapport à la Voie Lactée grâce au red-shift</event>
-    <event date="1911" content-id="100"  hidden="1">Découverte du noyau atomique par Rutherford</event>
+    <event date="1911" content-id="100" hidden="1">Découverte du noyau atomique par Rutherford</event>
     <event date="1919" content-id="100" hidden="1">Découverte du proton</event>
-    <event date="1912" content-id="100">Victor F. Hess découvre le rayonnement cosmique</event>
+    <event date="1912" content-id="100" hidden="1">Victor F. Hess découvre le rayonnement cosmique</event>
     <event date="1915" content-id="1">Albert Einstein finalise la théorie de la Relativité Générale, une théorie relativiste de la gravitation</event>
     <event date="1917" content-id="3">A. Einstein propose un modèle statique de l'Univers dans le cadre de la Relativité Générale</event>
     <event date="1917" content-id="2">V. Slipher montre que la plupart des galaxies s'éloignent de nous</event>
