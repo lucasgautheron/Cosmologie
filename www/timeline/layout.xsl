@@ -154,7 +154,7 @@
     <body>
       <div id="navigation"><a href="#" id="show_timeline">Frise</a> | <a href="#" id="show_previous">Précédent</a> | <a href="#" id="show_next">Suivant</a></div>
       <div id="timeline-container">
-      <h1>Chronologie</h1>
+      <h1>Histoire de la Cosmologie Moderne</h1>
         <ul id="timeline">
           <xsl:for-each select="root/events/event[not(@hidden=1)]">
             <xsl:sort select="./@date" />
@@ -165,7 +165,7 @@
             <li><p class="timeline-date"><xsl:value-of select="./@date" /></p><div id="timeline{generate-id(.)}" class="timeline-content"><a href="contents/content_{./@content-id}.html" data-cid="{./@content-id}"><xsl:value-of select="." /></a></div></li>
           </xsl:for-each>
         </ul>
-        <div>Les conventions suivantes sont utilisées :
+        <div class="meta">Les conventions suivantes sont utilisées :
           <ul>
             <li>Signature métrique $(+,-,-,-)$</li>
             <li>$c$ apparait explicitement dans les équations (les distances sont donc exprimées en mètres et les temps en secondes) sauf mention contraire</li>
@@ -173,7 +173,7 @@
             <li>Pour un univers homogène et isotrope, $R$ est le rayon de courbure de l'Univers, et $k$ un entier relatif pouvant valoir $-1$ (géométrie sphérique), $0$ (géométrie euclidienne), $1$ (géométrie hyperbolique)</li>
           </ul>
         </div>
-        <div>
+        <div class="meta">
           Le site fait appel aux technologies et programmes suivants :
           <ul>
             <li><a href="http://www.w3schools.com/xml/xml_xsl.asp">XML/XSLT</a> pour le contenu et sa traduction en HTML</li>
