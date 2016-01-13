@@ -155,16 +155,25 @@
      <reference id="20" content-id="10">
       <title>The Period-Luminosity relation of the Cepheids</title>
       <author>Walter Baade</author>
-      <text>Dans cert article, W. Baade fait le point sur l'utilisation des étoiles variables comme chandelles standard.</text>
+      <text>Dans cet article, W. Baade fait le point sur l'utilisation des étoiles variables comme chandelles standard.</text>
       <date>1956</date>
       <file>baade_1956.pdf</file>
     </reference>
     
-     <reference id="21" content-id="12">
+        
+     <reference id="21" content-id="10">
+      <title>Current problems in the extra-galactic distance scale</title>
+      <author>Allan Sandage</author>
+      <text>Ce papier tente de corriger un certain nombre d'erreurs faites jusqu'alors en évaluant les distances d'objets extra-galactiques, et met en évidence les points qui reste à éclaircir. La valeur de $H_0$ est estimée entre 50 et 100 km/s/Mpc.</text>
+      <date>1958</date>
+      <file>sandage_1958.pdf</file>
+    </reference>
+    
+     <reference id="22" content-id="12">
       <title>Rotational properties of 21 Sc galaxies with a large range of luminosities and radii</title>
       <author>Kent Ford, Vera Rubin</author>
       <text>Article dans lequel Vera Rubin et Kent Ford montrent que les galaxies qu'ils ont étudiées possèdent des courbes de vitesses de rotation croissantes et non képleriennes, suggérant la présence de masse invisible.</text>
-      <date>1956</date>
+      <date>1980</date>
       <file>rubin_1980.pdf</file>
     </reference>
 </references>

@@ -251,7 +251,6 @@
            Il existe donc un rayonnement qui est la somme du rayonnement stellaire et du rayonnement thermique induit de la poussière qui y est exposé.
            La matière étant distribuée de façon anisotrope à courte échelle (préférentiellement dans le plan galactique pour nous sur Terre), le rayonnement observé, s'il émanait des étoiles et poussières, devrait être anisotrope or il est remarquablement isotrope (il est équivalent à une même température quelque soit la direction, au premier ordre).
            D'autre part, la poussière devrait émettre avec des écarts significatifs au spectre du corps noir. Des mesures plus précises montreront que le fond diffus suit très précisément le spectre du corps noir à une température de 2,7 K.
-          
         </p>
         
         <h3>Distribution des sources radios</h3>
@@ -278,7 +277,11 @@
         
         <p>
             Un des arguments des défenseurs de l'Univers stationnaire était que l'âge (fini) de l'Univers dans la théorie du Big Bang devait être de quelques milliards d'années, d'après la valeur de la constante de Hubble connue à l'époque. Or, cette valeur était inférieure à certaines estimations de l'âge de la Terre ou d'autres structures. 
-            Or, en 1952, Walter Baade découvre qu'il existe deux classes de céphéides variables. 
+            Or, en 1952, Walter Baade découvre qu'il existe deux classes de céphéides variables. Cela remet en question l'application de la relation luminosité-distance employée depuis 30 ans pour mesurer les distances des galaxies environnantes. 
+            TODO expliquer.
+            Baade fait les corrections et nécessaire et trouve une valeur de la constante de Hubble deux fois inférieure à la valeur précédemment estimée (de 500 à 250 km/s/Mpc). Ceci a pour effet de doubler l'âge de l'Univers dans les modèle en Big Bang comme le modèle Einstein-de Sitter. 
+            Suite à ces travaux, Allan Sandage découvre d'autres sources d'erreurs dans l'estimation de $H_0$ faite par Hubble en 1929. Par exemple, Hubble avait supposé que les étoiles les plus brillantes étaient de même intensité dans toutes les galaxies, mais Sandage montra qu'il interpréta à tort des objets comme des étoiles alors qu'il s'agissait de régions HII (hydrogène ionisé). Ces objets étant plus brillants, corriger l'erreur conduisit à des valeurs plus grandes des distances des galaxies incriminées, et donc à une diminution de la valeur de $H_0$. 
+            En 1958, Sandage publie un papier dans lequel il expose plusieurs corrections à la méthode de mesure de la constante de Hubble et montre que sa valeur doit être comprise entre 50 et 100 km/s/Mpc. L'âge de l'Univers dans les modèles de type Big Bang les plus simples est alors compris entre 6,5 et 13 milliards d'années, montrant que ces modèles ne sont pas exclus par l'âge des structures de l'Univers.
         </p>
         
         <h3>Découverte des quasars</h3>
