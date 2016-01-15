@@ -216,6 +216,7 @@
 <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
 <html lang="fr">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   </head>
   <body>
     <div id="content">
@@ -257,6 +258,7 @@
 <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
 <html lang="fr">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   </head>
   <body>
     <div id="ressource">
