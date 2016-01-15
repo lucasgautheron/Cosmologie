@@ -5,6 +5,7 @@ $return_code = $return = 0;
 
 $verbose = in_array('-V', $_SERVER['argv']);
 $perform_simulations = in_array('-S', $_SERVER['argv']);
+$archive = in_array('-A', $_SERVER['argv']);
 
 $redirect = $verbose ? "" : " > /dev/null 2>&1 ";
 
@@ -76,5 +77,7 @@ if(is_file('tmp')) unlink('tmp');
 echo "plot generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 
 chdir('..');
+
+if($archive) exec("tar -zcvf archive.tar.gz ./* --exclude='*~'");
 
 exit((int)$return);
