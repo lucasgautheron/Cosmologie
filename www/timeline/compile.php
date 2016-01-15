@@ -83,7 +83,8 @@ chdir('..');
 if($archive)
 {
     @unlink('archive.tar.gz');
-    exec("tar -zcvf archive.tar.gz . --exclude='*~'");
+    exec("tar -zcvf ../archive.tar.gz . --exclude='*~'");
+    rename('../archive.tar.gz', 'archive.tar.gz');
 }
 
 exit((int)$return);
