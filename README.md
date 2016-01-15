@@ -29,7 +29,7 @@ apt-get install ffmpeg build-essential
 ```
 git pull
 cd www/timeline
-php compile.php
+php compile.php -V -S
 ```
 
 Usage script compile.php : 
