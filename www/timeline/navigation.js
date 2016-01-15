@@ -77,14 +77,14 @@ function update()
 
 function build_hash()
 {
-    var url = '#';
+    var url = '#!';
     if(current_content!=null)
     {
         if(current_ressource!=null)
         {
-            url = '#/content/' + current_content + '/ressource/' + current_ressource;
+            url = '#!content=' + current_content + '&ressource=' + current_ressource;
         }
-        else url = '#/content/' + current_content;
+        else url = '#!content=' + current_content;
     }
     return url;
 }
@@ -98,17 +98,24 @@ function update_hash()
 
 function load_hash()
 {
-    var matches = window.location.hash ? window.location.hash.match(/\/content\/(\d+)(\/ressource\/(\d+))?/) : null;
-    if(!matches)
+
+   var subject = window.location.hash.substring(2);
+   var data = search?JSON.parse('{"' + search.replace(/&/g, '","').replace(/=/g,'":"') + '"}',
+                 function(key, value) { return key===""?value:decodeURIComponent(value) }):{};
+
+    if(!data || data['content'] === undefined)
     {
         show_timeline();
         return;
     }
-    var new_content = current_content != matches[1];
-    var new_ressource = current_ressource != matches[3];
+    data['content'] = data['content'] === undefined ? null : data['content'];
+    data['ressource'] = data['ressource'] === undefined ? null : data['ressource'];
+
+    var new_content = current_content != data['content'];
+    var new_ressource = current_ressource != data['ressource'];
     var change = new_content || new_ressource;
-    current_content = matches[1];
-    current_ressource = matches[3];
+    current_content = data['content'];
+    current_ressource = data['ressource'];
     if(change)
     {
         if(!current_content && !current_ressource) show_timeline();
