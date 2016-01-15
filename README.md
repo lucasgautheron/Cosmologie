@@ -29,14 +29,11 @@ apt-get install ffmpeg build-essential
 ```
 git pull
 cd www/timeline
+
+# si première compilation, où si une simulation a changé :
 php compile.php -V -S
-```
-
-Usage script compile.php : 
-
-```
-php compile.php -V // verbose mode (affiche des messages informatifs au cours de la compilation)
-php compile.php -S // run simulations (exécute toutes les simulations qui produisent certains plots, animations, etc. Peut prendre une quinzaine de minutes
+# sinon :
+php compile -V
 ```
 
 ## Dev
