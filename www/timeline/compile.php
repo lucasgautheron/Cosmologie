@@ -31,6 +31,8 @@ exec('saxonb-xslt -s:data/cache -xsl:graph.xsl -o:graph.html -ext:on' . $redirec
 $return |= $return_code;
 echo "graph generation completed (" . round(microtime(true) - $start_time, 4) . " s)\n";
 
+@unlink('data/cache');
+
 // simulations
 if($perform_simulations)
 {
