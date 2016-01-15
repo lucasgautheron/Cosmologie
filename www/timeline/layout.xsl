@@ -6,23 +6,25 @@
   
   <xsl:variable name="linkwords" select="//ressources/ressource/linkwords/linkword"/>
   <xsl:function name="doc:find-matching-linkword">
+    <xsl:param name="cid"/>
     <xsl:param name="text"/>
     <xsl:copy-of select="(data(($linkwords[contains($text, .)])[1]/../../@id), ($linkwords[contains($text, .)])[1], data(($linkwords[contains($text, .)])[1]/../../title))"/>
   </xsl:function>
   <xsl:function name="doc:add-links" as="item()*">
+    <xsl:param name="cid"/>
     <xsl:param name="text"/>
-    <xsl:variable name="linkword" select="doc:find-matching-linkword($text)"/>
+    <xsl:variable name="linkword" select="doc:find-matching-linkword($cid, $text)"/>
     <xsl:choose>
       <xsl:when test="$linkword[1]">
         <xsl:value-of select="substring-before($text, $linkword[2])"/>
-        <a href="html/ressources/ressource_{$linkword[1]}.html" class="ressource" data-rid="{$linkword[1]}" title="{$linkword[3]}"><xsl:value-of select="$linkword[2]"/></a>
-        <xsl:copy-of select="doc:add-links(substring-after($text, $linkword[2]))"/>
+        <a href="#!content={$cid}&amp;ressource={$linkword[1]}" class="ressource" data-rid="{$linkword[1]}" title="{$linkword[3]}"><xsl:value-of select="$linkword[2]"/></a>
+        <xsl:copy-of select="doc:add-links($cid, substring-after($text, $linkword[2]))"/>
       </xsl:when>
       <xsl:otherwise><xsl:value-of select="$text"/></xsl:otherwise>
     </xsl:choose>
   </xsl:function>
   <xsl:template match="text//text()">
-    <xsl:copy-of select="doc:add-links(.)"/>
+    <xsl:copy-of select="doc:add-links(../@id, .)"/>
   </xsl:template>
   <xsl:template match="node()|@*">
     <xsl:copy><xsl:apply-templates select="node()|@*"/></xsl:copy>
@@ -162,7 +164,7 @@
             <xsl:if test="/root/contents/content[@id=$cid][1]/color">            
             <style type="text/css">#timeline<xsl:value-of select="generate-id(.)" />.timeline-content:before { background-color: <xsl:value-of select="/root/contents/content[@id=$cid][1]/color" />;}</style>
             </xsl:if>
-            <li><p class="timeline-date"><xsl:value-of select="./@date" /></p><div id="timeline{generate-id(.)}" class="timeline-content"><a href="contents/content_{./@content-id}.html" data-cid="{./@content-id}"><xsl:value-of select="." /></a></div></li>
+            <li><p class="timeline-date"><xsl:value-of select="./@date" /></p><div id="timeline{generate-id(.)}" class="timeline-content"><a href="#!content={./@content-id}" data-cid="{./@content-id}"><xsl:value-of select="." /></a></div></li>
           </xsl:for-each>
         </ul>
         <div class="meta">Les conventions suivantes sont utilisées :
@@ -211,40 +213,52 @@
 <xsl:for-each select="root/contents/content">
  <xsl:variable name="id" select="./@id"/>
 <xsl:result-document method="html" href="html/contents/content_{./@id}.html">
-  <div id="content">
-    <div id="horizontal-timeline">
-      <ul>
-      <xsl:for-each select="/root/events/event[@content-id=$id]">
-        <xsl:sort select="./@date" />
-        <li><b><xsl:value-of select="./@date" /></b> : <xsl:value-of select="." /></li>
-      </xsl:for-each>
-      </ul>
-    </div>
-    <h2 id="title"><xsl:value-of select="./title" /></h2>
-    <div id="text"><xsl:apply-templates select="text" />
-      <xsl:for-each select="./text//note">
-        <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
-      </xsl:for-each></div>
-    
-    <div id="references">
-      <ul>
-        <xsl:for-each select="/root/references/reference[@content-id=$id]">
-          <xsl:sort select="./date" />
-          <li><i><a href="references/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
+<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
+<html lang="fr">
+  <head>
+  </head>
+  <body>
+    <div id="content">
+      <div id="horizontal-timeline">
+        <ul>
+        <xsl:for-each select="/root/events/event[@content-id=$id]">
+          <xsl:sort select="./@date" />
+          <li><b><xsl:value-of select="./@date" /></b> : <xsl:value-of select="." /></li>
         </xsl:for-each>
-      </ul>
+        </ul>
+      </div>
+      <h2 id="title"><xsl:value-of select="./title" /></h2>
+      <div id="text"><xsl:apply-templates select="text" />
+        <xsl:for-each select="./text//note">
+          <div class="note" data-nid="{generate-id(.)}"><xsl:apply-templates /></div>
+        </xsl:for-each></div>
+    
+      <div id="references">
+        <ul>
+          <xsl:for-each select="/root/references/reference[@content-id=$id]">
+            <xsl:sort select="./date" />
+            <li><i><a href="references/{./file}" target="_blank" title="{./text}"><xsl:value-of select="./title" /></a></i>, <xsl:value-of select="./author" /> (<xsl:value-of select="./date" />)</li>
+          </xsl:for-each>
+        </ul>
+      </div>
+      <div id="image">
+        <img src="images/{./image/@src}" />
+        <span class="caption"><xsl:value-of select="./image/." /></span>
+      </div>
     </div>
-    <div id="image">
-      <img src="images/{./image/@src}" />
-      <span class="caption"><xsl:value-of select="./image/." /></span>
-    </div>
-  </div>
+  </body>
+</html>
 </xsl:result-document>
 </xsl:for-each>
   
 <xsl:for-each select="root/ressources/ressource">
   <xsl:variable name="id" select="./@id"/>
   <xsl:result-document method="html" href="html/ressources/ressource_{./@id}.html">
+<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
+<html lang="fr">
+  <head>
+  </head>
+  <body>
     <div id="ressource">
       <h2 id="title"><xsl:value-of select="./title" /></h2>
       <div id="text"><xsl:apply-templates select="text" />
@@ -260,6 +274,8 @@
         </ul>
       </div>
     </div>
+  </body>
+</html>
   </xsl:result-document>
 </xsl:for-each>
 </xsl:template>
