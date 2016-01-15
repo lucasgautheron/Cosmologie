@@ -127,10 +127,10 @@ int main()
 {
     double radius, mass, external_mass, x0 = 1000;
     
-    calculate_star(0.1, true, radius, mass, external_mass);
-    calculate_star(1, true, radius, mass, external_mass);
-    calculate_star(10, true, radius, mass, external_mass);
+    //calculate_star(0.1, true, radius, mass, external_mass);
+    //calculate_star(1, true, radius, mass, external_mass);
+    //calculate_star(10, true, radius, mass, external_mass);
     calculate_star(100, true, radius, mass, external_mass);
-    calculate_star(10000, true, radius, mass, external_mass);
+    //calculate_star(10000, true, radius, mass, external_mass);
     return 0;
 }
