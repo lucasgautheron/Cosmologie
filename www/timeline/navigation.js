@@ -100,7 +100,7 @@ function load_hash()
 {
 
    var subject = window.location.hash.substring(2);
-   var data = search?JSON.parse('{"' + search.replace(/&/g, '","').replace(/=/g,'":"') + '"}',
+   var data = subject?JSON.parse('{"' + search.replace(/&/g, '","').replace(/=/g,'":"') + '"}',
                  function(key, value) { return key===""?value:decodeURIComponent(value) }):{};
 
     if(!data || data['content'] === undefined)
