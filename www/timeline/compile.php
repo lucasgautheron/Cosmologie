@@ -80,6 +80,10 @@ echo "plot generation completed (" . round(microtime(true) - $start_time, 4) . "
 
 chdir('..');
 
-if($archive) exec("tar -zcvf archive.tar.gz ./* --exclude='*~'");
+if($archive)
+{
+    @unlink('archive.tar.gz');
+    exec("tar -zcvf archive.tar.gz ./* --exclude='*~'");
+}
 
 exit((int)$return);
