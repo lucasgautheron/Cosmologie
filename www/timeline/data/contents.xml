@@ -25,14 +25,15 @@
             \end{equation}
             Cette première équation s'avère incorrecte (en particulier elle ne redonne pas le régime newtonien dans les situations où elles le devraient, c'est-à-dire petites vitesses et champs faible), et Einstein propose finalement en 1915 l'équation qui porte désormais son nom (équation d'Einstein) :
             \begin{equation}
-            R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu\nu}T \right)
+            R^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu\nu}T \right)
             \end{equation}
             Parallèlement, Hilbert propose une dérivation de cette équation à partir du principe de moindre action.
             La théorie de la Relativité générale est née !
             </p>
             
             <p>
-            Cette nouvelle théorie appelle évidemment à être testée. Dès 1915, périhélie de mercure. + lumière et controverse eddington
+            Cette nouvelle théorie appelle évidemment à être testée. Dès 1915, Einstein montre qu'elle permet d'expliquer l'écart entre l'avance du périhélie de mercure observée et celle calculée. En effet, l'influence perturbative des autres planètes du système solaire et de la non perfection de la rotondicité du Soleil entrainent une précession du périhélie de Mercure de près de 5500 secondes d'arc par siècle. Cependant, il existe à l'époque un écart de 43 secondes d'arc par sicèle entre la valeur prédite par les lois de Newton et la valeur observée. 
+            Grâce à sa théorie, Einstein prédit précisément une terme de précession supplémentaire égal à 43 secondes d'arc par siècle : c'est le premier succès de la Relativité générale.
             </p>
             </text>
     </content>
