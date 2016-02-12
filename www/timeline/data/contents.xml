@@ -18,10 +18,23 @@
                 moving body. </p>
         </quote>
         
-            <p>Si la relativité restreinte décrit avec succès l'électrodynamique, elle souffre d'un inconvénient majeur : elle est incompatible avec la théorie de la gravitation de Newton (par exemple, l'action gravitationnelle d'une masse sur une autre est instantanée selon la vision Newtonienne alors que la relativité fait apparaitre une vitesse limite $c$ pour les interactions). Pourtant, celle-ci parait tout à fait correcte puisqu'elle semble expliquer tous les phénomènes gravitationnels en accord avec l'expérience. Einstein élabore donc une théorie "relativiste" de la gravitation, appelée relativité générale, qu'il met au point jusqu'en 1915. Cette théorie repose sur le principe d'équivalence : un champ de gravitation est équivalent à l'accélération d'un référentiel non inertiel par rapport à un référentiel inertiel.</p>
-        
-        TODO: (voir PM Amanuensis => de l'accélération au formalisme tensoriel).
-        principe général, géométrie, équations einstein, succès expérimentaux.</text>
+            <p>Si la relativité restreinte décrit avec succès l'électrodynamique, elle souffre d'un inconvénient majeur : elle est incompatible avec la théorie de la gravitation de Newton (par exemple, l'action gravitationnelle d'une masse sur une autre est instantanée selon la vision Newtonienne alors que la relativité fait apparaitre une vitesse limite $c$ pour les interactions). Pourtant, celle-ci parait tout à fait correcte puisqu'elle semble expliquer tous les phénomènes gravitationnels en accord avec l'expérience. Einstein élabore donc une théorie "relativiste" de la gravitation, appelée relativité générale, qu'il met au point jusqu'en 1915. Cette théorie repose sur le principe d'équivalence : un champ de gravitation est équivalent à l'accélération d'un référentiel non inertiel par rapport à un référentiel inertiel. D'après ce constat, tous les corps en chute libre dans un même état initial suivent une même trajectoire dans un champ de gravitation, ce qui suggère que cette trajectoire ayant une nature universelle est une propriété de l'espace-temps. </p> 
+            <p>Pour cela, à l'aide de Marcel Grossmann, Einstein établit d'abord vers 1913 une première tentative de description de la gravitation comme une déformation de l'espace-temps induite par la masse et l'énergie, et propose une relation de proportionnalité entre le tenseur énergie-impulsion (qui contient l'information sur la densité d'énergie et son transport) $T^{\mu\nu}$ et le tenseur de Ricci $R^{\mu\nu}$ (qui décrit la courbure de l'espace-temps) :
+            \begin{equation}
+            R^{\mu\nu} = \kappa T^{\mu\nu}
+            \end{equation}
+            Cette première équation s'avère incorrecte (en particulier elle ne redonne pas le régime newtonien dans les situations où elles le devraient, c'est-à-dire petites vitesses et champs faible), et Einstein propose finalement en 1915 l'équation qui porte désormais son nom (équation d'Einstein) :
+            \begin{equation}
+            R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu\nu}T \right)
+            \end{equation}
+            Parallèlement, Hilbert propose une dérivation de cette équation à partir du principe de moindre action.
+            La théorie de la Relativité générale est née !
+            </p>
+            
+            <p>
+            Cette nouvelle théorie appelle évidemment à être testée. Dès 1915, périhélie de mercure. + lumière et controverse eddington
+            </p>
+            </text>
     </content>
     
     <content id="2">
