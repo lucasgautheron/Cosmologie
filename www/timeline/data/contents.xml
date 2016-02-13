@@ -136,7 +136,7 @@
             <p>Introduire un peu formation des éléments etc. + parler de hoyle </p>
             <p>Au début des années 1940, une hypothèse à l'étude est l'abondance relative des atomes dans l'Univers s'explique par un équilibre thermique rapide ayant eu lieu à une température $T$ qui aurait gelé les proportions des différentes espèces. Très approximativement, ces proportions devraient suivre une distribution de type Maxwell-Boltzmann $n \propto e^{-E/(k_B T)}$ où $E$ est leur énergie nucléaire de liaison. L'énergie de liaison augmentant linéairement avec la masse atomique, l'abondance des espèces devrait décroitre exponentiellement avec celle-ci. Mais ce n'est pas ce qu'on observe : au lieu de cela, l'abondance des espèces lourdes est à peu près constante. L'idée d'un équilibre thermique rapide est donc rejetée.
                 <spoiler><figure src="abondance_equilibre_thermique.svg" title="logarithme de l'abondance relative des éléments et fit pour une distribution de boltzmann selon les énergies de liaison" plot="abondance_equilibre_thermique"> Le fit est réalisé sur la portion $0 \leq A \leq 80$ de la courbe La meilleure correspondance est atteinte pour une température d'équilibre de l'ordre de $10^{12}$ K, mais cela est incohérent avec le résultat pour des valeurs de $A$ supérieures (à partir d'environ 100-120) où la pente s'annulle inexplicablement.
-                TODO: évidemment TRES grossier puisque les états $(A,Z)$ ne sont pas équiv. Utiliser (x,y) (proportion neutrons, protons) + énergie de liaison PAR nucléon $E/A$ pour fit moins stupide? (sans compter le pb de signe !!)</figure></spoiler></p>
+                <!--TODO: évidemment TRES grossier puisque les états $(A,Z)$ ne sont pas équiv. Utiliser (x,y) (proportion neutrons, protons) + énergie de liaison PAR nucléon $E/A$ pour fit moins stupide? (sans compter le pb de signe !!)--></figure></spoiler></p>
             <p>A partir de 1946, Gamow propose, en réponse à l'échec de cette explication, une autre théorie de formation des éléments basée sur un processus hors équilibre qu'il justifie par l'expansion rapide de l'Univers. Il montre dans le cadre du modèle d'Einstein-de Sitter que l'Univers se serait trouvé dans un état de densité suffisant pour autoriser des réactions nucléaires pendant un temps très court, vers ses tous premiers instants, pendant lequel un équilibre n'aurait pu être atteint. Gamow suggère alors un mécanisme, après qu'il ait remarqué une forte corrélation entre les sections efficaces de capture de neutrons par des noyaux et leur abondance :
             <!--<p>TODO parler de l'hélium
             </p>-->
@@ -377,18 +377,11 @@
     	<image>acceleration_expansion.jpg</image>
     	<color>#a9680d</color>
     	<text>
-    	    <p>
-    	        <ul>
-    	            <li>Récapituler connaissances paramètres cosmologiques en 1998 : $\Omega_m$, $\Omega_r$, $\Omega_v$, courbure, $H_0$ etc.</li>
-    	            <li>Distances luminosité, angulaire etc. Animation. Chandelles standard : supernovas Ia. Evoquer rapidement mécanisme</li>
-                       <li>Courbe de luminosité vs $z$ et fit</li>
-    	        </ul>
-    	    </p>
             <p>
                 Au début des années 1990, le modèle le plus accepté parmi les cosmologistes est le modèle $S-CDM$, c'est-à-dire un Univers proche de sa densité de fermeture (plat) constitué en quasi totalité de matière noire froide, et également de matière baryonique froide. Ce modèle montre de plus en plus de faiblesses d'après les dernières observations, et de nouvelles données observationnelles sont nécessaires pour en comprendre les raisons.
             </p>
             <p>
-                 Les supernovae sont des évènements consécutif à la "mort" d'une étoile. Ils libèrent une énergie colossale et sont donc très lumineux. Au début des années 1990, on distingue deux catégories principales de supernovae (SN) :
+                 Les supernovae sont des évènements consécutifs à la "mort" d'une étoile. Ils libèrent une énergie colossale et sont donc très lumineux. Au début des années 1990, on distingue deux catégories principales de supernovae (SN) :
                 <ul>
                     <li>Les <b>SN de type I</b> : Elles sont dues à l'effondrement de naines blanches (des étoiles compactes de masse proche de celle du Soleil mais de rayon 100 fois plus petit) maintenues en équilibre contre l'effondrement gravitationnel par la pression de dégénérescence de leurs électrons<note>La pression de dégénérescence d'un gaz d'électron est la pression de ces électrons du au principe d'exclusion de Pauli qui en interdisant deux fermions d'être dans le même état quantique entraine que pour une pression donnée la densité d'électrons ne peut dépasser une certaine valeur.</note></li>
                     <li>Les <b>SN de type II</b> : Elles sont dues à l'effondrement d'une plus grande variétés d'étoiles lorsque notamment celles-ci ne produisent plus suffisamment d'énergie à partir des réactions nucléaires en leur sein.</li>
