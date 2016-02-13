@@ -257,7 +257,7 @@
       <image>bigbang.jpg</image>
       <color>#8681f0</color>
       <text>
-        <p>Au cours des années 1960, plusieurs observations vont mettre en cause la théorie de l'état stationnaire. TODO: faire une vraie intro moins bâteau.
+        <p>Entre les années 1950 et 1960, les données expérimentales vont s'accumuler en faveur du Big Bang, excluant de plus en plus la théorie de l'état stationnaire. 
         </p>
         <h3>Découverte du fond diffus cosmologique</h3>
         <p>
@@ -307,7 +307,7 @@
     </content>
     
       <content id="11">
-    	<title>Nucléosynthèse, suite ?</title>
+    	<title>Réapparition de la nucléosynthèse primordiale</title>
     	<image>nucleosynthese_bigbang.jpg</image>
     	<text>
     	    <p>
@@ -340,6 +340,8 @@
                 \begin{equation}
                 \rho (r) = \dfrac{3v^2}{4\pi G r} \left ( 1 + 2 \dfrac{r}{v(r)} v'(r) \right )
                 \end{equation}
+                
+                Ce profil peut être comparé à celui estimé à partir de la courbe de luminosité dans différentes bandes. La décroissance attendue en $1/r$ de la densité d'après les courbes de vitesse ne correspond pas à la matière visible ! Il y a bien de la matière invisible qui s'étend jusqu'hors des limites visibles des galaxies.
     	        
     	        <!--\begin{equation}
     	        v(r) = \sqrt{\dfrac{4\pi G}{r} \int_{0}^{r} \rho(r') r'^2 dr'}
