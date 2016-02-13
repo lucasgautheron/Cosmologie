@@ -335,17 +335,24 @@
     	        Le problème est que, si l'on fait ce calcul, par exemple pour la Voie Lactée, on trouve que $M_L$ ne représente qu'un dixième de $M_G$ ! Il semble donc qu'une composante essentielle de la masse soit "invisible". 
     	        
     	        Dans les années 1970, Vera Rubin mène des recherches avec l'aide de Kent Ford qui avait mis au point un nouveau spectrographe très performant afin d'étudier la distribution de vitesses orbitales des galaxies en fonction de la distance au centre.
+                En 1980, les deux physiciens publient dans un papier le résultat de leurs mesures portées sur 21 galaxies Sc (galaxies spirales à plus de deux bras, dans la séquence de Hubble). Ils trouvent systématiquement une courbe de vitesse devenant plate à des distances importantes du centre galactique.
+                
+                <figure src="rotation_curves.jpg">
+                    Légende originale traduite : "vitesses moyennes dans le plan galactique, en fonction de la distance au noyau pour 21 galaxies Sc, classées par rayon croissant. La courbe  dessinée est la courbe de rotation obtenue à partir de la moyenne des vitesses de chaque côté de l'axe principale. [...] Les tirets proches du noyau galactique indiquent les régions dans lesquelles les vitesses ne sont pas disponibles pour des raisons d'échelle. Les tirets à grande distance du noyau indiquent une vitesse chutant plus vite que la loi Képlerienne ($1/\sqrt{r}$)
+                </figure>
+    	        Grâce à la troisième loi de Képler il est alors possible de remonter au profil de densité $r \to \rho(r)$ selon :
+                
+                \begin{equation}
+                \rho (r) = \dfrac{3v^2}{4\pi G r} \left ( 1 + 2 \dfrac{r}{v(r)} v'(r) \right )
+                \end{equation}
     	        
-    	        
-    	        Méthode de la vitesse rotationnelle $v$ :
-    	        
-    	        \begin{equation}
+    	        <!--\begin{equation}
     	        v(r) = \sqrt{\dfrac{4\pi G}{r} \int_{0}^{r} \rho(r') r'^2 dr'}
     	        \end{equation}
     	        
     	        \begin{equation}
     	        v'(r) =  \dfrac{1}{r} \sqrt{\dfrac{4\pi G}{r}} \left [ \dfrac{\rho(r) r^3 - \int_{0}^{r} \rho(r') r'^2 dr'}{\sqrt{\int_{0}^{r} \rho(r') r'^2 dr'}} \right ]
-    	        \end{equation}
+    	        \end{equation}-->
     	    </p>
     	</text>
     </content>
