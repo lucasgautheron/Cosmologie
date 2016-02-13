@@ -2,7 +2,7 @@ var current_content = null;
 var current_ressource = null;
 
 $(document).ready(function() {
-  $("#timeline-container ul a").click(function() {
+  $("a.content-link").click(function() {
       show_content($(this).data('cid'), true);
       return false;
   });
@@ -51,6 +51,11 @@ $(document).ready(function() {
 
 function update()
 {
+    $("a.content-link").unbind("click");
+    $("a.content-link").click(function() {
+      show_content($(this).data('cid'), true);
+      return false;
+    });
     $("a.ressource").unbind("click");
     $("a.ressource").click(function() {
          show_ressource($(this).data('rid'), true);

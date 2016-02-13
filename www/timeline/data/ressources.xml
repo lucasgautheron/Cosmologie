@@ -431,7 +431,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
         <p><b>L'Univers est homogène</b> : A chaque instant les propriétés de l'Univers sont identiques en tout point de l'espace</p>
         <p><b>L'Univers est isotrope</b> : Il n'existe aucune direction privilégiée en aucun point de l'espace à chaque instant</p>
         
-        Certains modèles cosmologiques sont basés sur le principe cosmologique dit "parfait", qui en plus du principe cosmologique standard contient l'hypothèse d'homogénéité du temps. Un exemple de modèle respectant ce principe est le Steady-State Universe TODO DEVELOPPER + TRAD</text>
+        Certains modèles cosmologiques sont basés sur le principe cosmologique dit "parfait", qui en plus du principe cosmologique standard contient l'hypothèse d'homogénéité du temps. Un exemple de modèle respectant ce principe est la théorie de l'état stationnaire.</text>
         <linkwords>
             <linkword>principe cosmologique</linkword>
         </linkwords>
@@ -549,9 +549,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             
             Où $\rho_0$ est la densité d'énergie de masse de l'Univers, identique à toute date. On remarque que la relation densité-constante de Hubble est identique à celle de l'Univers d'Einstein-de Sitter, or à l'époque on pensait que celle-ci donnait de bons résultats. Le modèle d'Hoyle reprend donc les succès des modèles non-stationnaires (expansion et relation densité-constante de Hubble) et semble par ailleurs en résoudre d'autres (âge de l'Univers). </p>
             <h3>Formalisme</h3>
-            <p>TODO champ C équations etc</p>
+            <p></p>
             <h3>Échecs du modèle</h3>
-            <p>distance de luminosité versus z ? + pb big bang + objets lointains (donc anciens) diférents</p>
+            <p>Voir l'article <contentlink id="10" /></p>
         </text>
         <linkwords>
             <linkword>théorie de l'état stationnaire</linkword>

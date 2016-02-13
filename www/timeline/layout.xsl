@@ -121,6 +121,11 @@
    </div>
   </xsl:template>
   
+  <xsl:template match="contentlink">
+    <xsl:variable name="id" select="./@id"/>
+    <a class="content-link" href="#!content={./@id}" data-cid="{./@id}"><xsl:value-of select="/root/contents/content[@id=$id][1]/title" /></a>
+  </xsl:template>
+  
 <xsl:template match="/">
   <html>
     <head>
@@ -154,7 +159,7 @@
     </script>
     </head>
     <body>
-      <div id="navigation"><a href="#" id="show_timeline">Frise</a> | <a href="#" id="show_previous">Précédent</a> | <a href="#" id="show_next">Suivant</a> | Cette version est une ébauche. La version finale sera mise en ligne sur histoiredelacosmologie.fr. </div>
+      <div id="navigation"><a href="#" id="show_timeline">Frise</a> | <a href="#" id="show_previous">Précédent</a> | <a href="#" id="show_next">Suivant</a> | Cette version est une ébauche. La version finale sera mise en ligne sur http://histoiredelacosmologie.fr/. </div>
       <div id="timeline-container">
       <h1>Histoire de la Cosmologie Moderne</h1>
         <ul id="timeline">
@@ -164,7 +169,7 @@
             <xsl:if test="/root/contents/content[@id=$cid][1]/color">            
             <style type="text/css">#timeline<xsl:value-of select="generate-id(.)" />.timeline-content:before { background-color: <xsl:value-of select="/root/contents/content[@id=$cid][1]/color" />;}</style>
             </xsl:if>
-            <li><p class="timeline-date"><xsl:value-of select="./@date" /></p><div id="timeline{generate-id(.)}" class="timeline-content"><a href="#!content={./@content-id}" data-cid="{./@content-id}"><xsl:value-of select="." /></a></div></li>
+            <li><p class="timeline-date"><xsl:value-of select="./@date" /></p><div id="timeline{generate-id(.)}" class="timeline-content"><a class="content-link" href="#!content={./@content-id}" data-cid="{./@content-id}"><xsl:value-of select="." /></a></div></li>
           </xsl:for-each>
         </ul>
         <div class="meta">Les conventions suivantes sont utilisées :
