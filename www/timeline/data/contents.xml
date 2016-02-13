@@ -337,8 +337,8 @@
     	        Dans les années 1970, Vera Rubin mène des recherches avec l'aide de Kent Ford qui avait mis au point un nouveau spectrographe très performant afin d'étudier la distribution de vitesses orbitales des galaxies en fonction de la distance au centre.
                 En 1980, les deux physiciens publient dans un papier le résultat de leurs mesures portées sur 21 galaxies Sc (galaxies spirales à plus de deux bras, dans la séquence de Hubble). Ils trouvent systématiquement une courbe de vitesse devenant plate à des distances importantes du centre galactique.
                 
-                <figure src="rotation_curves.jpg">
-                    Légende originale traduite : "vitesses moyennes dans le plan galactique, en fonction de la distance au noyau pour 21 galaxies Sc, classées par rayon croissant. La courbe  dessinée est la courbe de rotation obtenue à partir de la moyenne des vitesses de chaque côté de l'axe principale. [...] Les tirets proches du noyau galactique indiquent les régions dans lesquelles les vitesses ne sont pas disponibles pour des raisons d'échelle. Les tirets à grande distance du noyau indiquent une vitesse chutant plus vite que la loi Képlerienne ($1/\sqrt{r}$)
+                <figure src="rotation_curves.jpg" title="Courbes de vitesse rotationnelle">
+                    Légende originale traduite : "vitesses moyennes dans le plan galactique, en fonction de la distance au noyau pour 21 galaxies Sc, classées par rayon croissant. La courbe  dessinée est la courbe de rotation obtenue à partir de la moyenne des vitesses de chaque côté de l'axe principale. [...] Les tirets proches du noyau galactique indiquent les régions dans lesquelles les vitesses ne sont pas disponibles pour des raisons d'échelle. Les tirets à grande distance du noyau indiquent une vitesse chutant plus vite que la loi Képlerienne ($r^{-1/2}$)"
                 </figure>
     	        Grâce à la troisième loi de Képler il est alors possible de remonter au profil de densité $r \to \rho(r)$ selon :
                 
