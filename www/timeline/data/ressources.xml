@@ -672,7 +672,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                En 1998 blabla
             </p>
             <p>Les supernovas de type Ia constituent de bonnes chandelles standard. On connait donc à la fois leur magnitude absolue et apparente ce qui donne leur distance de luminosité $d_L$. Un fit est réalisé ci-dessous dans le cadre d'un Univers plat constitué de matière froide et d'énergie noire.
-            <figure src="SNIa.svg" title="Relation magnitude/redshift SNIa et fit modèle LCDM" plot="SNIa">
+            <figure src="SNIa.svg" title="Relation magnitude/redshift SNIa et fit modèle $\Lambda$CDM" plot="SNIa">
                 La relation magnitude-redshift observée pour des supernovaes de type Ia est comparée à un modèle théorique $\Lambda$CDM ce qui permet de déterminer les valeurs de $\Omega_m$ et $\Omega_v$ donnant le meilleur accord. Ici on trouve $\Omega_m = 0,25$ et $\Omega_v = 0.75$.
             </figure>
             </p>
@@ -1194,20 +1194,11 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
                 <p>
                      
                 </p>
-                <p>Piste : si accrétion, la naine peut acquérir du $J$ ? Si oui sa masse critique augmente = > massive white dwarf
-                </p>
-                
-               
-               <p>
-                	
                </p>
-                <spoiler>
-                    pr la partie gravité, http://ads.harvard.edu/books/1989fsa..book/AbookC06.pdf semble intéressant. 
-                    
-                </spoiler>
         </text>
         <linkwords>
             <linkword>supernovas Ia</linkword>
+            <linkword>supernovae de type Ia</linkword>
         </linkwords>
     </ressource>
     
