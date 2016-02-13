@@ -400,7 +400,18 @@
                 TODO : expliquer distance de luminosité. + lien avec redshift (dilution + front d'onde)
                 
                 Deux équipes sont alors formées pour recenser ces évènements et en déduire les paramètres de densité de notre Univers : la High-Z Supernovae search team menée par Brian Schimdt et la Supernova Cosmology Project menée par Saul Perlmutter. 
-                En 1998, les deux projets font part de leurs résultats, après étude d'une quarantaine de SN Ia.
+                En 1998, les deux projets font part de leurs résultats, après étude d'une quarantaine de SN Ia. Ils parviennent ainsi à contraindre :
+                <ul>
+                    <li>La constante de Hubble</li>
+                    <li>La densité de matière froide $\Omega_m$</li>
+                    <li>La densité d'énergie du vide $\Omega_\Lambda$ (équivalant à un terme de constante cosmologique)</li>
+                    <li>Le paramètre de décélération $q_0 = \dot{H_0}/H_0^2$</li>
+                    <li>L'âge de l'Univers</li>
+                </ul>
+                La conclusion est alors que l'Univers est incompatible avec une absence d'énergie du vide ou une constante cosmologique nulle. Dans un Univers plat, les données indiquent $\Omega_m = 0,24$ et $\Omega_\Lambda = 0,76$ (L'Univers serait dominé par l'énergie du vide !) et que le paramètre de décélération est strictement négatif. L'expansion de l'Univers accélère !
+                <figure src="accelerating_expansion.jpg" title="Courbes de luminosité de quelques supernovae et fit de la relation distance de luminosité-redshift">
+                   La gauche de la figure montre les courbes de luminosité de 10 supernovae Ia, dans deux bandes différentes, en fonction du temps. La forme de la courbe est utilisée pour affiner l'estimation de la luminosité maximale. La courbe de droite représente la relation distance de luminosité-redshift observée, confrontée à plusieurs modèles cosmologiques. Le meilleur fit correspond à $(\Omega_m = 0,24 \Omega_\Lambda = 0,76)$ pour un Univers plat. $(\Omega_m = 1, \Omega_\Lambda = 0)$ (Univers plat et sans constante cosmologique) est exclus.
+                </figure>
             </p>
     	</text>
     </content>
