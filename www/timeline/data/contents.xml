@@ -297,7 +297,7 @@
         
         <p>
             Un des arguments des défenseurs de l'Univers stationnaire était que l'âge (fini) de l'Univers dans la théorie du Big Bang devait être de quelques milliards d'années, d'après la valeur de la constante de Hubble connue à l'époque. Or, cette valeur était inférieure à certaines estimations de l'âge de la Terre ou d'autres structures. 
-            Or, en 1952, Walter Baade découvre qu'il existe deux classes de céphéides variables, avec des corrélations entre luminosité et période différentes. Cela remet en question l'application de la relation luminosité-période employée depuis 30 ans pour mesurer les distances des galaxies environnantes. 
+            Or, en 1952, Walter Baade découvre qu'il existe deux classes de céphéides variables, avec des corrélations entre luminosité et période différentes. Cela remet en question l'application de la relation luminosité-période basée sur des céphéides d'importe métallicité employée depuis 30 ans pour mesurer les distances des galaxies environnantes. 
             
             Baade fait les corrections et nécessaire et trouve une valeur de la constante de Hubble deux fois inférieure à la valeur précédemment estimée (de 500 à 250 km/s/Mpc). Ceci a pour effet de doubler l'âge de l'Univers dans les modèle en Big Bang comme le modèle Einstein-de Sitter. 
             Suite à ces travaux, Allan Sandage découvre d'autres sources d'erreurs dans l'estimation de $H_0$ faite par Hubble en 1929. Par exemple, Hubble avait supposé que les étoiles les plus brillantes étaient de même intensité dans toutes les galaxies, mais Sandage montra qu'il interpréta à tort des objets comme des étoiles alors qu'il s'agissait de régions HII (hydrogène ionisé). Ces objets étant plus brillants, corriger l'erreur conduisit à des valeurs plus grandes des distances des galaxies incriminées, et donc à une diminution de la valeur de $H_0$. 
@@ -384,6 +384,24 @@
                        <li>Courbe de luminosité vs $z$ et fit</li>
     	        </ul>
     	    </p>
+            <p>
+            </p>
+            <p>
+                 Les supernovae sont des évènements consécutif à la "mort" d'une étoile. Ils libèrent une énergie colossale et sont donc très lumineux. Au début des années 1990, on distingue deux catégories principales de supernovae (SN) :
+                <ul>
+                    <li>Les <b>SN de type I</b> : Elles sont dues à l'effondrement de naines blanches (des étoiles compactes de masse proche de celle du Soleil mais de rayon 100 fois plus petit) maintenues en équilibre contre l'effondrement gravitationnel par la pression de dégénérescence de leurs électrons<note>La pression de dégénérescence d'un gaz d'électron est la pression de ces électrons du au principe d'exclusion de Pauli qui en interdisant deux fermions d'être dans le même état quantique entraine que pour une pression donnée la densité d'électrons ne peut dépasser une certaine valeur.</note></li>
+                    <li>Les <b>SN de type II</b> : Elles sont dues à l'effondrement d'une plus grande variétés d'étoiles lorsque notamment celles-ci ne produisent plus suffisamment d'énergie à partir des réactions nucléaires en leur sein.</li>
+                </ul>
+                Par les premières, les supernovae de type Ia présentent la caractéristique de contenir du silicium dans leur spectre.
+                Elles ont surtout une autre caractéristique majeur : elles possèdent des luminosités intrinsèques proches ! Mieux encore, ces évènements ayant une durée typique de quelques jours, leur courbe de luminosité est parfaitement observable. Pour les SN Ia, la forme de cette courbe (notamment la vitesse à laquelle elle décroit) permet de remonter encore plus précisément à leur luminosité intrinsèque maximale. Cela signifie que l'on peut connaitre leur magnitude absolue sans connaitre leur distance !
+                Les supernovae Ia sont donc des "chandelles standard". Ce constat est supporté par des modélisations et il y a de bonnes raisons d'avoir confiance en le potentiel des SN Ia en tant que chandelles standard. 
+                
+                Ainsi, observer la courbe de luminosité des SN Ia permet d'en déduire leur magnitude absolue et donc leur distance de luminosité. On peut par ailleurs mesurer leur redshift. Or, la relation entre distance de luminosité et redshift est fixée pour un modèle cosmologique donné. 
+                TODO : expliquer distance de luminosité. + lien avec redshift (dilution + front d'onde)
+                
+                Deux équipes sont alors formées pour recenser ces évènements et en déduire les paramètres de densité de notre Univers : la High-Z Supernovae search team menée par Brian Schimdt et la Supernova Cosmology Project menée par Saul Perlmutter. 
+                En 1998, les deux projets font part de leurs résultats. 
+            </p>
     	</text>
     </content>
     

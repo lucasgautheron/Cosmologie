@@ -176,4 +176,12 @@
       <date>1980</date>
       <file>rubin_1980.pdf</file>
     </reference>
+    
+     <reference id="23" content-id="14">
+      <title>Observational Evidence from Supernovae for an Accelerating Universe and a Cosmological Constant</title>
+      <author>Adam Riess</author>
+      <text>Article dans lequel les données collectées sur les supernovae de type Ia sont employées pour contraindre différents modèles cosmologiques, et suggérant que l'Univers est principalement constitué d'énergie du vide et donc que son expansion s'accélère</text>
+      <date>1998</date>
+      <file>snIa_1998.pdf</file>
+    </reference>
 </references>
