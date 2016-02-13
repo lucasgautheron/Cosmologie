@@ -186,9 +186,8 @@
 
             <p>
                 Bien que la nucléosynthèse primordiale dans un Big Bang semble une impasse au début des années 1950, l'idée selon laquelle il est nécessaire d'étudier les réactions nucléaires en détail pour comprendre le mécanisme à l'origine de l'abondance des éléments est plutôt bien admise. D'autre part, la seconde guerre mondiale ayant pris fin il y a peu, la physique nucléaire qui a fait l'objet d'intenses recherches à des fins militaires <note>Las Alamos etc. je n'ai pas énormément de références en faveur de cet argument, mais il semble correct et cest bien la déclassification de certains données qui a permis à Gamow de déceler la corrélation abondance -- neutron capture cross section</note> est en plein essor. Les données s'accumulent et permettent d'établir des réseaux de réactions nucléaires (et leurs sections efficaces) de façon assez complète.
-                TODO donner exemples
             </p>
-            <!--<p>FIXME parler ici de Fermi/Turkevich ?</p>-->
+            <!--<p>TODO FIXME parler ici de Fermi/Turkevich ?</p>-->
             <p>
                 En 1957, Geoffrey Burbidge, Margarett Burbidge, William Fowler et Fred Hoyle publient un article très détaillé intitulé "Synthesis of the Elements in Stars", dans lequel ils classent et décrivent très précisément différents processus nucléaires possibles dans les étoiles, afin d'expliquer la formation de la plupart des éléments naturels, des plus légers aux plus lourds (jusqu'à l'Uranium), à partir de l'hydrogène seulement. On peut résumer très rapidement cette classification ainsi :
                 <ul>
@@ -247,6 +246,9 @@
     	           <li>Nouvelles perspectives observationnelles en Cosmologie puisque la mesure du CMB (température, spectre, anisotropies) est riche en informations</li>
     	       </ul>
     	    </p>
+            <!--
+            TODO sach wolf = début de la cosmologie non homogène
+            -->
     	</text>
     </content>
     
@@ -270,11 +272,13 @@
         <h3>Distribution des sources radios</h3>
         
         <p>
-            La radiométrie permet d'autres tests cosmologiques que la découverte du CMB. http://www.astro.ubc.ca/people/jvw/ASTROSTATS/Answers/Chap7/ans_7_1.pdf
-            radio sources : étude du nombre de sources de luminosité plus grande qu'un seuil $S$. Pour un univers stationnaire, il y a autant de sources partout à tout temps (densité $n$ constante), et ils sont partout semblables (luminosité $L$ constante) : $N \propto n d^3$, et $S \propto L/d^2$ alors le nombre $N(\geq S) $ de sources plus "brillantes" que le seuil $S$ évolue comme$ S^{-3/2}$. Ainsi la courbe de $\log S \mapsto \log N$ doit avoir une pente de $-1.5$. Dans un Univers en Big Bang, la densité $n$ varie : 
-            TODO account for le PDF ci-dessus.
+            La radiométrie permet d'autres tests cosmologiques que la découverte du CMB. En comptant le nombre de sources d'ondes radio en fonction de leur intensité, on peut en effet évaluer la vraisemblance de la théorie de l'Univers stationnaire à partir du raisonnement suivant :
+            <!-- http://www.astro.ubc.ca/people/jvw/ASTROSTATS/Answers/Chap7/ans_7_1.pdf -->
+            Pour un univers stationnaire, il y a autant de sources partout à tout temps (densité $n$ constante), et ils sont partout semblables (luminosité $L$ constante) : $N \propto n d^3$, et $S \propto L/d^2$ alors le nombre $N(\geq S) $ de sources plus "brillantes" que le seuil $S$ évolue comme$ S^{-3/2}$. Ainsi la courbe de $\log S \mapsto \log N$ doit avoir une pente de $-1.5$. (En réalité, toutes les sources n'ont pas la même luminosité, mais suivent une distribution qui est constante dans le cas de l'Univers stationnaire, mais ceci ne change pas fondamentalement le résultat). Dans un Univers en Big Bang, la densité $n$ varie, et la pente de cette courbe doit être plus forte.
+            En réalité, la relation est plus complexe, il faut bien sur tenir compte des effets de l'expansion à redshift élevé<note>
+            
             \begin{equation}
-            N = \dfrac{4\pi}{3} (a(t) \chi)^3  
+            N = \dfrac{4\pi n}{3} (a(t) \chi)^3  
             \end{equation}
             
             \begin{equation}
@@ -283,30 +287,21 @@
             
             Donc 
             \begin{equation}
-            N(s\geq S,z) = \dfrac{4\pi}{3} \left (\dfrac{L}{4\pi(1+z)S} \right)^{3/2} = \dfrac{1}{3\sqrt{4\pi}} \dfrac{L}{(1+z)S}^{3/2}
-            \end{equation}
+            N(s\geq S,z) = \dfrac{4\pi n}{3} \left (\dfrac{L}{4\pi(1+z)S} \right)^{3/2} \propto \dfrac{1}{\left((1+z)S \right)}^{3/2}
+            \end{equation}</note>
+            
+            Dans les années 1950, une équipe d'astronomes de Cambridge publient plusieurs catalogues de sources d'ondes radio. On découvre alors parmi ces sources les quasars, des objects très caractéristiques (compacts, très lumineux). Martin Ryle argue à partir de ces résultats, que la relation $\log S \to \log N$ présente une pente plus forte que prédite par la théorie de l'état stationnaire (environ -2.5 au lieu de -1.5). Cependant après plusieurs corrections successives Ryle révise son estimation à environ -1.8. D'autres travaux conduisent mêmes à des valeurs proches de -1.5. Il s'ensuit alors une controverse entre Hoyle et Ryle, le premier jugeant irrecevable les conclusions établies à partir de ces observations.
         </p>
         
         <h3>Nouvelles mesures de la constante de Hubble</h3>
         
         <p>
             Un des arguments des défenseurs de l'Univers stationnaire était que l'âge (fini) de l'Univers dans la théorie du Big Bang devait être de quelques milliards d'années, d'après la valeur de la constante de Hubble connue à l'époque. Or, cette valeur était inférieure à certaines estimations de l'âge de la Terre ou d'autres structures. 
-            Or, en 1952, Walter Baade découvre qu'il existe deux classes de céphéides variables. Cela remet en question l'application de la relation luminosité-distance employée depuis 30 ans pour mesurer les distances des galaxies environnantes. 
-            TODO expliquer.
+            Or, en 1952, Walter Baade découvre qu'il existe deux classes de céphéides variables, avec des corrélations entre luminosité et période différentes. Cela remet en question l'application de la relation luminosité-période employée depuis 30 ans pour mesurer les distances des galaxies environnantes. 
+            
             Baade fait les corrections et nécessaire et trouve une valeur de la constante de Hubble deux fois inférieure à la valeur précédemment estimée (de 500 à 250 km/s/Mpc). Ceci a pour effet de doubler l'âge de l'Univers dans les modèle en Big Bang comme le modèle Einstein-de Sitter. 
             Suite à ces travaux, Allan Sandage découvre d'autres sources d'erreurs dans l'estimation de $H_0$ faite par Hubble en 1929. Par exemple, Hubble avait supposé que les étoiles les plus brillantes étaient de même intensité dans toutes les galaxies, mais Sandage montra qu'il interpréta à tort des objets comme des étoiles alors qu'il s'agissait de régions HII (hydrogène ionisé). Ces objets étant plus brillants, corriger l'erreur conduisit à des valeurs plus grandes des distances des galaxies incriminées, et donc à une diminution de la valeur de $H_0$. 
             En 1958, Sandage publie un papier dans lequel il expose plusieurs corrections à la méthode de mesure de la constante de Hubble et montre que sa valeur doit être comprise entre 50 et 100 km/s/Mpc. L'âge de l'Univers dans les modèles de type Big Bang les plus simples est alors compris entre 6,5 et 13 milliards d'années, montrant que ces modèles ne sont pas exclus par l'âge des structures de l'Univers.
-        </p>
-        
-        <h3>Découverte des quasars</h3>
-        
-        <p>
-        </p>
-        
-        <p>
-          - parler du CMB : difficilement explicable dans l'Univers d'Hoyle 
-          - 
-          - découverte des quasars : ces objets très caractéristiques (compacts, très forte luminosité). Les observations montrent qu'on en trouve surtout à une distance importante, ce sont donc des objets anciens, en contradiction avec le principe cosmologique parfait, ce qui porte un coup au modèle stationnaire de l'Univers. 
         </p>
       </text>
     </content>
