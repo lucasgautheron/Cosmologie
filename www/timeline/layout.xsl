@@ -154,7 +154,7 @@
     </script>
     </head>
     <body>
-      <div id="navigation"><a href="#" id="show_timeline">Frise</a> | <a href="#" id="show_previous">Précédent</a> | <a href="#" id="show_next">Suivant</a></div>
+      <div id="navigation"><a href="#" id="show_timeline">Frise</a> | <a href="#" id="show_previous">Précédent</a> | <a href="#" id="show_next">Suivant</a> | Cette version est une ébauche. La version finale sera mise en ligne sur histoiredelacosmologie.fr. </div>
       <div id="timeline-container">
       <h1>Histoire de la Cosmologie Moderne</h1>
         <ul id="timeline">
