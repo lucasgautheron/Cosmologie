@@ -1288,11 +1288,22 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
           
           Or, d'après la relation précédente, on doit avoir :
           
-          $|\Omega_k(t)|  = |\Omega_{k0}| \dfrac{\rho_0}{\rho(t) a(t)^2} \leq M \dfrac{\rho_0}{\rho(t) a(t)^2}$
+          \begin{equation}
+          |\Omega_k(t)|  = |\Omega_{k0}| \dfrac{\rho_0}{\rho(t) a(t)^2} \leq M \dfrac{\rho_0}{\rho(t) a(t)^2}
+          \end{equation}
           
           Dans les phases où l'expansion de l'Univers était la plus importante, la densité d'énergie a évolué en $\mathcal{O}(a^{-4})$ puis en $\mathcal{O}(a^{-3})$ si bien que $\Omega_k(t)$ a évolué en $\mathcal{O}(a^{n})$ avec $1 \leq n \leq 2$. 
           La valeur du paramètre $\Omega_k$ était donc bien plus petite qu'actuellement vers les débuts de l'Univers - d'un facteur au moins inférieur à celui du facteur d'échelle à l'époque. 
-          Si l'on suppose que la physique du big bang est comprise et peut être décrite avec les théories jusqu'à une situation ou sa température était en dessous de $T_{max}$ cela permet d'affirmer que le paramètre de courbure devait à cet instant être au moins aussi petit qu'une certaine valeur. Pour $T_{max} \sim $ TeV, TODO calcul planck + TeV
+          Si l'on suppose que la physique du big bang est comprise et peut être décrite avec les théories jusqu'à une situation ou sa température était en dessous de $T_{max}$ cela permet d'affirmer que le paramètre de courbure devait à cet instant être au moins aussi petit qu'une certaine valeur.
+          Puisque $T(t) a(t) = \mbox{cste}$, et qu'au début de l'expansion $\rho(t) a^4(t) = \mbox{cste}$ alors :
+          
+          \begin{equation}
+          |\Omega_k(t)|  \sim |\Omega_{k0}| \left ( \dfrac{2,7 \mbox{K}}{T_{max}} \right)^2
+          \end{equation}
+          
+          
+          Pour $T_{max} \sim $ TeV (c'est-à-dire à la limite de la physique que l'on sait reproduire dans les accélérateurs de particules), et $\Omega_{k0} \sim 10^{-4}$ alors $|Omega_k|$ devait valoir de l'ordre de $10^{-36}$ !
+          Si à cette température le paramètre de courbure avait été un peu différent, cela aurait eu un impact très important sur sa valeur actuelle.
           
           </p>
       </text>
@@ -1357,7 +1368,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
           </p>
           <h3>Solution au problème</h3>
           <p>
-              ...
+              Une solution à ce problème peut être apportée par la théorie de l'inflation cosmique.
           </p>
       </text>
       <linkwords>
