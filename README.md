@@ -34,7 +34,7 @@ apt-get install ffmpeg build-essential
 git pull
 cd www/timeline
 
-# si première compilation, où si une simulation a changé :
+# si première compilation, ou si une simulation a changé :
 php compile.php -V -S
 # sinon :
 php compile -V
