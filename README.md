@@ -1,6 +1,6 @@
 # Histoire de la Cosmologie
 
-http://histoiredelacosmlogie.fr/
+http://histoiredelacosmologie.fr/
 
 Version developpement : http://cosmologie.sciencestechniques.fr/timeline/
 
