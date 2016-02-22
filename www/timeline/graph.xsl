@@ -9,13 +9,41 @@
             <head>
                 <title>Structure</title>
                 <meta charset="utf-8" />
+                <style type="text/css">
+                .label-color {
+	padding:2px 4px;
+	font-size:12px;
+	font-weight:bold;
+	border-radius:2px;
+	box-shadow:inset 0 -1px 0 rgba(0,0,0,0.12);
+    color: white;
+    margin-right: 5px;
+                }
+                </style>
             </head>
             <body>
                 <ul>
                     <xsl:for-each select="root/contents/content">
                         <xsl:variable name="id" select="./@id"/>
                         <xsl:variable name="text" select="./text"/>
-                        <li><h3><a href="index.html#/content/{$id}"><xsl:value-of select="./title" /></a></h3><br />
+
+                        <li><h3><a href="index.html#/content/{$id}"><xsl:value-of select="./title" /></a></h3>
+                        <xsl:choose>
+                        <xsl:when test="./@ready">
+                           <span class="label-color" style="background-color: #fcfc29;" title="ready">ready</span>
+                        </xsl:when>
+                        <xsl:otherwise>
+                        </xsl:otherwise>
+                        </xsl:choose>
+
+                        <xsl:choose>
+                        <xsl:when test="./@reviewed">
+                          <span class="label-color" style="background-color: #29fc29;" title="relecture faite">relecture faite</span>
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <span class="label-color" style="background-color: #fc2929;" title="relecture en attente">relecture en attente</span>
+                        </xsl:otherwise>
+                        </xsl:choose><br />
                             <h4>Evènements</h4>
                             <ul>
                                 <xsl:for-each select="//root/events/event[@content-id=$id]">

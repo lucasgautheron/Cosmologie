@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contents>
-    <content id="1">
+    <content id="1" ready="1">
         <title>Développement de la relativité</title>
         <image src="einstein.jpg">
             Einstein en 1916, photographié par Paul Ehrenfest.
@@ -38,7 +38,7 @@
             </text>
     </content>
     
-    <content id="2">
+    <content id="2" ready="1" reviewed="1">
         <title>Découverte de l'éloignement des galaxies</title>
         <image src="nebulae.jpg">Nébuleuse spirale M51</image>
         <color>#8d0e01</color>
@@ -52,7 +52,7 @@
         <p>Slipher continue ses observations sur les galaxies. En 1917, il a observé le spectre de 25 d'entre elles. Le résultat est étonnant : seules 4 parmi les 25 se rapprochent de nous. Toutes les autres s'éloignent ! Puisque la plupart des galaxies s'éloignent, les raies lumineuses (donc entre le rouge et le bleu) qu'elles émettent sont décalées vers des longueurs d'ondes plus grandes c'est-à-dire vers le rouge : on parle de décalage vers le rouge ou encore de redshift. Slipher trouve des vitesses dépassant 1000 km/s : il est clair que ces "spirales nébuleuses" sont des objets indépendants de notre galaxie, la Voie Lactée.</p></text>
     </content>
     
-    <content id="3">
+    <content id="3" ready="1" reviewed="0">
         <title>Débuts de la Cosmologie relativiste</title>
         <image src="lemaitre.jpg">Georges Lemaître</image>
         <color>#79136f</color>
