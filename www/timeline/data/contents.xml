@@ -67,7 +67,7 @@
         Ce résultat peut être testé expérimentalement : il suffit de vérifier que la vitesse de fuite de galaxies est proportionnelle à leur distance avec nous. La mesure du coefficient de proportionnalité donne directement la valeur de $K = \frac{c\dot{R}}{R}$. La difficulté est d'évaluer ces distances.</p></text>
     </content>
     
-    <content id="4">
+    <content id="4" ready="1">
         <title>Découverte de l'expansion de l'Univers</title>
         <image>hubble.jpg</image>
         <color>#c14630</color>
@@ -81,7 +81,7 @@
                 Les vitesses radiales, corrigées du mouvement du Soleil, sont représentées en fonction des distances estimées à partir des étoiles contenues et des luminosités moyennes des nébuleuses d'un amas. Les disques noirs et le trait plein représentent la solution pour un mouvement solaire estimé en se basant sur les données individuelles des nébuleuses ; les cercles et la ligne pointillée représentent la solution obtenue et regroupant les nébuleuses en 9 groupes distincts ; la croix représente la vitesse moyenne et la distance moyenne de 22 nébuleuses dont les distances n'ont pu être estimées inidividuellement. </figure></p></text>
     </content>
     
-    <content id="5">
+    <content id="5" ready="1">
         <title>Nouveaux modèles cosmologique : Big Bang ou Univers éternel ?</title>
         <image>bigbang.jpg</image>
         <color>#108b57</color>
@@ -127,7 +127,7 @@
         </text>
     </content>
     
-    <content id="7">
+    <content id="7" ready="1">
         <title>Les débuts de la nucléosynthèse primordiale</title>
         <image>nucleosynthese.jpg</image>
         <color>#32a818</color>
@@ -252,7 +252,7 @@
     	</text>
     </content>
     
-    <content id="10">
+    <content id="10" ready="1">
       <title>Victoire du Big Bang, rejet de l'Univers stationnaire</title>
       <image>bigbang.jpg</image>
       <color>#8681f0</color>
