@@ -2,7 +2,8 @@
 
 http://histoiredelacosmologie.fr/
 
-Version developpement : http://cosmologie.sciencestechniques.fr/timeline/
+Version developpement : http://cosmologie.sciencestechniques.fr/timeline/ 
+Statut : http://cosmologie.sciencestechniques.fr/timeline/graph.html
 
 Archive : http://cosmologie.sciencestechniques.fr/timeline/archive.tar.gz
 
