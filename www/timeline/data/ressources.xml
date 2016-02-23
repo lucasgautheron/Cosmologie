@@ -1240,8 +1240,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             \end{equation}
             Souvent le flux est mesuré dans un intervalle restreint de longueurs d'ondes (appelé "bande") en opposition à la magnitude dite "bolométrique" qui utilise le flux total.
         </p>
-            <p>La <b>magnitude absolue</b> $M$ d'un objet céleste la magnitude apparente qu'on mesurerait si elle se trouvait à une distance de 10 parsecs.
-                Puisque cette quantité ne dépend pas de la distance entre cet objet et l'observateur, elle donne une mesure de sa luminosité intrinsèque (la puissance lumineuse qu'elle émet).</p>
+            <p>La <b>magnitude absolue</b> $M$ d'un objet céleste la magnitude apparente qu'on mesurerait si il se trouvait à une distance de 10 parsecs.
+                Puisque cette quantité ne dépend pas de la distance entre cet objet et l'observateur, elle donne une mesure de sa luminosité intrinsèque (la puissance lumineuse qu'il émet).</p>
            <p> On peut établir une relation simple entre $m$ et $M$. Par définition on a :
            \begin{equation}
            M = -2.5 \log {\dfrac{F_{objet,10pc}}{F_{reference}}} = -2.5 \left ( \log {\dfrac{F_{objet,10pc}}{F_{objet}}} + \log {\dfrac{F_{objet}}{F_{reference}}}\right )
