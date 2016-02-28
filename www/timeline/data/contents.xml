@@ -219,7 +219,7 @@
     	    <p>
     	        Au cours de l'année 1964, deux astronomes américains, Arno Penzias et Robert Wilson, travaillent sur l'antenne cornet d'Holmdel pour les laboratoires Bell. L'objectif de cet antenne construite en 1959 était de détecter l'écho radar de satellites en forme de ballon agissant comme réflecteur. Les deux physiciens devaient cependant s'en servir pour observer la voie lactée à des longueurs d'ondes aux alentours de 7 cm.<br />
     	        Une des difficultés de cette taĉhe est que le faible niveau du signal requiert l'élimination de nombreuses sources de bruit, et notamment du bruit d'origine thermique, par exemple en refroidissant certains instruments jusqu'à 4 K (hélium liquide).
-    	        Malgré toutes ces précautions, les deux phyisiciens observèrent une bruit irréductible équivalent à une température d'environ 3,5 $\pm$ 1 K, indépendant des saisons, dépendant faiblement de la direction, ce qui semblait écarter une origine galactique. (todo + atmo + récepteur).
+    	        Malgré toutes ces précautions, les deux phyisiciens observèrent en mesurant le signal à une longueur d'onde de 7,35cm (4080 MHz) un bruit irréductible équivalent à une température d'environ 3,5 $\pm$ 1 K, indépendant des saisons, dépendant faiblement de la direction, ce qui semblait écarter une origine galactique. (todo + atmo + récepteur).
     	    </p>
     	    
     	    <figure title="Antenne d'Holmdel" src="antenne_holmdel.jpg">
