@@ -211,7 +211,7 @@
         </text>
     </content>
     
-       <content id="9">
+       <content id="9" ready="1">
     	<title>Découverte du fond diffus cosmologique</title>
     	<image>cmb.jpg</image>
     	<color>#e4ee86</color>
@@ -288,7 +288,9 @@
             Donc 
             \begin{equation}
             N(s\geq S,z) = \dfrac{4\pi n}{3} \left (\dfrac{L}{4\pi(1+z)S} \right)^{3/2} \propto \dfrac{1}{\left((1+z)S \right)}^{3/2}
-            \end{equation}</note>
+            \end{equation}
+            
+            <!-- Résultat sur la pente : S est corrélé négativement au redshift. Comment ? Ds tous les cas c'est déjà a priori suffisant pour conclure que cela "aplatit la pente". --></note>
             
             Dans les années 1950, une équipe d'astronomes de Cambridge publient plusieurs catalogues de sources d'ondes radio. On découvre alors parmi ces sources les quasars, des objects très caractéristiques (compacts, très lumineux). Martin Ryle argue à partir de ces résultats, que la relation $\log S \to \log N$ présente une pente plus forte que prédite par la théorie de l'état stationnaire (environ -2.5 au lieu de -1.5). Cependant après plusieurs corrections successives Ryle révise son estimation à environ -1.8. D'autres travaux conduisent mêmes à des valeurs proches de -1.5. Il s'ensuit alors une controverse entre Hoyle et Ryle, le premier jugeant irrecevable les conclusions établies à partir de ces observations.
         </p>
