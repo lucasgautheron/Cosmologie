@@ -8,9 +8,9 @@ const double r1 = 0.1;
 const double Vmin = -1.5;
 const double Vmax = 1.5;
 const double rmax = 5;
-const int rsteps = 1024;
-const int thetasteps = 1024;
-const int bins = 100;
+const int rsteps = 4096;
+const int thetasteps = 4096;
+const int bins = 200;
 
 #define PI 3.141592654
 
@@ -37,9 +37,13 @@ int main()
     const double dtheta = 2 * PI / double(thetasteps);
     double m = 0;
 
-    const double los_x = 1.0/sqrt(3);
+    /*const double los_x = 1.0/sqrt(3);
     const double los_y = 1.0/sqrt(3);
-    const double los_z = 1.0/sqrt(3);
+    const double los_z = 1.0/sqrt(3);*/
+
+    const double los_x = 1.0;
+    const double los_y = 0;
+    const double los_z = 0;
 
     double *I = new double[bins];
     for(int i = 0; i < bins; ++i)
@@ -56,7 +60,7 @@ int main()
         {
             double theta = double(j) * dtheta;
             double vr = sqrt(m/r);
-            double vx = vr * cos(theta), vy = vr * sin(theta);
+            double vx = -vr * sin(theta), vy = vr * cos(theta);
             double v = vx * los_x + vy * los_y;
             int bin = findbin(v);
             if(bin < 0 || bin >= bins)
