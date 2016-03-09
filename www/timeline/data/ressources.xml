@@ -1425,7 +1425,7 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
          Et donc
          
          \begin{equation}
-         \mathcal{L}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left [ \partial_\mu \psi + ik \psi \left ( \partial_\mu \phi + ikA_\mu \right ) \right ] + m \bar{\psi} \psi 
+         \mathcal{L}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left [ \partial_\mu \psi + ik \psi \left ( \partial_\mu \phi + A_\mu \right ) \right ] + m \bar{\psi} \psi 
          \end{equation}
          
          Si la physique est invariante par la transformation $A_\mu \to A_\mu' = A_\mu + \partial_\mu \phi$ alors ...
