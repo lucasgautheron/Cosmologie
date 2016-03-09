@@ -1383,8 +1383,9 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
   <ressource id="605">
       <title>Théorie de Grande Unification</title>
       <text>
-         <p>Une Théorie de Grande Unification (En anglais GUT pour Grand Unified Theory) est une théorie visant à regrouper l'interaction électrofaible avec l'interaction forte sous une description plus générale avec sa propre invariance de jauge et une unique constante de couplage. TODO expliquer</p>
-          <p>TODO exemple. GUT scale energy.</p>
+         <p>Une Théorie de Grande Unification (En anglais GUT pour Grand Unified Theory) est une théorie visant à regrouper l'interaction électrofaible avec l'interaction forte sous une description plus générale avec sa propre invariance de jauge et une unique constante de couplage. TODO expliquer. SU(3) x SU(2) x U(1)</p>
+          <p>TODO exemple. GUT scale energy. Modèle standard, paramètres libres etc.</p>
+          <p>Application Inflation</p>
       </text>
       <linkwords>
            <linkword>Théorie de Grande Unification</linkword>
@@ -1397,7 +1398,17 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
       <title>Invariance de Jauge</title>
       <text>
          <p>Une invariance de jauge est la propriété d'un champ de pouvoir subir une transformation mathématique sans que cela n'en change les manifestations physiques. </p>
-         <p>TODO exemple lagrangien fermion + champ EM</p>
+         <p>TODO exemple lagrangien fermion + champ EM
+\begin{equation}
+\psi(x^\mu) \to \psi(x^\mu) e^{i\phi(x^\mu)}
+\end{equation}
+
+
+Et
+
+\begin{equation}
+\mathcal{L} = ...
+\end{equation}</p>
       </text>
       <linkwords>
            <linkword>Invariance de jauge</linkword>
