@@ -1398,34 +1398,34 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
       <title>Invariance de Jauge</title>
       <text>
          <p>Une invariance de jauge est la propriété d'un champ de pouvoir subir une transformation mathématique sans que cela n'en change les manifestations physiques. Les invariances imposent une certaine structure au champ et induisent des lois de conservations conformément au théorème de Noether.</p>
-         <h2>Exemple : invariance U(1) et électromagnétisme</h2>
+         <h3>Exemple : invariance U(1) et électromagnétisme</h3>
          <p>
          Le Lagrangien pour un fermion (par exemple un électron) libre de masse $m$ est le lagrangien de Dirac :
          \begin{equation}
-         \mathcal{L}_{\mbox{Dirac}} = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \partial_\mu \psi + m \bar{\psi} \psi 
+         \mathcal{L}_{\mbox{Dirac}} = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \partial_\mu \psi + mc \bar{\psi} \psi 
          \end{equation}
          
          Si on impose une invariance $U(1)$, donc par transformation unitaire - qui préserve la norme - alors la transformation $\psi(x_\mu) \to \psi'(x_\mu) = \psi e^{i k \phi(x_\mu)}$ (qui change localement la phase du champ $\psi$) doit préserver les résultats physiques.
          Or, on remarque que le lagrangien de dirac n'est pas invariant par une telle transformation :
          
          \begin{equation}
-         \mathcal{L}_{\mbox{Dirac}}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu \psi + ik \psi \partial_\mu \phi \right ) + m \bar{\psi} \psi 
+         \mathcal{L}_{\mbox{Dirac}}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu \psi + ik \psi \partial_\mu \phi \right ) + mc \bar{\psi} \psi 
          \end{equation}
          
          On peut alors substituer l'opérateur $\partial_\mu$ par l'opérateur de différentiation $D_\mu = \partial_\mu + ikA_\mu$ où $A_\mu$ est un nouveau champ vectoriel. Le nouveau lagrangien devient :
          
          \begin{equation}
-         \mathcal{L} = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu D_\mu \psi + m \bar{\psi} \psi  = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu + ikA_\mu  \right ) \psi + m \bar{\psi} \psi 
+         \mathcal{L} = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu D_\mu \psi + mc \bar{\psi} \psi  = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu + ikA_\mu  \right ) \psi + m \bar{\psi} \psi 
          \end{equation}
          
          \begin{equation}
-         \mathcal{L}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu \psi + ik \psi \partial_\mu \phi + ikA_\mu \psi \right ) + m \bar{\psi} \psi 
+         \mathcal{L}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu \psi + ik \psi \partial_\mu \phi + ikA_\mu \psi \right ) + mc \bar{\psi} \psi 
          \end{equation}
          
          Et donc
          
          \begin{equation}
-         \mathcal{L}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left [ \partial_\mu \psi + ik \psi \left ( \partial_\mu \phi + A_\mu \right ) \right ] + m \bar{\psi} \psi 
+         \mathcal{L}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left [ \partial_\mu \psi + ik \psi \left ( \partial_\mu \phi + A_\mu \right ) \right ] + mc \bar{\psi} \psi 
          \end{equation}
          
          Si la physique est invariante par la transformation $A_\mu \to A_\mu' = A_\mu + \partial_\mu \phi$ alors ...
