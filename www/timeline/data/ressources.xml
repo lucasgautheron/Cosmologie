@@ -1409,26 +1409,35 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
          Or, on remarque que le lagrangien de dirac n'est pas invariant par une telle transformation :
          
          \begin{equation}
-         \mathcal{L}_{\mbox{Dirac}}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu \psi + ik \psi \partial_\mu \phi \right ) + mc \bar{\psi} \psi 
+         \mathcal{L}_{\mbox{Dirac}}' = i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu \psi + ik \psi \partial_\mu \phi \right ) + mc \bar{\psi} \psi 
          \end{equation}
          
          On peut alors substituer l'opérateur $\partial_\mu$ par l'opérateur de différentiation $D_\mu = \partial_\mu + ikA_\mu$ où $A_\mu$ est un nouveau champ vectoriel. Le nouveau lagrangien devient :
          
          \begin{equation}
-         \mathcal{L} = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu D_\mu \psi + mc \bar{\psi} \psi  = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu + ikA_\mu  \right ) \psi + m \bar{\psi} \psi 
+         \mathcal{L} = i \hbar \bar{\psi} \gamma^\mu D_\mu \psi + mc \bar{\psi} \psi  = i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu + ikA_\mu  \right ) \psi + mc \bar{\psi} \psi 
          \end{equation}
          
          \begin{equation}
-         \mathcal{L}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu \psi + ik \psi \partial_\mu \phi + ikA_\mu \psi \right ) + mc \bar{\psi} \psi 
+         \mathcal{L}' = i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu \psi + ik \psi \partial_\mu \phi + ikA_\mu \psi \right ) + mc \bar{\psi} \psi 
          \end{equation}
          
          Et donc
          
          \begin{equation}
-         \mathcal{L}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left [ \partial_\mu \psi + ik \psi \left ( \partial_\mu \phi + A_\mu \right ) \right ] + mc \bar{\psi} \psi 
+         \mathcal{L}' = i \hbar \bar{\psi} \gamma^\mu \left [ \partial_\mu \psi + ik \psi \left ( \partial_\mu \phi + A_\mu \right ) \right ] + mc \bar{\psi} \psi 
          \end{equation}
          
          Si la physique est invariante par la transformation $A_\mu \to A_\mu' = A_\mu + \partial_\mu \phi$ alors ...
+         
+         On peut rajouter un terme proportionnel à $F_{\mu\nu}F^{\mu\nu}$ où $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ (tenseur électromagnétique) qui est bien un invariant de Lorentz, et ne dépend que des dérivées d'ordre 1 du champ $A_\mu$ et par ailleurs respecte l'invariance par la transformation $A_\mu \to A_\mu'$. 
+         
+         Le Lagrangien s'écrit alors, en définissant $e = -k$ : 
+         
+         \begin{equation}
+         \mathcal{L} = i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu  - ieA_\mu  \right ) \psi + mc \bar{\psi} \psi - \dfrac{1}{4\mu_0 c} F_{\mu\nu}F^{\mu\nu}
+         \end{equation}
+         
          TODO : $F_{\mu\nu}$ respecte bien cette invariance. Lien avec $j_\mu A^\mu$ qui est bien invariant par cette transformation <i>grâce</i> à la conservation de la charge!
          
          TODO exemple lagrangien fermion + champ EM
