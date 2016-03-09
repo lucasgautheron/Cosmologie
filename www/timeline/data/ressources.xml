@@ -1385,6 +1385,10 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
       <text>
          <p>Une Théorie de Grande Unification (En anglais GUT pour Grand Unified Theory) est une théorie visant à regrouper l'interaction électrofaible avec l'interaction forte sous une description plus générale avec sa propre invariance de jauge et une unique constante de couplage. TODO expliquer. SU(3) x SU(2) x U(1)</p>
           <p>TODO exemple. GUT scale energy. Modèle standard, paramètres libres etc.</p>
+          <h3>Interaction électrofaible</h3>
+          <p>
+            TODO exemple unification U(1) et SU(2) en U(1) x SU(2). champ de Higgs.
+          </p>
           <p>Application Inflation</p>
       </text>
       <linkwords>
@@ -1439,12 +1443,8 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
          \end{equation}
          
          TODO : $F_{\mu\nu}$ respecte bien cette invariance. Lien avec $j_\mu A^\mu$ qui est bien invariant par cette transformation <i>grâce</i> à la conservation de la charge!
-         
-         TODO exemple lagrangien fermion + champ EM
-\begin{equation}
-\psi(x^\mu) \to \psi(x^\mu) e^{i\phi(x^\mu)}
-\end{equation}
 
+        <h3>Invariance SU(2) et interaction faible</h3>
 
 Et
 
