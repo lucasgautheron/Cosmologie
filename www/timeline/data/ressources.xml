@@ -1405,11 +1405,11 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
          \mathcal{L}_{\mbox{Dirac}} = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \partial_\mu \psi + m \bar{\psi} \psi 
          \end{equation}
          
-         Si on impose une invariance $U(1)$, donc par transformation unitaire - qui préserve la norme - alors la transformation $\psi(x_\mu) \to \psi'(x_\mu) = \psi e^{i kc \phi(x_\mu)}$ (qui change localement la phase du champ $\psi$) doit préserver les résultats physiques.
+         Si on impose une invariance $U(1)$, donc par transformation unitaire - qui préserve la norme - alors la transformation $\psi(x_\mu) \to \psi'(x_\mu) = \psi e^{i k \phi(x_\mu)}$ (qui change localement la phase du champ $\psi$) doit préserver les résultats physiques.
          Or, on remarque que le lagrangien de dirac n'est pas invariant par une telle transformation :
          
          \begin{equation}
-         \mathcal{L}_{\mbox{Dirac}}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu \psi + ikc \psi \partial_\mu \phi \right ) + m \bar{\psi} \psi 
+         \mathcal{L}_{\mbox{Dirac}}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu \psi + ik \psi \partial_\mu \phi \right ) + m \bar{\psi} \psi 
          \end{equation}
          
          On peut alors substituer l'opérateur $\partial_\mu$ par l'opérateur de différentiation $D_\mu = \partial_\mu + ikA_\mu$ où $A_\mu$ est un nouveau champ vectoriel. Le nouveau lagrangien devient :
@@ -1419,8 +1419,17 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
          \end{equation}
          
          \begin{equation}
-         \mathcal{L}_{\mbox{Dirac}}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu \psi + ikc \psi \partial_\mu \phi + ikA_\mu \psi \right ) + m \bar{\psi} \psi 
+         \mathcal{L}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu \psi + ik \psi \partial_\mu \phi + ikA_\mu \psi \right ) + m \bar{\psi} \psi 
          \end{equation}
+         
+         Et donc
+         
+         \begin{equation}
+         \mathcal{L}' = \dfrac{1}{2} i \hbar \bar{\psi} \gamma^\mu \left [ \partial_\mu \psi + ik \psi \left ( \partial_\mu \phi + ikA_\mu \right ) \right ] + m \bar{\psi} \psi 
+         \end{equation}
+         
+         Si la physique est invariante par la transformation $A_\mu \to A_\mu' = A_\mu + \partial_\mu \phi$ alors ...
+         TODO : $F_{\mu\nu}$ respecte bien cette invariance. Lien avec $j_\mu A^\mu$ qui est bien invariant par cette transformation <i>grâce</i> à la conservation de la charge!
          
          TODO exemple lagrangien fermion + champ EM
 \begin{equation}
