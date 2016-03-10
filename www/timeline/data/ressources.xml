@@ -1436,10 +1436,10 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
          
          On peut rajouter un terme proportionnel à $F_{\mu\nu}F^{\mu\nu}$ où $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ (tenseur électromagnétique) qui est bien un invariant de Lorentz, et ne dépend que des dérivées d'ordre 1 du champ $A_\mu$ et par ailleurs respecte l'invariance par la transformation $A_\mu \to A_\mu'$. 
          
-         Le Lagrangien s'écrit alors, en définissant $e = -k$ : 
+         Le Lagrangien s'écrit alors, en définissant $q = -k$ : 
          
          \begin{equation}
-         \mathcal{L} = i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu  - ieA_\mu  \right ) \psi + mc \bar{\psi} \psi - \dfrac{1}{4\mu_0 c} F_{\mu\nu}F^{\mu\nu}
+         \mathcal{L} = i \hbar \bar{\psi} \gamma^\mu \left ( \partial_\mu  - iqA_\mu  \right ) \psi + mc \bar{\psi} \psi - \dfrac{1}{4\mu_0 c} F_{\mu\nu}F^{\mu\nu}
          \end{equation}
          
          TODO : $F_{\mu\nu}$ respecte bien cette invariance. Lien avec $j_\mu A^\mu$ qui est bien invariant par cette transformation <i>grâce</i> à la conservation de la charge!

@@ -344,7 +344,7 @@
                 \end{equation}
                 
                 Ce profil peut être comparé à celui estimé à partir de la courbe de luminosité dans différentes bandes. La décroissance attendue en $1/r$ de la densité d'après les courbes de vitesse ne correspond pas à la matière visible ! Il y a bien de la matière invisible qui s'étend jusqu'hors des limites visibles des galaxies.
-    	        
+    	        <!-- FIXME 1/r^2 -->
     	        <!--\begin{equation}
     	        v(r) = \sqrt{\dfrac{4\pi G}{r} \int_{0}^{r} \rho(r') r'^2 dr'}
     	        \end{equation}
@@ -363,13 +363,27 @@
     	<text>
     	TODO Parler de zeldovic
     	    <p>
-    	        En 1980, le modèle du Big Bang fait consensus. Pourtant, il pose déjà plusieurs problèmes, et en 1980, Alan Guth propose une solution à deux d'entre eux :
+    	        Vers la fin des années 1970, le modèle du Big Bang fait consensus. Pourtant, il soulève déjà plusieurs problèmes :
     	        <ul>
-    	            <li><b>Problème de la platitude</b> (flatness problem) : A l'époque, on n'observe aucune indication d'une courbure éventuelle de l'Univers. Le paramètre de courbure $\Omega_k$ étant relié à la densité d'énergie et la densité critique de l'Univers par $\Omega_k = \frac{\rho - \rho_c}{\rho_c}$, ces deux densités doivent être raisonnablement proches (pas plus d'un ordre de grandeur d'écart). Or... TODO montrer fine tuning, modele simple, à la Guth à partir de $T_0 \sim $ MeV</li>
+    	            <li><b>Problème de la platitude</b> (flatness problem) : A l'époque, on n'observe aucune indication d'une courbure éventuelle de l'Univers. Le paramètre de courbure $\Omega_k$ étant relié à la densité d'énergie et la densité critique de l'Univers par $\Omega_k = \frac{\rho - \rho_c}{\rho_c}$, ces deux densités doivent être raisonnablement proches (pas plus d'un ordre de grandeur d'écart), $\Omega_k$ devant être raisonnablement petit. Si elles ne l'étaient pas, l'Univers serait très différent, et la formation des grandes structures en aurait été grandement affectée. Or, le paramètre de courbure évolue au cours du temps :
+          \begin{equation}
+          |\Omega_k(t)| = |\Omega_{k0}| \dfrac{\rho_0}{\rho(t) a(t)^2}
+          \end{equation}
+          Dans une phase où l'Univers est dominé par le rayonnement (ce qui est le cas pour l'Univers à ses débuts dans le cadre d'un Big-Bang chaud) alors $\rho \propto T^4$, $a \propto T^{-1}$ et donc :
+
+          \begin{equation}
+          |\Omega_k(t)| = |\Omega_{k0}| \dfrac{T_0^2}{T(t)^2}
+          \end{equation}
+
+          Plus on remonte dans le temps, plus l'Univers devait être chaud et plus il devait donc être plat ! En prenant $T_0 = $ 3 K, et l'instant $t$ tel que $T(t) = $ 1 TeV $ = 10^{16}$ K, alors la courbure de l'Univers devait être $10^{32}$ fois plus faible qu'aujourd'hui à cette époque, donc remarquablement minuscule. Si elle n'avait pas été ajustée alors pour être si petite, l'Univers aurait été très différent aujourd'hui.
+</li>
     	            <li><b>Problème de l'Horizon</b> : L'Univers est supposé en tout temps homogène et isotrope bien que régions aient été et soient "causalement déconnectées" (aucune interaction n'a pu se propager de l'une à l'autre, pas même la lumière), et donc ne peuvent être maintenues en équilibre par un processus physique.</li>
     	        </ul>
+
+                Alan Guth TODO travail GUT monopole magnétiques. conf sur ces deux problèmes. etc. finir bouquin.
+Parler de Zeldovic. 
     	        
-    	        La solution que propose Alan Guth repose sur une hypothétique phase d'expansion très rapide au début de l'Univers. EXpliquer etc. papier
+    	        <!--La solution que propose Alan Guth repose sur une hypothétique phase d'expansion très rapide au début de l'Univers. EXpliquer etc. papier-->
     	    </p>
     	</text>
     </content>
