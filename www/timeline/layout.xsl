@@ -172,12 +172,16 @@
             <li><p class="timeline-date"><xsl:value-of select="./@date" /></p><div id="timeline{generate-id(.)}" class="timeline-content"><a class="content-link" href="#!content={./@content-id}" data-cid="{./@content-id}"><xsl:value-of select="." /></a></div></li>
           </xsl:for-each>
         </ul>
-        <h2>Activités</h2>
-        <ul id="activities">
-          <xsl:for-each select="root/contents/content[type='activity']">
-            <li><a class="content-link" href="#!content={./@id}" data-cid="{./@id}"><xsl:value-of select="./title" /></a></li>
-          </xsl:for-each>
-        </ul>
+
+        <div class="meta">
+          <h2>Activités</h2>
+          <ul id="activities">
+            <xsl:for-each select="/root/contents/content[@type='activity']">
+              <li><a class="content-link" href="#!content={./@id}" data-cid="{./@id}"><xsl:value-of select="./title" /></a></li>
+            </xsl:for-each>
+          </ul>
+        </div>
+
         <div class="meta">Les conventions suivantes sont utilisées :
           <ul>
             <li>Signature métrique $(+,-,-,-)$</li>
@@ -186,6 +190,7 @@
             <li>Pour un univers homogène et isotrope, $R$ est le rayon de courbure de l'Univers, et $k$ un entier relatif pouvant valoir $-1$ (géométrie sphérique), $0$ (géométrie euclidienne), $1$ (géométrie hyperbolique)</li>
           </ul>
         </div>
+
         <div class="meta">
           Le site fait appel aux technologies et programmes suivants :
           <ul>
@@ -200,6 +205,7 @@
         <div>
           Pour signaler toute erreur, ou simplement pour poser des questions relatives au contenu, vous pouvez envoyer un email à l'adresse lucas <i>dot</i> gautheron <i>at</i> gmail <i>dot</i> com
         </div>
+
       </div>
       
       <div id="content">
