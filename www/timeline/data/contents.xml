@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contents>
-    <content id="1" ready="1">
+    <content id="1" type="timeline" ready="1">
         <title>Développement de la relativité</title>
         <image src="einstein.jpg">
             Einstein en 1916, photographié par Paul Ehrenfest.
@@ -38,7 +38,7 @@
             </text>
     </content>
     
-    <content id="2" ready="1" reviewed="1">
+    <content id="2" type="timeline" ready="1" reviewed="1">
         <title>Découverte de l'éloignement des galaxies</title>
         <image src="nebulae.jpg">Nébuleuse spirale M51</image>
         <color>#8d0e01</color>
@@ -52,7 +52,7 @@
         <p>Slipher continue ses observations sur les galaxies. En 1917, il a observé le spectre de 25 d'entre elles. Le résultat est étonnant : seules 4 parmi les 25 se rapprochent de nous. Toutes les autres s'éloignent ! Puisque la plupart des galaxies s'éloignent, les raies lumineuses (donc entre le rouge et le bleu) qu'elles émettent sont décalées vers des longueurs d'ondes plus grandes c'est-à-dire vers le rouge : on parle de décalage vers le rouge ou encore de redshift. Slipher trouve des vitesses dépassant 1000 km/s : il est clair que ces "spirales nébuleuses" sont des objets indépendants de notre galaxie, la Voie Lactée.</p></text>
     </content>
     
-    <content id="3" ready="1" reviewed="0">
+    <content id="3" type="timeline" ready="1" reviewed="0">
         <title>Débuts de la Cosmologie relativiste</title>
         <image src="lemaitre.jpg">Georges Lemaître</image>
         <color>#79136f</color>
@@ -67,7 +67,7 @@
         Ce résultat peut être testé expérimentalement : il suffit de vérifier que la vitesse de fuite de galaxies est proportionnelle à leur distance avec nous. La mesure du coefficient de proportionnalité donne directement la valeur de $K = \frac{c\dot{R}}{R}$. La difficulté est d'évaluer ces distances.</p></text>
     </content>
     
-    <content id="4" ready="1">
+    <content id="4" type="timeline" ready="1">
         <title>Découverte de l'expansion de l'Univers</title>
         <image>hubble.jpg</image>
         <color>#c14630</color>
@@ -81,7 +81,7 @@
                 Les vitesses radiales, corrigées du mouvement du Soleil, sont représentées en fonction des distances estimées à partir des étoiles contenues et des luminosités moyennes des nébuleuses d'un amas. Les disques noirs et le trait plein représentent la solution pour un mouvement solaire estimé en se basant sur les données individuelles des nébuleuses ; les cercles et la ligne pointillée représentent la solution obtenue et regroupant les nébuleuses en 9 groupes distincts ; la croix représente la vitesse moyenne et la distance moyenne de 22 nébuleuses dont les distances n'ont pu être estimées inidividuellement. </figure></p></text>
     </content>
     
-    <content id="5" ready="1">
+    <content id="5" type="timeline" ready="1">
         <title>Nouveaux modèles cosmologique : Big Bang ou Univers éternel ?</title>
         <image>bigbang.jpg</image>
         <color>#108b57</color>
@@ -127,7 +127,7 @@
         </text>
     </content>
     
-    <content id="7" ready="1">
+    <content id="7" type="timeline" ready="1">
         <title>Les débuts de la nucléosynthèse primordiale</title>
         <image>nucleosynthese.jpg</image>
         <color>#32a818</color>
@@ -178,7 +178,7 @@
         </text>
     </content>
     
-    <content id="8">
+    <content type="timeline" id="8">
         <title>Nucléosynthèse stellaire et nucléosynthèse primordiale</title>
         <image>nucleosynthese_stellaire.jpg</image>
         <color>#0562a3</color>
@@ -211,7 +211,7 @@
         </text>
     </content>
     
-       <content id="9" ready="1">
+       <content id="9" type="timeline" ready="1">
     	<title>Découverte du fond diffus cosmologique</title>
     	<image>cmb.jpg</image>
     	<color>#e4ee86</color>
@@ -252,7 +252,7 @@
     	</text>
     </content>
     
-    <content id="10" ready="1">
+    <content id="10" type="timeline" ready="1">
       <title>Victoire du Big Bang, rejet de l'Univers stationnaire</title>
       <image>bigbang.jpg</image>
       <color>#8681f0</color>
@@ -308,7 +308,7 @@
       </text>
     </content>
     
-      <content id="11">
+      <content id="11" type="timeline">
     	<title>Réapparition de la nucléosynthèse primordiale</title>
     	<image>nucleosynthese_bigbang.jpg</image>
     	<text>
@@ -318,7 +318,7 @@
     	</text>
     </content>
     
-      <content id="12">
+      <content id="12" type="timeline">
     	<title>Découverte de la matière noire</title>
     	<image>matierenoire.jpg</image>
     	<text>
@@ -356,7 +356,7 @@
     	</text>
     </content>
     
-     <content id="13">
+     <content id="13" type="timeline">
     	<title>Inflation</title>
     	<image>inflation.jpg</image>
     	<color>#46c4e5</color>
@@ -393,7 +393,7 @@ Youpi !
     	</text>
     </content>
     
-    <content id="14">
+    <content id="14" type="timeline">
     	<title>Découverte de l'accélération de l'expansion de l'Univers</title>
     	<image>acceleration_expansion.jpg</image>
     	<color>#a9680d</color>
@@ -428,6 +428,27 @@ Youpi !
                 </figure>
             </p>
     	</text>
+    </content>
+
+    <content id="15" type="activity">
+        <title>Utiliser une éclipse pour tester la relativité générale</title>
+    	<image>eclipse.jpg</image>
+    	<text>
+        <p>TODO background historique : expérience de 1919 par Eddington. Principe, histoire, résultat, controverse (rapidement).</p>
+         
+        <h3>Réalisation</h3>
+        <h4>Principe</h4>
+        <h4>Matériel</h4>
+        <h4>Exploitation résultats</h4>
+        </text>
+    </content>
+
+    <content id="16" type="activity">
+        <title>Mesurer des redshifts</title>
+    	<image>redshift.jpg</image>
+    	<text>
+          <p>radiotéléscope. (HI?). Savoir comprendre et expliquer les courbes. Tenir compte du mouvement composé terre + soleil + galaxie. Objets à regarder ?</p>
+        </text>
     </content>
     
     <content id="100">

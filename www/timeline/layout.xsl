@@ -172,6 +172,12 @@
             <li><p class="timeline-date"><xsl:value-of select="./@date" /></p><div id="timeline{generate-id(.)}" class="timeline-content"><a class="content-link" href="#!content={./@content-id}" data-cid="{./@content-id}"><xsl:value-of select="." /></a></div></li>
           </xsl:for-each>
         </ul>
+        <h2>Activités</h2>
+        <ul id="activities">
+          <xsl:for-each select="root/contents/content[type='activity']">
+            <li><a class="content-link" href="#!content={./@id}" data-cid="{./@id}"><xsl:value-of select="./title" /></a></li>
+          </xsl:for-each>
+        </ul>
         <div class="meta">Les conventions suivantes sont utilisées :
           <ul>
             <li>Signature métrique $(+,-,-,-)$</li>
