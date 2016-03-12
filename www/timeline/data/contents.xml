@@ -435,8 +435,30 @@ Youpi !
             </p>
     	</text>
     </content>
+    
+        <content id="16" type="timeline">
+    	<title>Recherche de la matière noire</title>
+    	<image>dark_matter.jpg</image>
+    	<color>#a9F00d</color>
+    	<text>
+    	  <h3>Les traces de la matière noire</h3>
+            <p>
+              Aujourd'hui, nombreuses sont les observations qui révèlent la présence d'une quantité importante de matière invisible. 
+              TODO donner chiffres dans la liste qui suit.
+              <ul>
+                  <li><b>Courbes de rotation des galaxies </b> : La distribution des vitesses observée au sein des galaxies indique une présence de masse significativement plus importante que celle estimée à partir des ondes électromagnétiques qu'elles émettent ("lumière"). </li>  
+                  <li><b>Densité de matière froide de l'Univers</b> : Les observations cosmologiques et la structure de l'Univers révèlent que parmi la matière "froide" (non relativiste) qui compose l'Univers, un peu moins de 20 % seulement est visible (étoiles, planètes, gaz interstellaire). Le reste est inexpliqué !</li>
+                  <li><b>Densité </b></li>
+              </ul>          
+            </p>
+             <h3>Les différentes façons de la détecter</h3>
+             <p>
+             </p>
+            <h3>Un cas concret avec Vivian Poulin</h3>
+    	</text>
+    </content>
 
-    <content id="15" type="activity">
+    <content id="20" type="activity">
         <title>Utiliser une éclipse pour tester la relativité générale</title>
     	<image>eclipse.jpg</image>
     	<text>
@@ -445,11 +467,24 @@ Youpi !
         <h3>Réalisation</h3>
         <h4>Principe</h4>
         <h4>Matériel</h4>
+        <p> 
+        <ul>
+          <li> Trépied photo </li>
+          <li> Appareil photo avec focale &lt; 1m </li>
+        </ul>
+        </p>
         <h4>Exploitation résultats</h4>
+        <p>
+        <ul>
+          <li> Repérer précisément la position des étoiles observer sur l'image</li>
+          <li> Tenir compte de la projection sur le "fond de ciel"</li>
+          <li> Comparer aux positions mesurées avant l'éclipse pour mettre en évidence le phénomène de lentille gravitationnelle.</li>
+        </ul>
+        </p>
         </text>
     </content>
 
-    <content id="16" type="activity">
+    <content id="21" type="activity">
         <title>Mesurer des redshifts</title>
     	<image>redshift.jpg</image>
     	<text>

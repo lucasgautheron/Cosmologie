@@ -184,4 +184,12 @@
       <date>1998</date>
       <file>snIa_1998.pdf</file>
     </reference>
+    
+     <reference id="24" content-id="16">
+      <title>"Indirect and direct search for dark matter" (statut de la recherche sur la matière noire)</title>
+      <author>M. Klasen, M. Pohl, G. Sigl</author>
+      <text>Dans cet article, les auteurs présentent le statut actuel de la recherche de la matière noire, les différents candidats, et les différents canaux de recherche (directs et indirects)</text>
+      <date>2015</date>
+      <file>dm_review_2015.pdf</file>
+    </reference>
 </references>
