@@ -445,7 +445,20 @@ Youpi !
         <h3>Réalisation</h3>
         <h4>Principe</h4>
         <h4>Matériel</h4>
+        <p> 
+        <ul>
+          <li> Trépied photo </li>
+          <li> Appareil photo avec focale &lt; 1m </li>
+        </ul>
+        </p>
         <h4>Exploitation résultats</h4>
+        <p>
+        <ul>
+          <li> Repérer précisément la position des étoiles observer sur l'image</li>
+          <li> Tenir compte de la projection sur le "fond de ciel"</li>
+          <li> Comparer aux positions mesurées avant l'éclipse pour mettre en évidence le phénomène de lentille gravitationnelle.</li>
+        </ul>
+        </p>
         </text>
     </content>
 
