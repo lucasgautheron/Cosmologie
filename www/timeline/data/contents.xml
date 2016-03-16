@@ -458,7 +458,13 @@
               </ul>          
             </p>
              <h3>Recherches actuelles</h3>
+             <h4>Candidats pour la matière noire</h4>
              <p>
+               <ul>
+                 <li><b>WIMP</b> : Weakly Interacting Massive Particles, c'est-à-dire des particules massives ($m \geq $ GeV) (FIXME), interagissant faiblement avec les autres particules.</li>
+                 <li><b>Axions</b> : Particules de masse $&lt; $ eV.</li>  
+                 <li><b>Trous noirs primordiaux</b> : Trous noirs formés aux débuts de l'expansion de l'Univers par condensation de petites inhomogénéités. </li>
+               </ul>
              </p>
             <h3>Un cas concret avec Vivian Poulin</h3>
     	</text>
