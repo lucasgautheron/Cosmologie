@@ -849,6 +849,44 @@ R^{\mu\nu} - \Lambda g^{\mu\nu} = 8\pi G \left ( T^{\mu\nu} - \dfrac{1}{2}g^{\mu
             <linkword>Michelson-Morley</linkword>
         </linkwords>
     </ressource>
+
+    <!--          -->
+    <!-- THEORIES -->
+    <!--          -->
+
+     <ressource id="300">
+      <title>Supersymétrie</title>
+      <text>
+         <p>La supersymétrie est une théorie en physique des particules visant à compléter le Modèle Standard. TODO explain</p>
+      </text>
+      <linkwords>
+           <linkword>SUSY</linkword>
+           <linkword>supersymétrie</linkword>
+           <linkword>supersymétrique</linkword>
+           <linkword>supersymmetry</linkword>
+      </linkwords>
+    </ressource>
+
+     <ressource id="301">
+      <title>WIMP</title>
+      <text>
+         <p>Les WIMP (Weakly Interacting Massive Particles, particules massives interagissant faiblement) sont des particules postulées afin de donner une réponse au problème de la matière noire. De telles particules sont prédites par différentes théories telles que la supersymétrie.</p>
+         <h4>Les WIMP comme relique thermale</h4>
+         <p>Les WIMP n'interagissant que très faiblement, il est proposé que leur présence (dominante) dans l'Univers s'explique par un équilibre du type :
+       \begin{equation}
+       X+X \rightleftharpoons \mbox{ SM }
+       \end{equation}</p>
+       Il s'agit donc d'un équilibre enter annihilation des particules WIMP ("X") en particules du modèle standard, ou leur formation par un processus inverse. Le taux d'annihilation par unité de temps $\Gamma_{ann}$ est donné par :
+       \begin{equation}
+       \Gamma_{ann} \sim n_{X} \langle \sigma v \rangle
+       \end{equation}
+       Où $n_X$ est la densité de particules WIMP, $\sigma$ leur section efficace d'annihilation et $v$ leur vitesse relative.
+       Puisque $n_X \propto a^{-3}$, et que $\sigma v$ décroit également avec $a$, ce taux diminue avec l'expansion, et lorsqu'il devient inférieur à $1/H$, le phénomène d'annihilation devient négligeable et la densité de WIMP est relativement constante. C'est le "freeze-out". 
+      </text>
+      <linkwords>
+           <linkword>WIMP</linkword>
+      </linkwords>
+    </ressource>
     
     <!--         -->
     <!-- EFFECTS -->
