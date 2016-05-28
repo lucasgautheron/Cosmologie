@@ -431,7 +431,7 @@
                     <li>La constante de Hubble</li>
                     <li>La densité de matière froide $\Omega_m$</li>
                     <li>La densité d'énergie du vide $\Omega_\Lambda$ (équivalant à un terme de constante cosmologique)</li>
-                    <li>Le paramètre de décélération $q_0 = \dot{H_0}/H_0^2$</li>
+                    <li>Le paramètre de décélération $q_0 = -\dot{H_0}/H_0^2-1$</li>
                     <li>L'âge de l'Univers</li>
                 </ul>
                 La conclusion est alors que l'Univers est incompatible avec une absence d'énergie du vide ou une constante cosmologique nulle. Dans un Univers plat, les données indiquent $\Omega_m = 0,24$ et $\Omega_\Lambda = 0,76$ (L'Univers serait dominé par l'énergie du vide !) et que le paramètre de décélération $q$ est strictement négatif. L'expansion de l'Univers accélère !
