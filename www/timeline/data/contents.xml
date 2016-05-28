@@ -493,11 +493,6 @@ E_T^{miss} = ||\sum_{i} \vec{p}_i||
                    L'objet ici est de rechercher la production de matière noire associée à la production d'un jet (matière hadronique/quarks/gluons émise dans une certaine direction)
                    Les différentes composantes du bruit de fond attendues sont superposées et la somme est comparée aux données ATLAS issues du Run1. 
                 </figure>
-
-                <figure src="cms_1m_mtm.png" title="Distribution $E_T^{miss}$ pour les évènements associés avec la production d'un lepton dans CMS">
-                   Recherche de matière noire associée à la production d'un lepton.
-                   Les différentes composantes du bruit de fond attendues sont superposées et la somme est comparée aux données CMS issues du Run1. 
-                </figure>
              </p>
              
                          
