@@ -1580,8 +1580,11 @@ Et
             Par ailleurs, $n_X(t) = \dfrac{N_x}{V(1+z(t))^3}$. L'équation peut alors être réécrite :
 
             \begin{equation}
-            \dot{H}\dfrac{dN_x}{dz} = \dfrac{1}{(1+z)^3}\langle \sigma_{ann} v \rangle \left ( x(z)^{-3} e^{-2x(z)}^2 - N_X(z)^2 \right )
+            H(z)\dfrac{dN_x}{dz} = \dfrac{1}{(1+z)^3}\langle \sigma_{ann} v \rangle \left ( x(z)^{-3} e^{-2x(z)} - N_X(z)^2 \right )
             \end{equation}
+
+
+            Cette équation peut être couplée à l'équation de Friedmann qui donne directement $H(z)$ !
          </p>
 
          <h4>Candidats</h4>
