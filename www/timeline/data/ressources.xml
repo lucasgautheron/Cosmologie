@@ -1580,11 +1580,11 @@ Et
             Par ailleurs, $n_X(t) = \dfrac{N_x}{V(1+z(t))^3}$. L'équation peut alors être réécrite :
 
             \begin{equation}
-            -\dfrac{H(z)}{(1+z)^2}\dfrac{dn_x}{dz} = 3 \dfrac{H(z)}{(1+z)^3} n_x + \dfrac{1}{(1+z)^3}\langle \sigma_{ann} v \rangle \left ( K x(z)^{-3} e^{-2x(z)} - n_X(z)^2 \right )
+            -\dfrac{H(z)}{(1+z)^2}\dfrac{dn_x}{dz} = - 3 \dfrac{H(z)}{(1+z)^3} n_x + \dfrac{1}{(1+z)^3}\langle \sigma_{ann} v \rangle \left ( K n_{\gamma}^2 x(z)^{3} e^{-2x(z)} - n_X(z)^2 \right )
             \end{equation}
 
             \begin{equation}
-            (1+z)H(z)\dfrac{dn_x}{dz} = 3 H(z) n_x + \langle \sigma_{ann} v \rangle \left ( K x(z)^{-3} e^{-2x(z)} - n_X(z)^2 \right )
+            (1+z)H(z)\dfrac{dn_x}{dz} = 3 H(z) n_x + \langle \sigma_{ann} v \rangle \left ( n_X(z)^2 - K n_{\gamma}^2 x(z)^{3} e^{-2x(z)}\right )
             \end{equation}
 
 
@@ -1596,6 +1596,18 @@ Et
       </text>
       <linkwords>
            <linkword>WIMP</linkword>
+      </linkwords>
+
+     <ressource id="702">
+      <title>Axions</title>
+      <text>
+          <p>Les axions sont des particules hypothétiques initialement introduites dans le cadre de la théorie Peccei–Quinn afin de résoudre le problème CP-fort. Ils se sont révélés être de bons candidats pour la matière noire par la suite.</p>
+          <h4>Problème CP fort</h4>
+          <h4>Axions</h4>
+          <h4>Candidat pour la matière noire</h4>
+      </text>
+      <linkwords>
+           <linkword>axions</linkword>
       </linkwords>
     </ressource>
 </ressources>
