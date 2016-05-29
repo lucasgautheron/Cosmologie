@@ -1574,13 +1574,13 @@ Et
             Le terme $\alpha n_{SM}^2$ décrit le taux de formation de $X$ à partir de particules du modèle standard, qui est inconnu. Afin de demeureur aussi modèle-indépendant que possible, on réécrit l'équation en fonction de $n_x^{eq}$ plutôt que ce terme :
 
             \begin{equation}
-            \dfrac{dN_x}{dt} = \langle \sigma_{ann} v \rangle \left ( {n_X^{eq}}^2 - n_X^2 \right )
+            \dfrac{dN_x}{dt} = \langle \sigma_{ann} v \rangle \left ( {n_X^{eq}}^2 - n_X^2 \right ) V
             \end{equation}
 
             Par ailleurs, $n_X(t) = \dfrac{N_x}{V(1+z(t))^3}$. L'équation peut alors être réécrite :
 
             \begin{equation}
-            H(z)\dfrac{dN_x}{dz} = \dfrac{1}{(1+z)^3}\langle \sigma_{ann} v \rangle \left ( x(z)^{-3} e^{-2x(z)} - N_X(z)^2 \right )
+            -\dfrac{H(z)}{(1+z)^2}\dfrac{dn_x}{dz} = 3 \dfrac{H(z)}{(1+z)^3} n_x + \langle \sigma_{ann} v \rangle \left ( K x(z)^{-3} e^{-2x(z)} - n_X(z)^2 \right )
             \end{equation}
 
 
