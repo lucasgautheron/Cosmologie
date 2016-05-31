@@ -463,16 +463,39 @@
              </p>
                 <h4>WIMP</h4>
               <p>
-                  Il a été proposé que la matière noire soit principalement constituée de particules massives interagissant faiblement (Weakly Interacting Massive Particles, WIMP). Ces particules auraient été formées à l'époque où l'Univers était suffisamment chaud. Un équilire thermique entre annihilation et formation aurait imposé leur densité jusqu'à ce que celle-ci devienne trop faible pour que la réaction d'annihilation se produise : leur quantité demeure alors constante ("freeze-out"). Les WIMP sont attendues à l'échelle électrofaible ($\sim$ TeV), et pourraient donc être expliquées par des théories de type SUSY.
+                  Il a été proposé que la matière noire soit principalement constituée de particules massives interagissant faiblement (Weakly Interacting Massive Particles, WIMP). Ces particules auraient été formées à l'époque où l'Univers était suffisamment chaud. Un équilire thermique entre annihilation et formation aurait imposé leur densité jusqu'à ce que celle-ci devienne trop faible pour que la réaction d'annihilation se produise : leur quantité demeure alors constante ("freeze-out"). Les WIMP sont attendues à l'échelle électrofaible ($\sim$ TeV), et pourraient donc être expliquées par des théories de type SUSY. Leur masse est en effet bornée par une limite supérieure : des particules très massives ($> 100$ TeV) seraient trop stables et présentes en trop large quantité aujourd'hui par rapport à celle de matière noire.
               </p>
 
+               <p>Cependant, si le freeze-out intervient hors-équilibre, cette contrainte sur la masse est levée. Il a donc été proposé que la matière noire soit en fait des WIMP très massifs appelés WIMPZILLAS.</p>
 
                 <h4>Axions</h4>
               <p>
-                  
+                  Bien que leur existence n'ait pas été initialement suggérée en réponse au problème de la matière noire, mais en réalité pour résoudre le problème CP fort, les axions seraient un bon candidat pour la matière noire. Ils seraient a priori très peu massifs ($m &lt; $ eV) mais feraient intervenir un champ scalaire de pression nulle, et donc seraient équivalent à de la matière froide, là où les neutrinos ultrarelativistes ne sont que de bons candidats pour la matière noire chaude.
               </p>
 
+              <h4>Trous noirs primordiaux</h4>
+              <p>
+              </p>
 
+              <h4>MOND</h4>
+              <p></p>
+
+
+              <h4>Gravité $f(R)$</h4>
+              <p>
+              La Relativité Générale est contenue dans l'action d'Hilbert-Einstein de forme :
+              \begin{equation} 
+              S = \int \dfrac{c^4}{16\pi G} R \sqrt{-g} d^4x
+              \end{equation}
+              Les équations du mouvements (équation d'Einstein) s'obtiennent alors par application du principe de moindre action.
+              L'idée des théories $f(R)$ est que l'action est en réalité donnée par :
+
+              \begin{equation} 
+              S = \int \dfrac{c^4}{16\pi G} f(R) \sqrt{-g} d^4x
+              \end{equation}
+
+              TODO motivation. Application FLRW.
+              </p>
               
 
              
