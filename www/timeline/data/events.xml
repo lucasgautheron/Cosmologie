@@ -32,5 +32,5 @@
     <event date="1998" content-id="14">Introduction de la notion d'"Énergie sombre" par Dragan Huterer et Michael S. Turner pour expliquer l'accélération de l'expansion. Ceci comprend entre autres hypothèses la réintroduction de la constante cosmologique.</event>
     <event date="2015" content-id="15">Les résultats de l'expérience Planck permettent d'améliorer la précision sur la connaissance des paramètres cosmologiques.</event>
     <event date="Aujourd'hui" content-id="16">Rercherche de la matière noire</event>
-    <event date="Aujourd'hui" content-id="17">Energie noire</event>
+    <!--<event date="Aujourd'hui" content-id="17">Energie noire</event>-->
 </events>
