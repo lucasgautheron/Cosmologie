@@ -53,7 +53,7 @@
                             <h4>Ressources</h4>
                             <ul>
                                 <xsl:for-each select="//ressources/ressource/linkwords/linkword[contains($text, .)]">
-                                    <li><a href="#!content={$id}&amp;ressource={../../@id}"><xsl:value-of select="."/></a></li>
+                                    <li><a href="index.html#!content={$id}&amp;ressource={../../@id}"><xsl:value-of select="."/></a></li>
                                 </xsl:for-each>
                             </ul>
                             <h4>Références</h4>
